@@ -118,9 +118,9 @@ body {
 	padding: 0;
 	font-size: 0;
 	background: #343434;
-	border-bottom: none;
+	
 	position: absolute;
-	top: 40px;
+	top: 43px;
 	z-index: 10;
 }
 .second-menu-travel li,
@@ -140,6 +140,13 @@ body {
 }
 .second-menu:hover .second-menu2 {
 	display: block;
+}
+.second-menu ul {
+	border-bottom: none;
+	box-shadow: 0px 5px 7px 2px #707070;
+}
+.second-menu2 a:hover {
+	background: #444;
 }
 /******END MENU********/
 
