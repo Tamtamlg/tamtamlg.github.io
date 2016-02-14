@@ -1,0 +1,62 @@
+body {
+	background: #000 url("../img/background.png") no-repeat center top;
+	color: #fff;
+	font-family: "Tahoma";
+	font-size: 16px;
+}
+.container {
+	width: 820px;
+	margin: 0 auto;
+	padding-left: 70px;
+	padding-right: 70px;
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.header {
+	margin-top: 135px;
+	margin-bottom: 10px;
+}
+.logo {
+	float: left;
+	text-align: center;
+	
+}
+.logo p {
+	font-size: 10px;
+	margin-top: 0
+}
+.contacts {
+	float: right;
+	font-size: 10px;
+}
+.galery {
+	clear: both;
+	font-size: 0;
+	margin-bottom: 95px;
+}
+.galery-item {
+	display: inline-block;
+	margin-right: 12px;
+	margin-bottom: 50px;
+}
+.galery-item:nth-child(3n) {
+	
+	margin-right: 0;
+}
+.galery-item img {
+	width: 260px;
+	height: 178px;
+	border: 2px solid #989898;
+}
+.galery-item p {
+	text-align: center;
+	font-size: 16px;
+	margin-top: 0;
+}
+.footer p {
+	text-align: center;
+	font-size: 10px;
+}
