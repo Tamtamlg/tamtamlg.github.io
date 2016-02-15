@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.header {
+    background: url(../img/pattern.png);
+    width: 1215px;
+    margin: 0 auto;
+}
+.navigation {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0px;
+}
+.navigation li {
+    display: inline-block;
+    
+}
+.navigation li a {
+    display: block;
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+    padding: 10px 15px;
+    color: #60b5ed;
+    text-decoration: none;
+}
+.navigation .active a{
+    background: #4eabda;
+    color: #fff;
+}
+.navigation li a:hover {
+    background: #4eabda;
+    color: #fff;
+}
+.btn {
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    background: linear-gradient(to top, #2a7ab5, #51b1dc);
+    border: 1 px solid #51b1dc;
+}
+.entrance {
+    width: 192px;
+    float: right;
+    margin-right: 20px;
+}
+.flag {
+    float: right;
+    position: relative;
+    font-size: 0;
+}
+
+.flag a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+}
+.flag img {
+    position: absolute;
+    top: 5px;
+    left: 30px;
+}
+.flag a:before {
+    content: "";
+    height: 31px;
+    border-left: 1px solid #60b5ed;
+    margin-right: 50px;
+}
+.content {
+    position: relative;
+    margin: 0 auto;
+    background: url(../img/background.png) no-repeat;
+    width: 1215px;
+    height: 1028px;
+}
+.wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 560px;
+    height: 615px;
+}
+.heading {
+    width: 560px;
+    height: 65px;
+    background: rgba(0,0,0,.5);
+    font-size: 24px;
+    text-align: center;
+    line-height: 65px;
+    color: #fff;
+    margin-bottom: 2px;
+}
+.form {
+    width: 560px;
+    height: 548px;
+    background: rgba(0,0,0,.5);
+}
