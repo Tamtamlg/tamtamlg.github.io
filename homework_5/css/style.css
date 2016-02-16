@@ -47,10 +47,10 @@ body {
     color: #fff;
     text-decoration: none;
     background: linear-gradient(to top, #2a7ab5, #51b1dc);
-    border: 1 px solid #51b1dc;
+    border: 1px solid #51b1dc;
+    border-radius: 3px;
 }
 .entrance {
-    width: 192px;
     float: right;
     margin-right: 20px;
 }
@@ -107,7 +107,86 @@ body {
     margin-bottom: 2px;
 }
 .form {
+    padding-top: 35px;
     width: 560px;
-    height: 548px;
+    height: 513px;
     background: rgba(0,0,0,.5);
+    text-align: center;
+}
+.ou {
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+.ou span {
+    text-transform: uppercase;
+    color: #999;
+    position: relative;
+}
+.ou span:after {
+    content: "";
+    position: absolute;
+    width: 117px;
+    top: 8px;
+    left: 30px;
+    display: block;
+    border-bottom: 1px solid #666;
+    box-shadow: 0 1px 0 0 #000;
+}
+.ou span:before {
+    content: "";
+    position: absolute;
+    width: 116px;
+    top: 8px;
+    left: -127px;
+    display: block;
+    border-bottom: 1px solid #666;
+    box-shadow: 0 1px 0 0 #000;
+}
+input[type="text"], 
+input[type="email"],
+input[type="password"]{
+    display: block;
+    margin: 18px auto;
+    padding: 8px 20px;
+    width: 236px;
+    color: #ccc;
+    background: #0f0f0f;
+    border: none;
+    border-bottom: 1px solid #484948;
+}
+input[type="text"]:focus, 
+input[type="email"]:focus,
+input[type="password"]:focus {
+    background: #1b5288;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #689bcc;
+    box-shadow: 0 0 5px 3px #416f8f;
+}
+form span {
+    color: #ccc;
+    display: inline-block;
+}
+input[type="submit"] {
+    display: block;
+    margin: 15px auto;
+    padding: 10px 15px;
+    color: #fff;
+    background: linear-gradient(to top, #2a7ab5, #51b1dc);
+    border: 1px solid #51b1dc;
+    border-radius: 3px;
+}
+.checkbox {
+    margin: 0 auto;
+    width: 276px;
+    text-align: left;
+    vertical-align: top;
+}
+input[type="checkbox"] {
+    width: 14px;
+    vertical-align: middle;
+}
+.form p {
+    font-size: 11px;
+    color: #ccc;
 }
