@@ -1,7 +1,18 @@
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url('fonts/helveticaneue-thin-webfont.eot');
+    src: url('fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+         url('fonts/helveticaneue-thin-webfont.woff') format('woff'),
+         url('fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body {
     margin: 0;
     padding: 0;
-    font-family: Tahoma, sans-serif;
+    font-family: "Helvetica Neue";
     font-size: 14px;
 }
 .clearfix:after {
@@ -27,7 +38,7 @@ body {
 }
 .navigation li a {
     display: block;
-    font-family: Tahoma, sans-serif;
+    font-family: 'helvetica_neueregular';
     font-size: 14px;
     padding: 10px 15px;
     color: #60b5ed;
@@ -65,7 +76,7 @@ body {
     padding: 10px 15px;
     text-decoration: none;
     color: #fff;
-    font-family: Tahoma, sans-serif;
+    font-family: 'helvetica_neueregular';
     font-size: 14px;
 }
 .flag img {
@@ -153,6 +164,7 @@ input[type="password"]{
     background: #0f0f0f;
     border: none;
     border-bottom: 1px solid #484948;
+    
 }
 input[type="text"]:focus, 
 input[type="email"]:focus,
@@ -166,6 +178,7 @@ input[type="password"]:focus {
 form span {
     color: #ccc;
     display: inline-block;
+    font-family: 'helvetica_neueregular';
 }
 input[type="submit"] {
     display: block;
