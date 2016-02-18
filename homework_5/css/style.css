@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: 'Helvetica Neue';
     src: url('../fonts/helveticaneue-thin-webfont.eot');
@@ -47,6 +49,7 @@ body {
 .navigation .active a{
     background: #4eabda;
     color: #fff;
+    font-weight: 700;
 }
 .navigation li a:hover {
     background: #4eabda;
@@ -60,6 +63,7 @@ body {
     background: linear-gradient(to top, #2a7ab5, #51b1dc);
     border: 1px solid #51b1dc;
     border-radius: 3px;
+    font-weight: 700;
 }
 .entrance {
     float: right;
@@ -78,6 +82,7 @@ body {
     color: #fff;
     font-family: 'Helvetica Neue';
     font-size: 14px;
+    font-weight: 700;
 }
 .flag img {
     position: absolute;
@@ -116,6 +121,40 @@ body {
     line-height: 65px;
     color: #fff;
     margin-bottom: 2px;
+}
+.facebook {
+    display: block;
+    position: relative;
+    padding: 9px 55px 10px 70px;
+    margin: 0 auto;
+    width: 151px;
+    color: #fff;
+    text-decoration: none;
+    background: linear-gradient(to top, #314174, #3e5692);
+    border-top: 1px solid #7787b8;
+    border-radius: 3px;
+    font-weight: 700;
+    
+}
+.facebook img {
+    position: absolute;
+    top: 6px;
+    left: 17px;
+}
+.facebook:before {
+    content: "";
+    height: 36px;
+    border-left: 1px solid #1f3c76;
+    border-right: 1px solid #4d65a3;
+    position: absolute;
+    top: 0px;
+    left: 45px;
+}
+.with {
+    font-weight: normal;
+}
+.entrance span {
+    text-decoration: underline;
 }
 .form {
     padding-top: 35px;
@@ -160,12 +199,14 @@ input[type="password"]{
     margin: 18px auto;
     padding: 8px 20px;
     width: 236px;
-    color: #ccc;
+    color: #fff;
     background: #0f0f0f;
     border: none;
     border-bottom: 1px solid #484948;
-    
+    font-weight: 700;
+    position: relative;
 }
+
 input[type="text"]:focus, 
 input[type="email"]:focus,
 input[type="password"]:focus {
@@ -173,13 +214,32 @@ input[type="password"]:focus {
     color: #fff;
     border: none;
     border-bottom: 1px solid #689bcc;
+    
     box-shadow: 0 0 5px 3px #416f8f;
+    
+}
+input[type="text"]:after, 
+input[type="email"]:after,
+input[type="password"]:after{ 
+    content: ""; 
+    display: block ; 
+    position: absolute ; 
+    top: 0 ; 
+    bottom: 0 ; 
+    left: 0 ; 
+    right: 0 ; 
+    border-radius: 5px ; 
+    border: 5px solid #red ; 
+}
+.heading span {
+    font-weight: 700;
 }
 form span {
     color: #ccc;
     display: inline-block;
     font-family: 'Helvetica Neue';
     font-size: 14px;
+    font-weight: 700;
 }
 input[type="submit"] {
     display: block;
@@ -191,6 +251,7 @@ input[type="submit"] {
     border-radius: 3px;
     font-family: 'Helvetica Neue';
     font-size: 14px;
+    font-weight: 700;
 }
 .checkbox {
     margin: 0 auto;
@@ -206,3 +267,7 @@ input[type="checkbox"] {
     font-size: 11px;
     color: #ccc;
 }
+::-webkit-input-placeholder {color:#ccc;}
+::-moz-placeholder          {color:#ccc;}/* Firefox 19+ */
+:-moz-placeholder           {color:#ccc;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#ccc;}
