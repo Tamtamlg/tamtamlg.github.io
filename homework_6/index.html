@@ -55,7 +55,6 @@
                     <span class="auto-auto">Поиск по автомобилю</span>
                     <span class="auto-tire">Шины:</span>
                 </div> 
-                    <form action="/">
                         <div class="select-auto-left">
                            <div class="column1">
                            <p>Марка <span class="color-gray">авто:</span></p>
@@ -71,11 +70,11 @@
                             <select name="" id="">
                                 <option value=""></option>
                                 <option value=""></option>
-                            </select>
+                            </select><br>
                             <select name="year1" id="">
                                 <option value=""></option>
                                 <option value=""></option>
-                            </select>
+                            </select><br>
                             <select name="" id="">
                                 <option value=""></option>
                                 <option value=""></option>
@@ -89,33 +88,89 @@
                            <p>Год выпуска<br><span class="color-gray">автомобиля:</span><br></p>
                            <p>Комплектация:</p>
                             </div>
-                            <div class="column2">
-                            <select name="" id="">
-                                <option value=""></option>
-                                <option value=""></option>
-                            </select><br>
-                            <select name="" id="">
-                                <option value=""></option>
-                                <option value=""></option>
-                            </select>
-                            <select name="year1" id="">
-                                <option value=""></option>
-                                <option value=""></option>
-                            </select>
-                            <select name="" id="">
-                                <option value=""></option>
-                                <option value=""></option>
-                            </select>
-                            </div>
+                            <form action="/"  class="column2">
+                                <select name="" id="">
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                                <select name="" id="">
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                                <select name="year1" id="">
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                                <select name="" id="">
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                                <input type="submit" value="поиск...">
+                            </form>
                         </div>
+            </div>
+            <div class="select-tire  clearfix">
+                <div class="tire-headers">поиск шин</div>
+                    <div class="select-tire-left">
+                        <p>Размер:</p>
+                        <p class="r">R</p>
+                        <p>Сезон:</p>
+                    </div>
+                    <form action="/" class="select-tire-right">
+                        <select name="" id="">
+                            <option value="">145</option>
+                            <option value=""></option>
+                        </select> / 
+                        <select name="" id="">
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                        <select name="radius" id="">
+                            <option value="">12</option>
+                            <option value=""></option>
+                        </select>
+                        <p><input type="checkbox" name="" id="">лето</p>
+                        <p><input type="checkbox" name="" id="">зима</p>
+                        <p><input type="checkbox" name="" id="">всесез</p>
                         <input type="submit" value="поиск...">
                     </form>
             </div>
-            <div class="select-tire">
-                
-            </div>
-            <div class="select-disc">
-                
+            <div class="select-disc clearfix">
+                <div class="disc-headers">Поиск дисков</div>
+                        <div class="select-disc-left">
+                           <p>Диаметр <span class="color-gray">диска:</span></p>
+                           <p>Количество <span class="color-gray">крепежных отверстий:</span></p>
+                           <p>Диаметр <span class="color-gray">расположения крепежных отверстий:</span></p>
+                        </div>
+                        <form action="/" class="column3">
+                            <div class="column3-left">   
+                                <select name="" id="">
+                                    <option value="">14</option>
+                                    <option value=""></option>
+                                </select><br>
+                                <select name="" id="">
+                                    <option value="">3</option>
+                                    <option value=""></option>
+                                </select><br>
+                                <select name="" id="">
+                                    <option value="">12</option>
+                                    <option value=""></option>
+                                </select>    
+                            </div>
+                            <div class="column3-right">
+                                <p>ДЦО<br><span class="color-gray">диаметр центрального отверстия:</span></p>
+                                <select name="" id="">
+                                    <option value="">12</option>
+                                    <option value=""></option>
+                                </select><br>
+                                <p>ЕТ<br><span class="color-gray">вылет диска:</span></p>
+                                <select name="" id="">
+                                    <option value="">12</option>
+                                    <option value=""></option>
+                                </select>
+                                <input type="submit" value="поиск...">
+                            </div>
+                        </form>
             </div>
         </section>
         <main class="container clearfix">
@@ -146,28 +201,57 @@
             <section class="galery">
                 <div class="galery-item">
                     <h3>Goodyear</h3>
-                    <figure>
-                        <figcaption>Ultra Grip Extreme</figcaption>
-                        <div>
+                    <div class="figure">
+                        <div>Ultra Grip Extreme</div>
                         <a href="#"><img src="img/goodvear.png" alt=""></a>
                         </div>
-                    </figure>
+                    
                     <div class="price">90.00 <span>грн.</span></div>
                 </div>
                 <div class="galery-item">
                     <h3>Nokian</h3>
-                    <figure>
-                        <figcaption>Hakkapeliitta R</figcaption>
+                    <div class="figure">
+                        <div class="figcaption">Hakkapeliitta R</div>
                         <div>
                         <a href="#"><img src="img/goodvear.png" alt=""></a>
                         </div>
-                    </figure>
+                    </div>
                     <div class="price">115.00 <span>грн.</span></div>
                 </div>
                 <div class="galery-item">
                     <h3>Hankook</h3>
-                    <figure>
-                        <figcaption>K 708 155/65 R14</figcaption>
+                    <div class="figure">
+                        <div class="figcaption">K 708 155/65 R14</div>
+                        <div>
+                        <a href="#"><img src="img/goodvear.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="price">393.00 <span>грн.</span></div>
+                </div>
+                <div class="galery-item">
+                    <h3>Goodyear</h3>
+                    <div class="figure">
+                        <div class="figcaption">Ultra Grip Extreme</div>
+                        <div>
+                        <a href="#"><img src="img/goodvear.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="price">90.00 <span>грн.</span></div>
+                </div>
+                <div class="galery-item">
+                    <h3>Nokian</h3>
+                    <div class="figure">
+                        <div class="figcaption">Hakkapeliitta R</div>
+                        <div>
+                        <a href="#"><img src="img/goodvear.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="price">115.00 <span>грн.</span></div>
+                </div>
+                <div class="galery-item">
+                    <h3>Hankook</h3>
+                    <div class="figure">
+                        <div class="figcaption">K 708 155/65 R14</figcaption>
                         <div>
                         <a href="#"><img src="img/goodvear.png" alt=""></a>
                         </div>
@@ -176,68 +260,38 @@
                 </div>
                 <div class="galery-item">
                     <h3>Goodyear</h3>
-                    <figure>
-                        <figcaption>Ultra Grip Extreme</figcaption>
+                    <div class="figure">
+                        <div class="figcaption">Ultra Grip Extreme</div>
                         <div>
                         <a href="#"><img src="img/goodvear.png" alt=""></a>
                         </div>
-                    </figure>
+                    </div>
                     <div class="price">90.00 <span>грн.</span></div>
                 </div>
                 <div class="galery-item">
                     <h3>Nokian</h3>
-                    <figure>
-                        <figcaption>Hakkapeliitta R</figcaption>
+                    <div class="figure">
+                        <div class="figcaption">Hakkapeliitta R</div>
                         <div>
                         <a href="#"><img src="img/goodvear.png" alt=""></a>
                         </div>
-                    </figure>
+                    </div>
                     <div class="price">115.00 <span>грн.</span></div>
                 </div>
                 <div class="galery-item">
                     <h3>Hankook</h3>
-                    <figure>
-                        <figcaption>K 708 155/65 R14</figcaption>
+                    <div class="figure">
+                        <div class="figcaption">K 708 155/65 R14</div>
                         <div>
                         <a href="#"><img src="img/goodvear.png" alt=""></a>
                         </div>
-                    </figure>
-                    <div class="price">393.00 <span>грн.</span></div>
-                </div>
-                <div class="galery-item">
-                    <h3>Goodyear</h3>
-                    <figure>
-                        <figcaption>Ultra Grip Extreme</figcaption>
-                        <div>
-                        <a href="#"><img src="img/goodvear.png" alt=""></a>
-                        </div>
-                    </figure>
-                    <div class="price">90.00 <span>грн.</span></div>
-                </div>
-                <div class="galery-item">
-                    <h3>Nokian</h3>
-                    <figure>
-                        <figcaption>Hakkapeliitta R</figcaption>
-                        <div>
-                        <a href="#"><img src="img/goodvear.png" alt=""></a>
-                        </div>
-                    </figure>
-                    <div class="price">115.00 <span>грн.</span></div>
-                </div>
-                <div class="galery-item">
-                    <h3>Hankook</h3>
-                    <figure>
-                        <figcaption>K 708 155/65 R14</figcaption>
-                        <div>
-                        <a href="#"><img src="img/goodvear.png" alt=""></a>
-                        </div>
-                    </figure>
+                    </div>
                     <div class="price">393.00 <span>грн.</span></div>
                 </div>
             </section>
             <section class="right-column">
                 <form action="/">
-                    <div class="left-heading">Каталог продукции:</div>
+                    <div class="left-heading">Бренды:</div>
                     <div class="left-heading-tire">Шины</div>
                     <div class="check">
                     <input type="checkbox" name="" id=""><span>Бренд 1</span>
