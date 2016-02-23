@@ -23,7 +23,7 @@ body {
     position: absolute;
     margin-left: 8px;
     top: 5px;
-    left: -7px;
+    left: -6px;
     width: 22px;
     height: 21px;
     background: transparent url(../img/spritesheet.png) no-repeat;
@@ -35,6 +35,7 @@ body {
     font-size: 19px;
     line-height: 30px;
     color: #5e696d;
+    letter-spacing: -0.2px;
 }
 .user-block {
     position: relative;
@@ -92,13 +93,14 @@ input[type="text"] {
     height: 100%;
     background: transparent;
     color: #fff;
-    margin-right: 9px;
+    margin-right: 12px;
+    letter-spacing: -1.0px;
 }
 .submit:before {
     content: "";
     position: absolute;
     top: 8px;
-    left: 31px;
+    left: 30px;
     height: 10px;
     border-left: 1px solid #fff;
 }
@@ -114,9 +116,10 @@ input[type="text"] {
     color: #fff;
     font-size: 11px;
     text-decoration: none;
+    letter-spacing: -0.2px;
 }
 .submit a:last-child {
-    margin-left: 19px;
+    margin-left: 21px;
     color: #bfbfbf;
     font-size: 12px;
 }
@@ -190,14 +193,14 @@ nav li {
 }
 nav li a {
     display: block;
-    padding: 2px 18px;
+    padding: 4px 18px;
     text-transform: uppercase;
     text-decoration: none;
     font-family: "Lucida Sans Unicode";
     font-size: 13px;
     
     color: #b1bcc0;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
     word-spacing: 7px;
 
 }
@@ -267,6 +270,8 @@ nav li a:hover {
 }
 .select-auto select{
     width: 100px;
+    margin-bottom: 5px;
+
 }
 .select{
     margin-top: 11px;
@@ -292,12 +297,15 @@ select[name="year2"] {
     font-family: Arial, sans-serif;
     font-size: 10px;
     line-height: 20px;
+    margin-left: 5px;
+    margin-top: -2px;
 }
 .select p {
     margin: 4px;
 }
 .auto-headers {
     text-align: center;
+    margin-top: -1px;
 }
 .auto-auto {
     font-family: Arial, sans-serif;
@@ -306,18 +314,20 @@ select[name="year2"] {
     color: #154467;
     font-weight: bold;
     margin-left: 66px;
-    margin-right: 66px;
+    margin-right: 70px;
+    letter-spacing: 1.3px;
 }
 .auto-disk {
     font-family: Arial, sans-serif;
-    font-size: 10px;
+    font-size: 11px;
     line-height: 10px;
     color: #154467;
     font-weight: bold;
+    letter-spacing: 0.8px;
 }
 .auto-tire {
     font-family: Arial, sans-serif;
-    font-size: 10px;
+    font-size: 11px;
     line-height: 10px;
     color: #154467;
     font-weight: bold;
@@ -331,8 +341,9 @@ select[name="year2"] {
     width: 75px;
     float: left;
     line-height: 10px;
-    margin-left: 17px;
+    margin-left: 13px;
     margin-right: 5px;
+    margin-top: 4px;
 }
 .select input[type="submit"] {
     font-style: italic;
@@ -471,39 +482,6 @@ select[name="radius"] {
     height: 105px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .left-column {
     float: left;
     width: 186px;
@@ -533,11 +511,11 @@ select[name="radius"] {
 .galery-item:nth-child(3n) {
     margin-right: 0;
 }
-.galery-item figure {
+.galery-item .figure {
     padding: 0;
     margin: 0;
 }
-.galery-item figure div {
+.item-img {
     width: 136px;
     height: 117px;
     background: #fff;
@@ -552,7 +530,7 @@ select[name="radius"] {
     font-size: 15px;
     line-height: 15px;
 }
-.galery-item figcaption {
+.figcaption {
     color: #000;
     font-family: "Lucida Sans Unicode";
     font-size: 12px;
