@@ -23,7 +23,7 @@ body {
     position: absolute;
     margin-left: 8px;
     top: 5px;
-    left: -6px;
+    left: -7px;
     width: 22px;
     height: 21px;
     background: transparent url(../img/spritesheet.png) no-repeat;
@@ -40,7 +40,7 @@ body {
 .user-block {
     position: relative;
     float: left;
-    margin-left: 15px;
+    margin-left: 21px;
     width: 475px;
     padding: 0px 10px 0px 10px;
     background: linear-gradient(to top, #0c3357, #1f6787);
@@ -58,7 +58,6 @@ body {
     height: 18px;
     background: transparent url(../img/spritesheet.png) no-repeat;
     background-position: -5px -225px;
-    
 }
 .input {
     margin: 0px 0px 0 14px;
@@ -76,7 +75,6 @@ body {
     font-size: 11px;
 }
 input[type="text"] {
-    
     margin-right: 6px;
 }
 .submit {
@@ -119,7 +117,7 @@ input[type="text"] {
     letter-spacing: -0.2px;
 }
 .submit a:last-child {
-    margin-left: 21px;
+    margin-left: 24px;
     color: #bfbfbf;
     font-size: 12px;
 }
@@ -193,16 +191,14 @@ nav li {
 }
 nav li a {
     display: block;
-    padding: 4px 18px;
+    padding: 2px 18px;
     text-transform: uppercase;
     text-decoration: none;
     font-family: "Lucida Sans Unicode";
     font-size: 13px;
-    
     color: #b1bcc0;
     letter-spacing: -1px;
     word-spacing: 7px;
-
 }
 nav li a:hover {
     background: linear-gradient(to top, #0c3357, #1f6787);
@@ -218,7 +214,6 @@ nav li a:hover {
     padding-left: 27px;
     margin-top: 2px;
     position: relative;
-    
 }
 .store:after {
     content: "";
@@ -241,14 +236,12 @@ nav li a:hover {
     font-family: Arial, sans-serif;
     font-size: 12px;
     color: #0d5a8f;
-    
 }
 .summ {
     font-family: Arial, sans-serif;
     font-size: 11px;
     color: #929b9f;
     margin-left: 11px;
-    
 }
 .summ-num {
     font-family: Arial, sans-serif;
@@ -256,14 +249,10 @@ nav li a:hover {
     color: #0d5a8f;
     margin-left: 10px;
 }
-
-/**/
-/**/
-/**/
-
 .select-auto {
     float: left;
     width: 413px;
+    height: 133px;
     border: 1px solid #b6b6b7;
     border-radius: 18px;
     box-shadow: 2px 2px 7px 0px #a5a5a5;
@@ -271,7 +260,6 @@ nav li a:hover {
 .select-auto select{
     width: 100px;
     margin-bottom: 5px;
-
 }
 .select{
     margin-top: 11px;
@@ -355,19 +343,17 @@ select[name="year2"] {
     font-size: 14px;
     color: #154467;
     line-height: 28px;
+    margin-top: -4px;
 }
 .column2 {
     float: left;
     width: 100px;
 }
-
-
-/**/
-/**/
 .select-tire {
     float: left;
-    margin-left: 10px;
-    width: 193px;
+    margin-left: 14px;
+    width: 191px;
+    height: 134px;
     border: 1px solid #b6b6b7;
     border-radius: 18px;
     box-shadow: 2px 2px 7px 0px #a5a5a5;
@@ -379,13 +365,15 @@ select[name="year2"] {
     color: #154467;
     font-weight: bold;
     text-align: left;
-    padding-left: 10px;
+    padding-left: 7px;
+    letter-spacing: 2px;
 }
 .select-tire-left {
     float: left;
     padding: 0;
-    margin-right: 3px;
-    
+    margin-right: 0px;
+    margin-left: 7px;
+    margin-top: 5px;
     text-align: left;
     width: 49px;
     font-family: Arial, sans-serif;
@@ -404,26 +392,37 @@ select[name="year2"] {
     font-size: 10px;
     line-height: 20px;
 }
+.select-tire-right input[type="submit"] {
+    margin-top: -8px;
+    margin-right: 3px;
+}
 .select-tire select {
     width: 52px;
+}
+.select-tire-right select:nth-child(1) {
+    margin-right: 5px;
+}
+.select-tire-right select:nth-child(2) {
+    margin-left: 1px;
 }
 select[name="radius"] {
     width: 45px;
     margin-top: 4px;
-    margin-bottom: 7px;
+    margin-bottom: 11px;
 }
 .select-tire-right p {
     line-height: 10px;
     margin: 0;
+    letter-spacing: 1px;
 }
 .r {
     text-align: right;
 }
-/**/
 .select-disc {
     float: left;
     margin-left: 10px;
     width: 267px;
+    height: 133px;
     border: 1px solid #b6b6b7;
     border-radius: 18px;
     box-shadow: 2px 2px 7px 0px #a5a5a5;
@@ -438,8 +437,9 @@ select[name="radius"] {
     color: #154467;
     font-weight: bold;
     text-align: left;
-    padding-left: 10px;
-    width: 90px;
+    padding-left: 8px;
+    width: 105px;
+    letter-spacing: 2px;
 }
 .select-disc-left {
     float: left;
@@ -447,7 +447,7 @@ select[name="radius"] {
     width: 85px;
     font-family: Arial, sans-serif;
     font-size: 10px;
-    
+    letter-spacing: 0.2px;
     line-height: 10px;
     margin-left: 17px;
     margin-right: 5px;
@@ -463,15 +463,29 @@ select[name="radius"] {
 }
 .column3-left select {
     margin-top: 3px;
-    margin-bottom: 10px;
+    margin-bottom: 11px;
+}
+.column3-left select[name="numb3"] {
+    width: 50px;
 }
 .column3-right {
     position: relative;
     width: 80px;
     float: right;
     padding-left: 10px;
-    margin-left: 60px;
-    margin-top: -103px;
+    margin-left: 65px;
+    margin-top: -106px;
+    letter-spacing: 0.4px;
+}
+.column3-right select {
+    margin-left: 4px;
+    margin-bottom: 5px;
+}
+.select-disc input[type="submit"] {
+    margin-right: 9px;
+}
+.column3-right p {
+    margin: 1.3px;
 }
 .column3-right:before {
     content: "";
@@ -481,10 +495,10 @@ select[name="radius"] {
     border-left: 1px solid #bdc6ca;
     height: 105px;
 }
-
 .left-column {
     float: left;
     width: 186px;
+    padding-top: 0px;
 }
 .right-column {
     float: right;
@@ -492,7 +506,7 @@ select[name="radius"] {
 }
 .galery {
     margin-left: 6px;
-    padding: 12px 22px;
+    padding: 14px 22px 3px 22px;
     float: left;
     width: 480px;
     background: linear-gradient(to top, #93a7b0, #e5e7e8);
@@ -542,15 +556,18 @@ select[name="radius"] {
     color: #114165;
     font-style: italic;
     font-weight: bold;
+    margin-top: 4px;
 }
 .price span {
     font-size: 12px;
 }
 /***********galery-item end***********/
 .left-heading {
-    margin-bottom: 13px;
+    margin-bottom: 15px;
     text-transform: uppercase;
-    padding-left: 29px;
+    padding-left: 27px;
+    margin-top: 3px;
+    width: 153px;
     position: relative;
     font-size: 13px;
     line-height: 24px;
@@ -570,15 +587,16 @@ select[name="radius"] {
     background-position: -5px -274px;
 }
 .left-heading-tire {
-    width: 121px;
+    width: 118px;
     text-transform: uppercase;
     padding-left: 29px;
     position: relative;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 25px;
     border: 1px solid #8b979c;
     border-radius: 12px;
     color: #114165;
+    margin-left: 2px;
 }
 .left-heading-tire:before {
     content: "";
@@ -602,11 +620,13 @@ select[name="radius"] {
 }
 .left-column ul {
     list-style: none;
-    padding: 0 20px;
+    padding: 0 0 0 37px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 .left-column li {
     position: relative;
-    padding-left: 16px; 
+    padding: 3px 1px 2px 11px;
 }
 .left-column ul a {
     text-decoration: none;
@@ -649,7 +669,7 @@ select[name="radius"] {
 }
 .check {
     margin-left: 25px;
-    line-height: 27px;
+    line-height: 26px;
 }
 .check span {
     margin-left: 15px;
@@ -657,8 +677,19 @@ select[name="radius"] {
 input[type="checkbox"] {
     vertical-align: middle;
 }
+.right-column .left-heading {
+    padding: 0px 0px 0px 32px;
+    width: 149px;
+}
+.right-column .left-heading:before {
+    top: 0px;
+    left: 4px;
+}
 .right-column .left-heading-tire {
     margin-left: 15px;
+    width: 106px;
+    margin-top: 8px;
+    margin-bottom: 2px;
 }
 .right-column input[type="submit"] {
     border: none;
@@ -671,14 +702,14 @@ input[type="checkbox"] {
     font-size: 11px;
     line-height: 11px;
     text-transform: uppercase;
-    margin-top: 20px;
+    margin-top: 12px;
     margin-left: 25px;
     box-shadow: 1px 1px 2px 1px #bfbfbf;
 }
 .partners {
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 25px;
+    margin-top: 35px;
+    margin-bottom: 17px;
 }
 footer {
     height: 100px;
@@ -705,7 +736,7 @@ footer {
     font-family: Arial, sans-serif;
     font-size: 12px;
     text-decoration: none;
-    
+    letter-spacing: 1px;
 }
 .footer-menu li a:hover {
     color: #52abcb;
@@ -714,6 +745,7 @@ footer p {
     color: #7f4740;
     font-family: Arial, sans-serif;
     font-size: 10px;
+    padding: 5px;
 }
 
 
