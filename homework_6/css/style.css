@@ -7,6 +7,7 @@ body {
 .container {
     width: 912px;
     margin: 0 auto;
+    overflow: hidden;
 }
 .clearfix:after {
     content: "";
@@ -256,6 +257,7 @@ nav li a:hover {
     border: 1px solid #b6b6b7;
     border-radius: 18px;
     box-shadow: 2px 2px 7px 0px #a5a5a5;
+    position: relative;
 }
 .select-auto select{
     width: 100px;
@@ -357,6 +359,7 @@ select[name="year2"] {
     border: 1px solid #b6b6b7;
     border-radius: 18px;
     box-shadow: 2px 2px 7px 0px #a5a5a5;
+    position: relative;
 }
 .tire-headers {
     font-family: Arial, sans-serif;
@@ -426,6 +429,7 @@ select[name="radius"] {
     border: 1px solid #b6b6b7;
     border-radius: 18px;
     box-shadow: 2px 2px 7px 0px #a5a5a5;
+    position: relative;
 }
 .select-disc select {
     width: 58px;
@@ -474,16 +478,14 @@ select[name="radius"] {
     float: right;
     padding-left: 10px;
     margin-left: 65px;
-    margin-top: -106px;
+    top: -106px;
     letter-spacing: 0.4px;
 }
 .column3-right select {
     margin-left: 4px;
     margin-bottom: 5px;
 }
-.select-disc input[type="submit"] {
-    margin-right: 9px;
-}
+
 .column3-right p {
     margin: 1.3px;
 }
@@ -707,10 +709,77 @@ input[type="checkbox"] {
     box-shadow: 1px 1px 2px 1px #bfbfbf;
 }
 .partners {
-    text-align: center;
     margin-top: 35px;
-    margin-bottom: 17px;
+    margin-bottom: 27px;
+    font-size: 0;
+    vertical-align: middle;
 }
+.partners a {
+    display: inline-block;
+}
+.partner-inl {
+    background: url(../img/spritesheet.png);
+    vertical-align: middle;
+}
+
+.toyo {
+    width: 83px;
+    height: 21px;
+    background-position: -5px -375px;
+    margin-left: 118px;
+    margin-top: 6px;
+}
+.bridgstone {
+    width: 97px;
+    height: 14px;
+    background-position: -5px -55px;
+    margin-left: 12px;
+    margin-top: 0px;
+}
+.continental {
+    width: 77px;
+    height: 21px;
+    background-position: -5px -79px;
+    margin-left: 13px;
+    margin-top: 6px;
+}
+.cooper {
+    width: 59px;
+    height: 21px;
+    background-position: -5px -110px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.avon {
+   width: 77px;
+    height: 13px;
+    background-position: -5px -5px;
+    margin-left: 12px;
+}
+.factory {
+    width: 57px;
+    height: 27px;
+    background-position: -5px -162px;
+    margin-left: 13px;
+    margin-top: 0px;
+}
+.firelli {
+    width: 61px;
+    height: 14px;
+    background-position: -5px -201px;
+    margin-left: 13px;
+    margin-top: 2px;
+}
+.dunlop {
+    width: 72px;
+    height: 13px;
+    background-position: -5px -141px;
+    margin-left: 15px;
+}
+
+
+
+
 footer {
     height: 100px;
     background: #213a4d;
@@ -749,5 +818,11 @@ footer p {
 }
 
 
-
+.select-auto input[type="submit"], 
+.select-tire input[type="submit"], 
+.select-disc input[type="submit"] {
+    position: absolute;
+    right: 13px;
+    bottom: 3px;
+}
 
