@@ -66,12 +66,13 @@ body {
     padding: 4px 0;
     width: 236px;
     font-size: 0;
+    
 }
 .user-block input[type="text"],
 .user-block input[type="password"] {
-    padding: 5px 4px;
+    padding: 0px 4px;
     width: 105px;
-    height: 6px;
+    height: 16px;
     border: 1px solid #82949c;
     border-radius: 2px;
     font-size: 11px;
@@ -515,7 +516,7 @@ select[name="radius"] {
     margin-left: 6px;
     padding: 14px 22px 3px 22px;
     float: left;
-    width: 480px;
+    width: 481px;
     background: #a0b1b8;
     background: linear-gradient(to top, #93a7b0, #e5e7e8);
     border: 1px solid #f3f4f4;
