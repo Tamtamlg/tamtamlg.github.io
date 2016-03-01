@@ -505,7 +505,7 @@ select[name="radius"] {
     float: right;
     padding-left: 10px;
     margin-left: 65px;
-    top: -106px;
+    top: -107px;
     letter-spacing: 0.4px;
 }
 .column3-right select {
@@ -851,6 +851,6 @@ footer p {
 .select-disc input[type="submit"] {
     position: absolute;
     right: 13px;
-    bottom: 3px;
+    bottom: 1px;
 }
 
