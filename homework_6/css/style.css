@@ -94,9 +94,11 @@ input[type="text"] {
     height: 100%;
     background: transparent;
     color: #fff;
-    margin-right: 12px;
+    margin-right: 5px;
     letter-spacing: -1.0px;
 }
+
+/*
 .submit:before {
     content: "";
     position: absolute;
@@ -105,6 +107,8 @@ input[type="text"] {
     height: 10px;
     border-left: 1px solid #fff;
 }
+*/
+/*
 .submit:after {
     content: "";
     position: absolute;
@@ -113,16 +117,22 @@ input[type="text"] {
     width: 94px;
     border-bottom: 1px solid #bfbfbf;
 }
+*/
 .submit a {
     color: #fff;
     font-size: 11px;
     text-decoration: none;
     letter-spacing: -0.2px;
+    border-left: 2px solid #fff;
+  	padding-left: 4px;
 }
 .submit a:last-child {
     margin-left: 24px;
     color: #bfbfbf;
     font-size: 12px;
+    text-decoration: underline;
+    border-left: none;
+  	padding-left: 0px;
 }
 .icons {
     float: right;
