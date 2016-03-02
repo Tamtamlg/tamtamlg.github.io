@@ -11,6 +11,7 @@
 }
 html,
 body {
+  
   margin: 0;
   padding: 0;
   font-family: "OpenSans", sans-serif;
@@ -18,7 +19,9 @@ body {
   line-height: 24px;
   
 }
-
+.wrapper {
+  overflow: hidden;
+}
 .container {
   width: 960px;
   margin: 0 auto;
@@ -36,16 +39,15 @@ body {
   margin-bottom: 0;
 }
 .logo {
+  display: inline-block;
+  margin-top: 70px;
   font-family: 'LeagueGothic';
   font-size: 48px;
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
 }
-.logo {
-  display: inline-block;
-  margin-top: 70px;
-}
+
 .main-nav {
   float: right;
   
@@ -145,6 +147,8 @@ body {
   position: absolute;
   top: 149px;
   left: 753px;
+  z-index: 10;
+  cursor: pointer;
 }
 .slider__control {
   font-size: 0;
@@ -256,8 +260,9 @@ body {
   background-position: -5px -85px;
 }
 .blog {
-  max-width: 2361px;
   margin: 0 auto;
+  max-width: 2361px;
+ 
   background: #f9f9f9;
   padding-top: 20px;
   padding-left: 39px;
@@ -402,8 +407,9 @@ body {
   margin-left: 346px;
 }
 .partners {
-  max-width: 2400px;
   margin: 0 auto;
+  max-width: 2400px;
+  
   padding-top: 25px;
   padding-bottom: 31px;
   border-top: 1px solid #e6e6e6;
@@ -455,8 +461,9 @@ body {
 
 /***********************************/
 .news {
-  max-width: 2400px;
   margin: 0 auto;
+  max-width: 2400px;
+  
   margin-bottom: 100px;
   padding-top: 75px;
   background: #ececec;
@@ -515,6 +522,11 @@ body {
 /******************/
 .main-footer {
   padding-top: 23px;
+  position: relative;
+  
+  background: url(../img/background-bottom.png) no-repeat  center top;
+  height: 75px;
+  margin-bottom: 0;
 }
 .main-nav__list--footer {
   padding: 0;
@@ -539,13 +551,6 @@ body {
 }
 .main-nav__active-item--footer a{
   position: relative;
-}
-.main-footer {
-  position: relative;
-  width: 100%;
-  background: url(../img/background-bottom.png) no-repeat  center top;
-  height: 75px;
-  margin-bottom: 0;
 }
 .main-footer__copy {
   float: right;
