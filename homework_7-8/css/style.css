@@ -632,16 +632,20 @@ body {
 
     margin-top: 152px;
   }
+  
   .slider__img {
     margin-left: 57.3%;
   }
+  
   .slide__article {
     padding-left: 25px;
     width: 40%;
   }
+  
   .slide__article h1 {
   font-size: 48px;
 }
+  
 .slide__article h2 {
   font-size: 24px;
 
