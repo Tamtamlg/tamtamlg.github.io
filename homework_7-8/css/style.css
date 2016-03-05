@@ -21,7 +21,6 @@ body {
 }
 .wrapper {
   overflow: hidden;
-  
 }
 .container {
   max-width: 960px;
@@ -110,21 +109,29 @@ body {
   position: relative;
   margin-top: 115px;
 }
+.slider__bg {
+  width: 100%;
+  height: 400px;
+  background: url(../img/slider-bg.png) no-repeat  center top;
+  position: absolute;
+  top: 278px;
+
+}
 .slide1 {
-  
+  z-index: 1;
   position: relative;
 }
-.slide1:before {
+.slider:before {
   content: "";
   position: absolute;
   background-image: url(../img/spritesheet.png);
   top: 197px;
   left: -319px;
   width: 30px;
-    height: 42px;
-    background-position: -5px -126px;
+  height: 42px;
+  background-position: -5px -126px;
 }
-.slide1:after {
+.slider:after {
   content: "";
   position: absolute;
   background-image: url(../img/spritesheet.png);
@@ -215,9 +222,9 @@ body {
 }
 .features__item {
   display: inline-block;
-  padding-left: 64px;
-  width: 225px;
-  margin-right: 46px;
+  padding-left: 6.7%;
+  width: 23.4%;
+  margin-right: 4.8%;
   color: #fff;
 }
 .features__item:last-child {
@@ -249,7 +256,7 @@ body {
   font-size: 18px;
   font-weight: 300;
   color: #fff;
-  margin-left: 159px;
+  margin-left: 71%;
 }
 .features__item a:hover {
   text-shadow: 0 0 20px #d5d2d7;
@@ -595,7 +602,7 @@ body {
   font-weight: bold;
 }
 
-
+/****************** 860 *******************/
 
 @media (max-width: 860px) {
   .logo {
@@ -624,22 +631,33 @@ body {
     width: 768px;
     
   }
+  .logo {
+    margin-bottom: 29px;
+  }
   .main-nav {
   float: left;
   
 }
 .slider {
 
-    margin-top: 152px;
+    margin-top: 112px;
   }
   
+  .slider__bg {
+  
+  top: 244px;
+  
+}
+  
   .slider__img {
-    margin-left: 57.3%;
+    margin-left: 55.7%;
+    margin-bottom: 20px;
   }
   
   .slide__article {
     padding-left: 25px;
     width: 40%;
+    margin-top: 101px;
   }
   
   .slide__article h1 {
@@ -652,13 +670,24 @@ body {
 }
 .slide__article p {
   font-size: 16px;
+  max-height: 100px;
+  overflow-y: hidden;
 }
 
   .slider__control {
-  margin-left: 71%;
+  margin-left: 68%;
   }
 
+  .slider:before {
   
+  left: -24px;
+  
+}
+.slider:after {
+  
+  left: 722px;
+  
+}
   
 }
 
