@@ -345,6 +345,10 @@ body {
   color: #454545;
   
 }
+.slide__article--2 p {
+  max-height: 190px;
+  overflow: hidden;
+}
 .slider__img--2 {
   position: absolute;
   top: 20px;
@@ -633,6 +637,9 @@ body {
   }
   .slider {
     margin-top: 152px;
+  }
+  .slide__article h2 {
+    font-size: 24px;
   }
   .features__item h2 {
     font-size: 24px;
