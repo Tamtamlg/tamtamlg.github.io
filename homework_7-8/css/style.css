@@ -1047,12 +1047,14 @@ padding-left: 37px;
 
 
   @media (max-width: 320px) {
-    
+    .main-header {
+    height: 446px;  
+  }
     .container {
       width: 320px;
     }
     .logo {
-      padding-left: 20%;
+      padding-left: 17%;
     }
     .slider__img {
       display: none;
@@ -1066,11 +1068,12 @@ padding-left: 37px;
 
   .slide__article {
     
-    width: 40%;
+   padding-left: 10%;
     
   }
   .slide__article h1 {
   font-size: 36px;
+    
    white-space: nowrap; 
   }
   .slide__article h2 {
@@ -1080,16 +1083,129 @@ padding-left: 37px;
     margin-top: 10px;
     letter-spacing: 0.5px;
   }
-    .main-nav__list {
-      display: none;
+    .main-nav {
+      background: none;
+    }
+    .main-nav__list li{
+      position: relative;
+      left: 2000px;
     }  
-    .main-nav__active-item {
-      display: block;
+    .main-nav__active-item  a span{
+      right: 2000px;
     }
     
+  .slider:after {
+    left: 263px;
     
+  }    
+  .slider__control {
+  margin-left: 30%;
+    margin-top: 77px;
+  }  
+  .features__item {
+    margin-bottom: 50px;
+    padding-left: 17%;
+    width: 60%;
+  }  
+  .features__item:last-child {
+      padding-left: 17%;
+    margin-top: 70px;
+    }
+  .features__item a {
+    left: 85.5%;
+    top: 107px;
+  }    
+    .features__item p {
+      height: 75px;
+      overflow-y: hidden;
+    }  
     
+  .slide__article--2 h2 {
+    font-size: 24px;
+    max-width: 130px;
+    margin-bottom: 0px;
+    padding-left: 32px;
+  }
+  .slide__article--2 p {
+    padding-right: 25px;
+    padding-left: 35px;
+    height: 174px;
+    overflow: hidden;
+    margin-top: 0px;
+  }
+  
+  .slider__img--2 {
+    top: 23px;
+    left: 0px;
+}  
     
+  .update {
+  
+padding-left: 0px;
+ 
+  width: 80%;
+  
+}    
+  .update a {
+  
+  margin-left: 73%;
+  
+}    
+  .update h3 {
+  max-width: 160px;
+  overflow: hidden;
+  
+}
+  .update__list p {
+  min-width: 200px;
+  max-width: 215px;
+  
+}
+    .blog .container{
+      padding-left: 0px;
+    }  
+  .slider__control--2 {
+  margin-left: 43%;
+  
+}    
+    
+.partners {
+      padding-top: 53px;
+    }
+.logos1 {
+    margin-left: 11%;
+  
+  }
+  .logos2 {
+    margin-left: 15%;
+  }
+  .logos3 {
+    margin-top: 60px;
+    margin-left: 13%;
+    margin-right: 5%;
+  }
+  .logos4 {
+    margin-left: 14%;
+    margin-top: 60px;
+  }
+  .logos5 {
+    margin-left: 4%;
+    margin-top: 50px;
+  }
+  .logos6 {
+    margin-left: 16%;
+    margin-top: 45px;
+  }        
+    
+    .news {
+      display: none;
+    }  
+    .main-nav__list--footer {
+      display: none;
+    }
+    .main-footer {
+      padding-top: 66px;
+    }
     
     
     
