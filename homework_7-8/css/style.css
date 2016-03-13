@@ -156,6 +156,7 @@ body {
   font-size: 58px;
   color: #fff;
   font-weight: 300;
+  white-space: nowrap;
 }
 .slide__article h2 {
   font-family: 'LeagueGothic';
@@ -167,6 +168,7 @@ body {
   margin-left: -2px;
   margin-bottom: 0;
   color: #edbfff;
+  white-space: nowrap;
 }
 .slide__article p {
   margin-top: 5px;
@@ -255,7 +257,7 @@ body {
 }
 .features__item a {
   position: absolute;
-  width: 56px;
+  width: 58px;
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'LeagueGothic';
@@ -672,7 +674,7 @@ body {
 @media (max-width: 768px) {
   
   .container {
-    width: 768px;
+    max-width: 768px;
   }
   .logo {
     margin-bottom: 29px;
@@ -810,7 +812,7 @@ body {
     
     
   .container {
-    width: 480px;
+    max-width: 480px;
     
   }  
   .main-header {
@@ -1051,7 +1053,7 @@ padding-left: 37px;
     height: 446px;  
   }
     .container {
-      width: 320px;
+      max-width: 320px;
     }
     .logo {
       padding-left: 17%;
