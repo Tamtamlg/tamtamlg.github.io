@@ -839,6 +839,7 @@ body {
     width: 246px;
     margin: 0 auto;
     z-index: 10;
+    background:#3f3247;
     background: rgba(63,50,71,.8);
     border-radius: 10px;
 }
