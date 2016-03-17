@@ -12,7 +12,7 @@ function pow(a, b) {
 	if (b == 1) {
 		result = a;
 	}
-	if (b > 0) { 
+	if ((b > 0) && (b !== 1)) { 
 		for (var i = 1; i < b; i++) { 
 		result *= a;
 		}
@@ -20,7 +20,7 @@ function pow(a, b) {
 	if (b == -1) {
 		result = 1/a;
 	}
-	if (b < 0 && b !== -1) { 
+	if ((b < 0) && (b !== -1)) { 
 		for (var i = 1; i < (b*(-1)); i++) { 
 		firstResult *= a;
 		result = 1/firstResult;
