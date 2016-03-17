@@ -24,9 +24,8 @@ for (var i = 0; i < Users.length; i++) {
     if (currentUser === Users[i]) {
         alert(currentUser + ', вы успешно вошли');
         i = Users.length;
-    } else {
+    }
+    if ((currentUser !== Users[i]) && (i == Users.length - 1)) {
         alert('Ошибка');
-        i = Users.length;
     }
 }
-
