@@ -21,11 +21,15 @@ for (var i = 0; i < quantityUsers; i++) {
 var currentUser = prompt('Введите имя пользователя', 'Андрей');
 
 for (var i = 0; i < Users.length; i++) {
-    if (currentUser === Users[i]) {
+    if ((currentUser === Users[i]) && (currentUser !== null)) {
         alert(currentUser + ', вы успешно вошли');
         i = Users.length;
     }
     if ((currentUser !== Users[i]) && (i == Users.length - 1)) {
         alert('Ошибка');
+    }
+    if (currentUser == null) {
+        alert('Ошибка, вы не ввели имя');
+        i = Users.length;
     }
 }
