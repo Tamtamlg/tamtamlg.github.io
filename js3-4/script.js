@@ -18,9 +18,9 @@ window.addEventListener('load', function fullLoad() {
       inner: function (element, text) {
         element.innerHTML = text;
       },
-            
+      
       createInput: function (tag, text) {
-        tag.innerHTML = '<input type="checkbox">' + text;
+        tag.innerHTML = '<label>' + '<input type="checkbox">' + text + '</label>';
       }
     },
     heading,
