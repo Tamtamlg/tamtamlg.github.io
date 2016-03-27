@@ -5,8 +5,8 @@
 // вызывая методы объекта нужно создать dom-элементы
 
 window.addEventListener('load', function fullLoad() {
-	'use strict';
-	var numQuestions,
+  'use strict';
+  var numQuestions,
     numAnswers,
     mainObject = {
 	    create: function (tag, param, parentElement) {
@@ -28,6 +28,7 @@ window.addEventListener('load', function fullLoad() {
     QuestionsLi,
     InputArr,
     button,
+    form,
     i;
 	
 	numQuestions = 3;
@@ -36,8 +37,12 @@ window.addEventListener('load', function fullLoad() {
 	mainObject.create('h1', 'heading', document.body);
 	heading = document.querySelector('h1');
 	mainObject.inner(heading, 'Тест по программированию');
+  
+  mainObject.create('form', 'main-form', document.body);
+  form = document.querySelector('form');
+  form.setAttribute('id', 'mainForm');
 	
-	mainObject.create('ol', 'questions', document.body);
+	mainObject.create('ol', 'questions', mainForm);
 	questions = document.querySelector('ol');
 	for (i = 0; i < numQuestions; i++) {
 		mainObject.create('li', 'questionsItem', questions);
@@ -75,7 +80,7 @@ window.addEventListener('load', function fullLoad() {
   mainObject.createInput(answer8, 'Вариант ответа №2');
   mainObject.createInput(answer9, 'Вариант ответа №3');
     
-  mainObject.create('div', 'btn', document.body);
+  mainObject.create('div', 'btn', mainForm);
   button = document.getElementsByClassName('btn');
   button[0].setAttribute('id', 'submit');
   submit.innerHTML = '<input type="submit" value="Проверить мои результаты">';
