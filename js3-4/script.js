@@ -9,15 +9,15 @@ window.addEventListener('load', function fullLoad() {
   var numQuestions,
     numAnswers,
     mainObject = {
-	    create: function (tag, param, parentElement) {
-		    tag = document.createElement(tag);
-		    parentElement.appendChild(tag);
-		    tag.classList.add(param);
-	    },
-		
-	    inner: function (element, text) {
-		    element.innerHTML = text;
-	    },
+      create: function (tag, param, parentElement) {
+        tag = document.createElement(tag);
+        parentElement.appendChild(tag);
+        tag.classList.add(param);
+      },
+
+      inner: function (element, text) {
+        element.innerHTML = text;
+      },
             
       createInput: function (tag, text) {
         tag.innerHTML = '<input type="checkbox">' + text;
@@ -31,27 +31,27 @@ window.addEventListener('load', function fullLoad() {
     form,
     i;
 	
-	numQuestions = 3;
+  numQuestions = 3;
   numAnswers = 3;
     
-	mainObject.create('h1', 'heading', document.body);
-	heading = document.querySelector('h1');
-	mainObject.inner(heading, 'Тест по программированию');
+  mainObject.create('h1', 'heading', document.body);
+  heading = document.querySelector('h1');
+  mainObject.inner(heading, 'Тест по программированию');
   
   mainObject.create('form', 'main-form', document.body);
   form = document.querySelector('form');
   form.setAttribute('id', 'mainForm');
 	
-	mainObject.create('ol', 'questions', mainForm);
-	questions = document.querySelector('ol');
-	for (i = 0; i < numQuestions; i++) {
-		mainObject.create('li', 'questionsItem', questions);
-	}
-	QuestionsLi = document.getElementsByClassName('questionsItem');
-	
-	mainObject.inner(QuestionsLi[0], 'Вопрос №1');
-	mainObject.inner(QuestionsLi[1], 'Вопрос №2');
-	mainObject.inner(QuestionsLi[2], 'Вопрос №3');
+  mainObject.create('ol', 'questions', mainForm);
+  questions = document.querySelector('ol');
+  for (i = 0; i < numQuestions; i++) {
+    mainObject.create('li', 'questionsItem', questions);
+  }
+  QuestionsLi = document.getElementsByClassName('questionsItem');
+
+  mainObject.inner(QuestionsLi[0], 'Вопрос №1');
+  mainObject.inner(QuestionsLi[1], 'Вопрос №2');
+  mainObject.inner(QuestionsLi[2], 'Вопрос №3');
     
     
   for (i = 0; i < numAnswers; i++) {
