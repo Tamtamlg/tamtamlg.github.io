@@ -1,0 +1,22 @@
+.main-timer {
+  width: 600px;
+}
+.timer {
+  margin: 50px auto;
+  border: 5px solid #000;
+  border-radius: 20px;
+  font-size: 100px;
+  text-align: center;
+  background: yellow;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}

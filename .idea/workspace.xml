@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c96446f-96bd-473c-bdb5-916348b7b990" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/eslintPlugin.xml" afterPath="$PROJECT_DIR$/.idea/eslintPlugin.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tamtamlg.github.io.iws" />
@@ -26,8 +29,8 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js3-4/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3057554">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.2915952">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -46,6 +49,7 @@
         <option value="$PROJECT_DIR$/js2/index.html" />
         <option value="$PROJECT_DIR$/js2/script.js" />
         <option value="D:/test.html" />
+        <option value="$PROJECT_DIR$/js3-4/script.js" />
       </list>
     </option>
   </component>
@@ -87,12 +91,12 @@
     <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/node_modules/eslint/bin/eslint.js" />
+    <property name="last_opened_file_path" value="$USER_HOME$/node_modules/node-static/bin/cli.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.selected.configurable" value="com.eslint.settings.ESLintSettingsPage" />
-    <property name="js.eslint.eslintPackage" value="D:\node_modules\eslint\bin" />
-    <property name="js.eslint.nodeInterpreter" value="D:\node_modules\.bin\eslint" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="js.eslint.nodeInterpreter" value="" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RunManager">
@@ -359,8 +363,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js3-4/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3057554">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.2915952">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

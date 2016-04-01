@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+ <div class="container main-timer">
+  <div class="row">
+    <div class="timer clearfix">
+      <span id="hour" class="hour">00</span>
+      <span class="colon">:</span>
+      <span id="minute"class="minute"></span>
+      <span class="colon">:</span>
+      <span id="second" class="second"></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <button type="button" id="timerStart" class="btn btn-success btn-lg left">Start</button>
+    </div>
+    <div class="col-md-6">
+      <button type="button" id="timerStop" class="btn btn-danger btn-lg right">Clear</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
