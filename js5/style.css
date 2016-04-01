@@ -20,3 +20,8 @@
   display: table;
   clear: both;
 }
+.millisecond {
+  font-size: 30px;
+  text-align: right;
+  padding-right: 35px;
+}

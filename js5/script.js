@@ -11,11 +11,12 @@ window.addEventListener('load', function fullLoad() {
   var flag = true;
   timerStart.addEventListener('click', function() {
     if (flag) {
-      var secondTimer = setInterval(secondOn, 1000);
+      var milliecondTimer = setInterval(milliSecondOn, 1);
+     // var secondTimer = setInterval(secondOn, 1000);
       flag = !flag;
     } else {
       alert('timer stop');
-      }
+    }
   });
 
   var secondCount = 0;
@@ -24,7 +25,21 @@ window.addEventListener('load', function fullLoad() {
   minute.innerHTML = '00';
   var hourCount = 0;
   hour.innerHTML = '00';
-  
+  var milliSecondCount = 0;
+  millisecond.innerHTML = '0';
+
+  function milliSecondOn() {
+    milliSecondCount++;
+
+        millisecond.innerHTML = milliSecondCount;
+
+    if (milliSecondCount == 1000) {
+      millisecond.innerHTML = '0';
+      secondOn();
+      milliSecondCount = 0;
+    }
+  }
+
   function secondOn() {
     secondCount++;
     if (secondCount < 10) {
@@ -38,7 +53,7 @@ window.addEventListener('load', function fullLoad() {
       secondCount = 0;
     }
   }
-  
+
   function minuteOn() {
     minuteCount++;
     if (minuteCount < 10) {
@@ -52,7 +67,7 @@ window.addEventListener('load', function fullLoad() {
       minuteCount = 0;
     }
   }
-  
+
   function hourOn() {
     hourCount++;
     if (hourCount < 10) {
@@ -61,8 +76,8 @@ window.addEventListener('load', function fullLoad() {
       hour.innerHTML = hourCount;
     }
   }
-  
-  
+
+
 });
 
 
