@@ -40,7 +40,7 @@ window.addEventListener('load', function fullLoad() {
   millisecond.innerHTML = '0';
   
   timerStart.addEventListener('click', function () {
-    secondTimer = setInterval(secondOn, 1000);
+    secondTimer = setInterval(milliSecondOn, 1);
     timerStart.classList.add('btn-none');
     timerStop.classList.remove('btn-none');
   });
