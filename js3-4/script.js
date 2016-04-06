@@ -44,7 +44,7 @@ window.addEventListener('load', function fullLoad() {
 	
   mainObject.create('ol', 'questions', mainForm);
   questions = document.querySelector('ol');
-  for (i = 0; i < numQuestions; i++) {
+  for (i = 0; i < numQuestions; i += 1) {
     mainObject.create('li', 'questionsItem', questions);
   }
   QuestionsLi = document.getElementsByClassName('questionsItem');
@@ -54,17 +54,17 @@ window.addEventListener('load', function fullLoad() {
   mainObject.inner(QuestionsLi[2], 'Вопрос №3');
     
     
-  for (i = 0; i < numAnswers; i++) {
+  for (i = 0; i < numAnswers; i += 1) {
     mainObject.create('div', 'answers', QuestionsLi[0]);
   }
-  for (i = 0; i < numAnswers; i++) {
+  for (i = 0; i < numAnswers; i += 1) {
     mainObject.create('div', 'answers', QuestionsLi[1]);
   }
-  for (i = 0; i < numAnswers; i++) {
+  for (i = 0; i < numAnswers; i += 1) {
     mainObject.create('div', 'answers', QuestionsLi[2]);
   }
   InputArr = document.getElementsByClassName('answers');
-  for (i = 0; i < InputArr.length; i++) {
+  for (i = 0; i < InputArr.length; i += 1) {
     InputArr[i].setAttribute('id', 'answer' + (i + 1));
   }
     
@@ -83,5 +83,5 @@ window.addEventListener('load', function fullLoad() {
   mainObject.create('div', 'btn', mainForm);
   button = document.getElementsByClassName('btn');
   button[0].setAttribute('id', 'submit');
-  submit.innerHTML = '<input type="submit" value="Проверить мои результаты">';
+  button[0].innerHTML = '<input type="submit" value="Проверить мои результаты">';
 });

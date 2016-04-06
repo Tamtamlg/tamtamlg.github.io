@@ -40,7 +40,7 @@ window.addEventListener('load', function fullLoad() {
   millisecond.innerHTML = '0';
   
   timerStart.addEventListener('click', function () {
-    secondTimer = setInterval(milliSecondOn, 1);
+    secondTimer = setInterval(secondOn, 1000);
     timerStart.classList.add('btn-none');
     timerStop.classList.remove('btn-none');
   });
@@ -67,15 +67,15 @@ window.addEventListener('load', function fullLoad() {
     }
   });
   
-  function milliSecondOn() {
-    milliSecondCount++;
-    millisecond.innerHTML = milliSecondCount;
-    if (milliSecondCount === 1000) {
-      millisecond.innerHTML = '0';
-      secondOn();
-      milliSecondCount = 0;
-    }
-  }
+//  function milliSecondOn() {
+//    milliSecondCount++;
+//    millisecond.innerHTML = milliSecondCount;
+//    if (milliSecondCount === 1000) {
+//      millisecond.innerHTML = '0';
+//      secondOn();
+//      milliSecondCount = 0;
+//    }
+//  }
 
   function secondOn() {
     secondCount++;
