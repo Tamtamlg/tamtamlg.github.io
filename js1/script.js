@@ -3,35 +3,47 @@
 //Работать с целыми числами, большими, меньшими, и равными нулю. Бесконечности можно не обрабатывать
 
 
+//function pow(a, b) {
+//	'use strict';
+//	var result = a,
+//        i;
+//	  
+//	
+//    powerNull(this.b);
+//    powerOne();
+//	powerMinusOne();
+//    powerMinus();
+//  
+//	if ((b > 0) && (b !== 1)) {
+//		for (i = 1; i < b; i++) {
+//		  result *= a;
+//		}
+//	}
+//	console.log(result);
+//	return result;
+//}
+//
+//function powerNull(b) {
+//  if (b === 0) {
+//		result = 1;
+//	}
+//  return result;
+//} 
+
 function pow(a, b) {
-	'use strict';
-	var result = a;
-	var firstResult = a;
-	if (b === 0) {
-		result = 1;
-	}
-	if (b === 1) {
-		result = a;
-	}
-	if ((b > 0) && (b !== 1)) {
-		for (var i = 1; i < b; i++) {
-		result *= a;
-		}
-	}
-	if (b === -1) {
-		result = 1/a;
-	}
-	if ((b < 0) && (b !== -1)) {
-		for (var i = 1; i < (b*(-1)); i++) {
-		firstResult *= a;
-		result = 1/firstResult;
-		}
-	}
-	console.log(result);
-	return (result);
+  if (+a === 0) return 0;
+  if (+b === 0) return 1;
+
+  var result = a;
+
+  for (var i = Math.abs(b); i > 1; i--) {
+    result *= Math.abs(a);
+  }
+  return b > 0 ? result : 1/result;
 }
+
 
 var a = prompt ('Введите число, которое нужно возвести в степень', 0);
 var b = prompt ('Введите значение степени', 0);
 
-pow(a, b);
+console.log(pow(a, b));
