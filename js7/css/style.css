@@ -1,0 +1,35 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-left: 20px;
+  background: #aaa;
+  border-radius: 3px;
+}
+ul li {
+  display: inline-block;
+}
+ul a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  background: #ddd;
+  padding: 5px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.tabs {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+}
+.active {
+  background: #fff;
+}
+.tabs-item {
+  display: none;
+}
+.tabs-item-active {
+  display: block;
+}
