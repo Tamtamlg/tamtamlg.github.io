@@ -1,0 +1,38 @@
+
+label {
+  display: inline-block; 
+  width: 5em;
+}
+.container {
+  padding: 20px;
+  border: 2px solid #999;
+  border-radius: 5px;
+}
+.container div {
+  margin-bottom: 2em;
+}
+.btn {
+  margin-top: 20px;
+}
+.title-div {
+  position: absolute;
+  top: 0;
+  left: 250px;
+  display: inline-block;
+  margin-left: 20px;
+  margin-bottom: 0;
+  border: 1px solid #999;
+  padding: 3px;
+  box-shadow: 0 0 5px 3px #777; 
+}
+.input-container {
+  position: relative;
+}
+/*
+  fieldset .help {
+    display: inline-block;
+  }
+  .ui-tooltip {
+    width: 210px;
+  }
+*/
