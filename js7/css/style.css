@@ -19,6 +19,12 @@ ul a {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
+ul a:hover {
+  background: #ccc;
+}
+.active:hover {
+  background: #fff;
+}
 .tabs {
   border: 1px solid #000;
   border-radius: 5px;
