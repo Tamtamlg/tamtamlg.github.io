@@ -1,0 +1,17 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-checkbox1 {
+    width: 66px;
+    height: 65px;
+    background-position: -5px -5px;
+}
+
+.sprite-checkbox2 {
+    width: 75px;
+    height: 66px;
+    background-position: -5px -80px;
+}

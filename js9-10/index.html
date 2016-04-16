@@ -2,11 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>js9-10</title>
+  <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.js"></script>
+<!--  <script src="https://cdn.jsdelivr.net/jquery.formstyler/1.7.4/jquery.formstyler.min.js"></script>-->
+  <script src="js/jquery.formstyler.js"></script>
   <script src="js/main.js"></script>
 </head>
 <body>
-  
+  <!-- Wrapper -->
+<div class="wrap_jcarousel">
+   
+    <!-- Carousel -->
+    <div class="jcarousel">
+        <ul>
+            <li><img src="img/1.JPG" alt=""></li>
+            <li><img src="img/2.JPG" alt=""></li>
+            <li><img src="img/3.JPG" alt=""></li>
+            <li><img src="img/4.JPG" alt=""></li>
+        </ul>
+    </div>
+
+    <!-- Controls -->
+    <a class="jcarousel-prev" href="#">&#9664;</a>
+    <a class="jcarousel-next" href="#">&#9654;</a>
+    
+    <!--  PAGINATION  -->
+<!--    <p class="jcarousel-pagination"></p>-->
+</div>
+<!--  select -->
+  <select name="nameSelect" id="idSelect" value="select-select">
+    <option value="type1">пункт 1</option>
+    <option value="type2">пункт 2</option>
+    <option value="type3">пункт 3</option>
+    <option value="type4">пункт 4</option>
+  </select>
+  <br>
+<!--  checkbox css -->
+<input type="checkbox" id="test-check1">
+<label for="test-check1" class="css">Чекбокс на CSS</label>
+<br>
+
+<!--  checkbox jquery -->
+<label class="jqr"><input type="checkbox" id="test-check2">Чекбокс на JQUERY</label>
+
 </body>
 </html>

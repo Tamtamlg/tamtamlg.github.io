@@ -1,9 +1,9 @@
 $(function () {
   'use strict';
-  var parentElem;
-  var inputContainer;
-  var $title = $('[data-title]');
-  var $btn = $('.btn');
+  var parentElem,
+    inputContainer,
+    $title = $('[data-title]'),
+    $btn = $('.btn');
   
   $title.on('mouseover', function (event) {
     if (event.target.getAttribute('data-title')) {

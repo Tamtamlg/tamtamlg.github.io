@@ -1,11 +1,11 @@
 $(function () {
   'use strict';
-  var $links = $('.links');
-  var $tabsItem = $('.tabs-item');
+  var $links = $('.links'),
+    $tabsItem = $('.tabs-item');
   
   $('ul').on('click', function (event) {
-    var $active = $('.active');
-    var $activDiv = $('#tabs-1');
+    var $active = $('.active'),
+      $activDiv = $('#tabs-1');
     
     $links.removeClass('active');
     if (!event.target.classList.contains('active')) {
@@ -17,7 +17,7 @@ $(function () {
     
     $tabsItem.removeClass('tabs-item-active');
     if (!$activDiv.hasClass('tabs-item-active')) {
-    $activDiv.addClass('tabs-item-active');
+      $activDiv.addClass('tabs-item-active');
     }
   });
 });
