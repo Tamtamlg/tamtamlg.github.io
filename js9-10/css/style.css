@@ -1,4 +1,4 @@
-/*slider*/
+/********************slider********************/
 .wrap_jcarousel{
   width: 350px;
   margin: 10px auto;
@@ -47,9 +47,11 @@
   color: #fff;
   background: #333;
 }
+/*
 #idSelect-styler{
   margin: 50px;
 }
+*/
 
 /**************checkbox jquery**************/
 
@@ -90,3 +92,63 @@ input[type=checkbox]:checked + label:before {
   background: url(../img/spritesheet.png) no-repeat -5px -80px;
 }
 
+/************MENU*********/
+
+nav {
+  background: #000077;
+  padding: 10px 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav li ul {    
+  background: #0000ff;
+  position: absolute;
+  left: 0;
+  top: 40px;
+  width: 200px;
+}
+nav li li {
+  position: relative;
+  margin: 0;
+  display: block;
+}
+nav li li ul {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  margin: 0;
+}
+nav a {
+  line-height: 40px;
+  padding: 0 12px;
+  margin: 0 12px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+nav a:hover,
+nav a:focus,
+nav a:active {
+  color: #999;
+}
+nav li li a {
+  border-bottom: 1px solid #fff;
+  margin: 0 10px;
+  padding: 0;
+}
+nav li li:last-child a {
+  border-bottom: none;
+}
+ul.submenu {
+  display:none;
+}

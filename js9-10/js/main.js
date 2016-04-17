@@ -27,8 +27,6 @@ $(function () {
   //select
   $('select').styler();
   
-  
-  
   //checkbox jquery
   $('.jqr').on('click', function () {
     if ($(this).find('input:checked').length) {
@@ -36,7 +34,20 @@ $(function () {
     } else {
       $(this).removeClass('active');
     }
-  })
+  });
 
+  
+  //MENU
+   
+  var $dropdownList = $('.dropdown-list');
+  
+  $dropdownList.hover(function () {
+    $(this).children('.submenu').slideToggle().animate({
+      backgroundColor: '#0000ff'
+    }, 400);
+    $(this).children('.submenu').css({'backgroundColor': '#000077'});
+  }
+      );
+  
 });
 

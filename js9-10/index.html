@@ -7,14 +7,17 @@
   <link rel="stylesheet" href="css/jquery.formstyler.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.js"></script>
-<!--  <script src="https://cdn.jsdelivr.net/jquery.formstyler/1.7.4/jquery.formstyler.min.js"></script>-->
   <script src="js/jquery.formstyler.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.js"></script>
+
   <script src="js/main.js"></script>
 </head>
 <body>
+ 
+ 
+ 
   <!-- Wrapper -->
 <div class="wrap_jcarousel">
-   
     <!-- Carousel -->
     <div class="jcarousel">
         <ul>
@@ -24,14 +27,41 @@
             <li><img src="img/4.JPG" alt=""></li>
         </ul>
     </div>
-
     <!-- Controls -->
     <a class="jcarousel-prev" href="#">&#9664;</a>
     <a class="jcarousel-next" href="#">&#9654;</a>
-    
     <!--  PAGINATION  -->
 <!--    <p class="jcarousel-pagination"></p>-->
 </div>
+
+<!-- MENU -->
+<nav class="main-menu">
+  <ul class="menu">
+    <li><a href="#">Nav 1</a></li>
+    <li class="dropdown-list">
+      <a href="#">Nav 2 &#9661;</a>
+      <ul class="submenu">
+        <li><a href="#">Nav 2.1</a></li>
+        <li><a href="#">Nav 2.3</a></li>
+        <li class="dropdown-list">
+          <a href="#">Nav 2.4 &#9661;</a>
+          <ul class="submenu">
+            <li><a href="#">Nav 2.4.1</a></li>
+            <li><a href="#">Nav 2.4.2</a></li>
+            <li><a href="#">Nav 2.4.3</a></li>
+            <li><a href="#">Nav 2.4.4</a></li>
+            <li><a href="#">Nav 2.4.5</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Nav 2.5</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Nav 3</a></li>
+    <li><a href="#">Nav 4</a></li>
+    <li><a href="#">Nav 5</a></li>
+  </ul>
+</nav>
+
 <!--  select -->
   <select name="nameSelect" id="idSelect" value="select-select">
     <option value="type1">пункт 1</option>
@@ -40,6 +70,7 @@
     <option value="type4">пункт 4</option>
   </select>
   <br>
+  
 <!--  checkbox css -->
 <input type="checkbox" id="test-check1">
 <label for="test-check1" class="css">Чекбокс на CSS</label>
@@ -47,6 +78,8 @@
 
 <!--  checkbox jquery -->
 <label class="jqr"><input type="checkbox" id="test-check2">Чекбокс на JQUERY</label>
+
+
 
 </body>
 </html>
