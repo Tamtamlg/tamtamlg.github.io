@@ -30,12 +30,18 @@
   font-size: 100px;
   padding: 10px 30px;
   position: absolute;
-  cursor: pointer;
   top: 140px;
+  cursor: default;
 }
 .btn-left {
   left: 70px;
+  opacity: .1
 }
 .btn-right {
   right: 70px;
+  opacity: .1
+}
+.start {
+  opacity: 1;
+  cursor: pointer;
 }
