@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DZ12-template</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.11.2/lodash.min.js"></script>
+  
+  <script src="js/main.js"></script>
+  
+  <script type="text/template" id="test">
+    <div class="main">
+            <div class="container">
+                <h2><%= name %></h2>
+                <div class="foto">
+                    <img src="img/foto.jpg" alt="Мое фото" title="Мое фото">
+                    <p><%= role %></p>
+                </div>
+                <div class="list">
+                    <p>Хочу учить фронтенд, потому что:</p>
+                    <ul>
+                    <% for (var i=0; i<answer.length; i++) { %>
+                        <li><%= answer[i] %></li>
+                        
+                    <% }; %>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <p>Мой контактный телефон<br>
+                    <%= phone %></p>
+                    <p>Мой профиль вконтакте<br>
+                    <a href="<%= social %>">vk.com</a></p>
+                </div>
+                <div class="feedback">
+                    <p>Мой фидбек:<br>
+                    <%= feedback %></p>
+                </div>
+            </div>
+        </div>
+  </script>
+  
+</head>
+<body>
+
+</body>
+</html>
