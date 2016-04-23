@@ -3,6 +3,7 @@ $(function () {
   
   var html = $('#test').html();
   var data = {
+    fotoSrc: 'img/foto.jpg',
     name: 'Подрез Виталий Сергеевич',
     title: 'Специалист по обслуживанию банкоматов',
     answer: [

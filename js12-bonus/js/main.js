@@ -2,6 +2,7 @@ $(function () {
   'use strict';
   
   var data = {
+    fotoSrc: 'img/foto.jpg',
     name: 'Подрез Виталий Сергеевич',
     role: 'Специалист по обслуживанию банкоматов',
     answer: [
@@ -16,6 +17,6 @@ $(function () {
   
 
   var content = _.template($('#test').html());
-  document.write(content);
+  document.write(content(data));
 });
 
