@@ -24,10 +24,13 @@ window.addEventListener('load', function fullLoad() {
             {
               text: 'Вариант ответа №3(вопрос1)',
               correct: false
+            },
+            {
+              text: 'Вариант ответа №4(вопрос1)',
+              correct: false
             }
           ]
         },
-        
         {
           questionText: 'Вопрос №2',
           answer: [
@@ -45,7 +48,6 @@ window.addEventListener('load', function fullLoad() {
             }
           ]
         },
-        
         {
           questionText: 'Вопрос №3',
           answer: [
@@ -60,24 +62,29 @@ window.addEventListener('load', function fullLoad() {
             {
               text: 'Вариант ответа №3(вопрос3)',
               correct: false
+            },
+            {
+              text: 'Вариант ответа №4(вопрос3)',
+              correct: false
+            },
+            {
+              text: 'Вариант ответа №5(вопрос3)',
+              correct: false
             }
           ]
         }
-        
       ],
-          
-          
-          
+      // создание DOM-элемента
       create: function (tag, param, parentElement) {
         tag = document.createElement(tag);
         parentElement.appendChild(tag);
         tag.classList.add(param);
       },
-
+      // вставка текста в элемент
       inner: function (element, someText) {
         element.innerHTML = someText;
       },
-      
+      // создание input type="checkbox"
       createInput: function (tag, text) {
         tag.innerHTML = '<label>' + '<input type="checkbox">' + text + '</label>';
       }
@@ -90,24 +97,19 @@ window.addEventListener('load', function fullLoad() {
     form,
     mainForm,
     i,
+    l,
     j;
   //количество вопросов
   numQuestions = mainObject.questionsArray.length;
-  //количество вариантов ответов
-  numAnswers = 3;
-  
-  
   //заголовок
   mainObject.create('h1', 'heading', document.body);
   heading = document.querySelector('h1');
   mainObject.inner(heading, 'Тест по программированию');
-  
   //форма
   mainObject.create('form', 'main-form', document.body);
   form = document.querySelector('form');
   form.setAttribute('id', 'mainForm');
   mainForm = document.getElementById('mainForm');
-  
   //список
   mainObject.create('ol', 'questions', mainForm);
   questions = document.querySelector('ol');
@@ -115,21 +117,20 @@ window.addEventListener('load', function fullLoad() {
     mainObject.create('li', 'questionsItem', questions);
   }
   QuestionsLi = document.getElementsByClassName('questionsItem');
-  
   //вопросы
   for (i = 0; i < QuestionsLi.length; i += 1) {
     mainObject.inner(QuestionsLi[i], mainObject.questionsArray[i].questionText);
   }
-  
   //варианты ответов
   for (i = 0; i < QuestionsLi.length; i += 1) {
-    for (j = 0; j < numAnswers; j += 1) {
-      mainObject.create('div', 'answers', QuestionsLi[j]);
-      InputArr = QuestionsLi[j].getElementsByClassName('answers');
-      mainObject.createInput(InputArr[i], mainObject.questionsArray[j].answer[i].text);
+    for (j = 0; j < mainObject.questionsArray[i].answer.length; j += 1) {
+      mainObject.create('div', 'answers', QuestionsLi[i]);
+    }
+    InputArr = QuestionsLi[i].getElementsByClassName('answers');
+    for (l = 0; l < InputArr.length; l += 1) {
+      mainObject.createInput(InputArr[l], mainObject.questionsArray[i].answer[l].text);
     }
   }
-  
   //кнопка
   mainObject.create('div', 'btn', mainForm);
   button = document.getElementsByClassName('btn');
