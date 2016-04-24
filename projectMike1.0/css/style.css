@@ -189,11 +189,12 @@ nav {
   padding-top: 20px;
 }
 .left .btn {
+  font:normal 16px/20px Arial, Helvetica, sans-serif;
   display:inline-block;
   margin:6px 0 0 11px;
   background:grey;
   color: #fff;
-  padding: 5px 20px;
+  padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
 }
@@ -289,11 +290,12 @@ nav {
   padding-top: 20px;
 }
 .right .btn{
+  font:normal 16px/20px Arial, Helvetica, sans-serif;
   display:inline-block;
   margin:0 0 20px 0;
   background:grey;
   color: #fff;
-  padding: 12px 20px;
+  padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
 }
