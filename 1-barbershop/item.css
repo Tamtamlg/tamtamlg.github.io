@@ -1,0 +1,290 @@
+body{
+	min-width: 960px;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: "PT Sans Narrow", sans-serif;
+	background: url("images/textura.png");
+
+}
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.main-header{
+	background-color: #000;
+	margin-bottom: 60px;
+}
+.main-navigation a{
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	padding: 26px 18px;
+}
+.main-navigation ul{
+	list-style : none;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+}
+.container{
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.main-navigation{
+	width: 780px;
+	float: left;
+}
+.user-block{
+	float: right;
+	max-width: 140px;
+	
+}
+.main-navigation li{
+	display: inline-block;
+	font-size: 16px;
+	line-height: 20px;
+	vertical-align: top;
+}
+.main-navigation a:hover{
+	background: #242424;
+}
+.login{
+	font-size: 16px;
+	line-height: 20px;
+	vertical-align: top;
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	padding: 26px 18px 26px 50px;
+	position: relative;
+}
+.login:before {
+  content: "";
+
+  position: absolute;
+  top: 28px;
+  left: 20px;
+
+  width: 18px;
+  height: 16px;
+
+  background: transparent url(images/spritesheet.png) no-repeat;
+  background-position: -5px -171px;
+  opacity: .3;	
+}
+
+.login:hover:before {
+opacity: 1;
+}
+.user-block a:hover{
+	background: #242424;
+}
+.left-column{
+	width: 480px;
+	float: left;
+	padding-left: 0;
+	padding-right: px;
+	padding-top: 20px;
+	
+}
+.right-column{
+	width: 390px;
+	float: right;
+}
+.litle{
+	display: inline-block;
+	margin: 20px 16px 80px 0;
+}
+.litle:last-child{
+	margin-right: 0;
+}
+img{
+	box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+.item-navigation ul{
+	list-style : none;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+}
+.item-navigation li{
+	display: inline-block;
+	font-size: 14px;
+}
+.item-navigation a{
+	color: #000;
+	text-decoration: none;
+	display: block;
+	padding: 0 30px 0 10px;
+	position: relative;
+}
+.item-navigation a:after{
+  content: "";
+
+  position: absolute;
+  bottom: 30%;
+  
+
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  right: 5px;
+
+  background: #000;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.current a:after{
+	display: none;
+}
+.main-navigation .active a {
+  position: relative;
+}
+
+.main-navigation .active a:hover {
+  background: none;
+}
+
+.main-navigation .active a:after {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  right: 20px;
+
+  height: 5px;
+
+  background: white;
+}
+h1{
+	font-size: 27px;
+}
+.main-footer{
+	background: #252525;
+	box-shadow: inset 0 40px 60px -30px #000;
+	color: #fff;
+	padding: 60px 10px
+}
+.footer-contacts{
+	float: left;
+	margin-right: 150px;
+}
+.footer-social{
+	float: left;
+	text-align: center;
+	
+}
+.footer-copyright{
+	float: right;
+	text-align: center;
+}
+.articul{
+	color: #aeaeae;
+	float: right;
+}
+.nal{
+	float: left;
+}
+.cost{
+	float: left;
+	background: #e5e5e5;
+	padding: 15px 25px;
+}
+.btn{
+	float: left;
+	text-decoration: none;
+	color: #fff;
+	background: #000;
+	padding: 15px 25px;
+}
+.btn:hover, .btn:active{
+	background: #663d15;
+}
+.cost-btn{
+	margin-bottom: 35px;
+	margin-top: 40px;
+}
+.nal-articul{
+	margin-bottom: 30px
+}
+.social-btn{
+	background-image: url(images/spritesheet.png);
+    background-repeat: no-repeat;
+    display:inline-block;
+	font-size: 0;
+	text-decoration: none;
+	width: 43px;
+    height: 43px;
+}
+.social-btn-vk{
+    background-position: -5px -363px;
+}
+.social-btn-fb{
+    background-position: -5px -65px;
+}
+.social-btn-inst{
+    background-position: -5px -197px;
+}
+.social-btn-vk:hover{
+    background-position: -5px -416px;
+}
+.social-btn-fb:hover{
+    background-position: -5px -118px;
+}
+.social-btn-inst:hover{
+    background-position: -5px -250px;
+}
+.disine:hover{
+	background-color: #fff;
+	color: #000;
+}
+.disine{
+	padding: 10px 20px;
+	margin-top: 5px;
+}
+.footer-social p{
+	margin: 0;
+}
+.footer-copyright p{
+	margin: 0;
+}
+.right-column ul{
+	list-style : none;
+	margin: 0;
+	padding: 0;
+}
+.list-item{
+	padding-left: 20px;
+	position: relative;
+}
+.list-item:before{
+  content: "";
+
+  position: absolute;
+  bottom: 30%;
+  
+
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  left: 0;
+
+  background: #000;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+h2{
+	margin-top: 30px;
+}
+.right-column-list li:first-child{
+	margin-top: 30px;
+}
