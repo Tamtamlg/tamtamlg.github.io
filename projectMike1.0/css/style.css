@@ -88,10 +88,17 @@ body {
 /*  /SLIDER  */
 
 /*  MAIN-MENU  */
+header {
+  position: relative;
+}
 nav {
   margin: 0;
   padding: 0;
   background: gray;
+}
+.fixed {
+    position: fixed;
+    top: 0;
 }
 .main-menu {
   float: right;
@@ -310,12 +317,20 @@ nav {
   height:200px;
   float: left;
 }
+.right .new-service img{
+  width:340px;
+  height:200px;
+}
 .right .best-ideas {
   display: inline-block;
   border: 1px solid #000;
   width:340px;
   height:200px;
   float: right;
+}
+.right .best-ideas img{
+  width: 340px;
+  height: 200px;
 }
 .right h2.latest {
   font:normal 24px/51px Arial, Helvetica, sans-serif;
