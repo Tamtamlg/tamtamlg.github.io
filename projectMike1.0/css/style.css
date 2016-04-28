@@ -361,12 +361,15 @@ nav {
   margin:0;
 }
 .right .client {
-  width:86px;
-  height:75px;
-  padding:33px 0 0 31px;
+  width:100px;
+  height:100px;
   margin-right: 20px;
   border: 1px solid #000;
   float:left;
+}
+.right .client img{
+  width:100px;
+  height:100px;
 }
 
 .right .text2 {
