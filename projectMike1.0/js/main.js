@@ -2,7 +2,7 @@ $(function () {
   'use strict';
   
   //scroll
-  $('html, body').animate({scrollTop: $('nav').offset().top}, 1200);
+  $('html, body').animate({scrollTop: $('nav').offset().top}, 1500);
   
   //slider
   $('.jcarousel').jcarousel({
