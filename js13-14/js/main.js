@@ -70,8 +70,6 @@ $(function () {
     ]
   };
   
-  
-  
   //записываем вопросы в localStorage
   localStorage.setItem('saveTest', JSON.stringify(data));
   
@@ -94,6 +92,9 @@ $(function () {
     };
   
   //проверка результатов
+  var popupText;
+  var popup = document.querySelector('.popup');
+  var popupP = document.querySelector('.popup p');
   $('button').on('click', function() {
     for (var s = 0; s < $("input:checkbox:checked").length; s++) {
        if ($("input:checkbox:checked")[s].value == 'true') {
@@ -101,12 +102,23 @@ $(function () {
        }
     }
     if (count == countTrue && count === $("input:checkbox:checked").length) {
-      alert('test complete');
+      popupText = 'Тест пройден';
     } else {
-      alert('test not complete');
+      popupText = 'Тест провален';
     }
+    $('.popup p').append(popupText)
+    $('.popup').addClass('vis');
     count = 0;
     $("input:checkbox:checked").removeAttr('checked');
+    
+  });
+  
+  //закрыть окно Х
+  var closePopup = document.querySelector('.close');
+  closePopup.addEventListener('click', function(e) {
+    e.preventDefault();
+    popup.classList.remove('vis');
+    popupP.innerHTML = '';
   });
   
 });
