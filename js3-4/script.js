@@ -7,7 +7,7 @@
 window.addEventListener('load', function fullLoad() {
   'use strict';
   var numQuestions,
-    numAnswers,
+      //numAnswers,
     mainObject = {
       questionsArray: [
         {

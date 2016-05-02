@@ -15,7 +15,7 @@ $(function () {
     social: 'https://vk.com/id9417666',
     feedback: 'Если нужно, могу отремонтировать вам банкомат'
   };
-  var content = tmpl(html, data)
+  var content = tmpl(html, data);
   
   $('body').append(content);
 });
