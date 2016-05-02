@@ -2,43 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>DZ12-template</title>
+  <title>new_project</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="js/template.js"></script>
   <script src="js/main.js"></script>
-  
   <script type="text/template" id="test">
-    <div class="main">
-            <div class="container">
-                <h2><%= name %></h2>
-                <div class="foto">
-                    <img src="<%= fotoSrc %>" alt="Мое фото" title="Мое фото">
-                    <p><%= title %></p>
-                </div>
-                <div class="list">
-                    <p>Хочу учить фронтенд, потому что:</p>
-                    <ul>
-                    <% for (var i = 0; i < answer.length; i++) { %>
-                        <li><%= answer[i] %></li>
-                    <% }; %>
-                    </ul>
-                </div>
-                <div class="contacts">
-                    <p>Мой контактный телефон<br>
-                    <%= phone %></p>
-                    <p>Мой профиль вконтакте<br>
-                    <a href="<%= social %>">vk.com</a></p>
-                </div>
-                <div class="feedback">
-                    <p>Мой фидбек:<br>
-                    <%= feedback %></p>
-                </div>
-            </div>
-        </div>
+    <h1>Тест по программированию</h1>
+  <form action="">
+    <ol>
+      <% for (var k = 0; k < questionsArray.length; k++) { %>
+      <li><%= questionsArray[k].questionText %>
+    <% for (var j = 0; j < questionsArray[k].answer.length; j++) { %>
+      <div>
+        <label>
+          <input type="checkbox" value="<%= questionsArray[k].answer[j].correct %>">&nbsp;<%= questionsArray[k].answer[j].text %>
+        </label>
+      </div>
+    <% }; %>
+    </li><br>
+    <% }; %>
+    </ol>
+  </form>
+  <div>
+    <button type="reset">Проверить мои результаты</button>
+  </div>
   </script>
 </head>
 <body>
+  
+</body>
+</html>
 
 </body>
 </html>
