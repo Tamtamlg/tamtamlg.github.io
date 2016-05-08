@@ -96,6 +96,7 @@ $(function () {
   var popup = document.querySelector('.popup');
   var popupP = document.querySelector('.popup p');
   $('button').on('click', function() {
+    $(this).css({display: "none"});
     for (var s = 0; s < $("input:checkbox:checked").length; s++) {
        if ($("input:checkbox:checked")[s].value == 'true') {
          count++;
@@ -109,8 +110,6 @@ $(function () {
     $('.popup p').append(popupText)
     $('.popup').addClass('vis');
     count = 0;
-    $("input:checkbox:checked").removeAttr('checked');
-    
   });
   
   //закрыть окно Х
@@ -119,6 +118,8 @@ $(function () {
     e.preventDefault();
     popup.classList.remove('vis');
     popupP.innerHTML = '';
+    $("input:checkbox:checked").removeAttr('checked');
+    $('button').css({display: "block"});
   });
   
 });
