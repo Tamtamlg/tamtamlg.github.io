@@ -3,21 +3,46 @@ module.exports = function (grunt) {
 
   // Задачи
   grunt.initConfig({
+    
+    // Очищаем папку build перед новой записью
+    clean: {
+      build: ['build']
+    },
+
+    // Копируем файлы из папки source в папку build и дальше работаем с этой папкой
+    copy: { 
+      build: {         
+        files: [{           
+          expand: true,
+          cwd: 'source',           
+          src: [             
+            'img/**',             
+            'js/**',
+            'css/**',
+            'font/**',
+            'index.html'           
+          ],           
+          dest: 'build'
+        }]       
+      }
+     },
+    
     // Склеиваем
     concat: {
       js: {
         src: [
-          'js/template.js', 'js/main.js'
+          'build/js/template.js', 'build/js/main.js'
         ],
         dest: 'build/js/main.js'
       },
       css: {
         src: [
-          'css/normalize.css', 'css/style.css'
+          'build/css/normalize.css', 'build/css/style.css'
         ],
         dest: 'build/css/style.css'
       }
     },
+    
     // Сжимаем js
     uglify: {
       build: {
@@ -25,6 +50,8 @@ module.exports = function (grunt) {
           dest: 'build/js/main.min.js'
       }
     },
+    
+    // Сжимаем css
     cssmin: { //описываем работу плагина минификации и конкатенации css.
       target: {
         files: {
@@ -32,6 +59,42 @@ module.exports = function (grunt) {
         }
       }
     },
+    
+    //Сжимаем картинки
+    imagemin: { 
+      images: {         
+        options: {           
+          optimizationLevel: 3         
+        },         
+        files: [{           
+          expand: true,           
+          src: ["build/img/**/*.{png,jpg,gif,svg}"]         
+        }]       
+      } 
+    },
+
+    // Заменяем пути в файле index.html
+    replace: {
+      dist: {
+        options: {
+          patterns: [
+            {
+              match: /\"js\/main.js/g, 
+              replacement: '"js/main.min.js'
+            },
+            {
+              match: /\"css\/style.css/g, 
+              replacement: '"css/style.min.css'
+            }
+          ]
+        },
+        files: [
+          {expand: true, src: ['build/index.html']}
+        ]
+      }
+    },
+    
+    //Отслеживаем изменения
     watch: {
       concat: {
         files: ['<%= concat.js.src %>', '<%= concat.css.src %>'],
@@ -39,13 +102,17 @@ module.exports = function (grunt) {
       }
     }
   });
-
+  
   // Загрузка плагинов, установленных с помощью npm install
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-replace');
 
   // Задача по умолчанию
-  grunt.registerTask('default', ['concat', 'uglify', 'cssmin']);
+  grunt.registerTask('default', ['clean', 'copy', 'concat', 'uglify', 'cssmin', 'imagemin', 'replace']);
 };
