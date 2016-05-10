@@ -15,4 +15,19 @@ window.addEventListener('load', function fullLoad() {
     };
     document.head.appendChild(script);
   });
+  input.addEventListener('keydown', function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+      var script;
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'http://en.wikipedia.org/w/api.php?action=parse&page=title&prop=text&section=0&format=json&callback=func');
+      script = document.createElement('script');
+      script.src = 'http://en.wikipedia.org/w/api.php?action=parse&page=' + input.value + '&prop=text&section=0&format=json&callback=searchArticle';
+      window.searchArticle = function view(data) {
+        content.innerHTML = '';
+        content.innerHTML = data.parse.text['*'];
+      };
+      document.head.appendChild(script);
+    }
+  });
 });
