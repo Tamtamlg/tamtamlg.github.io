@@ -16,8 +16,9 @@ window.addEventListener('load', function fullLoad() {
     document.head.appendChild(script);
   });
   input.addEventListener('keypress', function(event) {
-    var script;
     if (event.keyCode == 13) {
+      event.preventDefault();
+      var script;
       var xhr = new XMLHttpRequest();
       xhr.open('GET', 'http://en.wikipedia.org/w/api.php?action=parse&page=title&prop=text&section=0&format=json&callback=func');
       script = document.createElement('script');
@@ -28,6 +29,5 @@ window.addEventListener('load', function fullLoad() {
       };
       document.head.appendChild(script);
     }
-      
   });
 });
