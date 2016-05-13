@@ -1,0 +1,179 @@
+@import "variables.scss";
+@font-face {
+  font-family: 'symbols-font';
+  src: url('../font/symbols-font.eot?79112524');
+  src: url('../font/symbols-font.eot?79112524#iefix') format('embedded-opentype'),
+       url('../font/symbols-font.woff2?79112524') format('woff2'),
+       url('../font/symbols-font.woff?79112524') format('woff'),
+       url('../font/symbols-font.ttf?79112524') format('truetype'),
+       url('../font/symbols-font.svg?79112524#symbols-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'symbols-font';
+    src: url('../font/symbols-font.svg?79112524#symbols-font') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "symbols-font";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-linkedin:before { content: '\e800'; } /* '' */
+.icon-facebook:before { content: '\e801'; } /* '' */
+.icon-skype:before { content: '\e802'; } /* '' */
+.icon-twitter:before { content: '\e803'; } /* '' */
+.icon-search:before { content: '\e804'; } /* '' */
+.icon-mobile:before { content: '\e805'; } /* '' */
+.icon-location:before { content: '\e806'; } /* '' */
+.icon-mail-alt:before { content: '\e807'; } /* '' */
+.icon-right-small:before { content: '\e808'; } /* '' */
+.icon-rss:before { content: '\e80c'; } /* '' */
+
+
+
+body {
+  margin-top: 37px;
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.logo-group {
+  width: 250px;
+  margin: 0 0 35px 0;
+}
+.logo-group__img {
+  vertical-align: top;
+  margin-right: 5px;
+}
+.logo-group__text {
+  margin-top: -5px;
+  padding: 0;
+  display: inline-block;
+  width: 200px;
+}
+.logo-group__text-top {
+  display: inline-block;
+  font-family: $font-family1;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+  color: $color1;
+  vertical-align: top;
+}
+.logo-group__text-bot {
+  display: inline-block;
+  margin-left: 2px;
+  font-family: $font-family1;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+  color: $color2;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  vertical-align: top;
+}
+.main-nav {
+  background: $nav-color;
+}
+.nav-list {
+  margin: 0;
+  padding: 0;
+  width: 900px;
+  list-style: none;
+  font-size: 0;
+  li {
+    display: inline-block;
+  }
+  a {
+    display: block;
+    font-family: $font-family1;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-right: 1px solid #181a1d;
+    padding: 20px 35px;
+    color: $nav-a-color;
+  }
+  a:hover {
+    color:$nav-a-hover-color;
+  }
+}
+.nav-list__active {
+  background: $nav-list__active-color;
+  a:hover {
+    color:$nav-a-color;
+  }
+}
+.search {
+  float: right;
+  margin-top: 8px;
+  margin-right: 8px;
+  input {
+    width: 200px;
+    height: 8px;
+    padding: 15px;
+    border: 1px solid #181a1d;
+    background: $search-bg-color;
+    color: $search-color;
+    font-family: $font-family2;
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

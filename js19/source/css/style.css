@@ -1,0 +1,203 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'symbols-font';
+  src: url("../font/symbols-font.eot?79112524");
+  src: url("../font/symbols-font.eot?79112524#iefix") format("embedded-opentype"), url("../font/symbols-font.woff2?79112524") format("woff2"), url("../font/symbols-font.woff?79112524") format("woff"), url("../font/symbols-font.ttf?79112524") format("truetype"), url("../font/symbols-font.svg?79112524#symbols-font") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'symbols-font';
+    src: url('../font/symbols-font.svg?79112524#symbols-font') format('svg');
+  }
+}
+*/
+/* line 24, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "symbols-font";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+/* line 59, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+.icon-linkedin:before {
+  content: '\e800'; }
+
+/* '' */
+/* line 60, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+.icon-facebook:before {
+  content: '\e801'; }
+
+/* '' */
+/* line 61, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+.icon-skype:before {
+  content: '\e802'; }
+
+/* '' */
+/* line 62, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+.icon-twitter:before {
+  content: '\e803'; }
+
+/* '' */
+/* line 63, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+.icon-search:before {
+  content: '\e804'; }
+
+/* '' */
+/* line 64, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+.icon-mobile:before {
+  content: '\e805'; }
+
+/* '' */
+/* line 65, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+.icon-location:before {
+  content: '\e806'; }
+
+/* '' */
+/* line 66, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+.icon-mail-alt:before {
+  content: '\e807'; }
+
+/* '' */
+/* line 67, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+.icon-right-small:before {
+  content: '\e808'; }
+
+/* '' */
+/* line 68, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+.icon-rss:before {
+  content: '\e80c'; }
+
+/* '' */
+/* line 72, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+body {
+  margin-top: 37px; }
+
+/* line 76, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+/* line 81, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+.container {
+  width: 1160px;
+  margin: 0 auto; }
+
+/* line 86, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+.logo-group {
+  width: 250px;
+  margin: 0 0 35px 0; }
+
+/* line 90, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+.logo-group__img {
+  vertical-align: top;
+  margin-right: 5px; }
+
+/* line 94, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+.logo-group__text {
+  margin-top: -5px;
+  padding: 0;
+  display: inline-block;
+  width: 200px; }
+
+/* line 100, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+.logo-group__text-top {
+  display: inline-block;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+  color: #434343;
+  vertical-align: top; }
+
+/* line 109, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+.logo-group__text-bot {
+  display: inline-block;
+  margin-left: 2px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  vertical-align: top; }
+
+/* line 121, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+.main-nav {
+  background: #2a2d32; }
+
+/* line 124, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+.nav-list {
+  margin: 0;
+  padding: 0;
+  width: 900px;
+  list-style: none;
+  font-size: 0; }
+  /* line 130, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  .nav-list li {
+    display: inline-block; }
+  /* line 133, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  .nav-list a {
+    display: block;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-right: 1px solid #181a1d;
+    padding: 20px 35px;
+    color: #fff; }
+  /* line 143, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  .nav-list a:hover {
+    color: #f4b60d; }
+
+/* line 147, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+.nav-list__active {
+  background: #248cec; }
+  /* line 149, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  .nav-list__active a:hover {
+    color: #fff; }
+
+/* line 153, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+.search {
+  float: right;
+  margin-top: 8px;
+  margin-right: 8px; }
+  /* line 157, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  .search input {
+    width: 200px;
+    height: 8px;
+    padding: 15px;
+    border: 1px solid #181a1d;
+    background: #35383c;
+    color: #fff;
+    font-family: "Arial", sans-serif;
+    font-size: 12px; }
+
+/*# sourceMappingURL=style.css.map */

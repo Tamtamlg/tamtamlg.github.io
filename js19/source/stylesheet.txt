@@ -1,0 +1,65 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-car-icon {
+    width: 32px;
+    height: 26px;
+    background-position: -5px -5px;
+}
+
+.sprite-logo {
+    width: 36px;
+    height: 36px;
+    background-position: -5px -41px;
+}
+
+.sprite-params-icon {
+    width: 32px;
+    height: 32px;
+    background-position: -5px -87px;
+}
+
+.sprite-partners1 {
+    width: 143px;
+    height: 62px;
+    background-position: -5px -129px;
+}
+
+.sprite-partners2 {
+    width: 143px;
+    height: 62px;
+    background-position: -5px -201px;
+}
+
+.sprite-partners3 {
+    width: 184px;
+    height: 64px;
+    background-position: -5px -273px;
+}
+
+.sprite-partners4 {
+    width: 143px;
+    height: 62px;
+    background-position: -5px -347px;
+}
+
+.sprite-partners5 {
+    width: 143px;
+    height: 62px;
+    background-position: -5px -419px;
+}
+
+.sprite-partners6 {
+    width: 143px;
+    height: 62px;
+    background-position: -5px -491px;
+}
+
+.sprite-settings-icon {
+    width: 32px;
+    height: 32px;
+    background-position: -5px -563px;
+}
