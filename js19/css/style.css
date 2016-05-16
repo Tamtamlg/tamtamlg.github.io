@@ -689,16 +689,19 @@ body {
     color: #8a8a8a;
     border-bottom: 1px solid #8a8a8a; }
   /* line 658, D:/dz/tamtamlg.github.io/js19/css/style.scss */
+  .links__item a:last-child {
+    border-bottom: none; }
+  /* line 661, D:/dz/tamtamlg.github.io/js19/css/style.scss */
   .links__item a:hover {
     color: #248cec; }
 
-/* line 662, D:/dz/tamtamlg.github.io/js19/css/style.scss */
+/* line 665, D:/dz/tamtamlg.github.io/js19/css/style.scss */
 .links__item:last-child {
   margin-right: 0; }
 
 /* Links end */
 /* FOOTER */
-/* line 669, D:/dz/tamtamlg.github.io/js19/css/style.scss */
+/* line 672, D:/dz/tamtamlg.github.io/js19/css/style.scss */
 .main-footer {
   background: #35383c;
   color: #8a8a8a;
@@ -708,12 +711,12 @@ body {
   padding-top: 25px;
   padding-bottom: 25px; }
 
-/* line 678, D:/dz/tamtamlg.github.io/js19/css/style.scss */
+/* line 681, D:/dz/tamtamlg.github.io/js19/css/style.scss */
 .footer__item {
   float: left;
   margin-right: 25px; }
 
-/* line 682, D:/dz/tamtamlg.github.io/js19/css/style.scss */
+/* line 685, D:/dz/tamtamlg.github.io/js19/css/style.scss */
 .footer__item:last-child {
   float: right;
   margin-right: 0; }
