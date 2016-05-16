@@ -261,18 +261,72 @@ body {
   width: 1160px;
   height: 470px; }
 
+/* line 225, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+.jcarousel-pagination {
+  font-size: 0;
+  width: 100%;
+  position: absolute;
+  top: 440px;
+  text-align: center; }
+  /* line 231, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  .jcarousel-pagination a {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background: #fff;
+    margin-left: 15px;
+    border: 3px solid #fff; }
+  /* line 239, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  .jcarousel-pagination .active {
+    background: #001d1d; }
+
+/* line 244, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+.slider-wrap {
+  position: relative; }
+
+/* line 248, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+.slider-text {
+  position: absolute;
+  top: 230px;
+  left: 35px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 54px;
+  line-height: 54px;
+  text-transform: uppercase;
+  color: #fff; }
+  /* line 258, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  .slider-text span {
+    color: #f4b60d; }
+  /* line 261, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  .slider-text p {
+    margin: 0;
+    padding: 0 15px;
+    background: rgba(0, 0, 0, 0.7); }
+  /* line 266, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  .slider-text .slider-text__build {
+    width: 160px;
+    padding-top: 10px; }
+  /* line 270, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  .slider-text .slider-text__your {
+    width: 160px; }
+  /* line 273, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  .slider-text .slider-text__buis {
+    width: 250px;
+    padding-bottom: 10px; }
+
 /*  /SLIDER  */
 /* Features */
-/* line 227, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+/* line 285, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
 .features {
   margin-top: 55px;
   margin-bottom: 85px; }
-  /* line 230, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  /* line 288, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
   .features .features-item {
     display: inline-block;
     width: 370px;
     margin-right: 19px; }
-    /* line 234, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+    /* line 292, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
     .features .features-item .features-item__num {
       display: inline-block;
       font-family: "Ubuntu", sans-serif;
@@ -281,66 +335,66 @@ body {
       font-weight: 500;
       vertical-align: top;
       color: #e9e9ea; }
-    /* line 243, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+    /* line 301, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
     .features .features-item .features-item__article {
       display: inline-block;
       width: 260px;
       padding-top: 15px; }
-      /* line 247, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+      /* line 305, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
       .features .features-item .features-item__article .article-icon__01 {
         width: 32px;
         height: 32px;
         background: url("../img/spritesheet.png") no-repeat;
         background-position: -5px -563px; }
-      /* line 253, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+      /* line 311, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
       .features .features-item .features-item__article .article-icon__02 {
         width: 32px;
         height: 32px;
         background: url("../img/spritesheet.png") no-repeat;
         background-position: -5px -87px; }
-      /* line 259, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+      /* line 317, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
       .features .features-item .features-item__article .article-icon__03 {
         width: 32px;
         height: 32px;
         background: url("../img/spritesheet.png") no-repeat;
         background-position: -5px -5px; }
-      /* line 265, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+      /* line 323, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
       .features .features-item .features-item__article h3 {
         margin: 15px 0 10px 5px; }
-      /* line 268, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+      /* line 326, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
       .features .features-item .features-item__article p {
         margin-top: 0;
         font-family: "Arial", sans-serif;
         font-size: 13px;
         line-height: 20px;
         color: #8a8a8a; }
-      /* line 275, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+      /* line 333, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
       .features .features-item .features-item__article a {
         font-family: "Arial", sans-serif;
         font-size: 13px;
         text-decoration: none;
         color: #2a2b2e; }
-        /* line 280, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+        /* line 338, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
         .features .features-item .features-item__article a i {
           color: #248cec; }
-      /* line 284, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+      /* line 342, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
       .features .features-item .features-item__article a:hover {
         color: #248cec; }
-        /* line 286, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+        /* line 344, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
         .features .features-item .features-item__article a:hover i {
           color: #8a8a8a; }
-  /* line 292, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  /* line 350, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
   .features .features-item:last-child {
     margin-right: 0; }
 
 /* Features end */
 /* Galery */
-/* line 299, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+/* line 357, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
 .galery-wrap {
   padding-top: 45px;
   padding-bottom: 65px;
   background: #2a2d32; }
-  /* line 304, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  /* line 362, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
   .galery-wrap .galery h2 {
     margin-bottom: 55px;
     font-family: "Ubuntu", sans-serif;
@@ -348,17 +402,17 @@ body {
     font-weight: 500;
     line-height: 30px;
     color: #fff; }
-  /* line 312, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  /* line 370, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
   .galery-wrap .galery .galery__item {
     width: 260px;
     display: inline-block;
     margin-right: 34px;
     cursor: pointer; }
-    /* line 317, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+    /* line 375, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
     .galery-wrap .galery .galery__item img {
       width: 260px;
       height: 260px; }
-    /* line 321, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+    /* line 379, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
     .galery-wrap .galery .galery__item p {
       font-family: "Ubuntu", sans-serif;
       font-size: 16px;
@@ -366,7 +420,7 @@ body {
       line-height: 20px;
       color: #fff;
       text-align: center; }
-    /* line 329, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+    /* line 387, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
     .galery-wrap .galery .galery__item .galery__hover {
       display: none;
       width: 260px;
@@ -375,7 +429,7 @@ body {
       top: 0;
       left: 0;
       background: rgba(36, 140, 236, 0.9); }
-    /* line 338, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+    /* line 396, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
     .galery-wrap .galery .galery__item .galery__hover:after {
       content: '';
       position: absolute;
@@ -384,7 +438,7 @@ body {
       width: 30px;
       height: 2px;
       background: #fff; }
-    /* line 347, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+    /* line 405, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
     .galery-wrap .galery .galery__item .galery__hover:before {
       content: '';
       position: absolute;
@@ -393,87 +447,87 @@ body {
       width: 2px;
       height: 30px;
       background: #fff; }
-  /* line 357, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  /* line 415, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
   .galery-wrap .galery .galery__item:last-child {
     margin-right: 0; }
-  /* line 360, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  /* line 418, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
   .galery-wrap .galery .galery__item:hover {
     position: relative; }
-    /* line 362, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+    /* line 420, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
     .galery-wrap .galery .galery__item:hover p {
       color: #f4b60d; }
-    /* line 365, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+    /* line 423, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
     .galery-wrap .galery .galery__item:hover .galery__hover {
       display: block; }
 
 /* Galery end*/
 /* News-banners */
-/* line 377, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+/* line 435, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
 .news-banners-wrap {
   background: #f7f7f7;
   padding-top: 65px; }
-  /* line 381, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  /* line 439, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
   .news-banners-wrap .news-banners {
     padding-bottom: 80px; }
-  /* line 384, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  /* line 442, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
   .news-banners-wrap h2 {
     margin: 0 0 50px 0; }
 
-/* line 388, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+/* line 446, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
 .news {
   float: left; }
 
-/* line 391, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+/* line 449, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
 .news__item {
   width: 565px;
   position: relative;
   margin-bottom: 30px; }
 
-/* line 396, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+/* line 454, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
 .news__img {
   float: left; }
 
-/* line 400, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+/* line 458, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
 .news__article {
   width: 385px;
   margin: 0;
   float: right;
   font-family: "Arial", sans-serif;
   font-size: 13px; }
-  /* line 406, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  /* line 464, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
   .news__article h4 {
     margin-top: 0;
     margin-bottom: 10px;
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
     font-size: 16px; }
-    /* line 412, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+    /* line 470, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
     .news__article h4 a {
       color: #000; }
-    /* line 415, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+    /* line 473, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
     .news__article h4 a:hover {
       color: #248cec; }
-  /* line 420, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  /* line 478, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
   .news__article p {
     margin-top: 30px;
     line-height: 20px;
     color: #8a8a8a; }
-  /* line 425, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  /* line 483, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
   .news__article a {
     text-decoration: none;
     color: #248cec; }
-  /* line 429, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  /* line 487, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
   .news__article span {
     color: #8a8a8a; }
 
-/* line 433, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+/* line 491, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
 .news__calendar {
   position: absolute;
   top: 13px;
   left: -18px;
   width: 40px;
   height: 80px; }
-  /* line 439, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  /* line 497, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
   .news__calendar .news__month {
     background: #248cec;
     text-align: center;
@@ -483,7 +537,7 @@ body {
     font-size: 15px;
     line-height: 20px;
     color: #fff; }
-  /* line 449, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  /* line 507, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
   .news__calendar .news__day {
     background: #f4b60d;
     text-align: center;
@@ -494,22 +548,22 @@ body {
     line-height: 20px;
     color: #2a2b2e; }
 
-/* line 461, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+/* line 519, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
 .banners {
   width: 560px;
   margin-left: 30px;
   float: right; }
 
-/* line 466, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+/* line 524, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
 .accordion {
   list-style: none;
   font-size: 0;
   padding: 0; }
 
-/* line 471, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+/* line 529, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
 .accordion__item {
   margin-bottom: 5px; }
-  /* line 473, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  /* line 531, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
   .accordion__item .accordion__plus {
     cursor: pointer;
     width: 40px;
@@ -519,10 +573,10 @@ body {
     text-align: center;
     display: inline-block;
     border: 1px solid #e8e8e8; }
-  /* line 483, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  /* line 541, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
   .accordion__item .accordion__plus:after {
     content: '+'; }
-  /* line 486, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  /* line 544, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
   .accordion__item .accordion__panel {
     cursor: pointer;
     font-family: "Arial", sans-serif;
@@ -532,32 +586,32 @@ body {
     text-transform: uppercase;
     width: 480px;
     border: 1px solid #e8e8e8; }
-  /* line 496, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  /* line 554, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
   .accordion__item p {
     display: none;
     width: 550px;
     font-family: "Arial", sans-serif;
     font-size: 13px; }
 
-/* line 505, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+/* line 563, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
 .accordion__item-active .accordion__plus {
   background: #f4b60d;
   border: 1px solid #f4b60d;
   border-right-color: #f6c53d;
   color: #fff; }
 
-/* line 511, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+/* line 569, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
 .accordion__item-active .accordion__plus:after {
   content: '-'; }
 
-/* line 514, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+/* line 572, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
 .accordion__item-active .accordion__panel {
   background: #f4b60d;
   border: 1px solid #f4b60d;
   border-left-color: #f6c53d;
   color: #fff; }
 
-/* line 520, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+/* line 578, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
 .accordion__item-active p {
   display: block;
   color: #8a8a8a;
@@ -566,53 +620,53 @@ body {
 
 /* News-banners end*/
 /* Partners */
-/* line 531, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+/* line 589, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
 .partners {
   margin-top: 80px;
   margin-bottom: 100px; }
-  /* line 534, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  /* line 592, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
   .partners a {
     display: inline-block;
     width: 143px;
     height: 62px;
     background: url("../img/spritesheet.png") no-repeat;
     margin-right: 50px; }
-  /* line 541, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  /* line 599, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
   .partners a:last-child {
     margin-right: 0; }
-  /* line 544, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  /* line 602, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
   .partners .partners__1 {
     background-position: -5px -129px; }
-  /* line 547, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  /* line 605, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
   .partners .partners__2 {
     background-position: -5px -201px; }
-  /* line 550, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  /* line 608, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
   .partners .partners__3 {
     background-position: -5px -273px; }
-  /* line 553, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  /* line 611, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
   .partners .partners__4 {
     background-position: -5px -347px; }
-  /* line 556, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  /* line 614, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
   .partners .partners__5 {
     background-position: -5px -419px; }
-  /* line 559, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  /* line 617, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
   .partners .partners__6 {
     background-position: -5px -491px; }
 
 /* Partners end */
 /* Links */
-/* line 569, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+/* line 627, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
 .links-wrap {
   background: #2a2d32;
   padding-top: 60px;
   padding-bottom: 80px; }
 
-/* line 574, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+/* line 632, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
 .links__item {
   display: inline-block;
   width: 260px;
   margin-right: 34px; }
-  /* line 578, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  /* line 636, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
   .links__item h4 {
     font-weight: 500;
     font-family: "Ubuntu", sans-serif;
@@ -620,7 +674,7 @@ body {
     line-height: 24px;
     color: #fff;
     text-transform: uppercase; }
-  /* line 586, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  /* line 644, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
   .links__item a {
     display: block;
     font-weight: 700;
@@ -630,17 +684,17 @@ body {
     line-height: 36px;
     color: #8a8a8a;
     border-bottom: 1px solid #8a8a8a; }
-  /* line 596, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+  /* line 654, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
   .links__item a:hover {
     color: #248cec; }
 
-/* line 600, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+/* line 658, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
 .links__item:last-child {
   margin-right: 0; }
 
 /* Links end */
 /* FOOTER */
-/* line 607, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+/* line 665, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
 .main-footer {
   background: #35383c;
   color: #8a8a8a;
@@ -650,12 +704,12 @@ body {
   padding-top: 25px;
   padding-bottom: 25px; }
 
-/* line 616, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+/* line 674, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
 .footer__item {
   float: left;
   margin-right: 25px; }
 
-/* line 620, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
+/* line 678, D:/dz/tamtamlg.github.io/js19/source/css/style.scss */
 .footer__item:last-child {
   float: right;
   margin-right: 0; }

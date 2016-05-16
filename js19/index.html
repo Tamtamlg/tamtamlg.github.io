@@ -6,6 +6,9 @@
   <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.js"></script>
+  <script src="js/slider.js"></script>
 </head>
 <body>
 <!-- HEADER -->
@@ -44,15 +47,24 @@
 <!-- HEADER end-->
 
 <!--  SLIDER  -->
-  <div class="wrap_jcarousel container">
+<section class="slider-wrap container">
+  <div class="wrap_jcarousel">
     <div class="jcarousel">
       <ul>
         <li><img src="img/slide1.jpg" alt=""></li>
         <li><img src="img/slide2.jpg" alt=""></li>
-        <li><img src="img/slide2.jpg" alt=""></li>
+        <li><img src="img/slide3.png" alt=""></li>
       </ul>
     </div>
+    <p class="jcarousel-pagination"></p>
   </div>
+  
+  <div class="slider-text">
+    <p class="slider-text__build"><span>Build</span></p>
+    <p class="slider-text__your">your</p>
+    <p class="slider-text__buis">business</p>
+  </div>
+</section>
 <!-- SLIDER end-->
 
 <!-- Features -->

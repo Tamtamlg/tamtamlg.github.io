@@ -220,6 +220,64 @@ body {
   width: 1160px;
   height: 470px;
 }
+
+
+.jcarousel-pagination {
+  font-size: 0;
+  width: 100%;
+  position: absolute;
+  top: 440px;
+  text-align: center;
+  a {
+    display:inline-block;
+    width: 9px;
+    height: 9px;
+    background: #fff;
+    margin-left: 15px;
+    border: 3px solid #fff;
+  }
+  .active {
+    background: $pagination-color;
+  }
+}
+
+.slider-wrap {
+  position: relative;
+}
+
+.slider-text {
+  position: absolute;
+  top: 230px;
+  left: 35px;
+  font-family: $font-family1;
+  font-weight: 500;
+  font-size: 54px;
+  line-height: 54px;
+  text-transform: uppercase;
+  color: #fff;
+  span {
+    color: $nav-a-hover-color;
+  }
+  p {
+    margin: 0;
+    padding: 0 15px;
+    background: rgba(0,0,0,.7)
+  }
+  .slider-text__build {
+    width: 160px;
+    padding-top: 10px
+  }
+  .slider-text__your {
+    width: 160px;
+  }
+  .slider-text__buis {
+    width: 250px;
+    padding-bottom: 10px;
+  }
+}
+
+
+
 /*  /SLIDER  */
 
 
