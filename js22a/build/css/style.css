@@ -1,0 +1,31 @@
+.popup {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 220px;
+  height: 50px;
+  padding: 100px;
+  background: #eee;
+  border: 1px solid #000;
+  box-shadow: 0 0 5px 5px #555;
+  text-align: center;
+  font-size: 30px;
+  display: none;
+}
+.vis {
+  display: block;
+}
+a {
+  text-decoration: none;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0px 4px;
+  color: #000;
+}
