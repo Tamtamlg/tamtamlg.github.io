@@ -303,7 +303,17 @@ header {
   }
 }
 
-
+.grid-item {
+  width: 320px;
+  text-align: center;
+  font-size: 0;
+  margin-bottom: 10px;
+  
+  img {
+    width: 300px;
+    border-radius: 5px;
+  }
+}
 
 
 
