@@ -298,20 +298,34 @@ header {
 
 /* IDEAS */
 .ideas {
+  
   h2 {
     text-align: center;
   }
 }
 
 .grid-item {
+  margin: 0 auto;
   width: 320px;
-  text-align: center;
   font-size: 0;
   margin-bottom: 10px;
+  float: left;
+  position: relative;
   
   img {
     width: 300px;
     border-radius: 5px;
+  }
+  
+  .title {
+    position: absolute;
+    top: 30%;
+    
+    width: 90%;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    font-family: $ff1;
   }
 }
 

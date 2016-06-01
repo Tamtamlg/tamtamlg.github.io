@@ -179,6 +179,7 @@ h2 {
   
   .main-form input[type="text"] {
     border-radius: 20px;
+	border: none;
     width: 285px;
     padding-left: 20px;
     padding-right: 20px;
@@ -190,6 +191,7 @@ h2 {
   .main-form select {
     padding: 9px 52px 12px 12px;
     border-radius: 18px;
+	border: none;
     -webkit-appearance: none;
     background-image: url("../img/select.png");
     background-position: right center;
@@ -820,6 +822,8 @@ h2 {
 
 .newspaper {
   column-count: 3;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
   margin-bottom: 50px; }
   
   .newspaper p:first-child {

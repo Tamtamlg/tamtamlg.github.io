@@ -9,8 +9,10 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
-  <script src="js/images.js"></script>
+<!--  <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>-->
+ <script src="js/template.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/masonry.js"></script>
   <script src="js/request.js"></script>
 </head>
 <body>
@@ -97,7 +99,19 @@
       <h2>Discover holiday activity ideas</h2>
       
       <!-- masonry -->
-      <div class="grid"></div>
+      <div class="grid">
+        <script id="test" type="text/template">
+
+          <% for (var i=0; i<7; i++) { %>
+          <div class="grid-item">
+            <img src="<%= hits[i].previewURL%>">
+            <h3 class="title"><%= hits[i].tags %></h3>
+          </div>
+          
+          <%}%>
+
+        </script>
+      </div>
       <!-- masonry end -->
     
     </div>
