@@ -7,17 +7,33 @@ $(function () {
   var html = $('#test').html();
   
   
-  function  imgRequest() {
-  var URL = "https://pixabay.com/api/?key="+API_KEY+"&q="+input.value+"&image_type=photo";
-  $.getJSON(URL, function (data) {
-    $.each(data.hits, function (i, hit) {
-      grid.empty();
-      var content = tmpl(html, data);
-      $('.grid').append(content);
-      input.value = '';
-    });
+  // masonry
+  var $grid = $('.grid').masonry({
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    columnWidth: '.grid-sizer',
+    gutter: 10
   });
-    
+  $grid.imagesLoaded().progress(function () {
+    $grid.masonry();
+  });
+  
+  //imagefill
+  $('.grid-item').imagefill();
+  
+
+  // запрос картинок
+  function imgRequest() {
+    var URL = "https://pixabay.com/api/?key="+API_KEY+"&q="+input.value+"&image_type=photo";
+    $.getJSON(URL, function (data) {
+
+      var $img = $('.grid-img');
+      for (var i = 0; i < 7; i++) {
+        $img[i].src = data.hits[i].webformatURL;
+        $img.parent().find('.title').html(data.hits[i].tags);
+      }
+        input.value = '';
+    });
   }
   
   imgRequest();
@@ -28,11 +44,9 @@ $(function () {
   });
   
   input.addEventListener('keypress', function(e) {
-    if (e.keyCode == 13) {
+    if (e.keyCode === 13) {
       e.preventDefault();
       imgRequest();
   }
   });
 });
-
-

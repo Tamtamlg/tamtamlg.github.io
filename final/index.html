@@ -9,22 +9,30 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<!--  <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>-->
- <script src="js/template.js"></script>
+
+<!--  <script src="js/template.js"></script>-->
+  
+<!--  <script src="js/masonry.js"></script>-->
+  
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/jquery-imagefill.js"></script>
   <script src="js/masonry.pkgd.min.js"></script>
-  <script src="js/masonry.js"></script>
   <script src="js/request.js"></script>
+<!--  <script src="js/imgfill.js"></script>-->
+  
 </head>
 <body>
 <div class="wrapper">
 <!-- HEADER -->
   <header>
     <div class="container">
-      <div class="menu">
-        <a href="#" class="login">Log in</a>
-        <a href="#" class="btn-invers">Sign up</a>
+      <div class="header-menu clearfix">
+        <div class="menu">
+          <a href="#" class="login">Log in</a>
+          <a href="#" class="btn-invers">Sign up</a>
+        </div>
+        <div class="logo"><a href="#">URLAUBSGLÜCK</a></div>
       </div>
-      <div class="logo"><a href="#">URLAUBSGLÜCK</a></div>
       <h1>Share your <br> holiday dreams</h1>
       <p>And find the perfect partner to fullfill it</p>
       <a href="#" class="btn">Find your holiday partner</a>
@@ -39,22 +47,29 @@
       <h2>How Urlaubsglück works?</h2>
 
       <article class="how-works__item step-1">
-        <a href="#" class="btn">Step 1</a>
-        <h2>Sed leo enim, condimentum</h2>
-        <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+        <div class="how-works__wrap">
+          <a href="#" class="btn">Step 1</a>
+          <h2>Sed leo enim, condimentum</h2>
+          <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+        </div>
       </article>
 
       <article class="how-works__item step-2">
-        <a href="#" class="btn">Step 2</a>
-        <h2>Sed leo enim, condimentum</h2>
-        <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+        <div class="how-works__wrap">
+          <a href="#" class="btn">Step 1</a>
+          <h2>Morbi velit risus</h2>
+          <p>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+        </div>
       </article>
 
       <article class="how-works__item step-3">
-        <a href="#" class="btn">Step 3</a>
-        <h2>Sed leo enim, condimentum</h2>
-        <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+        <div class="how-works__wrap">
+          <a href="#" class="btn">Step 1</a>
+          <h2>Sed leo enim, condimentum</h2>
+          <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+        </div>
       </article>
+
     </div>
   </section>
 <!-- HOW-WORKS end-->
@@ -73,13 +88,13 @@
       <article class="partners__item item-2">
         <a href="#" class=""></a>
         <h3>Lucas Marsha</h3>
-        <p>I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
+        <p>I'm a happy person that loves cats and climbing on mountains.</p>
       </article>
 
       <article class="partners__item item-3">
         <a href="#" class=""></a>
         <h3>Heather Walker</h3>
-        <p>I'm a happy person that loves cats and climbing on mountains.</p>
+        <p>I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
       </article>
 
       <article class="partners__item item-4">
@@ -95,25 +110,44 @@
 
 <!-- IDEAS -->
   <section class="ideas">
-    <div class="container">
+    <div class="container clearfix">
       <h2>Discover holiday activity ideas</h2>
       
-      <!-- masonry -->
+      
+    <!-- masonry -->  
       <div class="grid">
-        <script id="test" type="text/template">
-
-          <% for (var i=0; i<7; i++) { %>
-          <div class="grid-item">
-            <img src="<%= hits[i].previewURL%>">
-            <h3 class="title"><%= hits[i].tags %></h3>
-          </div>
-          
-          <%}%>
-
-        </script>
+        <div class="grid-sizer"></div>
+        <div class="grid-item">
+          <img class="grid-img" src="">
+          <h2 class="title"></h2>
+        </div>
+        <div class="grid-item">
+          <img class="grid-img" src="">
+          <h2 class="title"></h2>
+        </div>
+        <div class="grid-item">
+          <img class="grid-img" src="">
+          <h2 class="title"></h2>
+        </div>
+        <div class="grid-item">
+          <img class="grid-img" src="">
+          <h2 class="title"></h2>
+        </div>
+        <div class="grid-item">
+          <img class="grid-img" src="">
+          <h2 class="title"></h2>
+        </div>
+        <div class="grid-item">
+          <img class="grid-img" src="">
+          <h2 class="title"></h2>
+        </div>
+        <div class="grid-item">
+          <img class="grid-img" src="">
+          <h2 class="title"></h2>
+        </div>
       </div>
-      <!-- masonry end -->
-    
+    <!-- masonry end -->  
+      
     </div>
   </section>
 <!-- IDEAS end -->
@@ -150,5 +184,31 @@
   </footer>
 <!-- FOOTER end -->
 </div>
+
+
+
 </body>
 </html>
+
+
+
+<!--
+      <div class="grid">
+      <div class="grid-sizer"></div>
+      
+        <script id="test" type="text/template">
+
+          <% for (var i = 0; i < 7; i++) { %>
+          <div class="grid-item">
+            <img class="grid-img" src="<%= hits[i].previewURL%>">
+            
+          </div>
+          <%}%>
+
+        </script>
+
+        
+      </div>
+-->
+
+
