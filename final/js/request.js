@@ -15,11 +15,11 @@ $(function () {
     gutter: 10
   });
   $grid.imagesLoaded().progress(function () {
-    $grid.masonry();
-  });
+    
   
-  //imagefill
   $('.grid-item').imagefill();
+  $grid.masonry();
+  });
   
 
   // запрос картинок
