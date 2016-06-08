@@ -322,7 +322,7 @@ header {
 .grid-item {
   margin: 0 auto;
   width: 95%;
-  height: 35vw;
+  height: 45vw;
   font-size: 0;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -606,6 +606,10 @@ header {
 .grid-item:nth-child(6) {
   width: 61.5%;
   height: 310px;
+  
+  img {
+    width: 100%;
+  }
 }
 
 

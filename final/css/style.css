@@ -285,7 +285,7 @@ header {
 .grid-item {
   margin: 0 auto;
   width: 95%;
-  height: 35vw;
+  height: 45vw;
   font-size: 0;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -504,6 +504,10 @@ footer {
   .grid-item:nth-child(6) {
     width: 61.5%;
     height: 310px; }
+    /* line 610, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    .grid-item:nth-child(5) img,
+    .grid-item:nth-child(6) img {
+      width: 100%; }
   /* IDEAS end */ }
 
 /*# sourceMappingURL=style.css.map */
