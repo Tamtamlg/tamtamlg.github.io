@@ -328,11 +328,6 @@ header {
   border-radius: 5px;
   overflow: hidden;
   
-  img {
-    width: 100%;
-    
-  }
-  
   .title {
     position: absolute;
     top: 30%;
@@ -600,6 +595,8 @@ header {
 .grid-item {
   width: 30%;
   height: 310px;
+  
+
 }
 
 .grid-item:nth-child(5),
@@ -607,9 +604,7 @@ header {
   width: 61.5%;
   height: 310px;
   
-  img {
-    width: 100%;
-  }
+
 }
 
 
@@ -619,5 +614,3 @@ header {
 /* IDEAS end */  
   
 }
-
-

@@ -28,9 +28,10 @@ $(function () {
     $.getJSON(URL, function (data) {
 
       var $img = $('.grid-img');
+      var $title = $('.title');
       for (var i = 0; i < 7; i++) {
         $img[i].src = data.hits[i].webformatURL;
-        $img.parent().find('.title').html(data.hits[i].tags);
+        $title[i].innerHTML = data.hits[i].tags;
       }
         input.value = '';
     });
