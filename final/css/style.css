@@ -35,13 +35,14 @@ a {
 /* line 38, D:/dz/tamtamlg.github.io/final/css/style.scss */
 .btn {
   background: #ff4e50;
-  padding: 15px 50px;
+  padding: 12px 50px;
   border-radius: 20px; }
 
 /* HEADER */
 /* line 47, D:/dz/tamtamlg.github.io/final/css/style.scss */
 header {
   margin: 0 auto;
+  margin-bottom: 36px;
   padding-top: 20px;
   width: 320px;
   height: 520px;
@@ -49,27 +50,27 @@ header {
   color: #fff;
   text-align: center;
   background-size: cover; }
-  /* line 57, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  /* line 58, D:/dz/tamtamlg.github.io/final/css/style.scss */
   header .menu {
     text-align: center;
     margin-bottom: 115px; }
-  /* line 62, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  /* line 63, D:/dz/tamtamlg.github.io/final/css/style.scss */
   header .logo {
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
     line-height: 20px;
-    margin-bottom: 40px; }
-  /* line 70, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    margin-bottom: 35px; }
+  /* line 71, D:/dz/tamtamlg.github.io/final/css/style.scss */
   header h1 {
     font-size: 30px;
     line-height: 30px;
     text-align: center;
     text-transform: uppercase;
-    margin: 0 0 20px 0; }
-  /* line 78, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    margin: 0 0 18px 0; }
+  /* line 79, D:/dz/tamtamlg.github.io/final/css/style.scss */
   header p {
-    margin: 0 0 20px 0;
+    margin: 0 0 18px 0;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 18px;
@@ -77,25 +78,25 @@ header {
     padding-left: 40px;
     padding-right: 40px;
     text-align: center; }
-  /* line 89, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  /* line 90, D:/dz/tamtamlg.github.io/final/css/style.scss */
   header .btn-invers {
     margin-left: 20px; }
 
 /* HEADER end*/
 /* HOW-WORKS */
-/* line 99, D:/dz/tamtamlg.github.io/final/css/style.scss */
+/* line 100, D:/dz/tamtamlg.github.io/final/css/style.scss */
 .how-works h2 {
   text-align: left;
   font-size: 24px;
   line-height: 24px;
   color: #333; }
 
-/* line 106, D:/dz/tamtamlg.github.io/final/css/style.scss */
+/* line 107, D:/dz/tamtamlg.github.io/final/css/style.scss */
 .how-works h2:first-child {
   text-align: center;
   font-size: 22px; }
 
-/* line 111, D:/dz/tamtamlg.github.io/final/css/style.scss */
+/* line 112, D:/dz/tamtamlg.github.io/final/css/style.scss */
 .how-works .how-works__item {
   height: 240px;
   padding-left: 20px;
@@ -104,25 +105,25 @@ header {
   border-radius: 5px;
   position: relative;
   box-shadow: inset 0 -240px 240px 0 rgba(0, 0, 0, 0.4); }
-  /* line 120, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  /* line 121, D:/dz/tamtamlg.github.io/final/css/style.scss */
   .how-works .how-works__item h2 {
     color: #fff;
     margin: 0;
-    margin-bottom: 20px; }
+    margin-bottom: 7px; }
 
-/* line 127, D:/dz/tamtamlg.github.io/final/css/style.scss */
+/* line 128, D:/dz/tamtamlg.github.io/final/css/style.scss */
 .how-works .how-works__wrap {
   position: absolute;
   bottom: 20px; }
-  /* line 131, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  /* line 132, D:/dz/tamtamlg.github.io/final/css/style.scss */
   .how-works .how-works__wrap .btn {
-    padding: 7px 14px;
+    padding: 3px 10px;
     text-transform: uppercase;
     font-size: 10px;
     border-radius: 10px;
     letter-spacing: 3px;
     margin-bottom: 20px; }
-  /* line 140, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  /* line 141, D:/dz/tamtamlg.github.io/final/css/style.scss */
   .how-works .how-works__wrap p {
     font-family: "Roboto", sans-serif;
     color: #ccc;
@@ -130,45 +131,48 @@ header {
     max-height: 60px;
     overflow-y: hidden; }
 
-/* line 149, D:/dz/tamtamlg.github.io/final/css/style.scss */
+/* line 150, D:/dz/tamtamlg.github.io/final/css/style.scss */
 .how-works .step-1 {
   background: url("../img/img-1.png") no-repeat center top;
   background-size: cover; }
 
-/* line 154, D:/dz/tamtamlg.github.io/final/css/style.scss */
+/* line 155, D:/dz/tamtamlg.github.io/final/css/style.scss */
 .how-works .step-2 {
   background: url("../img/img-2.png") no-repeat center top;
   background-size: cover; }
 
-/* line 159, D:/dz/tamtamlg.github.io/final/css/style.scss */
+/* line 160, D:/dz/tamtamlg.github.io/final/css/style.scss */
 .how-works .step-3 {
   background: url("../img/img-3.png") no-repeat center top;
   background-size: cover; }
 
 /* HOW-WORKS end*/
 /* PARTNERS */
-/* line 167, D:/dz/tamtamlg.github.io/final/css/style.scss */
+/* line 168, D:/dz/tamtamlg.github.io/final/css/style.scss */
 .partners {
   text-align: center; }
-  /* line 171, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  /* line 172, D:/dz/tamtamlg.github.io/final/css/style.scss */
   .partners h2 {
     text-align: center;
     padding: 0 20px 0 20px;
-    margin: 0; }
+    margin: 30px 0 13px;
+    font-size: 22px; }
 
-/* line 179, D:/dz/tamtamlg.github.io/final/css/style.scss */
+/* line 181, D:/dz/tamtamlg.github.io/final/css/style.scss */
 .partners__item {
   margin-bottom: 30px; }
-  /* line 183, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  /* line 185, D:/dz/tamtamlg.github.io/final/css/style.scss */
   .partners__item a {
     display: block;
     margin: 0 auto;
+    margin-bottom: 17px;
     width: 120px;
     height: 120px; }
-  /* line 190, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  /* line 193, D:/dz/tamtamlg.github.io/final/css/style.scss */
   .partners__item h3 {
-    text-align: center; }
-  /* line 194, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    text-align: center;
+    font-size: 14px; }
+  /* line 198, D:/dz/tamtamlg.github.io/final/css/style.scss */
   .partners__item p {
     margin: 0;
     font-family: "Roboto", sans-serif;
@@ -180,7 +184,7 @@ header {
     text-align: center;
     color: #666; }
 
-/* line 208, D:/dz/tamtamlg.github.io/final/css/style.scss */
+/* line 212, D:/dz/tamtamlg.github.io/final/css/style.scss */
 .item-1 a {
   background: url("../img/spritesheet.png") no-repeat;
   border-radius: 50%;
@@ -189,7 +193,7 @@ header {
   height: 122px;
   background-position: -5px -5px; }
 
-/* line 217, D:/dz/tamtamlg.github.io/final/css/style.scss */
+/* line 221, D:/dz/tamtamlg.github.io/final/css/style.scss */
 .item-1 a:after {
   content: '';
   position: absolute;
@@ -202,7 +206,7 @@ header {
   height: 40px;
   background-position: -5px -574px; }
 
-/* line 232, D:/dz/tamtamlg.github.io/final/css/style.scss */
+/* line 236, D:/dz/tamtamlg.github.io/final/css/style.scss */
 .item-2 a {
   background: url("../img/spritesheet.png") no-repeat;
   border-radius: 50%;
@@ -211,7 +215,7 @@ header {
   height: 123px;
   background-position: -5px -137px; }
 
-/* line 241, D:/dz/tamtamlg.github.io/final/css/style.scss */
+/* line 245, D:/dz/tamtamlg.github.io/final/css/style.scss */
 .item-2 a:after {
   content: '';
   position: absolute;
@@ -224,7 +228,7 @@ header {
   height: 40px;
   background-position: -5px -624px; }
 
-/* line 256, D:/dz/tamtamlg.github.io/final/css/style.scss */
+/* line 260, D:/dz/tamtamlg.github.io/final/css/style.scss */
 .item-3 a {
   background: url("../img/spritesheet.png") no-repeat;
   border-radius: 50%;
@@ -233,7 +237,7 @@ header {
   height: 124px;
   background-position: -5px -270px; }
 
-/* line 265, D:/dz/tamtamlg.github.io/final/css/style.scss */
+/* line 269, D:/dz/tamtamlg.github.io/final/css/style.scss */
 .item-3 a:after {
   content: '';
   position: absolute;
@@ -246,7 +250,7 @@ header {
   height: 40px;
   background-position: -5px -674px; }
 
-/* line 280, D:/dz/tamtamlg.github.io/final/css/style.scss */
+/* line 284, D:/dz/tamtamlg.github.io/final/css/style.scss */
 .item-4 a {
   background: url("../img/spritesheet.png") no-repeat;
   border-radius: 50%;
@@ -255,7 +259,7 @@ header {
   height: 126px;
   background-position: -5px -404px; }
 
-/* line 289, D:/dz/tamtamlg.github.io/final/css/style.scss */
+/* line 293, D:/dz/tamtamlg.github.io/final/css/style.scss */
 .item-4 a:after {
   content: '';
   position: absolute;
@@ -268,20 +272,22 @@ header {
   height: 40px;
   background-position: -5px -724px; }
 
-/* line 304, D:/dz/tamtamlg.github.io/final/css/style.scss */
+/* line 308, D:/dz/tamtamlg.github.io/final/css/style.scss */
 .btn-invers--red {
-  padding: 10px 75px;
+  margin-bottom: 12px;
+  padding: 10px 73px;
   border: 2px solid #ff4e50;
   border-radius: 20px;
   color: #ff4e50; }
 
 /* PARTNERS end */
 /* IDEAS */
-/* line 315, D:/dz/tamtamlg.github.io/final/css/style.scss */
+/* line 320, D:/dz/tamtamlg.github.io/final/css/style.scss */
 .ideas h2 {
-  text-align: center; }
+  text-align: center;
+  font-size: 22px; }
 
-/* line 322, D:/dz/tamtamlg.github.io/final/css/style.scss */
+/* line 328, D:/dz/tamtamlg.github.io/final/css/style.scss */
 .grid-item {
   margin: 0 auto;
   width: 95%;
@@ -290,7 +296,10 @@ header {
   margin-bottom: 10px;
   border-radius: 5px;
   overflow: hidden; }
-  /* line 331, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  /* line 337, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  .grid-item img {
+    display: block; }
+  /* line 341, D:/dz/tamtamlg.github.io/final/css/style.scss */
   .grid-item .title {
     position: absolute;
     top: 30%;
@@ -302,20 +311,24 @@ header {
 
 /* IDEAS end */
 /* SEARCH */
-/* line 349, D:/dz/tamtamlg.github.io/final/css/style.scss */
+/* line 358, D:/dz/tamtamlg.github.io/final/css/style.scss */
 .search {
   text-align: center; }
-  /* line 352, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  /* line 361, D:/dz/tamtamlg.github.io/final/css/style.scss */
   .search h2 {
-    text-align: center; }
-  /* line 356, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    margin-top: 26px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 22px; }
+  /* line 368, D:/dz/tamtamlg.github.io/final/css/style.scss */
   .search p {
+    margin-top: 0px;
     font-family: "Roboto", sans-serif;
     font-size: 18px;
     line-height: 18px;
     color: #333;
     font-weight: 300; }
-  /* line 364, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  /* line 377, D:/dz/tamtamlg.github.io/final/css/style.scss */
   .search input {
     width: 246px;
     display: block;
@@ -328,30 +341,30 @@ header {
     border-radius: 5px;
     outline: none;
     border: 1px solid #999;
-    margin-bottom: 10px; }
-  /* line 379, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    margin-bottom: 5px; }
+  /* line 392, D:/dz/tamtamlg.github.io/final/css/style.scss */
   .search .btn {
     display: inline-block;
-    padding: 15px 85px; }
+    padding: 10px 85px; }
 
 /* SEARCH end */
 /* FOOTER */
-/* line 388, D:/dz/tamtamlg.github.io/final/css/style.scss */
+/* line 401, D:/dz/tamtamlg.github.io/final/css/style.scss */
 footer {
   border-top: 4px solid #ff4e50;
   margin-top: 40px; }
-  /* line 392, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  /* line 405, D:/dz/tamtamlg.github.io/final/css/style.scss */
   footer .logo--red {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 20px;
+    margin-top: 18px;
+    margin-bottom: 12px;
+    font-size: 18px;
     text-transform: uppercase;
     text-align: center;
     line-height: 20px; }
-    /* line 400, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    /* line 413, D:/dz/tamtamlg.github.io/final/css/style.scss */
     footer .logo--red a {
       color: #ff4e50; }
-  /* line 405, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  /* line 418, D:/dz/tamtamlg.github.io/final/css/style.scss */
   footer h4 {
     text-align: center;
     font-family: "Montserrat", sans-serif;
@@ -359,42 +372,42 @@ footer {
     line-height: 14px;
     color: #333;
     margin: 0; }
-  /* line 414, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  /* line 427, D:/dz/tamtamlg.github.io/final/css/style.scss */
   footer .footer-menu {
     list-style: none;
-    margin-bottom: 13px;
-    margin-top: 7px;
+    margin-bottom: 10px;
+    margin-top: 5px;
     padding: 0;
     font-size: 0;
     text-align: center; }
-    /* line 423, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    /* line 436, D:/dz/tamtamlg.github.io/final/css/style.scss */
     footer .footer-menu li {
       display: inline-block; }
-    /* line 427, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    /* line 440, D:/dz/tamtamlg.github.io/final/css/style.scss */
     footer .footer-menu a {
       display: block;
       margin-right: 15px;
       font-family: "Roboto", sans-serif;
       font-size: 14px;
       color: #666; }
-    /* line 435, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    /* line 448, D:/dz/tamtamlg.github.io/final/css/style.scss */
     footer .footer-menu li:last-child a {
       margin-right: 0; }
-  /* line 440, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  /* line 453, D:/dz/tamtamlg.github.io/final/css/style.scss */
   footer .design {
     text-align: center; }
-    /* line 443, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    /* line 456, D:/dz/tamtamlg.github.io/final/css/style.scss */
     footer .design span {
       display: block;
       margin-top: 20px;
-      margin-bottom: 10px;
+      margin-bottom: 6px;
       font-family: "Montserrat", sans-serif;
       font-size: 10px;
       font-weight: bold;
       line-height: 10px;
       text-transform: uppercase;
       color: #ccc; }
-    /* line 455, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    /* line 468, D:/dz/tamtamlg.github.io/final/css/style.scss */
     footer .design a {
       display: inline-block;
       margin-bottom: 20px;
@@ -406,101 +419,268 @@ footer {
 /* FOOTER end */
 /* 321-768 */
 @media (min-width: 321px) {
-  /* line 473, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  /* line 486, D:/dz/tamtamlg.github.io/final/css/style.scss */
   .wrapper {
     width: 768px; }
-  /* line 477, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  /* line 490, D:/dz/tamtamlg.github.io/final/css/style.scss */
   .container {
     width: 750px; }
   /* HEADER */
-  /* line 482, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  /* line 495, D:/dz/tamtamlg.github.io/final/css/style.scss */
   header {
     width: 768px;
-    height: 700px; }
-    /* line 486, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    height: 700px;
+    margin-bottom: 90px; }
+    /* line 500, D:/dz/tamtamlg.github.io/final/css/style.scss */
     header .header-menu {
-      padding-left: 50px;
-      padding-right: 50px;
+      padding-left: 40px;
+      padding-right: 40px;
       height: 40px;
-      margin-bottom: 155px; }
-    /* line 493, D:/dz/tamtamlg.github.io/final/css/style.scss */
+      margin-bottom: 140px;
+      margin-top: 30px; }
+    /* line 508, D:/dz/tamtamlg.github.io/final/css/style.scss */
     header .menu {
       float: right; }
-    /* line 497, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    /* line 512, D:/dz/tamtamlg.github.io/final/css/style.scss */
     header .logo {
-      float: left; }
-      /* line 500, D:/dz/tamtamlg.github.io/final/css/style.scss */
+      float: left;
+      letter-spacing: 1px; }
+      /* line 516, D:/dz/tamtamlg.github.io/final/css/style.scss */
       header .logo a {
         line-height: 40px; }
-    /* line 506, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    /* line 522, D:/dz/tamtamlg.github.io/final/css/style.scss */
     header h1 {
       font-size: 52px;
-      line-height: 52px; }
-    /* line 511, D:/dz/tamtamlg.github.io/final/css/style.scss */
+      line-height: 60px;
+      margin-bottom: 30px; }
+    /* line 528, D:/dz/tamtamlg.github.io/final/css/style.scss */
     header p {
       font-size: 24px;
-      line-height: 24px; }
-    /* line 516, D:/dz/tamtamlg.github.io/final/css/style.scss */
+      line-height: 24px;
+      margin-bottom: 34px; }
+    /* line 534, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    header .btn {
+      padding: 10px 23px; }
+    /* line 538, D:/dz/tamtamlg.github.io/final/css/style.scss */
     header .btn-invers {
       margin-left: 20px; }
   /* HEADER end*/
   /* HOW-WORKS */
-  /* line 525, D:/dz/tamtamlg.github.io/final/css/style.scss */
-  .how-works h2 {
-    text-align: left;
-    font-size: 22px;
-    line-height: 22px;
-    color: #333; }
-  /* line 532, D:/dz/tamtamlg.github.io/final/css/style.scss */
-  .how-works h2:first-child {
-    text-align: center; }
-  /* line 536, D:/dz/tamtamlg.github.io/final/css/style.scss */
-  .how-works .how-works__item {
-    width: 195px;
-    height: 400px;
-    margin-right: 2.1%;
-    display: inline-block; }
-  /* line 543, D:/dz/tamtamlg.github.io/final/css/style.scss */
-  .how-works .how-works__item:last-child {
-    margin-right: 0; }
-  /* line 547, D:/dz/tamtamlg.github.io/final/css/style.scss */
-  .how-works .how-works__item {
-    bottom: 15px; }
+  /* line 546, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  .how-works {
+    margin-bottom: 70px; }
+    /* line 549, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    .how-works h2 {
+      text-align: left;
+      font-size: 22px;
+      line-height: 22px;
+      color: #333; }
+    /* line 556, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    .how-works h2:first-child {
+      text-align: center;
+      margin-bottom: 50px; }
+    /* line 561, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    .how-works .how-works__item {
+      width: 195px;
+      height: 400px;
+      margin-right: 2.1%;
+      display: inline-block; }
+    /* line 568, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    .how-works .how-works__item:last-child {
+      margin-right: 0; }
+    /* line 572, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    .how-works .how-works__item {
+      bottom: 15px; }
   /* HOW-WORKS end*/
   /* PARTNERS */
-  /* line 555, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  /* line 580, D:/dz/tamtamlg.github.io/final/css/style.scss */
   .partners {
+    margin-bottom: 82px;
     text-align: center; }
-    /* line 559, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    /* line 584, D:/dz/tamtamlg.github.io/final/css/style.scss */
     .partners h2 {
       text-align: center;
       padding: 0 20px 0 20px;
-      margin: 0; }
-    /* line 565, D:/dz/tamtamlg.github.io/final/css/style.scss */
+      margin: 0 0 28px 0; }
+    /* line 590, D:/dz/tamtamlg.github.io/final/css/style.scss */
     .partners .container {
       width: 470px; }
-  /* line 571, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    /* line 594, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    .partners .btn-invers--red {
+      padding: 10px 28px; }
+  /* line 599, D:/dz/tamtamlg.github.io/final/css/style.scss */
   .partners__item {
     display: inline-block;
     vertical-align: top;
     width: 230px;
-    margin-bottom: 30px; }
+    margin-bottom: 44px; }
+  /* line 606, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  .partners__item:nth-child(3),
+  .partners__item:nth-child(4) {
+    margin-bottom: 17px; }
   /* PARTNERS end*/
   /* IDEAS */
-  /* line 582, D:/dz/tamtamlg.github.io/final/css/style.scss */
-  .ideas h2 {
-    text-align: center; }
-  /*////////////////////////////////*/
-  /* line 595, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  /* line 613, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  .ideas {
+    margin-bottom: 88px; }
+    /* line 617, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    .ideas h2 {
+      text-align: center;
+      margin-bottom: 35px; }
+  /* line 626, D:/dz/tamtamlg.github.io/final/css/style.scss */
   .grid-sizer,
   .grid-item {
     width: 30%;
     height: 310px; }
-  /* line 603, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  /* line 632, D:/dz/tamtamlg.github.io/final/css/style.scss */
   .grid-item:nth-child(5),
   .grid-item:nth-child(6) {
     width: 61.5%;
     height: 310px; }
-  /* IDEAS end */ }
+  /* IDEAS end */
+  /* SEARCH */
+  /* line 640, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  .search {
+    text-align: center; }
+    /* line 643, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    .search h2 {
+      margin-bottom: 35px; }
+    /* line 647, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    .search p {
+      margin-bottom: 38px; }
+    /* line 651, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    .search input {
+      width: 206px;
+      display: inline-block;
+      margin: 0 auto;
+      padding: 10px 17px; }
+    /* line 659, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    .search .btn {
+      display: inline-block;
+      padding: 10px 25px;
+      margin-left: 7px; }
+  /* SEARCH end */
+  /* FOOTER */
+  /* line 668, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  footer {
+    margin-top: 95px;
+    padding-top: 18px;
+    padding-bottom: 30px; }
+    /* line 673, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    footer .logo--red {
+      display: inline-block;
+      width: 170px;
+      margin-left: 20px;
+      vertical-align: top; }
+      /* line 679, D:/dz/tamtamlg.github.io/final/css/style.scss */
+      footer .logo--red a {
+        font-size: 16px;
+        letter-spacing: 1px; }
+    /* line 685, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    footer .company {
+      display: inline-block;
+      width: 100px;
+      vertical-align: top;
+      margin-top: 20px;
+      margin-left: 65px; }
+      /* line 692, D:/dz/tamtamlg.github.io/final/css/style.scss */
+      footer .company h4 {
+        text-align: left;
+        margin-bottom: 12px; }
+    /* line 697, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    footer .footer-menu {
+      margin-bottom: 10px;
+      margin-top: 5px;
+      padding: 0;
+      font-size: 0;
+      text-align: center; }
+      /* line 705, D:/dz/tamtamlg.github.io/final/css/style.scss */
+      footer .footer-menu li {
+        display: block;
+        text-align: left;
+        margin-bottom: 5px; }
+    /* line 714, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    footer .footer-partners {
+      display: inline-block;
+      width: 170px;
+      margin-left: 12px;
+      vertical-align: top;
+      margin-top: 20px; }
+    /* line 722, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    footer .design {
+      text-align: center;
+      display: inline-block;
+      width: 170px;
+      margin-left: 31px;
+      vertical-align: top;
+      margin-top: 3px; }
+      /* line 730, D:/dz/tamtamlg.github.io/final/css/style.scss */
+      footer .design span {
+        margin-left: 20px; }
+  /* FOOTER end */ }
+
+/* 769-1440 */
+@media (min-width: 769px) {
+  /* line 745, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  .wrapper {
+    width: 1440px; }
+  /* line 749, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  .container {
+    width: 940px; }
+  /* HEADER */
+  /* line 754, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  header {
+    width: 1440px;
+    height: 700px;
+    margin-bottom: 90px; }
+    /* line 759, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    header .header-menu {
+      padding-left: 0px;
+      padding-right: 0px; }
+  /* HEADER end*/
+  /* HOW-WORKS */
+  /* line 770, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  .how-works .how-works__item {
+    width: 260px;
+    margin-right: 1.5%; }
+  /* HOW-WORKS end*/
+  /* PARTNERS */
+  /* line 782, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  .partners .container {
+    width: 940px; }
+  /* PARTNERS end*/
+  /* IDEAS */
+  /* line 791, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  .ideas {
+    margin-bottom: 105px; }
+    /* line 795, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    .ideas h2 {
+      text-align: center;
+      margin-bottom: 35px; }
+  /* IDEAS end */
+  /* SEARCH */
+  /* SEARCH end */
+  /* FOOTER */
+  /* line 812, D:/dz/tamtamlg.github.io/final/css/style.scss */
+  footer {
+    margin-top: 100px; }
+    /* line 815, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    footer .logo--red {
+      margin-left: 0px; }
+    /* line 823, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    footer .footer-partners {
+      margin-left: 0px; }
+    /* line 827, D:/dz/tamtamlg.github.io/final/css/style.scss */
+    footer .design {
+      text-align: center;
+      display: inline-block;
+      width: 130px;
+      margin-left: 290px;
+      vertical-align: top;
+      margin-top: 3px; }
+      /* line 835, D:/dz/tamtamlg.github.io/final/css/style.scss */
+      footer .design span {
+        margin-left: 20px; }
+  /* FOOTER end */ }
 
 /*# sourceMappingURL=style.css.map */
