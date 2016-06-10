@@ -24,8 +24,19 @@ $(function () {
 
   // запрос картинок
   function imgRequest() {
-    var URL = "https://pixabay.com/api/?key="+API_KEY+"&q="+input.value+"&image_type=photo";
-    $.getJSON(URL, function (data) {
+    var URL = "https://pixabay.com/api/?key="+API_KEY+"&q="+input.value+"&image_type=photo&callback=?";
+    
+    $.ajax({
+
+				url: URL,
+				dataType: "jsonp",
+				success: function (data) {
+    
+    
+    
+    
+    
+   
 
       var $img = $('.grid-img');
       var $title = $('.title');
@@ -33,8 +44,10 @@ $(function () {
         $img[i].src = data.hits[i].webformatURL;
         $title[i].innerHTML = data.hits[i].tags;
       }
-        input.value = '';
+    }
+        
     });
+    input.value = '';
   }
   
   imgRequest();
