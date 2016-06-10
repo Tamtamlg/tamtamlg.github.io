@@ -27,17 +27,9 @@ $(function () {
     var URL = "https://pixabay.com/api/?key="+API_KEY+"&q="+input.value+"&image_type=photo&callback=?";
     
     $.ajax({
-
-				url: URL,
-				dataType: "jsonp",
-				success: function (data) {
-    
-    
-    
-    
-    
-   
-
+        url: URL,
+        dataType: "jsonp",
+        success: function (data) {
       var $img = $('.grid-img');
       var $title = $('.title');
       for (var i = 0; i < 7; i++) {
@@ -62,6 +54,25 @@ $(function () {
       e.preventDefault();
       imgRequest();
   }
+  });
+  
+  
+  //slider
+  $('.jcarousel').jcarousel({
+    wrap: 'circular'
+  })
+    .jcarouselAutoscroll({
+      interval: 3000,
+      target: '+=1',
+      autostart: false
+    });
+
+  $('.jcarousel-prev').jcarouselControl({
+    target: '-=1'
+  });
+
+  $('.jcarousel-next').jcarouselControl({
+    target: '+=1'
   });
 });
 
