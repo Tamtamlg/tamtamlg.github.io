@@ -1,0 +1,48 @@
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+  .team-item {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .team-item img {
+    margin: auto;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+  .images img {
+    width: 100%;
+  }
+  .team-item p {
+    text-align: left;
+  }
+  
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .team-item {
+    text-align: left;
+  }
+  .team-item img {
+    margin: 0;
+  }
+  .menu li {
+    display: inline-block;
+  }
+  
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .menu li {
+    margin-left: 55px;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

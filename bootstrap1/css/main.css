@@ -1,0 +1,212 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
+/*HEADER*/
+header {
+  background: url('../img/banner.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+}
+.fa-bars {
+  font-size: 30px;
+}
+.logo {
+  padding: 30px 0 30px 0;
+}
+.logo img {
+  vertical-align: middle;
+}
+.header-line {
+  border-bottom: 1px solid #4e5066;
+}
+.menu {
+  list-style: none;
+  padding: 0;
+  font-size: 0;
+}
+.menu li {
+  line-height: 94px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.menu a {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #fff;
+}
+.menu a:hover,
+.menu a:focus {
+  text-decoration: none;
+}
+.title-block {
+  text-align: center;
+  margin-top: 100px;
+}
+.title-block h1 {
+  margin-bottom: 40px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  text-transform: uppercase;
+}
+.title-block p {
+  margin-bottom: 70px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+}
+.title-block button {
+  margin-bottom: 150px;
+}
+.btn-md {
+  text-transform: uppercase;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+/*HEADER-end*/
+
+/*FEATURES*/
+.features {
+  margin-top: 45px;
+  text-align: center;
+}
+.features .fa {
+  font-size: 65px;
+  color: #e84545;
+}
+.features h5 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2d3033;
+}
+.features p {
+  font-size: 14px;
+  color: #6c7279;
+}
+.features-item {
+  margin-top: 75px;
+}
+/*FEATURES-end*/
+
+/*IMAGES*/
+.images {
+  margin-top: 120px;
+}
+.images .images-item {
+  position: relative;
+  padding: 0;
+}
+.images .image-hover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #e84545;
+  opacity: .8;
+  display: none;
+  text-align: center;
+  padding-top: 14%;
+  color: #fff;
+}
+.images .image-hover h5{
+  text-transform: uppercase;
+}
+.images .images-item:hover .image-hover {
+  display: block;
+}
+/*IMAGES-end*/
+
+/*TEAM*/
+.team {
+  margin-top: 100px;
+}
+.team h4 {
+  margin-top: 20px;
+  color: #2d3033;
+}
+.team span {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #e84545;
+}
+.team p {
+  margin-top: 15px;
+}
+.team .social-btn {
+  padding-left: 15px;
+}
+.team .social-btn a {
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  text-align: center;
+  padding: 5px;
+  color: #c6cacc;
+  border: 1px solid #c6cacc;
+}
+.team .social-btn a:hover,
+.team .social-btn a:focus {
+  text-decoration: none;
+}
+/*TEAM-end*/
+
+/*BOTTOM_HEADING*/
+.bottom-heading {
+  margin-top: 150px;
+  text-align: center;
+}
+.bottom-heading p {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 20px;
+  font-size: 14px;
+}
+.bottom-heading .btn-lg {
+  text-transform: uppercase;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-top: 50px;
+}
+/*BOTTOM_HEADING-end*/
+
+/*FOOTER*/
+footer {
+  margin-top: 100px;
+  text-align: center;
+}
+.footer-top {
+  padding-top: 70px;
+  padding-bottom: 110px;
+  background: #3a3e64;
+  color: #9092a7;
+}
+.footer-top h4 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.footer-top .social-btn a {
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  text-align: center;
+  padding: 5px;
+  color: #c6cacc;
+  border: 1px solid #c6cacc;
+}
+.footer-top .social-btn a:hover,
+.footer-top .social-btn a:focus {
+  text-decoration: none;
+}
+.footer-bottom {
+  background: #313454;
+  color: #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/*FOOTER-end*/
