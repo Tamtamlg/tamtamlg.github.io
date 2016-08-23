@@ -1,0 +1,250 @@
+/* line 3, D:/PROJECT/flowers/source/css/style.scss */
+
+body {
+	font-family: 'Pacifico', cursive;
+	font-style: italic;
+}
+
+/* HEADER */
+
+/* line 9, D:/PROJECT/flowers/source/css/style.scss */
+
+.my-nav {
+	text-align: center;
+}
+
+/* line 12, D:/PROJECT/flowers/source/css/style.scss */
+
+.nav.my-nav li {
+	margin-left: 3px;
+}
+
+/* line 15, D:/PROJECT/flowers/source/css/style.scss */
+
+.nav.my-nav li a {
+	padding: 10px 20px;
+	background: #eee;
+	color: #000;
+}
+
+/* line 20, D:/PROJECT/flowers/source/css/style.scss */
+
+.nav.my-nav li a:hover {
+	background: #8eb037;
+	color: #fff;
+}
+
+/* line 24, D:/PROJECT/flowers/source/css/style.scss */
+
+.navbar.navbar-default {
+	padding-top: 30px;
+	padding-bottom: 20px;
+	border: none;
+	background: none;
+}
+
+/* line 30, D:/PROJECT/flowers/source/css/style.scss */
+
+.nav.my-nav .my-nav__active a {
+	background: #8eb037;
+	color: #fff;
+}
+
+/* HEADER end*/
+
+/* CONTENT */
+
+/* line 37, D:/PROJECT/flowers/source/css/style.scss */
+
+.order-section {
+	background-image: url("../img/gray_jean.png");
+	color: #8eb037;
+}
+
+/* line 41, D:/PROJECT/flowers/source/css/style.scss */
+
+.order-section .order-section__left {
+	margin-top: 70px;
+	margin-bottom: 70px;
+	text-align: center;
+}
+
+/* line 48, D:/PROJECT/flowers/source/css/style.scss */
+
+.my-btn {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background: #8eb037;
+	color: #fff;
+}
+
+/* line 54, D:/PROJECT/flowers/source/css/style.scss */
+
+.my-btn:hover {
+	background: #7da926;
+	color: #fff;
+}
+
+/* line 59, D:/PROJECT/flowers/source/css/style.scss */
+
+.carousel-indicators li {
+	border: 1px solid #000;
+}
+
+/* line 62, D:/PROJECT/flowers/source/css/style.scss */
+
+.carousel-indicators .active {
+	background: #000;
+}
+
+/* line 65, D:/PROJECT/flowers/source/css/style.scss */
+
+.carousel-caption {
+	text-shadow: 0 1px 2px black;
+}
+
+/* line 68, D:/PROJECT/flowers/source/css/style.scss */
+
+.carousel img {
+	margin: auto;
+	width: 100%;
+}
+
+/* line 73, D:/PROJECT/flowers/source/css/style.scss */
+
+.images {
+	margin-top: 40px;
+	margin-bottom: 70px;
+}
+
+/* line 77, D:/PROJECT/flowers/source/css/style.scss */
+
+.images .images-item {
+	position: relative;
+	padding: 0;
+}
+
+/* line 81, D:/PROJECT/flowers/source/css/style.scss */
+
+.images .image-hover {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(142, 176, 55, 0.8);
+	display: none;
+	text-align: center;
+	padding-top: 20%;
+	color: #fff;
+}
+
+/* line 93, D:/PROJECT/flowers/source/css/style.scss */
+
+.images .image-hover h5 {
+	text-transform: uppercase;
+}
+
+/* line 96, D:/PROJECT/flowers/source/css/style.scss */
+
+.images .images-item:hover .image-hover {
+	display: block;
+}
+
+/* line 99, D:/PROJECT/flowers/source/css/style.scss */
+
+.info {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+/* line 103, D:/PROJECT/flowers/source/css/style.scss */
+
+hr {
+	margin-top: 40px;
+}
+
+/* CONTENT end */
+
+/*FOOTER*/
+
+/* line 109, D:/PROJECT/flowers/source/css/style.scss */
+
+footer {
+	margin-top: 50px;
+	text-align: center;
+}
+
+/* line 113, D:/PROJECT/flowers/source/css/style.scss */
+
+.footer-top {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background: #aaa;
+	color: #fff;
+}
+
+/* line 119, D:/PROJECT/flowers/source/css/style.scss */
+
+.footer-top h4 {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+/* line 124, D:/PROJECT/flowers/source/css/style.scss */
+
+.footer-top .social-btn a {
+	width: 50px;
+	height: 50px;
+	font-size: 30px;
+	text-align: center;
+	padding: 7px;
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+/* line 134, D:/PROJECT/flowers/source/css/style.scss */
+
+.footer-top .social-btn a:hover,
+.footer-top .social-btn a:focus {
+	text-decoration: none;
+}
+
+/* line 137, D:/PROJECT/flowers/source/css/style.scss */
+
+.footer-bottom {
+	background: #999;
+	color: #fff;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+/*FOOTER-end*/
+
+@media only screen and (min-width: 320px) {
+
+/* line 158, D:/PROJECT/flowers/source/css/style.scss */
+
+.images-item p {
+	display: none;
+}
+
+}
+
+@media only screen and (min-width: 480px) {
+
+/* line 148, D:/PROJECT/flowers/source/css/style.scss */
+
+.features-item img {
+	margin: auto;
+}
+
+/* line 151, D:/PROJECT/flowers/source/css/style.scss */
+
+.images-item img {
+	margin: auto;
+}
+
+}
+
