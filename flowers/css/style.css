@@ -245,14 +245,28 @@ hr {
 .my-pagination .active a,
 .my-pagination .active a:hover,
 .my-pagination .active a:focus {
-	background: #55a922;
+	background: #ccc;
+	border-color: #ccc;
+}
+
+/* line 159, D:/PROJECT/flowers/source/css/style.scss */
+
+.filter {
+	margin-bottom: 50px;
+}
+
+/* line 161, D:/PROJECT/flowers/source/css/style.scss */
+
+.filter ul {
+	list-style: none;
+	font-size: 20px;
 }
 
 /* CONTENT end */
 
 /*FOOTER*/
 
-/* line 161, D:/PROJECT/flowers/source/css/style.scss */
+/* line 169, D:/PROJECT/flowers/source/css/style.scss */
 
 footer {
 	position: absolute;
@@ -261,7 +275,7 @@ footer {
 	text-align: center;
 }
 
-/* line 167, D:/PROJECT/flowers/source/css/style.scss */
+/* line 175, D:/PROJECT/flowers/source/css/style.scss */
 
 .footer-top {
 	padding-top: 40px;
@@ -270,7 +284,7 @@ footer {
 	color: #fff;
 }
 
-/* line 173, D:/PROJECT/flowers/source/css/style.scss */
+/* line 181, D:/PROJECT/flowers/source/css/style.scss */
 
 .footer-top h4 {
 	margin-bottom: 20px;
@@ -278,7 +292,7 @@ footer {
 	color: #fff;
 }
 
-/* line 178, D:/PROJECT/flowers/source/css/style.scss */
+/* line 186, D:/PROJECT/flowers/source/css/style.scss */
 
 .footer-top .social-btn a {
 	width: 50px;
@@ -290,14 +304,14 @@ footer {
 	border: 1px solid #fff;
 }
 
-/* line 188, D:/PROJECT/flowers/source/css/style.scss */
+/* line 196, D:/PROJECT/flowers/source/css/style.scss */
 
 .footer-top .social-btn a:hover,
 .footer-top .social-btn a:focus {
 	text-decoration: none;
 }
 
-/* line 191, D:/PROJECT/flowers/source/css/style.scss */
+/* line 199, D:/PROJECT/flowers/source/css/style.scss */
 
 .footer-bottom {
 	background: #999;
@@ -310,13 +324,13 @@ footer {
 
 @media only screen and (min-width: 480px) {
 
-/* line 210, D:/PROJECT/flowers/source/css/style.scss */
+/* line 218, D:/PROJECT/flowers/source/css/style.scss */
 
 .features-item img {
 	margin: auto;
 }
 
-/* line 213, D:/PROJECT/flowers/source/css/style.scss */
+/* line 221, D:/PROJECT/flowers/source/css/style.scss */
 
 .images-item img {
 	margin: auto;
@@ -326,7 +340,7 @@ footer {
 
 @media only screen and (min-width: 960px) {
 
-/* line 202, D:/PROJECT/flowers/source/css/style.scss */
+/* line 210, D:/PROJECT/flowers/source/css/style.scss */
 
 .order-section__left {
 	margin-top: 3%;
