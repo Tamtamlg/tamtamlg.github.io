@@ -1,25 +1,34 @@
 /* line 3, D:/PROJECT/flowers/source/css/style.scss */
 
+html {
+	min-height: 100%;
+	position: relative;
+}
+
+/* line 8, D:/PROJECT/flowers/source/css/style.scss */
+
 body {
+	height: 100%;
+	padding-bottom: 300px;
 	font-family: 'Pacifico', cursive;
 	font-style: italic;
 }
 
 /* HEADER */
 
-/* line 9, D:/PROJECT/flowers/source/css/style.scss */
+/* line 16, D:/PROJECT/flowers/source/css/style.scss */
 
 .my-nav {
 	text-align: center;
 }
 
-/* line 12, D:/PROJECT/flowers/source/css/style.scss */
+/* line 19, D:/PROJECT/flowers/source/css/style.scss */
 
 .nav.my-nav li {
 	margin-left: 3px;
 }
 
-/* line 15, D:/PROJECT/flowers/source/css/style.scss */
+/* line 22, D:/PROJECT/flowers/source/css/style.scss */
 
 .nav.my-nav li a {
 	padding: 10px 20px;
@@ -27,14 +36,14 @@ body {
 	color: #000;
 }
 
-/* line 20, D:/PROJECT/flowers/source/css/style.scss */
+/* line 27, D:/PROJECT/flowers/source/css/style.scss */
 
 .nav.my-nav li a:hover {
 	background: #8eb037;
 	color: #fff;
 }
 
-/* line 24, D:/PROJECT/flowers/source/css/style.scss */
+/* line 31, D:/PROJECT/flowers/source/css/style.scss */
 
 .navbar.navbar-default {
 	padding-top: 30px;
@@ -43,7 +52,7 @@ body {
 	background: none;
 }
 
-/* line 30, D:/PROJECT/flowers/source/css/style.scss */
+/* line 37, D:/PROJECT/flowers/source/css/style.scss */
 
 .nav.my-nav .my-nav__active a {
 	background: #8eb037;
@@ -54,7 +63,7 @@ body {
 
 /* CONTENT */
 
-/* line 37, D:/PROJECT/flowers/source/css/style.scss */
+/* line 44, D:/PROJECT/flowers/source/css/style.scss */
 
 .order-section {
 	background-image: url("../img/gray_jean.png");
@@ -63,19 +72,19 @@ body {
 	padding-bottom: 3%;
 }
 
-/* line 43, D:/PROJECT/flowers/source/css/style.scss */
+/* line 50, D:/PROJECT/flowers/source/css/style.scss */
 
 .order-section .order-section__left {
 	text-align: center;
 }
 
-/* line 46, D:/PROJECT/flowers/source/css/style.scss */
+/* line 53, D:/PROJECT/flowers/source/css/style.scss */
 
 .order-section .order-section__left p {
 	font-size: 18px;
 }
 
-/* line 51, D:/PROJECT/flowers/source/css/style.scss */
+/* line 58, D:/PROJECT/flowers/source/css/style.scss */
 
 .my-btn {
 	margin-top: 20px;
@@ -84,66 +93,72 @@ body {
 	color: #fff;
 }
 
-/* line 57, D:/PROJECT/flowers/source/css/style.scss */
+/* line 64, D:/PROJECT/flowers/source/css/style.scss */
 
 .my-btn:hover {
 	background: #7da926;
 	color: #fff;
 }
 
-/* line 62, D:/PROJECT/flowers/source/css/style.scss */
+/* line 69, D:/PROJECT/flowers/source/css/style.scss */
 
 .carousel-indicators li {
 	border: 1px solid #000;
 }
 
-/* line 65, D:/PROJECT/flowers/source/css/style.scss */
+/* line 72, D:/PROJECT/flowers/source/css/style.scss */
 
 .carousel-indicators .active {
 	background: #000;
 }
 
-/* line 68, D:/PROJECT/flowers/source/css/style.scss */
+/* line 75, D:/PROJECT/flowers/source/css/style.scss */
 
 .carousel-caption {
 	text-shadow: 0 1px 2px black;
 }
 
-/* line 71, D:/PROJECT/flowers/source/css/style.scss */
+/* line 78, D:/PROJECT/flowers/source/css/style.scss */
 
 .carousel img {
 	margin: auto;
 	width: 100%;
 }
 
-/* line 76, D:/PROJECT/flowers/source/css/style.scss */
+/* line 83, D:/PROJECT/flowers/source/css/style.scss */
 
 .callback {
 	margin-top: 50px;
 	text-align: center;
 }
 
-/* line 80, D:/PROJECT/flowers/source/css/style.scss */
+/* line 87, D:/PROJECT/flowers/source/css/style.scss */
 
 .callback p {
 	font-size: 18px;
 }
 
-/* line 84, D:/PROJECT/flowers/source/css/style.scss */
+/* line 91, D:/PROJECT/flowers/source/css/style.scss */
 
 .images {
 	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
-/* line 88, D:/PROJECT/flowers/source/css/style.scss */
+/* line 94, D:/PROJECT/flowers/source/css/style.scss */
+
+.images hr {
+	margin-top: 50px;
+}
+
+/* line 98, D:/PROJECT/flowers/source/css/style.scss */
 
 .images .images-item {
 	position: relative;
 	padding: 0;
 }
 
-/* line 92, D:/PROJECT/flowers/source/css/style.scss */
+/* line 102, D:/PROJECT/flowers/source/css/style.scss */
 
 .images .image-hover {
 	width: 100%;
@@ -158,42 +173,95 @@ body {
 	color: #fff;
 }
 
-/* line 104, D:/PROJECT/flowers/source/css/style.scss */
+/* line 114, D:/PROJECT/flowers/source/css/style.scss */
 
 .images .image-hover h5 {
 	text-transform: uppercase;
 }
 
-/* line 107, D:/PROJECT/flowers/source/css/style.scss */
+/* line 117, D:/PROJECT/flowers/source/css/style.scss */
 
 .images .images-item:hover .image-hover {
 	display: block;
 }
 
-/* line 110, D:/PROJECT/flowers/source/css/style.scss */
+/* line 120, D:/PROJECT/flowers/source/css/style.scss */
 
 .info {
+	margin-bottom: 20px;
+}
+
+/* line 123, D:/PROJECT/flowers/source/css/style.scss */
+
+hr {
+	margin-top: 50px;
+}
+
+/* line 126, D:/PROJECT/flowers/source/css/style.scss */
+
+.features {
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+/* line 132, D:/PROJECT/flowers/source/css/style.scss */
+
+.catalog-heading {
+	text-align: center;
 	margin-bottom: 40px;
 }
 
-/* line 113, D:/PROJECT/flowers/source/css/style.scss */
+/* line 136, D:/PROJECT/flowers/source/css/style.scss */
 
-hr {
-	margin-top: 40px;
+.my-label {
+	background: #55a922;
+	font-size: 20px;
+	line-height: 30px;
+	position: absolute;
+	right: -10px;
+	top: -10px;
+}
+
+/* line 144, D:/PROJECT/flowers/source/css/style.scss */
+
+.sale {
+	background: #ffa922;
+}
+
+/* line 147, D:/PROJECT/flowers/source/css/style.scss */
+
+.thumbnail {
+	position: relative;
+}
+
+/* line 150, D:/PROJECT/flowers/source/css/style.scss */
+
+.my-pagination {
+	text-align: center;
+}
+
+/* line 154, D:/PROJECT/flowers/source/css/style.scss */
+
+.my-pagination .active a,
+.my-pagination .active a:hover,
+.my-pagination .active a:focus {
+	background: #55a922;
 }
 
 /* CONTENT end */
 
 /*FOOTER*/
 
-/* line 119, D:/PROJECT/flowers/source/css/style.scss */
+/* line 161, D:/PROJECT/flowers/source/css/style.scss */
 
 footer {
+	position: absolute;
+	bottom: 0;
 	margin-top: 50px;
 	text-align: center;
 }
 
-/* line 123, D:/PROJECT/flowers/source/css/style.scss */
+/* line 167, D:/PROJECT/flowers/source/css/style.scss */
 
 .footer-top {
 	padding-top: 40px;
@@ -202,7 +270,7 @@ footer {
 	color: #fff;
 }
 
-/* line 129, D:/PROJECT/flowers/source/css/style.scss */
+/* line 173, D:/PROJECT/flowers/source/css/style.scss */
 
 .footer-top h4 {
 	margin-bottom: 20px;
@@ -210,7 +278,7 @@ footer {
 	color: #fff;
 }
 
-/* line 134, D:/PROJECT/flowers/source/css/style.scss */
+/* line 178, D:/PROJECT/flowers/source/css/style.scss */
 
 .footer-top .social-btn a {
 	width: 50px;
@@ -222,14 +290,14 @@ footer {
 	border: 1px solid #fff;
 }
 
-/* line 144, D:/PROJECT/flowers/source/css/style.scss */
+/* line 188, D:/PROJECT/flowers/source/css/style.scss */
 
 .footer-top .social-btn a:hover,
 .footer-top .social-btn a:focus {
 	text-decoration: none;
 }
 
-/* line 147, D:/PROJECT/flowers/source/css/style.scss */
+/* line 191, D:/PROJECT/flowers/source/css/style.scss */
 
 .footer-bottom {
 	background: #999;
@@ -242,13 +310,13 @@ footer {
 
 @media only screen and (min-width: 480px) {
 
-/* line 166, D:/PROJECT/flowers/source/css/style.scss */
+/* line 210, D:/PROJECT/flowers/source/css/style.scss */
 
 .features-item img {
 	margin: auto;
 }
 
-/* line 169, D:/PROJECT/flowers/source/css/style.scss */
+/* line 213, D:/PROJECT/flowers/source/css/style.scss */
 
 .images-item img {
 	margin: auto;
@@ -258,7 +326,7 @@ footer {
 
 @media only screen and (min-width: 960px) {
 
-/* line 158, D:/PROJECT/flowers/source/css/style.scss */
+/* line 202, D:/PROJECT/flowers/source/css/style.scss */
 
 .order-section__left {
 	margin-top: 3%;
