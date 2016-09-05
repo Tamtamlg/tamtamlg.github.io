@@ -1,0 +1,142 @@
+body {
+  text-align: center;
+}
+header {
+  background: url('../img/headerbg.jpg') center center no-repeat;
+  height: 700px;
+  background-size: cover;
+  color: #fff;
+  margin-bottom: 70px;
+  button {
+    margin-top: 50px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+nav {
+  border-bottom: 1px solid #4a4a4b;
+  margin-bottom: 200px;
+}
+a {
+  color: #fff;
+  &:hover {
+    color: #1dde85;
+    text-decoration: none;
+  }
+}
+.main-nav {
+  list-style: none;
+  font-size: 0;
+  li {
+    font-size: 16px;
+    display: inline-block;
+  }
+  a {
+    display: block;
+    padding: 15px 15px;
+    text-decoration: none;
+  }
+}
+.fa-bars {
+  font-size: 26px;
+  color: #999;
+}
+
+/* features */
+.features {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.features .fa {
+  font-size: 60px;
+  color: #5cb85c;
+}
+
+.features-item {
+  border: 1px solid #5cb85c;
+  margin: 10px;
+  padding: 10px;
+}
+/* features end*/
+
+/* team */
+.team {
+  margin-bottom: 70px;
+}
+
+.team img {
+  height: 300px;
+  margin: auto;
+}
+
+/* team end */
+
+/* works */
+.works button {
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+/* works */
+
+/* plans */
+.plan {
+  border: 1px solid #5cb85c;
+  margin: 10px;
+  padding-bottom: 10px;
+  p:first-child {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #5cb85c;
+  }
+  &:hover {
+    p:first-child {
+    background: #5cb85c;
+      color: #fff;
+  }
+  }
+}
+/* plans end*/
+
+.bottom {
+  margin-top: 70px;
+  background: url('../img/form-bg.jpg') center center no-repeat;
+  height: 500px;
+  background-size: cover;
+  color: #fff;
+}
+form input,
+form textarea {
+  background: transparent;
+  border: 1px solid #fff;
+  width: 100%;
+  color: #fff;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+
+
+
+footer {
+  color: #8f8e91;
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+}
+.fa {
+  font-size: 24px;
+  margin: 10px;
+}
+.icons a {
+  display: inline-block;
+  
+}
+.footer-top {
+  background: #0b0a0a;
+}
+.footer-bottom {
+  background: #000;
+}
