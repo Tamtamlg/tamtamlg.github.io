@@ -1,65 +1,65 @@
-/* line 1, D:/PROJECT/foinni/css/style.scss */
+/* line 1, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 body {
   text-align: center; }
 
-/* line 4, D:/PROJECT/foinni/css/style.scss */
+/* line 4, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 header {
   background: url("../img/headerbg.jpg") center center no-repeat;
   height: 700px;
   background-size: cover;
   color: #fff;
   margin-bottom: 70px; }
-  /* line 10, D:/PROJECT/foinni/css/style.scss */
+  /* line 10, D:/dz/tamtamlg.github.io/mv/css/style.scss */
   header button {
     margin-top: 50px; }
-  /* line 13, D:/PROJECT/foinni/css/style.scss */
+  /* line 13, D:/dz/tamtamlg.github.io/mv/css/style.scss */
   header p {
     font-size: 20px; }
 
-/* line 17, D:/PROJECT/foinni/css/style.scss */
+/* line 17, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 nav {
   border-bottom: 1px solid #4a4a4b;
   margin-bottom: 200px; }
 
-/* line 21, D:/PROJECT/foinni/css/style.scss */
+/* line 21, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 a {
   color: #fff; }
-  /* line 23, D:/PROJECT/foinni/css/style.scss */
+  /* line 23, D:/dz/tamtamlg.github.io/mv/css/style.scss */
   a:hover {
     color: #1dde85;
     text-decoration: none; }
 
-/* line 28, D:/PROJECT/foinni/css/style.scss */
+/* line 28, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .main-nav {
   list-style: none;
   font-size: 0; }
-  /* line 31, D:/PROJECT/foinni/css/style.scss */
+  /* line 31, D:/dz/tamtamlg.github.io/mv/css/style.scss */
   .main-nav li {
     font-size: 16px;
     display: inline-block; }
-  /* line 35, D:/PROJECT/foinni/css/style.scss */
+  /* line 35, D:/dz/tamtamlg.github.io/mv/css/style.scss */
   .main-nav a {
     display: block;
     padding: 15px 15px;
     text-decoration: none; }
 
-/* line 41, D:/PROJECT/foinni/css/style.scss */
+/* line 41, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .fa-bars {
   font-size: 26px;
   color: #999; }
 
 /* features */
-/* line 47, D:/PROJECT/foinni/css/style.scss */
+/* line 47, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .features {
   margin-top: 70px;
   margin-bottom: 70px; }
 
-/* line 51, D:/PROJECT/foinni/css/style.scss */
+/* line 51, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .features .fa {
   font-size: 60px;
   color: #5cb85c; }
 
-/* line 56, D:/PROJECT/foinni/css/style.scss */
+/* line 56, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .features-item {
   border: 1px solid #5cb85c;
   margin: 10px;
@@ -67,41 +67,46 @@ a {
 
 /* features end*/
 /* team */
-/* line 64, D:/PROJECT/foinni/css/style.scss */
+/* line 64, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .team {
   margin-bottom: 70px; }
 
-/* line 68, D:/PROJECT/foinni/css/style.scss */
+/* line 68, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .team img {
   height: 300px;
   margin: auto; }
 
 /* team end */
 /* works */
-/* line 76, D:/PROJECT/foinni/css/style.scss */
+/* line 76, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .works button {
   margin-top: 30px;
   margin-bottom: 70px; }
 
+/* line 80, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+.works-item {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
 /* works */
 /* plans */
-/* line 83, D:/PROJECT/foinni/css/style.scss */
+/* line 87, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .plan {
   border: 1px solid #5cb85c;
   margin: 10px;
   padding-bottom: 10px; }
-  /* line 87, D:/PROJECT/foinni/css/style.scss */
+  /* line 91, D:/dz/tamtamlg.github.io/mv/css/style.scss */
   .plan p:first-child {
     padding-bottom: 10px;
     padding-top: 10px;
     border-bottom: 1px solid #5cb85c; }
-  /* line 93, D:/PROJECT/foinni/css/style.scss */
+  /* line 97, D:/dz/tamtamlg.github.io/mv/css/style.scss */
   .plan:hover p:first-child {
     background: #5cb85c;
     color: #fff; }
 
 /* plans end*/
-/* line 101, D:/PROJECT/foinni/css/style.scss */
+/* line 105, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .bottom {
   margin-top: 70px;
   background: url("../img/form-bg.jpg") center center no-repeat;
@@ -109,7 +114,7 @@ a {
   background-size: cover;
   color: #fff; }
 
-/* line 109, D:/PROJECT/foinni/css/style.scss */
+/* line 113, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 form input,
 form textarea {
   background: transparent;
@@ -117,30 +122,31 @@ form textarea {
   width: 100%;
   color: #fff;
   line-height: 30px;
-  margin-bottom: 20px; }
+  margin-bottom: 10px;
+  margin-top: 15px; }
 
-/* line 121, D:/PROJECT/foinni/css/style.scss */
+/* line 126, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 footer {
   color: #8f8e91; }
-  /* line 123, D:/PROJECT/foinni/css/style.scss */
+  /* line 128, D:/dz/tamtamlg.github.io/mv/css/style.scss */
   footer ul {
     list-style: none;
     padding: 0; }
 
-/* line 129, D:/PROJECT/foinni/css/style.scss */
+/* line 134, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .fa {
   font-size: 24px;
   margin: 10px; }
 
-/* line 133, D:/PROJECT/foinni/css/style.scss */
+/* line 138, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .icons a {
   display: inline-block; }
 
-/* line 137, D:/PROJECT/foinni/css/style.scss */
+/* line 142, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .footer-top {
   background: #0b0a0a; }
 
-/* line 140, D:/PROJECT/foinni/css/style.scss */
+/* line 145, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .footer-bottom {
   background: #000; }
 
