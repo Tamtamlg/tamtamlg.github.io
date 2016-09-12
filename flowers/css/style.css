@@ -16,19 +16,19 @@ body {
 
 /* HEADER */
 
-/* line 16, D:/PROJECT/flowers/source/css/style.scss */
+/* line 17, D:/PROJECT/flowers/source/css/style.scss */
 
 .my-nav {
 	text-align: center;
 }
 
-/* line 19, D:/PROJECT/flowers/source/css/style.scss */
+/* line 20, D:/PROJECT/flowers/source/css/style.scss */
 
 .nav.my-nav li {
 	margin-left: 3px;
 }
 
-/* line 22, D:/PROJECT/flowers/source/css/style.scss */
+/* line 23, D:/PROJECT/flowers/source/css/style.scss */
 
 .nav.my-nav li a {
 	padding: 10px 20px;
@@ -36,14 +36,14 @@ body {
 	color: #000;
 }
 
-/* line 27, D:/PROJECT/flowers/source/css/style.scss */
+/* line 28, D:/PROJECT/flowers/source/css/style.scss */
 
 .nav.my-nav li a:hover {
 	background: #8eb037;
 	color: #fff;
 }
 
-/* line 31, D:/PROJECT/flowers/source/css/style.scss */
+/* line 32, D:/PROJECT/flowers/source/css/style.scss */
 
 .navbar.navbar-default {
 	padding-top: 30px;
@@ -52,7 +52,7 @@ body {
 	background: none;
 }
 
-/* line 37, D:/PROJECT/flowers/source/css/style.scss */
+/* line 38, D:/PROJECT/flowers/source/css/style.scss */
 
 .nav.my-nav .my-nav__active a {
 	background: #8eb037;
@@ -63,28 +63,81 @@ body {
 
 /* CONTENT */
 
-/* line 44, D:/PROJECT/flowers/source/css/style.scss */
+/* line 45, D:/PROJECT/flowers/source/css/style.scss */
 
 .order-section {
 	background-image: url("../img/gray_jean.png");
-	color: #8eb037;
-	padding-top: 3%;
-	padding-bottom: 3%;
 }
 
-/* line 50, D:/PROJECT/flowers/source/css/style.scss */
+/* line 49, D:/PROJECT/flowers/source/css/style.scss */
 
-.order-section .order-section__left {
+.order-section h2 {
 	text-align: center;
 }
 
-/* line 53, D:/PROJECT/flowers/source/css/style.scss */
+/* line 52, D:/PROJECT/flowers/source/css/style.scss */
 
 .order-section .order-section__left p {
 	font-size: 18px;
 }
 
-/* line 58, D:/PROJECT/flowers/source/css/style.scss */
+/* line 57, D:/PROJECT/flowers/source/css/style.scss */
+
+.order-section .order-section__right {
+	padding: 0;
+}
+
+/* line 60, D:/PROJECT/flowers/source/css/style.scss */
+
+.order-section .order-section__right img {
+	margin: auto;
+}
+
+/* line 63, D:/PROJECT/flowers/source/css/style.scss */
+
+.order-section a.btn-link {
+	float: right;
+}
+
+/* line 67, D:/PROJECT/flowers/source/css/style.scss */
+
+.even-section {
+	background-image: none;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+/* line 71, D:/PROJECT/flowers/source/css/style.scss */
+
+.even-section h2 {
+	text-align: center;
+}
+
+/* line 74, D:/PROJECT/flowers/source/css/style.scss */
+
+.even-section .even-section__left p {
+	font-size: 18px;
+}
+
+/* line 79, D:/PROJECT/flowers/source/css/style.scss */
+
+.even-section .even-section__right {
+	padding: 0;
+}
+
+/* line 82, D:/PROJECT/flowers/source/css/style.scss */
+
+.even-section .even-section__right img {
+	margin: auto;
+}
+
+/* line 85, D:/PROJECT/flowers/source/css/style.scss */
+
+.even-section a.btn-link {
+	float: right;
+}
+
+/* line 90, D:/PROJECT/flowers/source/css/style.scss */
 
 .my-btn {
 	margin-top: 20px;
@@ -93,125 +146,29 @@ body {
 	color: #fff;
 }
 
-/* line 64, D:/PROJECT/flowers/source/css/style.scss */
+/* line 96, D:/PROJECT/flowers/source/css/style.scss */
 
 .my-btn:hover {
 	background: #7da926;
 	color: #fff;
 }
 
-/* line 69, D:/PROJECT/flowers/source/css/style.scss */
-
-.carousel-indicators li {
-	border: 1px solid #000;
-}
-
-/* line 72, D:/PROJECT/flowers/source/css/style.scss */
-
-.carousel-indicators .active {
-	background: #000;
-}
-
-/* line 75, D:/PROJECT/flowers/source/css/style.scss */
-
-.carousel-caption {
-	text-shadow: 0 1px 2px black;
-}
-
-/* line 78, D:/PROJECT/flowers/source/css/style.scss */
-
-.carousel img {
-	margin: auto;
-	width: 100%;
-}
-
-/* line 83, D:/PROJECT/flowers/source/css/style.scss */
-
-.callback {
-	margin-top: 50px;
-	text-align: center;
-}
-
-/* line 87, D:/PROJECT/flowers/source/css/style.scss */
-
-.callback p {
-	font-size: 18px;
-}
-
-/* line 91, D:/PROJECT/flowers/source/css/style.scss */
-
-.images {
-	margin-top: 40px;
-	margin-bottom: 20px;
-}
-
-/* line 94, D:/PROJECT/flowers/source/css/style.scss */
-
-.images hr {
-	margin-top: 50px;
-}
-
-/* line 98, D:/PROJECT/flowers/source/css/style.scss */
-
-.images .images-item {
-	position: relative;
-	padding: 0;
-}
-
-/* line 102, D:/PROJECT/flowers/source/css/style.scss */
-
-.images .image-hover {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: rgba(142, 176, 55, 0.8);
-	display: none;
-	text-align: center;
-	padding-top: 20%;
-	color: #fff;
-}
-
-/* line 114, D:/PROJECT/flowers/source/css/style.scss */
-
-.images .image-hover h5 {
-	text-transform: uppercase;
-}
-
-/* line 117, D:/PROJECT/flowers/source/css/style.scss */
-
-.images .images-item:hover .image-hover {
-	display: block;
-}
-
-/* line 120, D:/PROJECT/flowers/source/css/style.scss */
-
-.info {
-	margin-bottom: 20px;
-}
-
-/* line 123, D:/PROJECT/flowers/source/css/style.scss */
+/* line 106, D:/PROJECT/flowers/source/css/style.scss */
 
 hr {
 	margin-top: 50px;
 }
 
-/* line 126, D:/PROJECT/flowers/source/css/style.scss */
+/*************/
 
-.features {
-	margin-top: 40px;
-	margin-bottom: 20px;
-}
-
-/* line 132, D:/PROJECT/flowers/source/css/style.scss */
+/* line 112, D:/PROJECT/flowers/source/css/style.scss */
 
 .catalog-heading {
 	text-align: center;
 	margin-bottom: 40px;
 }
 
-/* line 136, D:/PROJECT/flowers/source/css/style.scss */
+/* line 116, D:/PROJECT/flowers/source/css/style.scss */
 
 .my-label {
 	background: #55a922;
@@ -222,25 +179,26 @@ hr {
 	top: -10px;
 }
 
-/* line 144, D:/PROJECT/flowers/source/css/style.scss */
+/* line 124, D:/PROJECT/flowers/source/css/style.scss */
 
 .sale {
 	background: #ffa922;
 }
 
-/* line 147, D:/PROJECT/flowers/source/css/style.scss */
+/* line 127, D:/PROJECT/flowers/source/css/style.scss */
 
 .thumbnail {
 	position: relative;
+	text-align: center;
 }
 
-/* line 150, D:/PROJECT/flowers/source/css/style.scss */
+/* line 131, D:/PROJECT/flowers/source/css/style.scss */
 
 .my-pagination {
 	text-align: center;
 }
 
-/* line 154, D:/PROJECT/flowers/source/css/style.scss */
+/* line 135, D:/PROJECT/flowers/source/css/style.scss */
 
 .my-pagination .active a,
 .my-pagination .active a:hover,
@@ -249,13 +207,13 @@ hr {
 	border-color: #ccc;
 }
 
-/* line 159, D:/PROJECT/flowers/source/css/style.scss */
+/* line 140, D:/PROJECT/flowers/source/css/style.scss */
 
 .filter {
 	margin-bottom: 50px;
 }
 
-/* line 161, D:/PROJECT/flowers/source/css/style.scss */
+/* line 142, D:/PROJECT/flowers/source/css/style.scss */
 
 .filter ul {
 	list-style: none;
@@ -266,7 +224,7 @@ hr {
 
 /*FOOTER*/
 
-/* line 169, D:/PROJECT/flowers/source/css/style.scss */
+/* line 150, D:/PROJECT/flowers/source/css/style.scss */
 
 footer {
 	position: absolute;
@@ -275,7 +233,7 @@ footer {
 	text-align: center;
 }
 
-/* line 175, D:/PROJECT/flowers/source/css/style.scss */
+/* line 156, D:/PROJECT/flowers/source/css/style.scss */
 
 .footer-top {
 	padding-top: 40px;
@@ -284,7 +242,7 @@ footer {
 	color: #fff;
 }
 
-/* line 181, D:/PROJECT/flowers/source/css/style.scss */
+/* line 162, D:/PROJECT/flowers/source/css/style.scss */
 
 .footer-top h4 {
 	margin-bottom: 20px;
@@ -292,7 +250,7 @@ footer {
 	color: #fff;
 }
 
-/* line 186, D:/PROJECT/flowers/source/css/style.scss */
+/* line 167, D:/PROJECT/flowers/source/css/style.scss */
 
 .footer-top .social-btn a {
 	width: 50px;
@@ -304,14 +262,14 @@ footer {
 	border: 1px solid #fff;
 }
 
-/* line 196, D:/PROJECT/flowers/source/css/style.scss */
+/* line 177, D:/PROJECT/flowers/source/css/style.scss */
 
 .footer-top .social-btn a:hover,
 .footer-top .social-btn a:focus {
 	text-decoration: none;
 }
 
-/* line 199, D:/PROJECT/flowers/source/css/style.scss */
+/* line 180, D:/PROJECT/flowers/source/css/style.scss */
 
 .footer-bottom {
 	background: #999;
@@ -324,13 +282,13 @@ footer {
 
 @media only screen and (min-width: 480px) {
 
-/* line 218, D:/PROJECT/flowers/source/css/style.scss */
+/* line 199, D:/PROJECT/flowers/source/css/style.scss */
 
 .features-item img {
 	margin: auto;
 }
 
-/* line 221, D:/PROJECT/flowers/source/css/style.scss */
+/* line 202, D:/PROJECT/flowers/source/css/style.scss */
 
 .images-item img {
 	margin: auto;
@@ -340,7 +298,7 @@ footer {
 
 @media only screen and (min-width: 960px) {
 
-/* line 210, D:/PROJECT/flowers/source/css/style.scss */
+/* line 191, D:/PROJECT/flowers/source/css/style.scss */
 
 .order-section__left {
 	margin-top: 3%;
