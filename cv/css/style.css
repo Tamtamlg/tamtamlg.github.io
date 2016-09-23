@@ -29,7 +29,7 @@ body {
   min-height: 1000px;
   background: url(../img/header-slide1.jpg) no-repeat center center;
   background-size: cover;
-  padding-top: 500px;
+  padding-top: 400px;
   text-align: center;
 }
 .main-header a {
@@ -233,13 +233,16 @@ h1 span:after {
   line-height: 24px;
   font-weight: 700;
 }
-.my-skills__item,
-.my-education__item,
-.work__item {
+.my-skills__item {
   margin-bottom: 0;
   color: #566366;
   text-transform: uppercase;
   font-weight: bold;
+}
+.my-education__item,
+.work__item {
+  margin-bottom: 0;
+  color: #919191;
 }
 .percent-bg {
   position: relative;
@@ -301,7 +304,8 @@ h1 span:after {
   font-weight: 700;
 }
 
-.work span {
+.work span,
+.my-education span {
   color: #566366;
   font-weight: bold;
 }
