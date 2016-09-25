@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/contact.js"></script>
 </head>
 <body>
 
@@ -57,8 +59,8 @@
       <div class="col-md-8 about-me__info">
         <article class="about-me__article">
           <h2 class="about-me__heading">About me</h2>
-          <p class="about-me__text">My name is Vitaly Podrez. 9 years I have been working in the Department of Information Technology, and 4 of them served as Deputy Head of Department</p>
-          <p class="about-me__text">I am currently engaged in the development of the frontend.</p>
+          <p class="about-me__text">My name is Vitaly Podrez. I work in the department of information technology for more than 9 years, and 4 of them I served as Deputy Head of Department</p>
+          <p class="about-me__text">Now I'm engaged in the development of the frontend.</p>
         </article>
         
         <div class="row about-me__skills skills">
@@ -68,7 +70,7 @@
             </div>
             <article class="skills__item col-sm-5">
               <h3 class="skills__heading">HTML5</h3>
-              <p class="skills__text">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam.</p>
+              <p class="skills__text">I use new tags HTML5 standard</p>
             </article>
 
             <div class="col-sm-1 icon">
@@ -76,7 +78,7 @@
             </div>
             <article class="skills__item col-sm-5">
               <h3 class="skills__heading">CSS3</h3>
-              <p class="skills__text">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam.</p>
+              <p class="skills__text">All that can be done on the CSS without JavaScript I do on CSS</p>
             </article>
           </div>
           
@@ -86,15 +88,15 @@
             </div>
             <article class="skills__item col-sm-5">
               <h3 class="skills__heading">Clean code</h3>
-              <p class="skills__text">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam.</p>
+              <p class="skills__text">All works are validated w3c</p>
             </article>
 
             <div class="col-sm-1 icon">
-              <i class="fa fa-wordpress" aria-hidden="true"></i>
+              <i class="fa fa-desktop" aria-hidden="true"></i>
             </div>
             <article class="skills__item col-sm-5">
-              <h3 class="skills__heading">Wordpress</h3>
-              <p class="skills__text">Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam.</p>
+              <h3 class="skills__heading">Responsive</h3>
+              <p class="skills__text">Adaptation for mobile devices (adaptive and responsive)</p>
             </article>
           </div>
         </div>
@@ -111,7 +113,7 @@
           Frameworks and libraries: Bootstrap3, jQuery, Lodash<br>
           Development Tools: WebStorm, Brackets, Photoshop<br>
           Programming languages: JavaScript<br></p>
-          <a href="#">Contact me</a>
+          <a href="#contacts">Contact me</a>
         </div>
         
         <div class="col-md-6 my-skills__right">
@@ -326,18 +328,18 @@
           </div>
 
           <div class="col-md-6 contacts__right">
-            <form action="">
+            <form id="contact" action="mail.php" method="post">
               <div class="row clearfix">
                 <p>Name *</p>
-                <input type="text" name="" id="">
+                <input type="text" name="name" id="name" required>
               </div>
               <div class="row clearfix">
                 <p>Email *</p>
-                <input type="email" name="" id="">
+                <input type="email" name="email" id="email" required>
               </div>
               <div class="row clearfix">
-                <p>Text</p>
-                <textarea></textarea>
+                <p>Text *</p>
+                <textarea name="message" cols="1" rows="5" id="comment" required></textarea>
               </div>
               <div class="row clearfix">
                 <button type="submit">Contact me</button>
