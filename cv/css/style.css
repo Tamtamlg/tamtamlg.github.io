@@ -343,10 +343,12 @@ h1 span:after {
 .portfolio__item {
   margin-top: 20px;
   margin-bottom: 20px;
+  text-align: center;
 }
 .portfolio__item img {
   max-width: 100%;
   height: auto;
+  border: 1px solid #919191;
 }
 
 .contacts {
