@@ -198,9 +198,6 @@ h1 {
 
 /* line 184, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 main h3 {
-  position: absolute;
-  bottom: 10px;
-  left: 20px;
   margin: 0;
   color: #fff;
   font-size: 40px;
@@ -209,19 +206,25 @@ main h3 {
   font-weight: 400;
   letter-spacing: 10px; }
 
-/* line 198, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 195, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+.wrap {
+  position: absolute;
+  bottom: 10px;
+  left: 20px; }
+
+/* line 201, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .bottom-menu {
   float: left;
   list-style: none;
   padding: 20px;
   font-size: 0; }
-  /* line 204, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  /* line 207, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
   .bottom-menu li {
     display: inline-block; }
-    /* line 206, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+    /* line 209, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
     .bottom-menu li:last-child a {
       padding-right: 0; }
-  /* line 210, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  /* line 213, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
   .bottom-menu a {
     display: block;
     padding: 10px 35px;
@@ -230,28 +233,28 @@ main h3 {
     text-transform: uppercase;
     text-decoration: none;
     color: #1a1a1a; }
-    /* line 218, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+    /* line 221, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
     .bottom-menu a:hover {
       color: #f84545; }
-  /* line 224, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  /* line 227, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
   .bottom-menu .active a {
     color: #f84545; }
 
-/* line 228, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 231, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 footer {
   padding: 20px; }
 
-/* line 231, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 234, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .social {
   float: right;
   padding: 20px;
   font-size: 30px; }
-  /* line 236, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  /* line 239, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
   .social a {
     display: inline-block;
     padding: 10px;
     color: #1a1a1a; }
-    /* line 240, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+    /* line 243, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
     .social a:hover {
       color: #f84545; }
 
