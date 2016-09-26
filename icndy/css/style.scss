@@ -101,32 +101,38 @@ h1 {
 
 
 .img1 {
+  position: relative;
   background: url('../img/img1.jpg') center center no-repeat;
   background-size: cover;
   height: 776px;
 }
 .img2 {
+  position: relative;
   margin-bottom: 56px;
   background: url('../img/img2.jpg') center center no-repeat;
   background-size: cover;
   height: 360px;
 }
 .img3 {
+  position: relative;
   background: url('../img/img3.jpg') center center no-repeat;
   background-size: cover;
   height: 360px;
 }
 .img4 {
+  position: relative;
   background: url('../img/img4.jpg') center center no-repeat;
   background-size: cover;
   height: 580px;
 }
 .img5 {
+  position: relative;
   background: url('../img/img5.jpg') center center no-repeat;
   background-size: cover;
   height: 580px;
 }
 .img6 {
+  position: relative;
   background: url('../img/img6.jpg') center center no-repeat;
   background-size: cover;
   height: 580px;
@@ -174,6 +180,19 @@ h1 {
   background: url('../img/img-groupe8.jpg') center center no-repeat;
   background-size: cover;
   height: 425px;
+}
+main h3 {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  margin: 0;
+  color: #fff;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 10px;
+  
 }
 
 .bottom-menu {

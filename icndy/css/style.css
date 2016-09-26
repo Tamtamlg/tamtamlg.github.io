@@ -102,107 +102,126 @@ h1 {
 
 /* line 103, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .img1 {
+  position: relative;
   background: url("../img/img1.jpg") center center no-repeat;
   background-size: cover;
   height: 776px; }
 
-/* line 108, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 109, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .img2 {
+  position: relative;
   margin-bottom: 56px;
   background: url("../img/img2.jpg") center center no-repeat;
   background-size: cover;
   height: 360px; }
 
-/* line 114, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 116, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .img3 {
+  position: relative;
   background: url("../img/img3.jpg") center center no-repeat;
   background-size: cover;
   height: 360px; }
 
-/* line 119, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 122, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .img4 {
+  position: relative;
   background: url("../img/img4.jpg") center center no-repeat;
   background-size: cover;
   height: 580px; }
 
-/* line 124, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 128, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .img5 {
+  position: relative;
   background: url("../img/img5.jpg") center center no-repeat;
   background-size: cover;
   height: 580px; }
 
-/* line 129, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 134, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .img6 {
+  position: relative;
   background: url("../img/img6.jpg") center center no-repeat;
   background-size: cover;
   height: 580px; }
 
-/* line 135, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 141, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .row1,
 .row2 {
   margin-bottom: 30px; }
 
-/* line 138, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 144, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .img-groupe1 {
   background: url("../img/img-groupe1.jpg") center center no-repeat;
   background-size: cover;
   height: 425px; }
 
-/* line 143, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 149, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .img-groupe2 {
   background: url("../img/img-groupe2.jpg") center center no-repeat;
   background-size: cover;
   height: 425px; }
 
-/* line 148, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 154, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .img-groupe3 {
   background: url("../img/img-groupe3.jpg") center center no-repeat;
   background-size: cover;
   height: 425px; }
 
-/* line 153, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 159, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .img-groupe4 {
   background: url("../img/img-groupe4.jpg") center center no-repeat;
   background-size: cover;
   height: 425px; }
 
-/* line 158, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 164, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .img-groupe5 {
   background: url("../img/img-groupe5.jpg") center center no-repeat;
   background-size: cover;
   height: 425px; }
 
-/* line 163, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 169, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .img-groupe6 {
   background: url("../img/img-groupe6.jpg") center center no-repeat;
   background-size: cover;
   height: 425px; }
 
-/* line 168, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 174, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .img-groupe7 {
   background: url("../img/img-groupe7.jpg") center center no-repeat;
   background-size: cover;
   height: 425px; }
 
-/* line 173, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 179, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .img-groupe8 {
   background: url("../img/img-groupe8.jpg") center center no-repeat;
   background-size: cover;
   height: 425px; }
 
-/* line 179, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 184, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+main h3 {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  margin: 0;
+  color: #fff;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 10px; }
+
+/* line 198, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .bottom-menu {
   float: left;
   list-style: none;
   padding: 20px;
   font-size: 0; }
-  /* line 185, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  /* line 204, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
   .bottom-menu li {
     display: inline-block; }
-    /* line 187, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+    /* line 206, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
     .bottom-menu li:last-child a {
       padding-right: 0; }
-  /* line 191, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  /* line 210, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
   .bottom-menu a {
     display: block;
     padding: 10px 35px;
@@ -211,28 +230,28 @@ h1 {
     text-transform: uppercase;
     text-decoration: none;
     color: #1a1a1a; }
-    /* line 199, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+    /* line 218, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
     .bottom-menu a:hover {
       color: #f84545; }
-  /* line 205, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  /* line 224, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
   .bottom-menu .active a {
     color: #f84545; }
 
-/* line 209, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 228, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 footer {
   padding: 20px; }
 
-/* line 212, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 231, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .social {
   float: right;
   padding: 20px;
   font-size: 30px; }
-  /* line 217, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  /* line 236, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
   .social a {
     display: inline-block;
     padding: 10px;
     color: #1a1a1a; }
-    /* line 221, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+    /* line 240, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
     .social a:hover {
       color: #f84545; }
 
