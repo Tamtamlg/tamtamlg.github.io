@@ -1,0 +1,239 @@
+/* line 1, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 30px; }
+
+/* line 8, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 12, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+/* line 15, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+/* line 20, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+header {
+  margin-bottom: 50px;
+  padding-top: 40px;
+  height: 895px;
+  background: url("../img/header-bg.jpg") center center no-repeat;
+  background-size: cover; }
+  /* line 27, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  header p {
+    text-align: center;
+    color: #f84545;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 20px; }
+
+/* line 36, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+.logo {
+  display: block;
+  float: left;
+  padding: 33px 0px 33px 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #fff;
+  color: #7e7e7c;
+  letter-spacing: 30px;
+  font-weight: bold; }
+
+/* line 49, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+.top-menu {
+  float: right;
+  list-style: none;
+  padding: 0;
+  padding-top: 20px;
+  font-size: 0; }
+  /* line 56, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  .top-menu li {
+    display: inline-block; }
+    /* line 58, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+    .top-menu li:last-child a {
+      padding-right: 0; }
+  /* line 62, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  .top-menu a {
+    display: block;
+    padding: 10px 35px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff; }
+    /* line 70, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+    .top-menu a:hover {
+      color: #f84545; }
+  /* line 76, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  .top-menu .active a {
+    color: #f84545; }
+
+/* line 81, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+h1 {
+  margin-top: 250px;
+  text-align: center;
+  color: #fff;
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 300;
+  letter-spacing: 35px; }
+
+/* line 90, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+.angle-down {
+  margin-top: 260px;
+  text-align: center; }
+  /* line 94, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  .angle-down a {
+    color: #fff;
+    font-size: 100px;
+    font-weight: 300;
+    text-decoration: none; }
+
+/* line 103, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+.img1 {
+  background: url("../img/img1.jpg") center center no-repeat;
+  background-size: cover;
+  height: 776px; }
+
+/* line 108, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+.img2 {
+  margin-bottom: 56px;
+  background: url("../img/img2.jpg") center center no-repeat;
+  background-size: cover;
+  height: 360px; }
+
+/* line 114, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+.img3 {
+  background: url("../img/img3.jpg") center center no-repeat;
+  background-size: cover;
+  height: 360px; }
+
+/* line 119, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+.img4 {
+  background: url("../img/img4.jpg") center center no-repeat;
+  background-size: cover;
+  height: 580px; }
+
+/* line 124, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+.img5 {
+  background: url("../img/img5.jpg") center center no-repeat;
+  background-size: cover;
+  height: 580px; }
+
+/* line 129, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+.img6 {
+  background: url("../img/img6.jpg") center center no-repeat;
+  background-size: cover;
+  height: 580px; }
+
+/* line 135, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+.row1,
+.row2 {
+  margin-bottom: 30px; }
+
+/* line 138, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+.img-groupe1 {
+  background: url("../img/img-groupe1.jpg") center center no-repeat;
+  background-size: cover;
+  height: 425px; }
+
+/* line 143, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+.img-groupe2 {
+  background: url("../img/img-groupe2.jpg") center center no-repeat;
+  background-size: cover;
+  height: 425px; }
+
+/* line 148, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+.img-groupe3 {
+  background: url("../img/img-groupe3.jpg") center center no-repeat;
+  background-size: cover;
+  height: 425px; }
+
+/* line 153, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+.img-groupe4 {
+  background: url("../img/img-groupe4.jpg") center center no-repeat;
+  background-size: cover;
+  height: 425px; }
+
+/* line 158, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+.img-groupe5 {
+  background: url("../img/img-groupe5.jpg") center center no-repeat;
+  background-size: cover;
+  height: 425px; }
+
+/* line 163, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+.img-groupe6 {
+  background: url("../img/img-groupe6.jpg") center center no-repeat;
+  background-size: cover;
+  height: 425px; }
+
+/* line 168, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+.img-groupe7 {
+  background: url("../img/img-groupe7.jpg") center center no-repeat;
+  background-size: cover;
+  height: 425px; }
+
+/* line 173, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+.img-groupe8 {
+  background: url("../img/img-groupe8.jpg") center center no-repeat;
+  background-size: cover;
+  height: 425px; }
+
+/* line 179, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+.bottom-menu {
+  float: left;
+  list-style: none;
+  padding: 20px;
+  font-size: 0; }
+  /* line 185, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  .bottom-menu li {
+    display: inline-block; }
+    /* line 187, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+    .bottom-menu li:last-child a {
+      padding-right: 0; }
+  /* line 191, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  .bottom-menu a {
+    display: block;
+    padding: 10px 35px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1a1a1a; }
+    /* line 199, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+    .bottom-menu a:hover {
+      color: #f84545; }
+  /* line 205, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  .bottom-menu .active a {
+    color: #f84545; }
+
+/* line 209, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+footer {
+  padding: 20px; }
+
+/* line 212, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+.social {
+  float: right;
+  padding: 20px;
+  font-size: 30px; }
+  /* line 217, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  .social a {
+    display: inline-block;
+    padding: 10px;
+    color: #1a1a1a; }
+    /* line 221, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+    .social a:hover {
+      color: #f84545; }
+
+/*# sourceMappingURL=style.css.map */

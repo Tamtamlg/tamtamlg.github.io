@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+* {
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+header {
+  margin-bottom: 50px;
+  padding-top: 40px;
+  height: 895px;
+  background: url('../img/header-bg.jpg') center center no-repeat;
+  background-size: cover;
+  
+  p {
+    text-align: center;
+    color: #f84545;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 20px;
+  }
+}
+
+.logo {
+  display: block;
+  float: left;
+  padding: 33px 0px 33px 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #fff;
+  color: #7e7e7c;
+  letter-spacing: 30px;
+  font-weight: bold;
+}
+.top-menu {
+  float: right;
+  list-style: none;
+  padding: 0;
+  padding-top: 20px;
+  font-size: 0;
+  
+  li {
+    display: inline-block;
+    &:last-child a {
+      padding-right: 0;
+    }
+  }
+  a {
+    display: block;
+    padding: 10px 35px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    &:hover {
+      color: #f84545;
+    }
+    
+  }
+  
+  .active a {
+    color: #f84545;
+  }
+}
+
+h1 {
+  margin-top: 250px;
+  text-align: center;
+  color: #fff;
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 300;
+  letter-spacing: 35px;
+}
+.angle-down {
+  margin-top: 260px;
+  text-align: center;
+  
+  a {
+    color: #fff;
+    font-size: 100px;
+    font-weight: 300;
+    text-decoration: none;
+  }
+}
+
+
+.img1 {
+  background: url('../img/img1.jpg') center center no-repeat;
+  background-size: cover;
+  height: 776px;
+}
+.img2 {
+  margin-bottom: 56px;
+  background: url('../img/img2.jpg') center center no-repeat;
+  background-size: cover;
+  height: 360px;
+}
+.img3 {
+  background: url('../img/img3.jpg') center center no-repeat;
+  background-size: cover;
+  height: 360px;
+}
+.img4 {
+  background: url('../img/img4.jpg') center center no-repeat;
+  background-size: cover;
+  height: 580px;
+}
+.img5 {
+  background: url('../img/img5.jpg') center center no-repeat;
+  background-size: cover;
+  height: 580px;
+}
+.img6 {
+  background: url('../img/img6.jpg') center center no-repeat;
+  background-size: cover;
+  height: 580px;
+}
+.row1,
+.row2 {
+  margin-bottom: 30px;
+}
+.img-groupe1 {
+  background: url('../img/img-groupe1.jpg') center center no-repeat;
+  background-size: cover;
+  height: 425px;
+}
+.img-groupe2 {
+  background: url('../img/img-groupe2.jpg') center center no-repeat;
+  background-size: cover;
+  height: 425px;
+}
+.img-groupe3 {
+  background: url('../img/img-groupe3.jpg') center center no-repeat;
+  background-size: cover;
+  height: 425px;
+}
+.img-groupe4 {
+  background: url('../img/img-groupe4.jpg') center center no-repeat;
+  background-size: cover;
+  height: 425px;
+}
+.img-groupe5 {
+  background: url('../img/img-groupe5.jpg') center center no-repeat;
+  background-size: cover;
+  height: 425px;
+}
+.img-groupe6 {
+  background: url('../img/img-groupe6.jpg') center center no-repeat;
+  background-size: cover;
+  height: 425px;
+}
+.img-groupe7 {
+  background: url('../img/img-groupe7.jpg') center center no-repeat;
+  background-size: cover;
+  height: 425px;
+}
+.img-groupe8 {
+  background: url('../img/img-groupe8.jpg') center center no-repeat;
+  background-size: cover;
+  height: 425px;
+}
+
+.bottom-menu {
+  float: left;
+  list-style: none;
+  padding: 20px;
+  font-size: 0;
+  
+  li {
+    display: inline-block;
+    &:last-child a {
+      padding-right: 0;
+    }
+  }
+  a {
+    display: block;
+    padding: 10px 35px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1a1a1a;
+    &:hover {
+      color: #f84545;
+    }
+    
+  }
+  
+  .active a {
+    color: #f84545;
+  }
+}
+footer {
+  padding: 20px;
+}
+.social {
+  float: right;
+  padding: 20px;
+  font-size: 30px;
+  
+  a {
+    display: inline-block;
+    padding: 10px;
+    color: #1a1a1a;
+     &:hover {
+      color: #f84545;
+    }
+  }
+}
