@@ -164,11 +164,11 @@ h1 span:after {
 }
 .about-me__article {
   padding-bottom: 20px;
-  padding-left: 100px;
+  padding-left: 12%;
   padding-right: 12%;
 }
 .about-me__skills {
-  padding-left: 100px;
+  padding-left: 12%;
   padding-right: 12%;
 }
 .about-me__text {
@@ -232,6 +232,10 @@ h1 span:after {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+}
+.my-skills span {
+  color: #566366;
+  font-weight: bold;
 }
 .my-skills__item {
   margin-bottom: 0;
@@ -334,7 +338,12 @@ h1 span:after {
 }
 .portfolio p {
   color: #919191;
+  text-align: center;
 }
+.portfolio a {
+  color: #919191;
+}
+
 .portfolio h2 {
   text-align: center;
   text-transform: uppercase;
@@ -386,7 +395,7 @@ h1 span:after {
 
 /*FOOTER*/
 footer {
-  height: 150px;
+  height: 160px;
   padding-top: 30px;
   background: #191f21;
   text-align: center;
@@ -400,3 +409,17 @@ footer a {
   padding-right: 20px;
 }
 /*FOOTER end*/
+
+
+@media only screen and (max-width : 320px) {
+  h1 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .about-me__article {
+    padding-bottom: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  
+}
