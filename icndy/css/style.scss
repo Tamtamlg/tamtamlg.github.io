@@ -141,6 +141,48 @@ h1 {
 .row2 {
   margin-bottom: 30px;
 }
+
+.instagram {
+  position: relative;
+  
+  
+  h2 {
+    margin-bottom: 10px;
+    height: 70px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 28% auto;
+    color: #fff;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 300;
+    letter-spacing: 25px;
+    z-index: 2;
+  }
+  a {
+    display: inline-block;
+    height: 70px;
+    width: 380px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 35% auto;
+    color: #f84545;
+    font-size: 30px;
+    line-height: 70px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    text-decoration: none;
+    z-index: 2;
+  }
+}
 .img-groupe1 {
   background: url('../img/img-groupe1.jpg') center center no-repeat;
   background-size: cover;
