@@ -1,4 +1,5 @@
 body {
+  background: #fffcf4;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   font-size: 16px;
@@ -90,6 +91,37 @@ a {
 .works-item {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.works-item1 {
+  background: url('../img/galery1.jpg') center center no-repeat;
+  background-size: cover;
+  height: 390px;
+}
+.works-item2 {
+  background: url('../img/galery2.jpg') center center no-repeat;
+  background-size: cover;
+  height: 390px;
+}
+.works-item3 {
+  background: url('../img/galery3.jpg') center center no-repeat;
+  background-size: cover;
+  height: 390px;
+}
+
+.works-item4 {
+  background: url('../img/galery4.jpg') center center no-repeat;
+  background-size: cover;
+  height: 390px;
+}
+.works-item5 {
+  background: url('../img/galery5.jpg') center center no-repeat;
+  background-size: cover;
+  height: 390px;
+}
+.works-item6 {
+  background: url('../img/galery6.jpg') center center no-repeat;
+  background-size: cover;
+  height: 390px;
 }
 /* works */
 

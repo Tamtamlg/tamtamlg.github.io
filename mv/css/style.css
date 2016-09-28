@@ -1,76 +1,77 @@
 /* line 1, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 body {
+  background: #fffcf4;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   font-size: 16px; }
 
-/* line 6, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+/* line 7, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 header {
   background: url("../img/headerbg.jpg") center center no-repeat;
   height: 700px;
   background-size: cover;
   color: #fff;
   margin-bottom: 70px; }
-  /* line 12, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+  /* line 13, D:/dz/tamtamlg.github.io/mv/css/style.scss */
   header button.btn {
     margin-top: 50px; }
-  /* line 15, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+  /* line 16, D:/dz/tamtamlg.github.io/mv/css/style.scss */
   header p {
     font-size: 20px; }
 
-/* line 19, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+/* line 20, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 nav {
   border-bottom: 1px solid #4a4a4b;
   margin-bottom: 100px; }
 
-/* line 23, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+/* line 24, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .logo {
   margin-top: 5px;
   border: 1px solid #fff; }
-  /* line 26, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+  /* line 27, D:/dz/tamtamlg.github.io/mv/css/style.scss */
   .logo:hover {
     border: 1px solid #1dde85; }
 
-/* line 30, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+/* line 31, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 a {
   color: #fff; }
-  /* line 33, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+  /* line 34, D:/dz/tamtamlg.github.io/mv/css/style.scss */
   a:hover,
   a:focus {
     color: #1dde85;
     text-decoration: none; }
 
-/* line 38, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+/* line 39, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .main-nav {
   list-style: none;
   font-size: 0; }
-  /* line 41, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+  /* line 42, D:/dz/tamtamlg.github.io/mv/css/style.scss */
   .main-nav li {
     font-size: 16px;
     display: inline-block; }
-  /* line 45, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+  /* line 46, D:/dz/tamtamlg.github.io/mv/css/style.scss */
   .main-nav a {
     display: block;
     padding: 15px 15px;
     text-decoration: none; }
 
-/* line 51, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+/* line 52, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .fa-bars {
   font-size: 26px;
   color: #fff; }
 
 /* features */
-/* line 57, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+/* line 58, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .features {
   margin-top: 70px;
   margin-bottom: 70px; }
 
-/* line 61, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+/* line 62, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .features .fa {
   font-size: 60px;
   color: #5cb85c; }
 
-/* line 66, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+/* line 67, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .features-item {
   border: 1px solid #5cb85c;
   margin: 10px;
@@ -78,46 +79,82 @@ a {
 
 /* features end*/
 /* team */
-/* line 74, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+/* line 75, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .team {
   margin-bottom: 70px; }
 
-/* line 78, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+/* line 79, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .team img {
   height: 300px;
   margin: auto; }
 
 /* team end */
 /* works */
-/* line 86, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+/* line 87, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .works button {
   margin-top: 30px;
   margin-bottom: 70px; }
 
-/* line 90, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+/* line 91, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .works-item {
   margin-top: 10px;
   margin-bottom: 10px; }
 
+/* line 95, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+.works-item1 {
+  background: url("../img/galery1.jpg") center center no-repeat;
+  background-size: cover;
+  height: 390px; }
+
+/* line 100, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+.works-item2 {
+  background: url("../img/galery2.jpg") center center no-repeat;
+  background-size: cover;
+  height: 390px; }
+
+/* line 105, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+.works-item3 {
+  background: url("../img/galery3.jpg") center center no-repeat;
+  background-size: cover;
+  height: 390px; }
+
+/* line 111, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+.works-item4 {
+  background: url("../img/galery4.jpg") center center no-repeat;
+  background-size: cover;
+  height: 390px; }
+
+/* line 116, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+.works-item5 {
+  background: url("../img/galery5.jpg") center center no-repeat;
+  background-size: cover;
+  height: 390px; }
+
+/* line 121, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+.works-item6 {
+  background: url("../img/galery6.jpg") center center no-repeat;
+  background-size: cover;
+  height: 390px; }
+
 /* works */
 /* plans */
-/* line 97, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+/* line 129, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .plan {
   border: 1px solid #5cb85c;
   margin: 10px;
   padding-bottom: 10px; }
-  /* line 101, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+  /* line 133, D:/dz/tamtamlg.github.io/mv/css/style.scss */
   .plan p:first-child {
     padding-bottom: 10px;
     padding-top: 10px;
     border-bottom: 1px solid #5cb85c; }
-  /* line 107, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+  /* line 139, D:/dz/tamtamlg.github.io/mv/css/style.scss */
   .plan:hover p:first-child {
     background: #5cb85c;
     color: #fff; }
 
 /* plans end*/
-/* line 115, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+/* line 147, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .bottom {
   margin-top: 70px;
   background: url("../img/form-bg.jpg") center center no-repeat;
@@ -125,7 +162,7 @@ a {
   background-size: cover;
   color: #fff; }
 
-/* line 123, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+/* line 155, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 form input,
 form textarea {
   background: transparent;
@@ -137,28 +174,28 @@ form textarea {
   margin-top: 15px;
   padding-left: 10px; }
 
-/* line 137, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+/* line 169, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 footer {
   color: #8f8e91; }
-  /* line 139, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+  /* line 171, D:/dz/tamtamlg.github.io/mv/css/style.scss */
   footer ul {
     list-style: none;
     padding: 0; }
 
-/* line 145, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+/* line 177, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .fa {
   font-size: 24px;
   margin: 10px; }
 
-/* line 149, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+/* line 181, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .icons a {
   display: inline-block; }
 
-/* line 153, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+/* line 185, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .footer-top {
   background: #0b0a0a; }
 
-/* line 156, D:/dz/tamtamlg.github.io/mv/css/style.scss */
+/* line 188, D:/dz/tamtamlg.github.io/mv/css/style.scss */
 .footer-bottom {
   background: #000; }
 
