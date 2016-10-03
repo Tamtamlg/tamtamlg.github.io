@@ -24,7 +24,9 @@ header {
   background: url('../img/header-bg.jpg') center center no-repeat;
   background-size: cover;
   
-  p {
+  p a {
+    display: block;
+    text-decoration: none;
     text-align: center;
     color: #f84545;
     font-size: 30px;
@@ -318,7 +320,7 @@ footer {
   h1 {
     font-size: 40px
   }
-  header p {
+  header p a {
     font-size: 18px;
     letter-spacing: 18px;
   }
@@ -339,7 +341,7 @@ footer {
     letter-spacing: 25px;
       
   }
-  header p {
+  header p a {
     font-size: 14px;
     letter-spacing: 14px;
   }
@@ -360,7 +362,7 @@ footer {
     margin-top: 60px;
     letter-spacing: 10px;
   }
-  header p {
+  header p a {
     
     letter-spacing: 8px;
   }
