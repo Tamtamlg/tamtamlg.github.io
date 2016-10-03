@@ -56,9 +56,6 @@ header {
   
   li {
     display: inline-block;
-    &:last-child a {
-      padding-right: 0;
-    }
   }
   a {
     display: block;
@@ -155,7 +152,7 @@ h1 {
     left: 0;
     right: 0;
     bottom: 0;
-    margin: 20% auto;
+    margin: 25% auto;
     color: #fff;
     font-size: 60px;
     line-height: 70px;
@@ -173,7 +170,7 @@ h1 {
     left: 0;
     right: 0;
     bottom: 0;
-    margin: 40% auto;
+    margin: 35% auto;
     color: #f84545;
     font-size: 30px;
     line-height: 70px;
@@ -240,44 +237,33 @@ main h3 {
   left: 20px;
 }
 
-.bottom-menu {
-  float: left;
-  list-style: none;
-  padding: 20px;
-  font-size: 0;
-  
-  li {
-    display: inline-block;
-    &:last-child a {
-      padding-right: 0;
-    }
-  }
-  a {
-    display: block;
-    padding: 10px 35px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #1a1a1a;
-    &:hover {
-      color: #f84545;
-    }
-    
-  }
-  
-  .active a {
-    color: #f84545;
-  }
-}
+
 footer {
   padding: 20px;
 }
 .bottom-menu {
   text-align: center;
+  li {
+    display: inline-block;
+    &:last-child a {
+      padding-right: 25px;
+    }
+  }
+  a {
+    display: block;
+    padding: 10px 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    &:hover {
+      color: #f84545;
+    }
+    
+  }
 }
 .social {
-  float: right;
   padding: 20px;
   font-size: 30px;
   text-align: center;
@@ -293,9 +279,19 @@ footer {
 }
 
 
+@media only screen and (max-width : 1150px) {
+  .instagram {
+    h2 {
+      letter-spacing: 10px;
+    }
+    
+  }
+}
+
 @media only screen and (max-width : 992px) {
   h1 {
     margin-top: 150px;
+    letter-spacing: 30px;
   }
   .img1 {
     margin-bottom: 30px;
@@ -309,8 +305,92 @@ footer {
   .img5 {
     margin-bottom: 30px;
   }
-  .social {
-    float: none;
-    
+  
+  .instagram {
+    h2 {
+      letter-spacing: 5px;
+      font-size: 50px;
+    }
   }
 }
+
+@media only screen and (max-width : 740px) {
+  h1 {
+    font-size: 40px
+  }
+  header p {
+    font-size: 18px;
+    letter-spacing: 18px;
+  }
+  .instagram {
+    h2 {
+      letter-spacing: 5px;
+      font-size: 40px;
+    }
+    a {
+      font-size: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width : 620px) {
+  h1 {
+    font-size: 30px;
+    letter-spacing: 25px;
+      
+  }
+  header p {
+    font-size: 14px;
+    letter-spacing: 14px;
+  }
+  .instagram {
+    h2 {
+      letter-spacing: 5px;
+      font-size: 36px;
+    }
+    a {
+      font-size: 18px;
+    }
+  }
+}
+
+@media only screen and (max-width : 560px) {
+  h1 {
+    
+    margin-top: 60px;
+    letter-spacing: 10px;
+  }
+  header p {
+    
+    letter-spacing: 8px;
+  }
+  .instagram {
+    h2 {
+      letter-spacing: 5px;
+      font-size: 30px;
+    }
+    a {
+      font-size: 16px;
+    }
+  }
+}
+
+@media only screen and (max-width : 480px) {
+  h1 {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  .instagram {
+    h2 {
+      height: 150px;
+      margin: 20% auto;
+    }
+    a {
+      width: 250px;
+      margin: 60% auto;
+    }
+  }
+}
+
+
+

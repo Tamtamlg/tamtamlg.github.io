@@ -61,10 +61,7 @@ header {
   /* line 57, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
   .top-menu li {
     display: inline-block; }
-    /* line 59, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
-    .top-menu li:last-child a {
-      padding-right: 0; }
-  /* line 63, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  /* line 60, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
   .top-menu a {
     display: block;
     padding: 10px 35px;
@@ -73,14 +70,14 @@ header {
     text-transform: uppercase;
     text-decoration: none;
     color: #fff; }
-    /* line 71, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+    /* line 68, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
     .top-menu a:hover {
       color: #f84545; }
-  /* line 77, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  /* line 74, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
   .top-menu .active a {
     color: #f84545; }
 
-/* line 82, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 79, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 h1 {
   margin-top: 250px;
   text-align: center;
@@ -90,25 +87,25 @@ h1 {
   font-weight: 300;
   letter-spacing: 35px; }
 
-/* line 91, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 88, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .angle-down {
   margin-top: 260px;
   text-align: center; }
-  /* line 95, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  /* line 92, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
   .angle-down a {
     color: #fff;
     font-size: 100px;
     font-weight: 300;
     text-decoration: none; }
 
-/* line 104, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 101, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .img1 {
   position: relative;
   background: url("../img/img1.jpg") center center no-repeat;
   background-size: cover;
   height: 776px; }
 
-/* line 110, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 107, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .img2 {
   position: relative;
   margin-bottom: 56px;
@@ -116,43 +113,43 @@ h1 {
   background-size: cover;
   height: 360px; }
 
-/* line 117, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 114, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .img3 {
   position: relative;
   background: url("../img/img3.jpg") center center no-repeat;
   background-size: cover;
   height: 360px; }
 
-/* line 123, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 120, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .img4 {
   position: relative;
   background: url("../img/img4.jpg") center center no-repeat;
   background-size: cover;
   height: 580px; }
 
-/* line 129, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 126, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .img5 {
   position: relative;
   background: url("../img/img5.jpg") center center no-repeat;
   background-size: cover;
   height: 580px; }
 
-/* line 135, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 132, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .img6 {
   position: relative;
   background: url("../img/img6.jpg") center center no-repeat;
   background-size: cover;
   height: 580px; }
 
-/* line 142, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 139, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .row1,
 .row2 {
   margin-bottom: 30px; }
 
-/* line 146, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 143, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .instagram {
   position: relative; }
-  /* line 149, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  /* line 146, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
   .instagram h2 {
     margin-bottom: 10px;
     height: 70px;
@@ -162,14 +159,14 @@ h1 {
     left: 0;
     right: 0;
     bottom: 0;
-    margin: 20% auto;
+    margin: 25% auto;
     color: #fff;
     font-size: 60px;
     line-height: 70px;
     font-weight: 300;
     letter-spacing: 25px;
     z-index: 2; }
-  /* line 166, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  /* line 163, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
   .instagram a {
     display: inline-block;
     height: 70px;
@@ -180,7 +177,7 @@ h1 {
     left: 0;
     right: 0;
     bottom: 0;
-    margin: 40% auto;
+    margin: 35% auto;
     color: #f84545;
     font-size: 30px;
     line-height: 70px;
@@ -189,55 +186,55 @@ h1 {
     text-decoration: none;
     z-index: 2; }
 
-/* line 186, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 183, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .img-groupe1 {
   background: url("../img/img-groupe1.jpg") center center no-repeat;
   background-size: cover;
   height: 425px; }
 
-/* line 191, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 188, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .img-groupe2 {
   background: url("../img/img-groupe2.jpg") center center no-repeat;
   background-size: cover;
   height: 425px; }
 
-/* line 196, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 193, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .img-groupe3 {
   background: url("../img/img-groupe3.jpg") center center no-repeat;
   background-size: cover;
   height: 425px; }
 
-/* line 201, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 198, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .img-groupe4 {
   background: url("../img/img-groupe4.jpg") center center no-repeat;
   background-size: cover;
   height: 425px; }
 
-/* line 206, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 203, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .img-groupe5 {
   background: url("../img/img-groupe5.jpg") center center no-repeat;
   background-size: cover;
   height: 425px; }
 
-/* line 211, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 208, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .img-groupe6 {
   background: url("../img/img-groupe6.jpg") center center no-repeat;
   background-size: cover;
   height: 425px; }
 
-/* line 216, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 213, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .img-groupe7 {
   background: url("../img/img-groupe7.jpg") center center no-repeat;
   background-size: cover;
   height: 425px; }
 
-/* line 221, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 218, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .img-groupe8 {
   background: url("../img/img-groupe8.jpg") center center no-repeat;
   background-size: cover;
   height: 425px; }
 
-/* line 226, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 223, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 main h3 {
   margin: 0;
   color: #fff;
@@ -247,81 +244,140 @@ main h3 {
   font-weight: 400;
   letter-spacing: 10px; }
 
-/* line 237, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 234, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .wrap {
   position: absolute;
   bottom: 10px;
   left: 20px; }
 
-/* line 243, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 241, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+footer {
+  padding: 20px; }
+
+/* line 244, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .bottom-menu {
-  float: left;
-  list-style: none;
-  padding: 20px;
-  font-size: 0; }
-  /* line 249, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  text-align: center; }
+  /* line 246, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
   .bottom-menu li {
     display: inline-block; }
-    /* line 251, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+    /* line 248, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
     .bottom-menu li:last-child a {
-      padding-right: 0; }
-  /* line 255, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+      padding-right: 25px; }
+  /* line 252, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
   .bottom-menu a {
     display: block;
-    padding: 10px 35px;
+    padding: 10px 25px;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     text-transform: uppercase;
     text-decoration: none;
-    color: #1a1a1a; }
-    /* line 263, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+    color: #000; }
+    /* line 260, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
     .bottom-menu a:hover {
       color: #f84545; }
-  /* line 269, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
-  .bottom-menu .active a {
-    color: #f84545; }
 
-/* line 273, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
-footer {
-  padding: 20px; }
-
-/* line 276, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
-.bottom-menu {
-  text-align: center; }
-
-/* line 279, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+/* line 266, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
 .social {
-  float: right;
   padding: 20px;
   font-size: 30px;
   text-align: center; }
-  /* line 285, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  /* line 271, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
   .social a {
     display: inline-block;
     padding: 10px;
     color: #1a1a1a; }
-    /* line 289, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+    /* line 275, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
     .social a:hover {
       color: #f84545; }
 
+@media only screen and (max-width: 1150px) {
+  /* line 284, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  .instagram h2 {
+    letter-spacing: 10px; } }
+
 @media only screen and (max-width: 992px) {
-  /* line 297, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  /* line 292, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
   h1 {
-    margin-top: 150px; }
-  /* line 300, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+    margin-top: 150px;
+    letter-spacing: 30px; }
+  /* line 296, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
   .img1 {
     margin-bottom: 30px; }
-  /* line 303, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  /* line 299, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
   .img2 {
     margin-bottom: 30px; }
-  /* line 306, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  /* line 302, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
   .img4 {
     margin-bottom: 30px; }
-  /* line 309, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  /* line 305, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
   .img5 {
     margin-bottom: 30px; }
-  /* line 312, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
-  .social {
-    float: none; } }
+  /* line 310, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  .instagram h2 {
+    letter-spacing: 5px;
+    font-size: 50px; } }
+
+@media only screen and (max-width: 740px) {
+  /* line 318, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  h1 {
+    font-size: 40px; }
+  /* line 321, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  header p {
+    font-size: 18px;
+    letter-spacing: 18px; }
+  /* line 326, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  .instagram h2 {
+    letter-spacing: 5px;
+    font-size: 40px; }
+  /* line 330, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  .instagram a {
+    font-size: 20px; } }
+
+@media only screen and (max-width: 620px) {
+  /* line 337, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  h1 {
+    font-size: 30px;
+    letter-spacing: 25px; }
+  /* line 342, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  header p {
+    font-size: 14px;
+    letter-spacing: 14px; }
+  /* line 347, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  .instagram h2 {
+    letter-spacing: 5px;
+    font-size: 36px; }
+  /* line 351, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  .instagram a {
+    font-size: 18px; } }
+
+@media only screen and (max-width: 560px) {
+  /* line 358, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  h1 {
+    margin-top: 60px;
+    letter-spacing: 10px; }
+  /* line 363, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  header p {
+    letter-spacing: 8px; }
+  /* line 368, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  .instagram h2 {
+    letter-spacing: 5px;
+    font-size: 30px; }
+  /* line 372, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  .instagram a {
+    font-size: 16px; } }
+
+@media only screen and (max-width: 480px) {
+  /* line 379, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  h1 {
+    font-size: 20px;
+    margin-top: 50px; }
+  /* line 384, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  .instagram h2 {
+    height: 150px;
+    margin: 20% auto; }
+  /* line 388, D:/dz/tamtamlg.github.io/icndy/css/style.scss */
+  .instagram a {
+    width: 250px;
+    margin: 60% auto; } }
 
 /*# sourceMappingURL=style.css.map */
