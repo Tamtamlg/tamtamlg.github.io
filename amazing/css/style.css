@@ -1,0 +1,238 @@
+/* line 1, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 18px;
+  line-height: 24px; }
+
+/* line 8, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 12, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+/* line 15, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+/* line 20, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+.btn {
+  background: transparent;
+  display: inline-block;
+  font-weight: 300;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f9f9f9; }
+
+/* line 32, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+.btn-green {
+  color: #2ebd59;
+  border-color: #2ebd59; }
+
+/* line 37, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+header {
+  height: 900px;
+  background: url("../img/header-bg.jpg") center center no-repeat;
+  background-size: cover;
+  padding-top: 88px; }
+  /* line 43, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  header .logo {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background: #000;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 60px;
+    color: #fff;
+    text-align: center;
+    padding: 12px; }
+  /* line 57, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  header .menu {
+    float: right;
+    text-align: center;
+    cursor: pointer; }
+    /* line 61, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+    header .menu__icon {
+      font-size: 28px; }
+    /* line 64, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+    header .menu__text {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #000; }
+  /* line 71, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  header .row1 {
+    margin-bottom: 200px; }
+  /* line 75, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  header h1 {
+    font-size: 72px;
+    line-height: 72px;
+    font-weight: 300; }
+  /* line 81, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  header p {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 300; }
+
+/* line 88, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+.foto {
+  min-height: 500px; }
+  /* line 91, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  .foto .foto__img {
+    min-height: 500px;
+    background: url("../img/img1.jpg") center center no-repeat;
+    background-size: cover; }
+  /* line 97, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  .foto .foto__text {
+    min-height: 500px;
+    background: #f3f1ef;
+    padding-top: 10%;
+    padding-left: 5%; }
+    /* line 102, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+    .foto .foto__text h2 {
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: 700;
+      color: #666;
+      text-transform: uppercase; }
+    /* line 109, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+    .foto .foto__text p {
+      max-width: 80%;
+      font-size: 36px;
+      line-height: 36px;
+      color: #666;
+      font-weight: 300; }
+
+/* line 118, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+.galery {
+  min-height: 515px; }
+  /* line 121, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  .galery .galery__item1 {
+    min-height: 515px;
+    background: url("../img/img2.jpg") center center no-repeat;
+    background-size: cover; }
+  /* line 126, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  .galery .galery__item2 {
+    min-height: 515px;
+    background: url("../img/img3.jpg") center center no-repeat;
+    background-size: cover; }
+  /* line 131, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  .galery .galery__item3 {
+    min-height: 515px;
+    background: url("../img/img4.jpg") center center no-repeat;
+    background-size: cover; }
+  /* line 136, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  .galery .galery__item4 {
+    min-height: 515px;
+    background: url("../img/img5.jpg") center center no-repeat;
+    background-size: cover; }
+
+/* line 143, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+.instagram {
+  min-height: 515px;
+  background: #3f729b; }
+  /* line 147, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  .instagram .instagram__img {
+    min-height: 515px;
+    background: url("../img/img6.jpg") center center no-repeat;
+    background-size: cover; }
+  /* line 153, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  .instagram .instagram__text {
+    min-height: 515px;
+    padding-top: 10%;
+    padding-left: 5%; }
+  /* line 158, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  .instagram h2 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #f9f9f9;
+    text-transform: uppercase; }
+  /* line 165, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  .instagram p {
+    max-width: 80%;
+    font-size: 36px;
+    line-height: 36px;
+    color: #f9f9f9;
+    font-weight: 300; }
+
+/* line 174, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+.music {
+  height: 900px;
+  background: #282b2f; }
+  /* line 178, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  .music .music__img {
+    width: 75%;
+    float: right;
+    height: 900px;
+    background: url("../img/img7.jpg") center center no-repeat;
+    background-size: cover; }
+  /* line 185, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  .music .music__text {
+    padding-top: 70px;
+    padding-left: 3%;
+    height: 500px;
+    background-color: #212227;
+    color: #2ebd59;
+    max-width: 400px; }
+    /* line 192, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+    .music .music__text h3 {
+      text-transform: uppercase;
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 0; }
+    /* line 198, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+    .music .music__text span {
+      text-transform: uppercase;
+      font-size: 18px;
+      line-height: 32px; }
+    /* line 203, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+    .music .music__text p {
+      color: #f9f9f9;
+      font-size: 14px;
+      margin-top: 10%;
+      margin-bottom: 10%; }
+
+/* line 213, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+.spotify-itunes {
+  height: 515px;
+  color: #f9f9f9; }
+  /* line 217, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  .spotify-itunes .spotify {
+    padding-top: 100px;
+    padding-left: 10%;
+    height: 515px;
+    background: #2ebd59; }
+  /* line 224, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  .spotify-itunes .itunes {
+    padding-top: 100px;
+    padding-left: 5%;
+    height: 515px;
+    background: #282b2f; }
+  /* line 231, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  .spotify-itunes h2 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #f9f9f9;
+    text-transform: uppercase; }
+  /* line 238, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  .spotify-itunes p {
+    max-width: 80%;
+    font-size: 36px;
+    line-height: 36px;
+    color: #f9f9f9;
+    font-weight: 300; }
+
+/*# sourceMappingURL=style.css.map */
