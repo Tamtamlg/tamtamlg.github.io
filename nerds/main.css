@@ -68,7 +68,15 @@
 
 /* ICON-FONTS END */
 
-
+@font-face {
+    font-family: 'Roboto';
+    src: url("../font/RobotoRegular.eot");
+    src: url("../font/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+    url("../font/RobotoRegular.woff") format("woff"),
+    url("../font/RobotoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 
 html,body{
     margin:0;
