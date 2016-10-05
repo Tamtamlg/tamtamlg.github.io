@@ -104,7 +104,7 @@ header {
   }
   
   .foto__text {
-    min-height: 500px;
+    height: 500px;
     background: #f3f1ef;
     padding-top: 10%;
     padding-left: 5%;
@@ -220,7 +220,7 @@ header {
 }
 
 .spotify-itunes {
-  height: 515px;
+  min-height: 515px;
   color: #f9f9f9;
   
   .spotify {
@@ -251,4 +251,95 @@ header {
       color: #f9f9f9;
       font-weight: 300;
     }
+}
+
+footer {
+  min-height: 600px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: #212227;
+  
+  .col-md-4 {
+    h3,
+    span {
+      text-transform: uppercase;
+      color: #f9f9f9;
+      margin-bottom: 0;
+      font-weight: 700
+    }
+    p {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      color: #919191;
+      font-size: 14px;
+    }
+    .copy {
+      font-weight: 300;
+      color: #919191;
+    }
+  }
+  
+  .col-md-2 {
+    h3 {
+      text-transform: uppercase;
+      color: #f9f9f9;
+      margin-bottom: 0;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    p {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      color: #919191;
+      font-size: 14px;
+    }
+    .icons {
+      margin-bottom: 0;
+      margin-top: 5px;
+    }
+  }
+  
+  .col-md-6 {
+    h3 {
+      text-transform: uppercase;
+      color: #f9f9f9;
+      margin-bottom: 0;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    p {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      color: #919191;
+      font-size: 14px;
+    }
+    input[type="email"] {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      background: #4d4e52;
+      margin-bottom: 20px;
+    }
+    form {
+      position: relative;
+    }
+    button[type="submit"] {
+      background: transparent;
+      border: none;
+      color: #919191;
+      position: absolute;
+      right: 10px;
+      top: 15px;
+    }
+    .sponsor__logo {
+      color: #f9f9f9;
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      border: 1px solid #f9f9f9;
+      text-align: center;
+      padding-top: 25px;
+      margin-right: 3%;
+    }
+  }
 }

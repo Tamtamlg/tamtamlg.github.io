@@ -101,7 +101,7 @@ header {
     background-size: cover; }
   /* line 106, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
   .foto .foto__text {
-    min-height: 500px;
+    height: 500px;
     background: #f3f1ef;
     padding-top: 10%;
     padding-left: 5%; }
@@ -212,7 +212,7 @@ header {
 
 /* line 222, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
 .spotify-itunes {
-  height: 515px;
+  min-height: 515px;
   color: #f9f9f9; }
   /* line 226, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
   .spotify-itunes .spotify {
@@ -240,5 +240,87 @@ header {
     line-height: 36px;
     color: #f9f9f9;
     font-weight: 300; }
+
+/* line 256, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+footer {
+  min-height: 600px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: #212227; }
+  /* line 264, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  footer .col-md-4 h3,
+  footer .col-md-4 span {
+    text-transform: uppercase;
+    color: #f9f9f9;
+    margin-bottom: 0;
+    font-weight: 700; }
+  /* line 270, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  footer .col-md-4 p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #919191;
+    font-size: 14px; }
+  /* line 276, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  footer .col-md-4 .copy {
+    font-weight: 300;
+    color: #919191; }
+  /* line 283, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  footer .col-md-2 h3 {
+    text-transform: uppercase;
+    color: #f9f9f9;
+    margin-bottom: 0;
+    font-weight: 700;
+    margin-bottom: 30px; }
+  /* line 290, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  footer .col-md-2 p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #919191;
+    font-size: 14px; }
+  /* line 296, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  footer .col-md-2 .icons {
+    margin-bottom: 0;
+    margin-top: 5px; }
+  /* line 303, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  footer .col-md-6 h3 {
+    text-transform: uppercase;
+    color: #f9f9f9;
+    margin-bottom: 0;
+    font-weight: 700;
+    margin-bottom: 30px; }
+  /* line 310, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  footer .col-md-6 p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #919191;
+    font-size: 14px; }
+  /* line 316, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  footer .col-md-6 input[type="email"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: #4d4e52;
+    margin-bottom: 20px; }
+  /* line 323, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  footer .col-md-6 form {
+    position: relative; }
+  /* line 326, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  footer .col-md-6 button[type="submit"] {
+    background: transparent;
+    border: none;
+    color: #919191;
+    position: absolute;
+    right: 10px;
+    top: 15px; }
+  /* line 334, D:/dz/tamtamlg.github.io/amazing/css/style.scss */
+  footer .col-md-6 .sponsor__logo {
+    color: #f9f9f9;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #f9f9f9;
+    text-align: center;
+    padding-top: 25px;
+    margin-right: 3%; }
 
 /*# sourceMappingURL=style.css.map */
