@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Vitaliy Podrez</title>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-</head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="js/slider.js"></script>
 <body>
 
  
@@ -250,12 +252,12 @@
     </section>
     
     <section class="container-fluid cit">
-      <div class="container">
+    <div class="container">
         <cite>
-          "When I am working on a problem, I do not think about beauty. I only think about how to solve the problem. But when a complete solution looks ugly, I know it - erroneously."
+        "When I am working on a problem, I do not think about beauty. I only think about how to solve the problem. But when a complete solution looks ugly, I know it - erroneously."
         </cite>
         <p>B. Fuller</p>
-      </div>
+    </div>
     </section>
     
     <section class="portfolio container" id="portfolio">
@@ -273,30 +275,45 @@
           <a href="http://tamtamlg.github.io/final/build/index.html" target="_blank">
             <img src="img/ex2.png" alt="Final">
           </a>
+          <div class="tooltip">
+            Responsive
+          </div>
         </div>
         
         <div class="col-md-4 col-sm-6 portfolio__item">
           <a href="http://tamtamlg.github.io/bootstrap1" target="_blank">
             <img src="img/ex3.png" alt="Bootstrap1">
           </a>
+          <div class="tooltip">
+            Responsive
+          </div>
         </div>
         
         <div class="col-md-4 col-sm-6 portfolio__item">
           <a href="http://tamtamlg.github.io/amazing" target="_blank">
             <img src="img/ex4.png" alt="">
           </a>
+          <div class="tooltip">
+            Responsive
+          </div>
         </div>
         
         <div class="col-md-4 col-sm-6 portfolio__item">
           <a href="http://tamtamlg.github.io/mv" target="_blank">
             <img src="img/ex5.png" alt="Final">
           </a>
+          <div class="tooltip">
+            Responsive
+          </div>
         </div>
         
         <div class="col-md-4 col-sm-6 portfolio__item">
           <a href="http://tamtamlg.github.io/icndy" target="_blank">
             <img src="img/ex6.png" alt="Icndy">
           </a>
+          <div class="tooltip">
+            Responsive
+          </div>
         </div>
         
       </div>
@@ -347,6 +364,14 @@
   </div>
   <p>&copy;2016 Vitaliy Podrez</p>
 </footer>
-
+<script>
+  $(function() {
+    $(".rslides").responsiveSlides(
+      auto: true,             // Boolean: Animate automatically, true or false
+  speed: 500,            // Integer: Speed of the transition, in milliseconds
+  timeout: 4000  
+    );
+  });
+</script>
 </body>
 </html>
