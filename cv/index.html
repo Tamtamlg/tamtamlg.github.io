@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-  <script src="js/slider.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/eskju.jquery.scrollflow.min.js"></script>
 <body>
 
  
@@ -31,7 +31,7 @@
   </nav>
   
   <main>
-    <section class="container features">
+    <section class="container features scrollflow -slide-top" data-scrollflow-start="0" data-scrollflow-distance="50" data-scrollflow-amount="200">
       <div class="row clearfix">
         
         <article class="features__item col-md-4">
@@ -51,7 +51,7 @@
       </div>
     </section>
     
-    <section class="container-fluid about-me" id="about-me">
+    <section class="container-fluid about-me scrollflow -slide-top" data-scrollflow-start="0" data-scrollflow-distance="50" data-scrollflow-amount="200" id="about-me">
     <div class="row clearfix">
       <div class="about-me__slider col-md-4">
 <!--        <img src="img/img1.jpg" alt="">-->
@@ -105,7 +105,7 @@
     </div> 
     </section>
     
-    <section class="my-skills container" id="my-skills">
+    <section class="my-skills container scrollflow -slide-top" data-scrollflow-start="0" data-scrollflow-distance="50" data-scrollflow-amount="200" id="my-skills">
       <div class="row clearfix">
         <div class="col-md-6 my-skills__left">
           <h2 class="my-skills__heading">My skills</h2>
@@ -149,7 +149,7 @@
       </div>
     </section>
     
-    <section class="resume container-fluid" id="resume">
+    <section class="resume container-fluid scrollflow -slide-top" data-scrollflow-start="0" data-scrollflow-distance="50" data-scrollflow-amount="200" id="resume">
       <div class="container">
         <h2 class="resume__heading">Resume</h2>
         <p class="resume__text">You can download my CV in pdf format.</p>
@@ -157,7 +157,7 @@
       </div>
     </section>
     
-    <section class="work container">
+    <section class="work container scrollflow -slide-top" data-scrollflow-start="0" data-scrollflow-distance="50" data-scrollflow-amount="200">
       <div class="row clearfix">
         <h2 class="work__heading">Work Experience</h2>
         <div class="clearfix">
@@ -192,7 +192,7 @@
     </section>
     
     
-    <section class="my-education container">
+    <section class="my-education container scrollflow -slide-top" data-scrollflow-start="0" data-scrollflow-distance="50" data-scrollflow-amount="200">
       <div class="row clearfix">
         <h2 class="work__heading">Education</h2>
         
@@ -251,7 +251,7 @@
       </div>
     </section>
     
-    <section class="container-fluid cit">
+    <section class="container-fluid cit scrollflow -slide-top" data-scrollflow-start="0" data-scrollflow-distance="50" data-scrollflow-amount="200">
     <div class="container">
         <cite>
         "When I am working on a problem, I do not think about beauty. I only think about how to solve the problem. But when a complete solution looks ugly, I know it - erroneously."
@@ -260,7 +260,7 @@
     </div>
     </section>
     
-    <section class="portfolio container" id="portfolio">
+    <section class="portfolio container scrollflow -slide-top" data-scrollflow-start="0" data-scrollflow-distance="50" data-scrollflow-amount="200" id="portfolio">
       <h2>Portfolio</h2>
       <p>This section presents only the latest projects. Other works can be found in my <a href="https://github.com/Tamtamlg" target="_blank">github</a></p>
       <div class="row clearfix">
@@ -319,7 +319,7 @@
       </div>
     </section>
     
-    <section class="contacts container-fluid" id="contacts">
+    <section class="contacts container-fluid scrollflow -slide-top" data-scrollflow-start="0" data-scrollflow-distance="50" data-scrollflow-amount="200" id="contacts">
       <div class="container">
         <div class="row clearfix">
           <div class="col-md-6 contacts__left">
@@ -364,14 +364,6 @@
   </div>
   <p>&copy;2016 Vitaliy Podrez</p>
 </footer>
-<script>
-  $(function() {
-    $(".rslides").responsiveSlides(
-      auto: true,             // Boolean: Animate automatically, true or false
-  speed: 500,            // Integer: Speed of the transition, in milliseconds
-  timeout: 4000  
-    );
-  });
-</script>
+
 </body>
 </html>
