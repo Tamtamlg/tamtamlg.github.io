@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+input[type=button] {
+  padding: 10px 20px;
+  background-color: coral;
+  color: beige;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.field {
+  margin-top: 20px;
+  display: inline-block;
+  border: 2px solid gray;
+  
+}
+
+.row {
+  height: 100px;
+}
+
+.cell {
+  background-size: cover;
+  display: inline-block;
+  border: 2px solid gray;
+  width: 100px;
+  height: 100px;
+}
+
+.hover-cell {
+  background-image: none !important;
+  background: lightblue;
+}
+
+.active-always {
+  background: transparent;
+}
