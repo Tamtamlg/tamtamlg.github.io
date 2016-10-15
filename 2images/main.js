@@ -3,6 +3,7 @@ window.addEventListener('load', function loadFull() {
 
   var field = document.querySelector('.field');
   var start = document.querySelector('.start');
+  var heading = document.querySelector('h1');
   
   doRequest();
   $('.start').click(doRequest);
@@ -19,6 +20,8 @@ window.addEventListener('load', function loadFull() {
         hoverCell();
       }
     });
+    
+    heading.innerHTML = 'Find 2 identical pictures';
   }
   
   function createField(width, height) { // создание игрового поля
@@ -89,14 +92,14 @@ window.addEventListener('load', function loadFull() {
     }
   }
   
-  function classActive(e) {
+  function classActive(e) { // добавляем класс к открытой картинке
     if (e.target.index && !e.target.classList.contains('active-always')) {
       e.target.classList.remove('hover-cell');
       e.target.classList.add('active');
     }
   }
   
-  function classActiveAlways(arr) {
+  function classActiveAlways(arr) { // добавляем класс, если картинки совпали  
     var i;
     for (i = 0; i < arr.length; i++) {
       arr[i].classList.remove('active');
@@ -104,7 +107,7 @@ window.addEventListener('load', function loadFull() {
     }
   }
   
-  function classHover(arr) {
+  function classHover(arr) { // если картинки не совпали
     var i;
     for (i = 0; i < arr.length; i++) {
       arr[i].classList.remove('active');
@@ -112,8 +115,16 @@ window.addEventListener('load', function loadFull() {
     }
   }
   
+  function getWin() {
+    var win = document.querySelectorAll('.active-always');
+    var size = document.querySelectorAll('.cell');
+    
+    if (win.length == size.length) {
+      heading.innerHTML = 'Win !!!';
+    }
+  }
+  
   field.addEventListener('click', function openImages(e) { // открываем картинки
-    var counter = 0;
     var active = [];
     var i;
     var itemStile1;
@@ -123,15 +134,20 @@ window.addEventListener('load', function loadFull() {
     
     active = document.querySelectorAll('.active'); // массив с открытыми картинками
     if (active.length == 2) {
+      
       itemStile1 = active[0].getAttribute('style');
       itemStile2 = active[1].getAttribute('style');
 
       if (itemStile1 == itemStile2) { // проверяем, одинаковые ли картинки
         classActiveAlways(active);
       } else {
-        classHover(active);
+        setTimeout(classHover, 500, active);
       }
+      
+      getWin();
     }
+    
+    
   });
   
 });
