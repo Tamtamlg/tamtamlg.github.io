@@ -1,0 +1,759 @@
+/* line 3, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-family: Verdana, Geneva, sans-serif;
+  line-height: 14px; }
+
+/* line 10, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 14, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+/* line 17, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+/* header */
+/* line 24, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+header {
+  padding-top: 14px;
+  background: url("../img/top-img.png") center top no-repeat;
+  min-height: 100px; }
+
+/* line 30, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.social {
+  padding-left: 30px; }
+
+/* line 34, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.social-icons {
+  list-style: none;
+  padding: 0; }
+  /* line 38, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .social-icons li {
+    display: inline-block; }
+  /* line 42, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .social-icons a {
+    display: block;
+    width: 25px;
+    height: 24px; }
+  /* line 47, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .social-icons .vk {
+    background: url("../img/spritesheet.png");
+    background-position: -5px -995px; }
+  /* line 51, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .social-icons .fb {
+    background: url("../img/spritesheet.png");
+    background-position: -5px -755px; }
+  /* line 55, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .social-icons .twit {
+    background: url("../img/spritesheet.png");
+    background-position: -5px -1029px; }
+  /* line 59, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .social-icons .goo {
+    background: url("../img/spritesheet.png");
+    background-position: -5px -789px; }
+  /* line 63, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .social-icons .tum {
+    background: url("../img/spritesheet.png");
+    background-position: -5px -931px; }
+  /* line 67, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .social-icons .inst {
+    background: url("../img/spritesheet.png");
+    background-position: -5px -823px; }
+
+/* line 74, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.phone {
+  position: relative;
+  padding-left: 65px; }
+  /* line 78, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .phone p {
+    margin-top: 0;
+    margin-bottom: 5px; }
+
+/* line 83, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.phone:before {
+  position: absolute;
+  content: '';
+  top: 3px;
+  left: 40px;
+  width: 17px;
+  height: 16px;
+  background: url("../img/spritesheet.png");
+  background-position: -5px -857px; }
+
+/* line 94, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+nav {
+  position: relative;
+  text-align: center; }
+  /* line 97, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  nav .logo {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 2; }
+    /* line 103, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+    nav .logo img {
+      max-width: 100%;
+      height: auto; }
+
+/* line 111, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.menu {
+  list-style: none;
+  padding: 0; }
+  /* line 115, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .menu li {
+    display: inline-block; }
+  /* line 118, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .menu li:first-child a {
+    padding-left: 0;
+    border-left: none; }
+  /* line 122, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .menu li:last-child a {
+    padding-right: 0; }
+  /* line 125, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .menu a {
+    display: block;
+    padding: 1px 15px;
+    border-left: 1px solid #390;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #390; }
+
+/* line 138, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.user-block {
+  text-align: right;
+  padding-top: 15px; }
+
+/* line 143, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.user {
+  margin-left: 25px;
+  border: none;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("../img/spritesheet.png");
+  background-position: -5px -965px; }
+
+/* line 152, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.search {
+  border: none;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../img/spritesheet.png");
+  background-position: -5px -883px; }
+
+/* line 160, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.cart {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  display: inline-block;
+  margin-top: 15px;
+  width: 170px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 15px 95px 10px 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #390; }
+
+/* line 173, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.cart:before {
+  position: absolute;
+  content: '';
+  top: 13px;
+  right: 10px;
+  width: 16px;
+  height: 16px;
+  background: url("../img/spritesheet.png");
+  background-position: -5px -698px; }
+
+/* header end */
+/* slider */
+/* line 189, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.slider .flexslider {
+  margin-bottom: 0; }
+
+/* line 192, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.slider .col-sm-12 {
+  padding: 0; }
+
+/* line 195, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.slider .row {
+  position: relative; }
+  /* line 198, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .slider .row .slider-text {
+    position: absolute;
+    padding: 20px;
+    width: 560px;
+    height: 200px;
+    top: 5%;
+    left: 20%;
+    z-index: 2;
+    background: rgba(155, 196, 36, 0.7);
+    overflow: hidden; }
+  /* line 209, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .slider .row h2 {
+    font-size: 36px;
+    margin-top: 0;
+    line-height: 40px;
+    font-weight: 400;
+    color: #fff; }
+  /* line 216, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .slider .row p {
+    font-size: 18px;
+    line-height: 20px;
+    color: #fff; }
+
+/* slider end */
+/* category */
+/* line 226, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.category {
+  padding-top: 40px;
+  border-bottom: 10px solid transparent;
+  background-image: linear-gradient(#f7f9e7, #f7f9e7), linear-gradient(to bottom right, transparent 50.5%, #f7f9e7 50.5%), linear-gradient(to bottom left, transparent 50.5%, #f7f9e7 50.5%), linear-gradient(to top right, transparent 50.5%, #f7f9e7 50.5%), linear-gradient(to top left, transparent 50.5%, #f7f9e7 50.5%);
+  background-repeat: repeat, repeat-x, repeat-x, repeat-x, repeat-x;
+  background-position: 0 0, 10px 0, 10px 0, 10px 100%, 10px 100%;
+  background-size: auto auto, 20px 20px, 20px 20px, 20px 20px, 20px 20px;
+  background-clip: padding-box, border-box, border-box, border-box, border-box;
+  background-origin: padding-box, border-box, border-box, border-box, border-box; }
+  /* line 242, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .category .row {
+    margin-top: 45px;
+    margin-bottom: 45px; }
+  /* line 246, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .category h2 {
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 24px;
+    color: #390; }
+  /* line 254, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .category .category-img-wrap {
+    height: 90px; }
+  /* line 257, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .category .category-item {
+    position: relative;
+    padding-top: 20px; }
+    /* line 260, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+    .category .category-item .drop {
+      display: none;
+      list-style: none;
+      padding: 0; }
+      /* line 264, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+      .category .category-item .drop li {
+        margin-bottom: 5px; }
+      /* line 267, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+      .category .category-item .drop a {
+        color: #390; }
+  /* line 272, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .category .category-wrapper {
+    position: relative; }
+  /* line 275, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .category .category-active {
+    position: absolute;
+    padding: 20px;
+    background: #fff;
+    z-index: 2;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
+    /* line 281, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+    .category .category-active .drop {
+      display: block; }
+  /* line 286, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .category .category-img1 {
+    margin: auto;
+    width: 118px;
+    height: 78px;
+    background: url("../img/spritesheet.png");
+    background-position: -5px -5px; }
+  /* line 293, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .category .category-img2 {
+    margin: auto;
+    width: 118px;
+    height: 88px;
+    background: url("../img/spritesheet.png");
+    background-position: -5px -93px; }
+  /* line 300, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .category .category-img3 {
+    margin: auto;
+    width: 126px;
+    height: 77px;
+    background: url("../img/spritesheet.png");
+    background-position: -5px -191px; }
+  /* line 307, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .category .category-img4 {
+    margin: auto;
+    width: 103px;
+    height: 88px;
+    background: url("../img/spritesheet.png");
+    background-position: -5px -278px; }
+  /* line 314, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .category .category-img5 {
+    margin: auto;
+    width: 109px;
+    height: 76px;
+    background: url("../img/spritesheet.png");
+    background-position: -5px -376px; }
+  /* line 321, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .category .category-img6 {
+    margin: auto;
+    width: 126px;
+    height: 86px;
+    background: url("../img/spritesheet.png");
+    background-position: -5px -462px; }
+  /* line 328, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .category .category-img7 {
+    margin: auto;
+    width: 129px;
+    height: 90px;
+    background: url("../img/spritesheet.png");
+    background-position: -5px -558px; }
+  /* line 335, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .category h3 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    min-height: 40px; }
+    /* line 342, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+    .category h3 a {
+      color: #390; }
+  /* line 347, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .category .fa {
+    text-decoration: underline; }
+
+/* category end */
+/* hits */
+/* line 356, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.hits {
+  margin-bottom: 50px;
+  padding-top: 50px; }
+  /* line 360, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .hits h2 {
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 24px;
+    color: #390; }
+
+/* line 369, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.hits-item {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #c2c2c2;
+  min-height: 310px;
+  margin-bottom: 10px; }
+  /* line 375, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .hits-item:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
+  /* line 379, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .hits-item h3 {
+    min-height: 30px;
+    font-size: 13px;
+    color: #390; }
+  /* line 384, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .hits-item .buy {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    padding: 13px 20px 13px 50px;
+    background-color: #ed1c24;
+    border: none; }
+  /* line 393, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .hits-item .buy:before {
+    position: absolute;
+    content: '';
+    top: 13px;
+    left: 20px;
+    width: 21px;
+    height: 21px;
+    background: url("../img/spritesheet.png");
+    background-position: -5px -724px; }
+  /* line 403, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .hits-item .buy-disabled {
+    background-color: #d7d7d7;
+    cursor: default; }
+  /* line 407, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .hits-item .contains {
+    padding: 3px;
+    color: #390; }
+  /* line 411, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .hits-item .no-contains {
+    padding: 3px;
+    color: #333; }
+  /* line 416, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .hits-item .price span {
+    color: #ff0000; }
+
+/* hits end*/
+/* producers */
+/* line 424, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.producers {
+  margin-bottom: 50px; }
+  /* line 426, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .producers h2 {
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 24px;
+    color: #390; }
+  /* line 434, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .producers .row {
+    margin-top: 30px; }
+
+/* line 439, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.producers1 {
+  padding-top: 25px;
+  display: inline-block; }
+
+/* line 444, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.producers2 {
+  display: inline-block;
+  padding-top: 10px; }
+
+/* line 448, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.producers3 {
+  display: inline-block;
+  padding-top: 20px; }
+
+/* line 452, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.producers4 {
+  display: inline-block;
+  padding-top: 0px; }
+
+/* line 456, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.producers5 {
+  display: inline-block;
+  padding-top: 20px; }
+
+/* line 460, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.producers6 {
+  display: inline-block;
+  padding-top: 0px; }
+
+/* line 464, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.producers7 {
+  display: inline-block;
+  padding-top: 0px; }
+
+/* line 468, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.producers8 {
+  display: inline-block;
+  padding-top: 0px; }
+
+/* line 472, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.producers9 {
+  display: inline-block;
+  padding-top: 0px; }
+
+/* line 476, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.producers10 {
+  display: inline-block;
+  padding-top: 0px; }
+
+/* producers end*/
+/* news */
+/* line 487, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.news {
+  padding-bottom: 50px; }
+  /* line 489, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .news h2 {
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 24px;
+    color: #390; }
+  /* line 498, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .news .news-item {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-align: center; }
+    /* line 502, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+    .news .news-item p {
+      text-align: left;
+      max-height: 187px;
+      overflow: hidden; }
+    /* line 507, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+    .news .news-item:hover {
+      background: #f7f9e7; }
+    /* line 510, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+    .news .news-item h3 {
+      min-height: 30px;
+      font-size: 13px;
+      line-height: 14px; }
+      /* line 514, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+      .news .news-item h3 a {
+        text-decoration: none;
+        color: #000; }
+  /* line 520, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .news .news-img {
+    text-align: center; }
+    /* line 523, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+    .news .news-img img {
+      max-width: 100%;
+      height: auto ""; }
+  /* line 528, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .news .news-date {
+    text-align: left;
+    color: #390; }
+
+/* news end */
+/* store */
+/* line 538, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.store {
+  margin-bottom: 50px; }
+  /* line 540, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .store h2 {
+    margin-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 24px;
+    color: #390; }
+  /* line 549, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .store .store-bordered {
+    padding: 20px;
+    overflow-y: scroll;
+    height: 265px;
+    border: 2px dashed #c6caa6;
+    border-radius: 5px; }
+    /* line 555, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+    .store .store-bordered ul {
+      list-style: none;
+      padding-left: 20px; }
+    /* line 559, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+    .store .store-bordered li {
+      position: relative; }
+    /* line 562, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+    .store .store-bordered li:before {
+      position: absolute;
+      content: '';
+      top: 2px;
+      left: -20px;
+      width: 12px;
+      height: 12px;
+      background: url("../img/spritesheet.png");
+      background-position: -5px -909px; }
+
+/* store end */
+/* reviews */
+/* line 579, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+.reviews {
+  padding-top: 30px;
+  text-align: center;
+  background: #f7f9e7; }
+  /* line 584, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .reviews .container {
+    position: relative; }
+  /* line 587, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .reviews .container:before {
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    left: 40px;
+    width: 305px;
+    height: 193px;
+    background: url("../img/spritesheet.png");
+    background-position: -5px -1160px; }
+  /* line 598, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .reviews h3 {
+    position: relative;
+    margin-top: 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    color: #390; }
+  /* line 606, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .reviews h3:before {
+    position: absolute;
+    content: '';
+    top: 2px;
+    left: 41%;
+    width: 30px;
+    height: 30px;
+    background: url("../img/spritesheet.png");
+    background-position: -5px -658px; }
+  /* line 616, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .reviews .input-groupe {
+    position: relative;
+    margin: auto;
+    width: 350px;
+    padding: 30px;
+    padding-top: 10px;
+    background: #fff;
+    border-radius: 20px;
+    border: 3px solid #c6caa6; }
+    /* line 626, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+    .reviews .input-groupe input {
+      outline: none;
+      border: none;
+      border-bottom: 2px solid #c6caa6;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 250px; }
+  /* line 636, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .reviews .input-groupe:before {
+    position: absolute;
+    content: '';
+    bottom: -70px;
+    left: 40px;
+    width: 61px;
+    height: 70px;
+    background: url("../img/spritesheet.png");
+    background-position: -5px -1883px; }
+  /* line 647, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .reviews .input-groupe:after {
+    position: absolute;
+    content: '';
+    bottom: -3px;
+    left: 40px;
+    width: 20px;
+    height: 3px;
+    background: #c6caa6; }
+  /* line 657, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .reviews .stars {
+    width: 140px;
+    margin: 10px auto 30px; }
+  /* line 661, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .reviews .rating {
+    float: left; }
+  /* line 664, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .reviews .rating label {
+    float: right;
+    width: 28px;
+    height: 28px;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    text-indent: -9999px; }
+  /* line 673, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .reviews .rating:not(:checked) > input {
+    position: absolute;
+    top: -9999px;
+    clip: rect(0, 0, 0, 0); }
+  /* line 677, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .reviews .rating:not(:checked) > label {
+    background: url("../img/spritesheet.png") no-repeat -5px -1845px; }
+  /* line 680, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .reviews .rating > input:checked ~ label {
+    width: 28px;
+    height: 28px;
+    background: url("../img/spritesheet.png") no-repeat -5px -1807px; }
+  /* line 689, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .reviews .rating:not(:checked) > label:hover,
+  .reviews .rating > input:checked + label:hover,
+  .reviews .rating > input:checked + label:hover ~ label,
+  .reviews .rating > label:hover ~ input:checked ~ label,
+  .reviews .rating:not(:checked) > label:hover ~ label {
+    background: url("../img/spritesheet.png") no-repeat -5px -1807px; }
+  /* line 694, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .reviews input[type="submit"] {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: inline-block;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    background: #390;
+    text-transform: uppercase;
+    font-weight: bold; }
+
+/* reviews end */
+/* footer */
+/* line 711, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+footer {
+  padding-top: 30px;
+  background: url("../img/bottom-img.png") center bottom no-repeat;
+  min-height: 180px; }
+  /* line 716, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  footer .counter {
+    padding-top: 30px; }
+
+/* footer end */
+@media only screen and (max-width: 1170px) {
+  /* line 730, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .reviews .container {
+    height: 660px; }
+  /* line 733, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .reviews .container:before {
+    left: 30%; } }
+
+@media only screen and (max-width: 992px) {
+  /* line 752, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .producers1,
+  .producers2,
+  .producers3,
+  .producers4,
+  .producers5,
+  .producers6,
+  .producers7,
+  .producers8,
+  .producers9,
+  .producers10 {
+    height: 100px;
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: center; }
+  /* line 758, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  nav .logo {
+    top: -90px;
+    left: 200px; }
+  /* line 762, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .reviews h3:before {
+    left: 35%; } }
+
+@media only screen and (max-width: 768px) {
+  /* line 769, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .slider-text {
+    display: none; }
+  /* line 772, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .reviews h3:before {
+    left: 30%; } }
+
+@media only screen and (max-width: 480px) {
+  /* line 779, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  nav .menu li {
+    text-align: center;
+    display: block;
+    margin-bottom: 10px; }
+    /* line 783, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+    nav .menu li a {
+      padding: 0;
+      text-align: center;
+      border: none; }
+  /* line 790, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .reviews .container:before {
+    left: 10%; }
+  /* line 794, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .reviews h3:before {
+    left: 20%; }
+  /* line 798, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .reviews .input-groupe {
+    width: 250px;
+    padding: 10px; }
+  /* line 802, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .reviews .input-groupe input {
+    width: 170px; }
+  /* line 805, D:/dz/tamtamlg.github.io/Grow-Market/source/css/style.scss */
+  .reviews .stars .rating {
+    width: 150px;
+    margin-left: 50px; } }
+
+/*# sourceMappingURL=style.css.map */
