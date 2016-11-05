@@ -8,8 +8,7 @@ $(function () {
   
   $('.list').click(function (e) {
     e.preventDefault();
-    $('.category-active').removeClass('category-active');
-    $(this).parent().addClass('category-active');
+    $(this).parent().toggleClass('category-active');
   });
   
 });
