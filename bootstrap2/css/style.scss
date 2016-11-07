@@ -1,5 +1,9 @@
 @import "variables.scss";
 
+.my-slider {
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
 .carousel-control.left {
   background-image: none;
 }
@@ -14,4 +18,38 @@
   filter: alpha(opacity=90);
   outline: 0;
   opacity: .9;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+.my-features img {
+  margin-bottom: 10px;
+}
+
+.tab-content p {
+  margin-top: 10px;
+}
+.tab-content img {
+  margin-right: 10px;
+}
+
+.learn .thumbnail {
+  position: relative;
+}
+
+.learn .thumbnail .price {
+  position: absolute;
+  top: -20px;
+  right: -10px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+footer {
+	background: #333;
+	color: #eee;
+	font-size: 11px;
+	padding: 20px;
 }
