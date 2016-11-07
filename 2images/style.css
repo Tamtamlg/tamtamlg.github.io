@@ -11,21 +11,13 @@ h1 {
   color: gray;
 }
 
-input[type=button] {
-  padding: 10px 20px;
-  background-color: coral;
-  color: beige;
-  outline: none;
-  text-transform: uppercase;
-}
-
 .field {
   margin-top: 20px;
   display: inline-block;
   border: 2px solid gray;
 }
 
-.row {
+.rows {
   height: 75px;
 }
 

@@ -2,25 +2,31 @@ window.addEventListener('load', function loadFull() {
   'use strict';
 
   var field = document.querySelector('.field');
-  var start = document.querySelector('.start');
+  var start4 = document.querySelector('.start4');
+  var start6 = document.querySelector('.start6');
+  var start8 = document.querySelector('.start8');
   var heading = document.querySelector('h1');
+
+  heading.innerHTML = 'Find 2 identical pictures';
+  doRequest(4, 4);
+
+  start4.addEventListener('click', function() {
+    doRequest(4, 4);
+  });
+  start6.addEventListener('click', function() {
+    doRequest(6, 6);
+  });
+  start8.addEventListener('click', function() {
+    doRequest(8, 8);
+  });
   
-  doRequest();
-  $('.start').click(doRequest);
-  
-  function doRequest() { //получаем данные и создаем игровое поле
-    $.ajax({
-      type: "GET",
-      url: "https://kde.link/test/get_field_size.php",
-      dataType: "json",
-      success: function (data) {
-        cleanField();
-        createField(data.width, data.height);
-        getImgArr(data.width, data.height);
-        hoverCell();
-      }
-    });
-    
+  function doRequest(width, height) { //получаем данные и создаем игровое поле
+
+    cleanField();
+    createField(width, height);
+    getImgArr(width, height);
+    hoverCell();
+
     heading.innerHTML = 'Find 2 identical pictures';
   }
   
@@ -31,7 +37,7 @@ window.addEventListener('load', function loadFull() {
     var j;
     for (i = 0; i < width; i++) {
       rows[i] = document.createElement('div');
-      rows[i].classList.add('row');
+      rows[i].classList.add('rows');
       field.appendChild(rows[i]);
       for (j = 0; j < height; j++) {
         cells[j] = document.createElement('div');
@@ -43,7 +49,7 @@ window.addEventListener('load', function loadFull() {
   }
   
   function cleanField() { // очистка игрового поля
-    var rows = document.querySelectorAll('.row');
+    var rows = document.querySelectorAll('.rows');
     var i;
     if (rows.length !== 0) {
       for (i = rows.length - 1; i >= 0; i--) {
@@ -57,19 +63,18 @@ window.addEventListener('load', function loadFull() {
     var cells = document.querySelectorAll('.cell');
     var i;
     var j;
-    var l;
     for (i = 0; i < (width * height) / 2; i++) {
       if (i < 10) {
-        images[i] = 'https://kde.link/test/' + i + '.png';
+        images[i] = 'img/' + i + '.png';
       }
       if (i >= 10 && i < 20) {
-        images[i] = 'https://kde.link/test/' + (i - 10) + '.png';
+        images[i] = 'img/' + (i - 10) + '.png';
       }
       if (i >= 20 && i < 30) {
-        images[i] = 'https://kde.link/test/' + (i - 20) + '.png';
+        images[i] = 'img/' + (i - 20) + '.png';
       }
       if (i >= 30 && i < 40) {
-        images[i] = 'https://kde.link/test/' + (i - 30) + '.png';
+        images[i] = 'img/' + (i - 30) + '.png';
       }
     }
     
@@ -115,7 +120,7 @@ window.addEventListener('load', function loadFull() {
     }
   }
   
-  function getWin() {
+  function getWin() { // проверка победы
     var win = document.querySelectorAll('.active-always');
     var size = document.querySelectorAll('.cell');
     
@@ -125,11 +130,10 @@ window.addEventListener('load', function loadFull() {
   }
   
   field.addEventListener('click', function openImages(e) { // открываем картинки
-    var active = [];
-    var i;
+    var active;
     var itemStile1;
     var itemStile2;
-    
+
     classActive(e);
     
     active = document.querySelectorAll('.active'); // массив с открытыми картинками
@@ -146,8 +150,7 @@ window.addEventListener('load', function loadFull() {
       
       getWin();
     }
-    
-    
+
   });
   
 });
