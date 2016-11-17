@@ -1,0 +1,514 @@
+/* line 3, D:/PROJECT/brus/source/css/style.scss */
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+/* line 10, D:/PROJECT/brus/source/css/style.scss */
+.hidden {
+  display: none; }
+
+/*HEADER*/
+/* line 15, D:/PROJECT/brus/source/css/style.scss */
+header {
+  height: 438px;
+  background: url("../img/header-bg.jpg") center center no-repeat; }
+  /* line 19, D:/PROJECT/brus/source/css/style.scss */
+  header .logo {
+    margin: 35px auto 15px;
+    background: url("../img/spritesheet.png") -5px -391px;
+    width: 131px;
+    height: 92px; }
+  /* line 27, D:/PROJECT/brus/source/css/style.scss */
+  header .header-form {
+    background: #404040;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px; }
+    /* line 33, D:/PROJECT/brus/source/css/style.scss */
+    header .header-form .fa {
+      color: #bdee39;
+      opacity: .5; }
+    /* line 38, D:/PROJECT/brus/source/css/style.scss */
+    header .header-form p {
+      position: relative;
+      padding-bottom: 10px;
+      font-size: 30px;
+      line-height: 35px;
+      color: #fff;
+      border-bottom: 2px solid #666; }
+    /* line 47, D:/PROJECT/brus/source/css/style.scss */
+    header .header-form a {
+      font-size: 16px;
+      line-height: 35px;
+      color: #bdee39;
+      border-bottom: 1px dotted #bdee39;
+      text-decoration: none; }
+      /* line 54, D:/PROJECT/brus/source/css/style.scss */
+      header .header-form a:hover,
+      header .header-form a:active {
+        text-decoration: none; }
+    /* line 61, D:/PROJECT/brus/source/css/style.scss */
+    header .header-form form input {
+      width: 240px;
+      padding: 10px;
+      text-align: center;
+      border: none; }
+    /* line 68, D:/PROJECT/brus/source/css/style.scss */
+    header .header-form form input[type="button"] {
+      margin-top: 3px;
+      background: #abd242;
+      border-bottom: 2px solid #86a532; }
+
+/* line 77, D:/PROJECT/brus/source/css/style.scss */
+nav.navbar {
+  background: #bdee39;
+  border: none;
+  margin-bottom: 0; }
+
+/* line 83, D:/PROJECT/brus/source/css/style.scss */
+ul.nav.menu {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  /* line 88, D:/PROJECT/brus/source/css/style.scss */
+  ul.nav.menu li {
+    display: inline-block;
+    font-size: 0; }
+    /* line 92, D:/PROJECT/brus/source/css/style.scss */
+    ul.nav.menu li a {
+      display: block;
+      text-transform: uppercase;
+      color: #404040;
+      font-size: 18px;
+      text-decoration: none; }
+      /* line 98, D:/PROJECT/brus/source/css/style.scss */
+      ul.nav.menu li a:hover {
+        color: #ff4200; }
+    /* line 103, D:/PROJECT/brus/source/css/style.scss */
+    ul.nav.menu li .fa {
+      color: #718f22; }
+  /* line 110, D:/PROJECT/brus/source/css/style.scss */
+  ul.nav.menu .menu-active {
+    position: relative; }
+    /* line 113, D:/PROJECT/brus/source/css/style.scss */
+    ul.nav.menu .menu-active a {
+      color: #ff4200; }
+  /* line 118, D:/PROJECT/brus/source/css/style.scss */
+  ul.nav.menu .search a {
+    color: #718f22; }
+
+/*PROJECT-LIST*/
+/* line 124, D:/PROJECT/brus/source/css/style.scss */
+.project-list {
+  background: #404040;
+  padding-top: 28px;
+  padding-bottom: 28px; }
+  /* line 129, D:/PROJECT/brus/source/css/style.scss */
+  .project-list .row {
+    vertical-align: middle; }
+  /* line 133, D:/PROJECT/brus/source/css/style.scss */
+  .project-list a {
+    display: block; }
+  /* line 137, D:/PROJECT/brus/source/css/style.scss */
+  .project-list img {
+    width: 80px;
+    height: auto;
+    border: 1px solid transparent; }
+  /* line 143, D:/PROJECT/brus/source/css/style.scss */
+  .project-list span {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #fff;
+    opacity: .5; }
+  /* line 150, D:/PROJECT/brus/source/css/style.scss */
+  .project-list a:hover {
+    text-decoration: none; }
+    /* line 153, D:/PROJECT/brus/source/css/style.scss */
+    .project-list a:hover img {
+      border: 2px solid #fff; }
+    /* line 157, D:/PROJECT/brus/source/css/style.scss */
+    .project-list a:hover span {
+      opacity: 1; }
+
+/*PROJECT-LIST end*/
+/*DROP-SEARCH*/
+/* line 165, D:/PROJECT/brus/source/css/style.scss */
+.drop-search {
+  background: #404040;
+  padding-top: 28px;
+  padding-bottom: 28px; }
+  /* line 170, D:/PROJECT/brus/source/css/style.scss */
+  .drop-search .input-group-addon {
+    padding-left: 35px;
+    padding-right: 35px;
+    background: #bcbcbc;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #404040;
+    cursor: pointer; }
+
+/*DROP-SEARCH end*/
+/*HEADER end*/
+/*BEST-PROJECTS*/
+/* line 185, D:/PROJECT/brus/source/css/style.scss */
+.best-projects {
+  background: url("../img/texture.png");
+  padding-bottom: 30px; }
+  /* line 189, D:/PROJECT/brus/source/css/style.scss */
+  .best-projects h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px; }
+  /* line 197, D:/PROJECT/brus/source/css/style.scss */
+  .best-projects .nav-tabs li {
+    width: 25%;
+    text-align: center; }
+  /* line 201, D:/PROJECT/brus/source/css/style.scss */
+  .best-projects .nav-tabs li a {
+    color: #858585;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase; }
+  /* line 207, D:/PROJECT/brus/source/css/style.scss */
+  .best-projects .nav-tabs li a:hover {
+    background: #d9d9d9; }
+  /* line 210, D:/PROJECT/brus/source/css/style.scss */
+  .best-projects .nav-tabs li.active a {
+    background: #404040;
+    color: #fff; }
+
+/* line 216, D:/PROJECT/brus/source/css/style.scss */
+.nav-tabs {
+  border-bottom: 3px solid #404040; }
+
+/* line 220, D:/PROJECT/brus/source/css/style.scss */
+.nav-tabs > li {
+  margin-bottom: 0px; }
+
+/* line 224, D:/PROJECT/brus/source/css/style.scss */
+.tab-slider {
+  margin-top: 14px; }
+
+/* line 228, D:/PROJECT/brus/source/css/style.scss */
+.tab-item {
+  display: inline-block;
+  vertical-align: top;
+  box-shadow: 0 0 3px 0px rgba(128, 128, 128, 0.65);
+  width: 50%;
+  float: left;
+  padding: 1px; }
+
+/* line 237, D:/PROJECT/brus/source/css/style.scss */
+.tab-item img {
+  width: 100%; }
+
+/* line 241, D:/PROJECT/brus/source/css/style.scss */
+.tab-item a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  width: 100%; }
+  /* line 247, D:/PROJECT/brus/source/css/style.scss */
+  .tab-item a div {
+    position: relative;
+    padding: 13px 30px;
+    background: #fff;
+    font-size: 16px;
+    color: #858585; }
+  /* line 254, D:/PROJECT/brus/source/css/style.scss */
+  .tab-item a .size:before {
+    content: '';
+    position: absolute;
+    top: 22px;
+    left: 10px;
+    background: url("../img/spritesheet.png") -5px -571px;
+    width: 15px;
+    height: 17px; }
+  /* line 264, D:/PROJECT/brus/source/css/style.scss */
+  .tab-item a .s {
+    margin-left: 30px;
+    margin-right: 50px; }
+  /* line 268, D:/PROJECT/brus/source/css/style.scss */
+  .tab-item a .s:before {
+    content: '';
+    position: absolute;
+    top: 22px;
+    left: 105px;
+    background: url("../img/spritesheet.png") -5px -493px;
+    width: 15px;
+    height: 17px; }
+  /* line 279, D:/PROJECT/brus/source/css/style.scss */
+  .tab-item a .price {
+    font-size: 24px;
+    color: #ff4200; }
+  /* line 283, D:/PROJECT/brus/source/css/style.scss */
+  .tab-item a del {
+    color: #000; }
+
+/*BEST-PROJECTS end*/
+/*CONTENT*/
+/* line 293, D:/PROJECT/brus/source/css/style.scss */
+.main-content {
+  margin-top: 20px; }
+
+/* line 297, D:/PROJECT/brus/source/css/style.scss */
+.content-map {
+  padding-top: 10px;
+  min-height: 278px;
+  background: url("../img/map.jpg") center center no-repeat; }
+  /* line 303, D:/PROJECT/brus/source/css/style.scss */
+  .content-map .map-container {
+    margin: 0 auto;
+    padding: 2%; }
+  /* line 308, D:/PROJECT/brus/source/css/style.scss */
+  .content-map .map-col1 {
+    text-align: center; }
+  /* line 311, D:/PROJECT/brus/source/css/style.scss */
+  .content-map .map-col1 p {
+    text-align: left; }
+  /* line 314, D:/PROJECT/brus/source/css/style.scss */
+  .content-map h2 {
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px; }
+  /* line 320, D:/PROJECT/brus/source/css/style.scss */
+  .content-map p {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 24px;
+    border-left: 4px solid rgba(0, 0, 0, 0.5);
+    padding-left: 10px; }
+    /* line 326, D:/PROJECT/brus/source/css/style.scss */
+    .content-map p:first-child {
+      border-left: none; }
+  /* line 331, D:/PROJECT/brus/source/css/style.scss */
+  .content-map .bottom-span {
+    position: relative;
+    font-size: 70px;
+    color: #fff;
+    font-weight: bold; }
+  /* line 337, D:/PROJECT/brus/source/css/style.scss */
+  .content-map .top-span {
+    position: absolute;
+    top: -6px;
+    left: 2px;
+    letter-spacing: 2px;
+    font-size: 64px;
+    color: #afe324;
+    font-weight: 300; }
+  /* line 347, D:/PROJECT/brus/source/css/style.scss */
+  .content-map .col-lg-2 p {
+    line-height: 90px; }
+  /* line 351, D:/PROJECT/brus/source/css/style.scss */
+  .content-map .map-col2 {
+    margin-top: 20px; }
+  /* line 354, D:/PROJECT/brus/source/css/style.scss */
+  .content-map ul {
+    list-style: none; }
+
+/* line 359, D:/PROJECT/brus/source/css/style.scss */
+.content-text {
+  margin-top: 50px; }
+  /* line 361, D:/PROJECT/brus/source/css/style.scss */
+  .content-text h2 {
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+  /* line 365, D:/PROJECT/brus/source/css/style.scss */
+  .content-text p {
+    font-size: 14px;
+    color: #858585; }
+  /* line 369, D:/PROJECT/brus/source/css/style.scss */
+  .content-text .text-heading {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #404040; }
+  /* line 375, D:/PROJECT/brus/source/css/style.scss */
+  .content-text ul {
+    padding: 0; }
+  /* line 378, D:/PROJECT/brus/source/css/style.scss */
+  .content-text li {
+    list-style: none;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 50px;
+    position: relative; }
+  /* line 385, D:/PROJECT/brus/source/css/style.scss */
+  .content-text li:nth-child(1):after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background: url("../img/spritesheet.png") -5px -520px;
+    width: 39px;
+    height: 41px; }
+  /* line 396, D:/PROJECT/brus/source/css/style.scss */
+  .content-text li:nth-child(2):after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background: url("../img/spritesheet.png") -5px -672px;
+    width: 39px;
+    height: 41px; }
+  /* line 407, D:/PROJECT/brus/source/css/style.scss */
+  .content-text li:nth-child(3):after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background: url("../img/spritesheet.png") -5px -598px;
+    width: 41px;
+    height: 41px; }
+
+/*CONTENT end*/
+/*SIDEBAR*/
+/* line 422, D:/PROJECT/brus/source/css/style.scss */
+.sidebar a {
+  text-decoration: underline;
+  font-size: 14px;
+  color: #404040; }
+
+/* line 432, D:/PROJECT/brus/source/css/style.scss */
+.gift {
+  height: 380px;
+  margin: 0 auto;
+  background: url("../img/brush.png") center center no-repeat;
+  background-size: cover; }
+  /* line 439, D:/PROJECT/brus/source/css/style.scss */
+  .gift .gift-header {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px 0;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #868686; }
+  /* line 451, D:/PROJECT/brus/source/css/style.scss */
+  .gift h3 {
+    margin-top: 0;
+    padding: 10px 0;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000; }
+  /* line 460, D:/PROJECT/brus/source/css/style.scss */
+  .gift p {
+    font-size: 18px;
+    color: #000;
+    text-align: center; }
+
+/* line 467, D:/PROJECT/brus/source/css/style.scss */
+.sidebar-list {
+  margin-top: 25px; }
+  /* line 470, D:/PROJECT/brus/source/css/style.scss */
+  .sidebar-list .list-title {
+    font-size: 30px;
+    color: #404040;
+    border-bottom: 2px solid #404040; }
+  /* line 475, D:/PROJECT/brus/source/css/style.scss */
+  .sidebar-list ul {
+    padding: 0; }
+  /* line 478, D:/PROJECT/brus/source/css/style.scss */
+  .sidebar-list li {
+    list-style: none;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 20px;
+    position: relative; }
+    /* line 485, D:/PROJECT/brus/source/css/style.scss */
+    .sidebar-list li a {
+      text-decoration: underline;
+      font-size: 14px;
+      color: #404040; }
+  /* line 491, D:/PROJECT/brus/source/css/style.scss */
+  .sidebar-list li:after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 0;
+    background: url("../img/spritesheet.png") -5px -649px;
+    width: 13px;
+    height: 13px; }
+
+/* line 503, D:/PROJECT/brus/source/css/style.scss */
+.flexslider {
+  margin-bottom: 5px; }
+  /* line 507, D:/PROJECT/brus/source/css/style.scss */
+  .flexslider li {
+    position: relative; }
+    /* line 511, D:/PROJECT/brus/source/css/style.scss */
+    .flexslider li p a {
+      position: absolute;
+      padding: 10px;
+      text-decoration: underline;
+      top: 0;
+      width: 100%;
+      font-size: 18px;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.6); }
+
+/* line 524, D:/PROJECT/brus/source/css/style.scss */
+.works {
+  margin-top: 20px;
+  font-size: 30px;
+  color: #404040;
+  border-bottom: 2px solid #404040; }
+
+/*SIDEBAR end*/
+/*FOOTER*/
+/* line 534, D:/PROJECT/brus/source/css/style.scss */
+footer {
+  margin-top: 30px;
+  background: #d9d9d9;
+  padding-top: 25px;
+  padding-bottom: 25px; }
+  /* line 540, D:/PROJECT/brus/source/css/style.scss */
+  footer h4 {
+    color: #404040;
+    border-bottom: 2px solid #bababa;
+    font-weight: bold; }
+  /* line 546, D:/PROJECT/brus/source/css/style.scss */
+  footer a {
+    text-decoration: underline;
+    font-size: 14px;
+    color: #404040; }
+  /* line 551, D:/PROJECT/brus/source/css/style.scss */
+  footer p span {
+    font-size: 16px;
+    color: #404040;
+    font-weight: bold; }
+  /* line 556, D:/PROJECT/brus/source/css/style.scss */
+  footer .social {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #404040;
+    margin-right: 10px;
+    margin-top: 10px; }
+  /* line 566, D:/PROJECT/brus/source/css/style.scss */
+  footer .fa {
+    font-size: 24px;
+    color: #d9d9d9; }
+  /* line 571, D:/PROJECT/brus/source/css/style.scss */
+  footer .fa-facebook {
+    position: absolute;
+    top: 13px;
+    left: 17px; }
+  /* line 576, D:/PROJECT/brus/source/css/style.scss */
+  footer .fa-vk {
+    position: absolute;
+    top: 12px;
+    left: 12px; }
+
+/*FOOTER end*/
+
+/*# sourceMappingURL=style.css.map */
