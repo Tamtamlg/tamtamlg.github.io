@@ -21,7 +21,12 @@ header {
     background: url('../img/spritesheet.png') -5px -391px;
     width: 131px;
     height: 92px;
-    //background-position: -5px -391px;
+    
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
   }
   
   .header-form {
@@ -71,8 +76,17 @@ header {
         border-bottom: 2px solid #86a532;
       }
     }
+    
   }
 }
+
+@media only screen and (max-width: 990px) {
+  .header-form {
+    max-width: 300px;
+    margin: auto;
+  }
+}
+
 
 nav.navbar {
   background: #bdee39;
@@ -101,7 +115,6 @@ ul.nav.menu {
     }
     
     .fa {
-      
       color: #718f22;
     }
     
@@ -119,6 +132,12 @@ ul.nav.menu {
     color: #718f22;
   }
 }
+
+
+@media only screen and (max-width: 990px) {
+  
+}
+
 
 /*PROJECT-LIST*/
 .project-list {
@@ -156,6 +175,13 @@ ul.nav.menu {
     
     span {
       opacity: 1;
+    }
+  }
+  
+  @media only screen and (max-width: 990px) {
+    .project-list__item {
+      padding-left: 30%;
+      margin: 10px;
     }
   }
 }
@@ -204,6 +230,34 @@ ul.nav.menu {
     text-decoration: none;
     text-transform: uppercase;
   }
+  
+  @media only screen and (max-width: 990px) {
+    .nav-tabs li a {
+      font-size: 18px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .nav-tabs li a {
+      font-size: 14px;
+    }
+  }
+  @media only screen and (max-width: 590px) {
+    .nav-tabs li a {
+      font-size: 12px;
+    }
+  }
+  @media only screen and (max-width: 540px) {
+    .nav-tabs li a {
+      font-size: 10px;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .nav-tabs li a {
+      font-size: 8px;
+    }
+  }
+  
+  
   .nav-tabs li a:hover {
     background: #d9d9d9;
   }
