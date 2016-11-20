@@ -79,6 +79,13 @@ header {
   background: url('../img/header-bg.jpg') center center no-repeat;
   height: 500px;
   padding-top: 25px;
+  
+  a {
+    display: block;
+  }
+  img {
+    margin: 0 auto;
+  }
 }
 
 /*HEADER end*/
@@ -213,7 +220,7 @@ header {
 }
 
 .team-social {
-  margin-top: 30%;
+  margin-top: 20%;
 }
 .team-social a {
   display: inline-block;
@@ -221,6 +228,10 @@ header {
   font-size: 30px;
   color: #000;
 }
+.team-social a:hover {
+  color: #3ac9e8;
+}
+
 .team-social a:last-child {
   margin-right: 0;
 }
@@ -254,6 +265,10 @@ header {
 	right: 0;
     margin: 0 auto;
     width: 300px;
+    text-transform: uppercase;
+    p:first-child {
+      font-weight: bold;
+    }
   }
 }
 
@@ -281,9 +296,8 @@ header {
   background: #ccc8b6;
 }
 .gallery-first {
-  padding-top: 6%;
+  padding-top: 5%;
   padding-bottom: 5%;
-  cursor: default;
   h2 {
     text-align: center;
     text-transform: uppercase;
@@ -298,3 +312,88 @@ header {
   }
 }
 
+
+
+/*CONTACT US*/
+.contact-first {
+  padding-top: 100px;
+  padding-bottom: 30px;
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 36px;
+    color: #010101;
+    font-weight: bold;
+    max-width: 300px;
+    margin: 0 auto;
+    border: 10px solid #010101;
+    padding: 25px 20px;
+  }
+  
+  .contact-center {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  h4,
+  span {
+    text-transform: uppercase;
+  }
+  .team-social {
+    margin-top: 50px;
+  }
+}
+
+
+.contact-second {
+  padding-top: 100px;
+  padding-bottom: 30px;
+  
+  input,
+  textarea {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px; 
+    border: 1px solid #000;
+    margin-bottom: 50px;
+    line-height: 40px;
+    outline: none;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  input[type="submit"] {
+    background: #9a977a;
+    border: none;
+    color: #fff;
+    margin-top: 50px;
+  }
+}
+/*CONTACT US end*/
+
+/*MAP*/
+.map {
+  height: 800px;
+  background: url('../img/map.jpg') center center no-repeat;
+  background-size: cover;
+}
+/*MAP end*/
+
+/*FOOTER*/
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: #aeaeae;
+  a {
+    display: block;
+  }
+  img {
+    margin: 0 auto;
+  }
+  p {
+    margin-top: 40px;
+  }
+}
+
+/*FOOTER end*/
