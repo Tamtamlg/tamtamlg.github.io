@@ -357,17 +357,18 @@ header {
     padding-right: 10px; 
     border: 1px solid #000;
     margin-bottom: 50px;
-    line-height: 40px;
     outline: none;
     color: #333;
     text-transform: uppercase;
     font-weight: bold;
   }
+  input {
+    line-height: 40px;
+  }
   input[type="submit"] {
     background: #9a977a;
     border: none;
     color: #fff;
-    margin-top: 50px;
   }
 }
 /*CONTACT US end*/

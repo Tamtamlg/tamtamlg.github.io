@@ -343,21 +343,22 @@ header {
     padding-right: 10px;
     border: 1px solid #000;
     margin-bottom: 50px;
-    line-height: 40px;
     outline: none;
     color: #333;
     text-transform: uppercase;
     font-weight: bold; }
-  /* line 366, D:/dz/tamtamlg.github.io/inktattoo/css/style.scss */
+  /* line 365, D:/dz/tamtamlg.github.io/inktattoo/css/style.scss */
+  .contact-second input {
+    line-height: 40px; }
+  /* line 368, D:/dz/tamtamlg.github.io/inktattoo/css/style.scss */
   .contact-second input[type="submit"] {
     background: #9a977a;
     border: none;
-    color: #fff;
-    margin-top: 50px; }
+    color: #fff; }
 
 /*CONTACT US end*/
 /*MAP*/
-/* line 376, D:/dz/tamtamlg.github.io/inktattoo/css/style.scss */
+/* line 377, D:/dz/tamtamlg.github.io/inktattoo/css/style.scss */
 .map {
   height: 800px;
   background: url("../img/map.jpg") center center no-repeat;
@@ -365,18 +366,18 @@ header {
 
 /*MAP end*/
 /*FOOTER*/
-/* line 384, D:/dz/tamtamlg.github.io/inktattoo/css/style.scss */
+/* line 385, D:/dz/tamtamlg.github.io/inktattoo/css/style.scss */
 footer {
   padding-top: 30px;
   padding-bottom: 30px;
   background: #aeaeae; }
-  /* line 388, D:/dz/tamtamlg.github.io/inktattoo/css/style.scss */
+  /* line 389, D:/dz/tamtamlg.github.io/inktattoo/css/style.scss */
   footer a {
     display: block; }
-  /* line 391, D:/dz/tamtamlg.github.io/inktattoo/css/style.scss */
+  /* line 392, D:/dz/tamtamlg.github.io/inktattoo/css/style.scss */
   footer img {
     margin: 0 auto; }
-  /* line 394, D:/dz/tamtamlg.github.io/inktattoo/css/style.scss */
+  /* line 395, D:/dz/tamtamlg.github.io/inktattoo/css/style.scss */
   footer p {
     margin-top: 40px; }
 
