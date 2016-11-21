@@ -79,6 +79,7 @@ header {
   background: url('../img/header-bg.jpg') center center no-repeat;
   height: 500px;
   padding-top: 25px;
+  background-size: cover;
   
   a {
     display: block;
@@ -87,15 +88,17 @@ header {
     margin: 0 auto;
   }
 }
-
 /*HEADER end*/
 
 
 /*ABOUT*/
 .about-first {
   background: url('../img/about-bg.jpg') center center no-repeat;
+  background-size: cover;
   height: 500px;
-  padding-top: 205px;
+//  padding-top: 205px;
+  display: flex;
+  align-items: center;
   h2 {
     text-align: center;
     text-transform: uppercase;
@@ -104,15 +107,22 @@ header {
     color: #010101;
     font-weight: bold;
     max-width: 300px;
-    margin: 0 auto;
     border: 10px solid #010101;
     padding: 25px;
+    margin: 0 auto;
   }
 }
 .about-second {
   background: url('../img/about-logo.png') center 100px no-repeat;
   height: 500px;
   padding: 180px 80px;
+}
+
+@media only screen and (max-width: 480px) {
+  
+  .about-second {
+    padding: 180px 20px;
+  }
 }
 
 .about-gallery .col-sm-2 {
@@ -152,9 +162,7 @@ header {
 }
 /*ABOUT end*/
 
-
-
-/*PARALLAX*/
+/*PARALLAX-1*/
 .parallax {
   height: 350px;
   background: url('../img/parallax1.jpg') center center no-repeat;
@@ -173,6 +181,12 @@ header {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .parallax {
+    height: 450px;
+  }
+}
+/*PARALLAX-1 end*/
 
 /*TEAM*/
 .team .col-md-4 {
@@ -216,7 +230,6 @@ header {
 
 .team .team-text {
   padding: 20px;
-  
 }
 
 .team-social {
@@ -234,6 +247,44 @@ header {
 
 .team-social a:last-child {
   margin-right: 0;
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .team-social {
+    margin-top: 0;
+  }
+  .team .team-text {
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 990px) {
+  
+  .team .team-text {
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+    .team-social {
+    margin-top: 10%;
+  }
+  
+}
+@media only screen and (max-width: 540px) {
+  
+  .team .team-text {
+    height: 100vw;
+    
+  }
+  .team-social {
+    margin-top: 0;
+  }
+  .team h2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
 }
 
 .form-container {
@@ -271,8 +322,9 @@ header {
     }
   }
 }
+/*TEAM*/
 
-
+/*PARALLAX-2*/
 .parallax2 {
   height: 350px;
   background: url('../img/parallax2.jpg') center center no-repeat;
@@ -292,12 +344,20 @@ header {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .parallax2 {
+    height: 450px;
+  }
+}
+/*PARALLAX-2 end*/
+
+/*GALLERY*/
 .gallery .row {
   background: #ccc8b6;
 }
 .gallery-first {
-  padding-top: 5%;
-  padding-bottom: 5%;
+  display: flex; justify-content: space-between; align-items: center;
+  height: 19vw;
   h2 {
     text-align: center;
     text-transform: uppercase;
@@ -312,7 +372,12 @@ header {
   }
 }
 
-
+@media only screen and (max-width: 768px) {
+  .gallery-first {
+    height: 70vw;
+  }
+}
+/*GALLERY end*/
 
 /*CONTACT US*/
 .contact-first {
@@ -325,7 +390,7 @@ header {
     line-height: 36px;
     color: #010101;
     font-weight: bold;
-    max-width: 300px;
+    max-width: 320px;
     margin: 0 auto;
     border: 10px solid #010101;
     padding: 25px 20px;
@@ -371,6 +436,19 @@ header {
     color: #fff;
   }
 }
+
+@media only screen and (max-width: 990px) {
+  .contact-info .col-md-6 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .contact-first h2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 /*CONTACT US end*/
 
 /*MAP*/
@@ -396,5 +474,4 @@ footer {
     margin-top: 40px;
   }
 }
-
 /*FOOTER end*/
