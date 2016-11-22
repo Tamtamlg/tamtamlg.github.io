@@ -1,0 +1,184 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url("../font/robotoregular-webfont.woff2") format("woff2"), url("../font/robotoregular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 12, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+html,
+body {
+  font-family: 'Roboto'; }
+
+/* line 15, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+.container-fluid {
+  max-width: 1366px; }
+
+/*HEADER*/
+/* line 20, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+header {
+  height: 1270px;
+  transform: skewY(-5deg);
+  padding-top: 610px;
+  margin-top: -590px;
+  color: #fff;
+  background: #4a454b;
+  background-image: url(../img/icon1.png), url(../img/icon2.png), url(../img/icon3.png), url(../img/icon4.png), url(../img/icon5.png);
+  background-repeat: no-repeat,                       no-repeat,                       no-repeat,                       no-repeat,                       no-repeat;
+  background-position: 30px 1125px, 160px 1125px, 290px 1125px, 420px 1125px, 550px 1125px; }
+
+/* line 43, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+header > * {
+  transform: skewY(5deg); }
+
+/*nav*/
+/* line 48, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+.navbar-toggle {
+  background: #4a454b; }
+
+/* line 51, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff; }
+
+/* line 54, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+.navbar-default .navbar-toggle {
+  border-color: #fff; }
+
+/* line 57, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: transparent; }
+
+/* line 60, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent; }
+
+/* line 65, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #777; }
+
+/* line 69, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 70px; }
+
+/* line 75, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #bbb;
+  background-color: transparent; }
+
+/*nav end*/
+/* line 81, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+.timer {
+  max-width: 970px;
+  margin: 0 auto;
+  margin-top: 80px;
+  text-align: center;
+  padding: 10px 20px 10px 20px;
+  border: 2px solid #90d23d;
+  border-radius: 17px; }
+
+/* line 95, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+.days,
+.hours,
+.minutes,
+.seconds,
+.timer-dot {
+  display: inline-block;
+  text-align: center; }
+
+/* line 102, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+.days-text,
+.hours-text,
+.minutes-text,
+.seconds-text {
+  font-size: 25px;
+  text-transform: uppercase; }
+
+/* line 110, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+.days-num,
+.hours-num,
+.minutes-num,
+.seconds-num,
+.timer-dot {
+  font-size: 130px;
+  line-height: 130px;
+  font-weight: 300; }
+
+/* line 117, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+.days,
+.hours,
+.minutes {
+  margin-right: 50px;
+  position: relative; }
+
+/* line 123, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+.days:after,
+.hours:after,
+.minutes:after {
+  content: ':';
+  position: absolute;
+  top: -10px;
+  right: -40px;
+  font-size: 100px; }
+
+/*HEADER end*/
+/*WELCOME*/
+/* line 134, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+.welcome {
+  padding-top: 80px; }
+  /* line 137, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+  .welcome h2 {
+    font-size: 50px;
+    color: #242424;
+    font-weight: 700; }
+
+/* line 144, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+.sign-up {
+  margin-top: -230px;
+  margin-bottom: 100px; }
+  /* line 147, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+  .sign-up form {
+    background: #fff;
+    width: 430px;
+    margin: 0 auto;
+    border: 1px solid #dbdada;
+    padding: 25px;
+    box-shadow: 0 1px 1px 0px #999; }
+  /* line 155, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+  .sign-up h3 {
+    font-size: 30px;
+    color: #252525;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px; }
+
+/* line 163, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+.sign-up input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  line-height: 54px;
+  border: 1px solid #bebebe;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 19px;
+  color: #6c6c6c; }
+
+/* line 176, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+.sign-up input:focus {
+  border: 1px solid #90d23d; }
+
+/* line 179, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+input[type='submit'] {
+  background: #90d23d;
+  color: #fff;
+  border: none; }
+
+/*WELCOME end*/
+
+/*# sourceMappingURL=style.css.map */
