@@ -77,6 +77,13 @@ header > * {
   color: #bbb;
   background-color: transparent;
 }
+
+.navbar-brand {
+  background: url(../img/spritesheet.png);
+  width: 230px;
+  height: 62px;
+  background-position: -5px -1966px;
+}
 /*nav end*/
 
 .timer {
@@ -126,6 +133,108 @@ header > * {
   top: -10px;
   right: -40px;
   font-size: 100px;
+}
+
+
+@media only screen and (max-width : 992px) {
+  
+  .timer {
+    padding: 5px;
+  }
+  .days-text,
+  .hours-text,
+  .minutes-text,
+  .seconds-text {
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  .days-num,
+  .hours-num,
+  .minutes-num,
+  .seconds-num,
+  .timer-dot {
+    font-size: 60px;
+    line-height: 130px;
+    font-weight: 300;
+  }
+  .days:after,
+  .hours:after,
+  .minutes:after {
+    content: ':';
+    position: absolute;
+    top: 20px;
+    right: -40px;
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width : 510px) {
+  .days-text,
+  .hours-text,
+  .minutes-text,
+  .seconds-text {
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  .days-num,
+  .hours-num,
+  .minutes-num,
+  .seconds-num,
+  .timer-dot {
+    font-size: 30px;
+    line-height: 80px;
+    font-weight: 300;
+  }
+  .days,
+  .hours,
+  .minutes {
+    margin-right: 20px;
+    position: relative;
+  }
+  .days:after,
+  .hours:after,
+  .minutes:after {
+    content: ':';
+    position: absolute;
+    top: 15px;
+    right: -15px;
+    font-size: 30px;
+  }
+}
+
+
+@media only screen and (max-width : 340px) {
+  .days-text,
+  .hours-text,
+  .minutes-text,
+  .seconds-text {
+    font-size: 8px;
+    text-transform: uppercase;
+  }
+  .days-num,
+  .hours-num,
+  .minutes-num,
+  .seconds-num,
+  .timer-dot {
+    font-size: 15px;
+    line-height: 40px;
+    font-weight: 300;
+  }
+  .days,
+  .hours,
+  .minutes {
+    margin-right: 10px;
+    position: relative;
+  }
+  .days:after,
+  .hours:after,
+  .minutes:after {
+    content: ':';
+    position: absolute;
+    top: 8px;
+    right: -8px;
+    font-size: 15px;
+  }
 }
 /*HEADER end*/
 
@@ -183,17 +292,39 @@ input[type='submit'] {
   color: #fff;
   border: none;
 }
+
+@media only screen and (max-width : 991px) {
+  .sign-up {
+    margin-top: 50px;
+  }
+}
 /*WELCOME end*/
 
 /*FEATURES*/
 .features {
   margin-top: 50px;
   margin-bottom: 100px;
-  img {
-    width: 200px;
-    height: 200px;
+  .features-img1 {
+    margin: 0 auto;
+    background: url(../img/spritesheet.png);
+    width: 198px;
+    height: 211px;
+    background-position: -5px -1687px;
   }
-  
+  .features-img2 {
+    margin: 0 auto;
+    background: url(../img/spritesheet.png);
+    width: 198px;
+    height: 198px;
+    background-position: -5px -876px;
+  }
+  .features-img3 {
+    margin: 0 auto;
+    background: url(../img/spritesheet.png);
+    width: 200px;
+    height: 201px;
+    background-position: -5px -1084px;
+  }
 }
 /*FEATURES end*/
 
@@ -217,6 +348,15 @@ input[type='submit'] {
     font-size: 22px;
     padding-left: 0;
     padding-right: 0;
+    
+    p {
+      display: none;
+      line-height: 30px;
+      padding: 20px;
+    }
+  }
+  .accordion-active p {
+    display: block;
   }
   .list-group-item:nth-child(even) {
     background: #4b4d4f;
@@ -248,33 +388,30 @@ input[type='submit'] {
   width: 70%;
 }
 .schedule-plus {
-  width: 34px;
-  position: relative;
-  color: #4b4d4f;
-}
-.schedule-plus:hover {
   cursor: pointer;
+  background: url(../img/spritesheet.png);
+  width: 33px;
+  height: 33px;
+  background-position: -5px -2934px;
 }
-.schedule-plus:after {
-  content: '';
-  position: absolute;
-  top: 20px;
-  right: 0;
-  width: 34px;
-  height: 34px;
-  background: #fff;
-  border-radius: 50%;
+
+
+@media only screen and (max-width : 992px) {
+  .schedule-action {
+    display: none;
+  }
+  .schedule-time {
+    padding-left: 20px;
+    width: 90%;
+    text-align: left;
+  }
 }
-.schedule-plus:before {
-  content: '+';
-  position: absolute;
-  top: 3px;
-  right: 6px;
-  width: 34px;
-  height: 34px;
-  font-size: 40px;
-  font-weight: 700;
-  z-index: 2;
+@media only screen and (max-width : 480px) {
+  .schedule-time {
+    
+    width: 80%;
+    
+  }
 }
 /*SCHEDULE end*/
 
@@ -284,6 +421,7 @@ input[type='submit'] {
   min-height: 580px;
   transform: skewY(-5deg);
   padding-top: 30px;
+  padding-bottom: 50px;
   color: #fff;
   background: #4a454b;
   margin-bottom: 100px;
@@ -295,9 +433,13 @@ input[type='submit'] {
 
 .elit-first {
   position: relative;
-  img {
+  .elit-img {
     position: absolute;
     top: -170px;
+    background: url(../img/spritesheet.png);
+    width: 354px;
+    height: 357px;
+    background-position: -5px -91px;
   }
 }
 
@@ -313,6 +455,12 @@ input[type='submit'] {
     background: #90d23d;
     margin-top: 40px;
     font-size: 22px;
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .elit-second {
+    margin-top: 170px;
   }
 }
 /*ELITE end*/
@@ -348,24 +496,48 @@ input[type='submit'] {
     font-size: 18px;
   }
 }
+
 .spikers-item__center {
   background: url('../img/icon7.png') center center no-repeat;
   height: 296px;
   background-size: cover;
 }
 .speaker-social {
+  margin-top: 30px;
   a {
     display: inline-block;
-    width: 35px;
-    height: 35px;
-    background: #fff;
-    border-radius: 50%;
-    margin-right: 15px;
-    margin-top: 30px;
-    text-align: center;
-    line-height: 35px;
-    font-size: 20px;
-    color: #90d23d;
+    background: url(../img/spritesheet.png);
+    margin-right: 10px;
+  }
+  .facebook {
+    width: 33px;
+    height: 33px;
+    background-position: -5px -458px;
+  }
+  .twitter {
+    width: 33px;
+    height: 33px;
+    background-position: -5px -3542px;
+  }
+  .behance {
+    width: 34px;
+    height: 33px;
+    background-position: -5px -48px;
+  }
+  .ball {
+    width: 33px;
+    height: 33px;
+    background-position: -5px -5px;
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .spikers-item,
+  .spikers-item__center {
+    margin-bottom: 30px;
+  }
+  .speakers .row {
+    margin-bottom: 0px;
   }
 }
 /*SPEAKERS end*/
@@ -379,6 +551,7 @@ input[type='submit'] {
   min-height: 580px;
   transform: skewY(-5deg);
   padding-top: 60px;
+  padding-bottom: 50px;
   color: #fff;
   background: #4a454b;
   margin-bottom: 100px;
@@ -407,7 +580,30 @@ input[type='submit'] {
   line-height: 80px;
 }
 .sponsor-img {
-  vertical-align: middle;
+  
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 30px;
+  }
+}
+.sponsor-img1 {
+  background: url(../img/spritesheet.png);
+  width: 178px;
+  height: 69px;
+  background-position: -5px -3283px;
+}
+.sponsor-img2 {
+  background: url(../img/spritesheet.png);
+  width: 95px;
+  height: 75px;
+  background-position: -5px -3362px;
+}
+.sponsor-img3 {
+  background: url(../img/spritesheet.png);
+  width: 153px;
+  height: 28px;
+  background-position: -5px -3447px;
 }
 /*SPONSOR end*/
 
@@ -478,7 +674,7 @@ input[type='submit'] {
   button {
     display: block;
     margin: 0 auto;
-    padding: 20px 45px;
+    padding: 15px 20px;
     border: none;
     border-radius: 14px;
     background: #90d23d;
@@ -486,8 +682,13 @@ input[type='submit'] {
     font-size: 22px;
     color: #fff;
   }
-  img {
+  .map-img {
+    margin: 0 auto;
     margin-bottom: 30px;
+    background: url(../img/spritesheet.png);
+    width: 132px;
+    height: 140px;
+    background-position: -5px -1537px;
   }
 }
 .map-second {
@@ -527,22 +728,43 @@ input[type='submit'] {
 footer {
   height: 220px;
   background: #90d23d;
+  padding-top: 30px;
   
   .footer-social {
     a {
       display: inline-block;
-      width: 35px;
-      height: 35px;
-      background: #fff;
-      border-radius: 50%;
-      margin-right: 15px;
-      margin-top: 30px;
-      margin-bottom: 30px;
-      text-align: center;
-      line-height: 35px;
-      font-size: 20px;
-      color: #90d23d;
+      margin-right: 10px;
     }
+  }
+  .footer-social1 {
+    background: url(../img/spritesheet.png);
+    width: 47px;
+    height: 47px;
+    background-position: -5px -501px;
+  }
+  .footer-social2 {
+    background: url(../img/spritesheet.png);
+    width: 47px;
+    height: 47px;
+    background-position: -5px -3585px;
+  }
+  .footer-social3 {
+    background: url(../img/spritesheet.png);
+    width: 47px;
+    height: 48px;
+    background-position: -5px -1908px;
+  }
+  .footer-social4 {
+    background: url(../img/spritesheet.png);
+    width: 47px;
+    height: 48px;
+    background-position: -5px -558px;
+  }
+  .footer-social5 {
+    background: url(../img/spritesheet.png);
+    width: 47px;
+    height: 47px;
+    background-position: -5px -3485px;
   }
   p {
     color: #fff;
@@ -555,15 +777,8 @@ footer {
     line-height: 100px;
   }
 }
-
-
-
-
-
-
-
-
 /*FOOTER end*/
+
 
 
 
