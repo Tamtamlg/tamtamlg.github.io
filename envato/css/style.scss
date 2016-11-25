@@ -19,7 +19,7 @@ body {
 
 /*HEADER*/
 header {
-  height: 1270px;
+  min-height: 1270px;
   transform: skewY(-5deg);
   padding-top: 610px;
   margin-top: -590px;
@@ -83,6 +83,16 @@ header > * {
   width: 230px;
   height: 62px;
   background-position: -5px -1966px;
+}
+
+@media only screen and (max-width : 768px) {
+  #menu-collapse {
+    position: absolute;
+    background: #4a454b;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+  }
 }
 /*nav end*/
 
@@ -165,6 +175,12 @@ header > * {
     top: 20px;
     right: -40px;
     font-size: 50px;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .timer {
+    max-width: 650px;
   }
 }
 
