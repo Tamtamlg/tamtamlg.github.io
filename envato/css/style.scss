@@ -269,7 +269,7 @@ header > * {
   margin-bottom: 100px;
   form {
     background: #fff;
-    width: 430px;
+    max-width: 430px;
     margin: 0 auto;
     border: 1px solid #dbdada;
     padding: 0 25px 25px 25px;
@@ -449,13 +449,9 @@ input[type='submit'] {
 
 .elit-first {
   position: relative;
-  .elit-img {
+  img {
     position: absolute;
     top: -170px;
-    background: url(../img/spritesheet.png);
-    width: 354px;
-    height: 357px;
-    background-position: -5px -91px;
   }
 }
 

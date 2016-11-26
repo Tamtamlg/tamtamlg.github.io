@@ -260,7 +260,7 @@ header > * {
   /* line 270, D:/dz/tamtamlg.github.io/envato/css/style.scss */
   .sign-up form {
     background: #fff;
-    width: 430px;
+    max-width: 430px;
     margin: 0 auto;
     border: 1px solid #dbdada;
     padding: 0 25px 25px 25px;
@@ -441,20 +441,16 @@ input[type='submit'] {
 .elit-first {
   position: relative; }
   /* line 452, D:/dz/tamtamlg.github.io/envato/css/style.scss */
-  .elit-first .elit-img {
+  .elit-first img {
     position: absolute;
-    top: -170px;
-    background: url(../img/spritesheet.png);
-    width: 354px;
-    height: 357px;
-    background-position: -5px -91px; }
+    top: -170px; }
 
-/* line 463, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 459, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .elit-second h2 {
   font-size: 50px;
   font-weight: 700; }
 
-/* line 467, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 463, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .elit-second button {
   padding: 20px 25px;
   border: none;
@@ -464,96 +460,96 @@ input[type='submit'] {
   font-size: 22px; }
 
 @media only screen and (max-width: 992px) {
-  /* line 478, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+  /* line 474, D:/dz/tamtamlg.github.io/envato/css/style.scss */
   .elit-second {
     margin-top: 170px; } }
 
 /*ELITE end*/
 /*SPEAKERS*/
-/* line 486, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 482, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .speakers {
   margin-bottom: 150px; }
 
-/* line 489, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 485, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .speakers h2 {
   font-size: 50px;
   font-weight: 700; }
 
-/* line 493, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 489, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .speakers .row {
   margin-bottom: 30px; }
 
-/* line 496, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 492, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .spikers-item {
   background: url("../img/speaker.png") center center no-repeat;
   height: 296px;
   background-size: cover;
   padding: 20px;
   border-radius: 14px; }
-  /* line 503, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+  /* line 499, D:/dz/tamtamlg.github.io/envato/css/style.scss */
   .spikers-item h3 {
     margin: 0 0 10px 0;
     font-size: 45px;
     color: #fff;
     font-weight: 700;
     border-bottom: 6px solid #fff; }
-  /* line 510, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+  /* line 506, D:/dz/tamtamlg.github.io/envato/css/style.scss */
   .spikers-item p {
     color: #fff;
     font-size: 18px; }
 
-/* line 516, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 512, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .spikers-item__center {
   background: url("../img/icon7.png") center center no-repeat;
   height: 296px;
   background-size: cover; }
 
-/* line 521, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 517, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .speaker-social {
   margin-top: 30px; }
-  /* line 523, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+  /* line 519, D:/dz/tamtamlg.github.io/envato/css/style.scss */
   .speaker-social a {
     display: inline-block;
     background: url(../img/spritesheet.png);
     margin-right: 10px; }
-  /* line 528, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+  /* line 524, D:/dz/tamtamlg.github.io/envato/css/style.scss */
   .speaker-social .facebook {
     width: 33px;
     height: 33px;
     background-position: -5px -458px; }
-  /* line 533, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+  /* line 529, D:/dz/tamtamlg.github.io/envato/css/style.scss */
   .speaker-social .twitter {
     width: 33px;
     height: 33px;
     background-position: -5px -3542px; }
-  /* line 538, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+  /* line 534, D:/dz/tamtamlg.github.io/envato/css/style.scss */
   .speaker-social .behance {
     width: 34px;
     height: 33px;
     background-position: -5px -48px; }
-  /* line 543, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+  /* line 539, D:/dz/tamtamlg.github.io/envato/css/style.scss */
   .speaker-social .ball {
     width: 33px;
     height: 33px;
     background-position: -5px -5px; }
 
 @media only screen and (max-width: 992px) {
-  /* line 552, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+  /* line 548, D:/dz/tamtamlg.github.io/envato/css/style.scss */
   .spikers-item,
   .spikers-item__center {
     margin-bottom: 30px; }
-  /* line 555, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+  /* line 551, D:/dz/tamtamlg.github.io/envato/css/style.scss */
   .speakers .row {
     margin-bottom: 0px; } }
 
 /*SPEAKERS end*/
 /*SPONSOR*/
-/* line 562, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 558, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .sponsor-container {
   max-width: 650px;
   margin: 0 auto; }
 
-/* line 566, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 562, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .sponsor {
   min-height: 580px;
   transform: skewY(-5deg);
@@ -563,17 +559,17 @@ input[type='submit'] {
   background: #4a454b;
   margin-bottom: 100px; }
 
-/* line 575, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 571, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .sponsor > * {
   transform: skewY(5deg); }
 
-/* line 579, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 575, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .sponsor-text h2 {
   font-size: 50px;
   font-weight: 700;
   margin-bottom: 25px; }
 
-/* line 584, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 580, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .sponsor-text button {
   padding: 20px 25px;
   border: none;
@@ -582,32 +578,32 @@ input[type='submit'] {
   margin-top: 40px;
   font-size: 22px; }
 
-/* line 594, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 590, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .sponsor-row {
   margin-top: 20px;
   line-height: 80px; }
 
-/* line 600, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 596, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .sponsor-img a {
   display: inline-block;
   vertical-align: middle;
   margin-bottom: 30px; }
 
-/* line 606, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 602, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .sponsor-img1 {
   background: url(../img/spritesheet.png);
   width: 178px;
   height: 69px;
   background-position: -5px -3283px; }
 
-/* line 612, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 608, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .sponsor-img2 {
   background: url(../img/spritesheet.png);
   width: 95px;
   height: 75px;
   background-position: -5px -3362px; }
 
-/* line 618, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 614, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .sponsor-img3 {
   background: url(../img/spritesheet.png);
   width: 153px;
@@ -616,15 +612,15 @@ input[type='submit'] {
 
 /*SPONSOR end*/
 /*PASTEVENTS*/
-/* line 628, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 624, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .pastevents {
   margin-bottom: 100px; }
-  /* line 630, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+  /* line 626, D:/dz/tamtamlg.github.io/envato/css/style.scss */
   .pastevents h2 {
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 25px; }
-  /* line 635, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+  /* line 631, D:/dz/tamtamlg.github.io/envato/css/style.scss */
   .pastevents button {
     display: block;
     margin: 0 auto;
@@ -636,40 +632,40 @@ input[type='submit'] {
     font-size: 22px;
     color: #fff; }
 
-/* line 648, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 644, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .pastevents1,
 .pastevents2 {
   height: 415px; }
 
-/* line 652, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 648, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .pastevents3,
 .pastevents4 {
   height: 360px; }
 
-/* line 655, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 651, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .pastevents1 {
   background: #3d6ed2; }
 
-/* line 658, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 654, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .pastevents2 {
   background: #90d23d; }
 
-/* line 661, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 657, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .pastevents3 {
   background: #ff9d00; }
 
-/* line 664, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 660, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .pastevents4 {
   background: #e0652a; }
 
-/* line 667, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 663, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .pastevents-img {
   margin-top: 100px;
   margin-bottom: 100px; }
 
 /*PASTEVENTS end*/
 /*MAP*/
-/* line 675, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 671, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .map {
   min-height: 660px;
   background: url("../img/map.jpg") center center no-repeat;
@@ -677,17 +673,17 @@ input[type='submit'] {
   padding-bottom: 60px;
   padding-top: 60px; }
 
-/* line 682, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 678, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .map-container {
   margin: 0 auto;
   background: #fff;
   max-width: 960px;
   min-height: 530px; }
 
-/* line 688, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 684, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .map-first {
   padding: 90px 100px; }
-  /* line 690, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+  /* line 686, D:/dz/tamtamlg.github.io/envato/css/style.scss */
   .map-first button {
     display: block;
     margin: 0 auto;
@@ -698,7 +694,7 @@ input[type='submit'] {
     margin-top: 40px;
     font-size: 22px;
     color: #fff; }
-  /* line 701, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+  /* line 697, D:/dz/tamtamlg.github.io/envato/css/style.scss */
   .map-first .map-img {
     margin: 0 auto;
     margin-bottom: 30px;
@@ -707,11 +703,11 @@ input[type='submit'] {
     height: 140px;
     background-position: -5px -1537px; }
 
-/* line 710, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 706, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .map-second {
   padding: 60px 70px; }
 
-/* line 714, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 710, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .map-second input,
 .map-second textarea {
   display: block;
@@ -726,17 +722,17 @@ input[type='submit'] {
   font-size: 19px;
   color: #6c6c6c; }
 
-/* line 728, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 724, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .map-second input:focus,
 .map-second textarea:focus {
   border: 1px solid #90d23d; }
 
-/* line 731, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 727, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .map-second textarea {
   max-width: 100%;
   line-height: 22px; }
 
-/* line 735, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 731, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 .map-second input[type='submit'] {
   background: #373737;
   color: #fff;
@@ -744,52 +740,52 @@ input[type='submit'] {
 
 /*MAP end*/
 /*FOOTER*/
-/* line 744, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+/* line 740, D:/dz/tamtamlg.github.io/envato/css/style.scss */
 footer {
   height: 220px;
   background: #90d23d;
   padding-top: 30px; }
-  /* line 750, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+  /* line 746, D:/dz/tamtamlg.github.io/envato/css/style.scss */
   footer .footer-social a {
     display: inline-block;
     margin-right: 10px; }
-  /* line 755, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+  /* line 751, D:/dz/tamtamlg.github.io/envato/css/style.scss */
   footer .footer-social1 {
     background: url(../img/spritesheet.png);
     width: 47px;
     height: 47px;
     background-position: -5px -501px; }
-  /* line 761, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+  /* line 757, D:/dz/tamtamlg.github.io/envato/css/style.scss */
   footer .footer-social2 {
     background: url(../img/spritesheet.png);
     width: 47px;
     height: 47px;
     background-position: -5px -3585px; }
-  /* line 767, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+  /* line 763, D:/dz/tamtamlg.github.io/envato/css/style.scss */
   footer .footer-social3 {
     background: url(../img/spritesheet.png);
     width: 47px;
     height: 48px;
     background-position: -5px -1908px; }
-  /* line 773, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+  /* line 769, D:/dz/tamtamlg.github.io/envato/css/style.scss */
   footer .footer-social4 {
     background: url(../img/spritesheet.png);
     width: 47px;
     height: 48px;
     background-position: -5px -558px; }
-  /* line 779, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+  /* line 775, D:/dz/tamtamlg.github.io/envato/css/style.scss */
   footer .footer-social5 {
     background: url(../img/spritesheet.png);
     width: 47px;
     height: 47px;
     background-position: -5px -3485px; }
-  /* line 785, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+  /* line 781, D:/dz/tamtamlg.github.io/envato/css/style.scss */
   footer p {
     color: #fff; }
-  /* line 788, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+  /* line 784, D:/dz/tamtamlg.github.io/envato/css/style.scss */
   footer .chevron a {
     color: #373737; }
-  /* line 791, D:/dz/tamtamlg.github.io/envato/css/style.scss */
+  /* line 787, D:/dz/tamtamlg.github.io/envato/css/style.scss */
   footer .fa-chevron-up {
     font-size: 40px;
     line-height: 100px; }
