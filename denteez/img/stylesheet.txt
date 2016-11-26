@@ -1,0 +1,83 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-ask-icon {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -5px;
+}
+
+.sprite-chat-icon {
+    width: 26px;
+    height: 22px;
+    background-position: -5px -39px;
+}
+
+.sprite-companies-icon {
+    width: 21px;
+    height: 24px;
+    background-position: -5px -71px;
+}
+
+.sprite-company1 {
+    width: 128px;
+    height: 85px;
+    background-position: -5px -105px;
+}
+
+.sprite-company2 {
+    width: 124px;
+    height: 82px;
+    background-position: -5px -200px;
+}
+
+.sprite-company3 {
+    width: 130px;
+    height: 97px;
+    background-position: -5px -292px;
+}
+
+.sprite-home-icon {
+    width: 24px;
+    height: 23px;
+    background-position: -5px -399px;
+}
+
+.sprite-logo {
+    width: 130px;
+    height: 40px;
+    background-position: -5px -432px;
+}
+
+.sprite-msg-icon {
+    width: 24px;
+    height: 24px;
+    background-position: -5px -482px;
+}
+
+.sprite-product1 {
+    width: 122px;
+    height: 81px;
+    background-position: -5px -516px;
+}
+
+.sprite-product2 {
+    width: 124px;
+    height: 82px;
+    background-position: -5px -607px;
+}
+
+.sprite-search-icon {
+    width: 16px;
+    height: 16px;
+    background-position: -5px -699px;
+}
+
+.sprite-services-icon {
+    width: 19px;
+    height: 24px;
+    background-position: -5px -725px;
+}

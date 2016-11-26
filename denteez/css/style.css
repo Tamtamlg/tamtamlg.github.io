@@ -1,0 +1,468 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url("../font/robotoregular-webfont.woff2") format("woff2"), url("../font/robotoregular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 10, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+/* line 17, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+html,
+body {
+  font-family: 'Roboto';
+  color: #59606b;
+  font-size: 16px;
+  line-height: 16px; }
+
+/* line 24, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+header {
+  position: relative;
+  background: #87b448;
+  border-bottom: 2px solid #71973c; }
+  /* line 28, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+  header a {
+    line-height: 70px;
+    display: inline-block; }
+  /* line 32, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+  header .logo {
+    position: absolute;
+    top: 10px;
+    background: url("../img/spritesheet.png");
+    width: 130px;
+    height: 40px;
+    background-position: -5px -432px; }
+  /* line 40, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+  header .user-block {
+    position: relative;
+    float: right;
+    width: 330px;
+    padding-left: 100px; }
+    /* line 45, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+    header .user-block a:hover {
+      text-decoration: none; }
+    /* line 48, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+    header .user-block .user-info {
+      width: 240px;
+      color: #fefefe;
+      font-size: 16px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+      /* line 55, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+      header .user-block .user-info img {
+        border-radius: 3px;
+        margin-right: 10px; }
+  /* line 61, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+  header .chat {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background: url("../img/spritesheet.png");
+    width: 26px;
+    height: 22px;
+    background-position: -5px -39px; }
+  /* line 70, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+  header .mag {
+    position: absolute;
+    top: 23px;
+    left: 45px;
+    background: url("../img/spritesheet.png");
+    width: 24px;
+    height: 24px;
+    background-position: -5px -482px; }
+  /* line 79, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+  header .search-input {
+    position: relative;
+    padding-top: 20px;
+    margin-left: 170px;
+    margin-right: 370px; }
+    /* line 84, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+    header .search-input input {
+      width: 100%;
+      line-height: 30px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+      background: #73993d;
+      color: #fff;
+      padding-left: 40px;
+      padding-right: 10px; }
+  /* line 97, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+  header .search-input:after {
+    content: '';
+    position: absolute;
+    top: 27px;
+    left: 10px;
+    background: url("../img/spritesheet.png");
+    width: 16px;
+    height: 16px;
+    background-position: -5px -699px; }
+
+/* line 108, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.wrapper {
+  overflow: hidden;
+  min-width: 970px;
+  max-width: 1440px;
+  margin: 0 auto; }
+
+/*LEFT COLUMN*/
+/* line 116, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.col1 {
+  float: left;
+  width: 250px;
+  padding-left: 20px;
+  padding-right: 20px; }
+  /* line 123, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+  .col1 h4 {
+    font-size: 14px;
+    line-height: 42px;
+    color: #7c8695;
+    margin-top: 0; }
+
+/* line 130, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.left-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  /* line 134, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+  .left-menu li {
+    position: relative;
+    padding-left: 50px;
+    border-bottom: 1px solid #e0e2e6; }
+  /* line 139, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+  .left-menu li:nth-child(1):after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background: url("../img/spritesheet.png");
+    width: 24px;
+    height: 23px;
+    background-position: -5px -399px; }
+  /* line 149, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+  .left-menu li:nth-child(2):after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background: url("../img/spritesheet.png");
+    width: 24px;
+    height: 24px;
+    background-position: -5px -5px; }
+  /* line 159, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+  .left-menu li:nth-child(3):after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background: url("../img/spritesheet.png");
+    width: 21px;
+    height: 24px;
+    background-position: -5px -71px; }
+  /* line 169, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+  .left-menu li:nth-child(4):after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background: url("../img/spritesheet.png");
+    width: 19px;
+    height: 24px;
+    background-position: -5px -725px; }
+  /* line 179, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+  .left-menu a {
+    display: block;
+    font-size: 16px;
+    color: #59606b;
+    font-size: 16px;
+    line-height: 42px; }
+  /* line 186, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+  .left-menu a:hover {
+    color: #e0e2e6; }
+
+/* line 190, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.banner {
+  width: 100%;
+  height: auto; }
+
+/* line 194, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.img-title {
+  font-size: 11px;
+  line-height: 42px;
+  color: #d3d3d3; }
+
+/* line 199, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.company {
+  padding-top: 10px;
+  border-top: 1px solid #e0e2e6;
+  border-bottom: 1px solid #e0e2e6;
+  margin-bottom: 20px; }
+  /* line 205, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+  .company p,
+  .company h3 {
+    margin: 0 0 3px 0; }
+
+/* line 210, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.see-all {
+  color: #1c2534;
+  font-size: 14px;
+  float: right; }
+
+/* line 215, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.see-all:hover {
+  color: #1c2534;
+  text-decoration: none; }
+
+/* line 219, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.company-item {
+  margin-bottom: 20px; }
+
+/* line 222, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.company-img {
+  float: left;
+  margin-right: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 5px; }
+
+/* line 229, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.company-img1 {
+  background: url("../img/spritesheet.png");
+  background-position: -5px -105px; }
+
+/* line 233, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.company-img2 {
+  background: url("../img/spritesheet.png");
+  background-position: -5px -200px; }
+
+/* line 237, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.company-img3 {
+  background: url("../img/spritesheet.png");
+  background-position: -5px -292px; }
+
+/* line 241, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.company-name {
+  font-size: 16px;
+  color: #1c2534; }
+
+/* line 245, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.company-activity {
+  font-size: 14px;
+  color: #7c8695; }
+
+/* line 249, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.company-adress {
+  font-size: 14px;
+  color: #7c8695; }
+
+/* line 254, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.company-follow a {
+  font-size: 12px;
+  color: #1c2534; }
+
+/* line 258, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.company-follow a:hover {
+  text-decoration: none; }
+
+/* line 263, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.copyright,
+.copyright a {
+  font-size: 14px;
+  color: #b7bfcd; }
+
+/* line 267, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.copyright a:first-child {
+  margin-right: 20px; }
+
+/* line 270, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.copyright a:hover {
+  text-decoration: none; }
+
+/*LEFT COLUMN end*/
+/*CENTER*/
+/* line 278, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.col2 {
+  margin: 0 250px; }
+  /* line 281, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+  .col2 h2 {
+    margin-top: 0;
+    font-size: 30px;
+    line-height: 36px; }
+
+/* line 288, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.center-heading {
+  margin-top: 15px;
+  margin-bottom: 20px; }
+
+/* line 292, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.new-service {
+  float: right;
+  border: none;
+  background: #87b448;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px; }
+
+/* line 300, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.content {
+  border: 1px solid #e0e2e6;
+  border-radius: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px; }
+
+/* line 312, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.category-item img {
+  width: 140px;
+  padding: 20px;
+  border: 1px solid #e0e2e6;
+  margin: 0 auto; }
+
+/* line 318, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.category-item p {
+  min-height: 50px;
+  margin-top: 5px;
+  color: #1c2534;
+  font-size: 14px; }
+
+/* line 326, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.category-item:hover img {
+  background: #f4f7fb; }
+
+/* line 329, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.category-item:hover p {
+  color: #71973c; }
+
+/*CENTER end*/
+/*RIGHT COLUMN*/
+/* line 342, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.col3 {
+  width: 250px;
+  float: right;
+  padding-left: 20px;
+  padding-right: 20px; }
+  /* line 348, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+  .col3 h4 {
+    font-size: 14px;
+    line-height: 42px;
+    color: #7c8695;
+    margin-top: 0; }
+
+/* line 355, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.people {
+  padding-top: 10px;
+  border-bottom: 1px solid #e0e2e6;
+  margin-bottom: 10px; }
+  /* line 360, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+  .people p,
+  .people h3 {
+    margin: 0 0 3px 0; }
+
+/* line 365, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.people-item {
+  margin-bottom: 20px; }
+
+/* line 368, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.people-img {
+  float: left;
+  margin-right: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 5px; }
+
+/* line 375, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.people-img1 {
+  background: url("../img/dentist1.jpg") center center no-repeat;
+  background-size: cover; }
+
+/* line 379, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.people-img2 {
+  background: url("../img/dentist2.jpg") center center no-repeat;
+  background-size: cover; }
+
+/* line 383, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.people-img3 {
+  background: url("../img/dentist3.jpg") center center no-repeat;
+  background-size: cover; }
+
+/* line 387, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.people-name {
+  font-size: 16px;
+  color: #1c2534; }
+
+/* line 391, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.people-activity {
+  font-size: 14px;
+  color: #7c8695; }
+
+/* line 395, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.people-adress {
+  font-size: 14px;
+  color: #7c8695; }
+
+/* line 400, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.people-follow a {
+  font-size: 12px;
+  color: #1c2534; }
+
+/* line 404, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.people-follow a:hover {
+  text-decoration: none; }
+
+/* line 409, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.product {
+  padding-top: 10px;
+  border-bottom: 1px solid #e0e2e6;
+  margin-bottom: 20px; }
+  /* line 414, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+  .product p,
+  .product h3 {
+    margin: 0 0 3px 0; }
+
+/* line 419, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.product-item {
+  margin-bottom: 20px; }
+
+/* line 422, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.product-img {
+  float: left;
+  margin-right: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 5px; }
+
+/* line 429, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.product-img1 {
+  background: url("../img/spritesheet.png");
+  background-position: -35px -516px; }
+
+/* line 434, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.product-img2 {
+  background: url("../img/spritesheet.png");
+  background-position: -35px -607px; }
+
+/* line 439, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.product-name {
+  font-size: 16px;
+  color: #1c2534; }
+
+/* line 443, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.product-activity {
+  font-size: 14px;
+  color: #7c8695; }
+
+/* line 447, D:/dz/tamtamlg.github.io/denteez/css/style.scss */
+.product-adress {
+  font-size: 14px;
+  color: #7c8695; }
+
+/*RIGHT COLUMN end*/
+
+/*# sourceMappingURL=style.css.map */
