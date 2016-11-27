@@ -20,8 +20,14 @@ body {
   font-size: 16px;
   line-height: 16px;
 }
-
-header { 
+.wrapper {
+  overflow: hidden;
+  min-width: 970px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/*HEADER*/
+header {
   position: relative;
   background: #87b448;
   border-bottom: 2px solid #71973c;
@@ -105,12 +111,7 @@ header {
     background-position: -5px -699px;
   }
 }
-.wrapper {
-  overflow: hidden;
-  min-width: 970px;
-  max-width: 1440px;
-  margin: 0 auto;
-}
+/*HEADER end*/
 
 /*LEFT COLUMN*/
 .col1 { 
