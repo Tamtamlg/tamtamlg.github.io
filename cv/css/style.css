@@ -520,7 +520,7 @@ footer a {
 .fa-bars:hover {
   color: #2ecc71; }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
   /* line 480, D:/dz/tamtamlg.github.io/cv/css/style.scss */
   .main-menu {
     display: none;
@@ -531,6 +531,11 @@ footer a {
   /* line 487, D:/dz/tamtamlg.github.io/cv/css/style.scss */
   .fa-bars {
     display: block; } }
+
+@media only screen and (min-width: 851px) {
+  /* line 492, D:/dz/tamtamlg.github.io/cv/css/style.scss */
+  .main-menu {
+    display: block !important; } }
 
 /*menu collapse end*/
 
