@@ -117,6 +117,8 @@ h1 span:after {
   left: 20px;
   right: 20px;
 }
+
+
 /*HEADER end*/
 
 /*MAIN*/
@@ -458,3 +460,32 @@ footer a {
     }
   }
 }
+
+
+/*menu collapse*/
+.fa-bars {
+  width: 100%;
+  text-align: right;
+  padding: 20px 30px;
+  color: #fff;
+  font-size: 24px;
+  line-height: 44px;
+  cursor: pointer;
+  display: none;
+}
+.fa-bars:hover {
+  color: #2ecc71;
+}
+@media only screen and (max-width : 800px) {
+  .main-menu {
+    display: none;
+    border-top: 1px solid #fff;
+    li {
+      display: block;
+    }
+  }
+  .fa-bars {
+    display: block;
+  }
+}
+/*menu collapse end*/
