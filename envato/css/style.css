@@ -77,7 +77,7 @@ header > * {
   height: 62px;
   background-position: -5px -1966px; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* line 89, D:/dz/tamtamlg.github.io/envato/css/style.scss */
   #menu-collapse {
     position: absolute;
