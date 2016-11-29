@@ -78,6 +78,12 @@ body {
   display: table;
   clear: both;
 }
+.wrapper {
+  overflow: hidden;
+  min-width: 1200px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
 .container {
   width: 1160px;
   margin: 0 auto;
@@ -281,7 +287,7 @@ body {
 /*  /SLIDER  */
 
 
-/* Features */
+/* FEATURES */
 .features {
   margin-top: 55px;
   margin-bottom: 85px;
@@ -351,10 +357,11 @@ body {
     margin-right: 0;
   }
 }
-/* Features end */
+/* FEATURES end */
 
-/* Galery */
+/* GALERY */
 .galery-wrap {
+  width: 100%;
   padding-top: 45px;
   padding-bottom: 65px;
   background: $galery-wrap-color;
@@ -433,10 +440,11 @@ body {
 }
 
 
-/* Galery end*/
+/* GALERY end*/
 
-/* News-banners */
+/* NEWS-BANNERS */
 .news-banners-wrap {
+  width: 100%;
   background: $news-wrap-color;
   padding-top: 65px;
   
@@ -586,11 +594,12 @@ body {
     margin: 25px 0 30px;
   }
 }
-/* News-banners end*/
+/* NEWS-BANNERS end*/
 
 
-/* Partners */
+/* PARTNERS */
 .partners {
+  width: 100%;
   margin-top: 80px;
   margin-bottom: 100px;
   a {
@@ -624,11 +633,12 @@ body {
 }
 
 
-/* Partners end */
+/* PARTNERS end */
 
 
-/* Links */
+/* LINKS */
 .links-wrap {
+  width: 100%;
   background: $galery-wrap-color;
   padding-top: 60px;
   padding-bottom: 80px;
@@ -666,10 +676,11 @@ body {
   margin-right: 0;
 }
 
-/* Links end */
+/* LINKS end */
 
 /* FOOTER */
 .main-footer {
+  width: 100%;
   background: $footer-color;
   color: $features-p-color;
   font-family: $font-family2;
