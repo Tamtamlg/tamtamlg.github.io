@@ -1,0 +1,21 @@
+@import "variables.scss";
+
+
+html {
+  overflow: hidden; /*task 2*/
+  text-align: center;/*task 7*/
+}
+form {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+input {
+  text-align: center;/*task 7*/
+}
+//.text-up {
+//  text-transform: uppercase;
+//}
+
+.btn.btn-link {
+  padding: 0;
+}
