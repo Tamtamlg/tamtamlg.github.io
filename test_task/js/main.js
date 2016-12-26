@@ -10,34 +10,35 @@ $(function () {
   
   // форматирование ввода номера карты
   function checkCardNumber() {
-    if (/\d{4}/.test(this.value)) {
-      this.value = this.value + ' ';
+    
+    var cardCode = this.value.replace(/[^\d]/g, '').substring(0,16); // исключаем все, что не цифры
+    
+    if (cardCode !== '') {
+      cardCode = cardCode.match(/.{1,4}/g).join(' '); // разделяем
+    } else {
+      cardCode = '';
     }
-    if (/\d{4} \d/.test(this.value)) {
-      this.value = this.value.slice(0, -1);
-    }
-    if (/\d{4} \d{4}/.test(this.value)) {
-      this.value = this.value + ' ';
-    }
-    if (/\d{4} \d{4} \d/.test(this.value)) {
-      this.value = this.value.slice(0, -1);
-    }
-    if (/\d{4} \d{4} \d{4}/.test(this.value)) {
-      this.value = this.value + ' ';
-    }
-    if (/\d{4} \d{4} \d{4} \d/.test(this.value)) {
-      this.value = this.value.slice(0, -1);
-    }
+    
+    this.value = cardCode;
+    
     if (/\d{4} \d{4} \d{4} \d{4}/.test(this.value)) {
       phoneNumber.removeAttr('disabled'); // разблокируем следующее поле
       phoneNumber[0].value = '+38(0';
     }
   }
   
+  
   // форматирование номера телефона
   function checkPhoneNumber() {
     errNumber.text('');
-    if (/\+/.test(this.value)) {
+  
+    this.value = this.value.replace(/[a-zA-Zа-яА-ЯёЁ\,\.\/\*\-\_]/g, ''); // исключаем все, что не цифры
+//    if (/\+/.test(this.value)) {
+//      this.value = phoneCode;
+//    } else {
+//      this.value = '+' + phoneCode;
+//    }
+  if (/\+/.test(this.value)) {
       this.value = this.value;
     } else {
       this.value = this.value.slice(0, -1);
@@ -66,6 +67,8 @@ $(function () {
     if (/\+\d\d\(\d{3}\) \d{3} \d{2} \d/.test(this.value)) {
       this.value = this.value.slice(0, -1);
     }
+
+    
     if (/\+38\(\d{3}\) \d{3} \d{2} \d{2}/.test(this.value)) {
       clientName.removeAttr('disabled'); // разблокируем следующее поле
     }
@@ -106,8 +109,8 @@ $(function () {
     }
   }
   
-  cardNumber.addEventListener('keyup', checkCardNumber);
-  phoneNumber.on('keyup', checkPhoneNumber);
+  cardNumber.addEventListener('input', checkCardNumber);
+  phoneNumber.on('input', checkPhoneNumber);
   phoneNumber.on('blur', blurPhoneNumber);
   clientName.on('input', checkClientName);
   btn.on('click', createObj);
