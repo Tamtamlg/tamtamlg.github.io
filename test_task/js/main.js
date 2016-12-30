@@ -15,6 +15,7 @@ $(function () {
     
     if (cardCode !== '') {
       cardCode = cardCode.match(/.{1,4}/g).join(' '); // разделяем
+      
     } else {
       cardCode = '';
     }
@@ -23,52 +24,37 @@ $(function () {
     
     if (/\d{4} \d{4} \d{4} \d{4}/.test(this.value)) {
       phoneNumber.removeAttr('disabled'); // разблокируем следующее поле
-      phoneNumber[0].value = '+38(0';
+      phoneNumber[0].value = '+38';
     }
   }
   
   
   // форматирование номера телефона
   function checkPhoneNumber() {
+
     errNumber.text('');
-  
-    this.value = this.value.replace(/[a-zA-Zа-яА-ЯёЁ\,\.\/\*\-\_]/g, ''); // исключаем все, что не цифры
-//    if (/\+/.test(this.value)) {
-//      this.value = phoneCode;
-//    } else {
-//      this.value = '+' + phoneCode;
-//    }
-  if (/\+/.test(this.value)) {
-      this.value = this.value;
-    } else {
-      this.value = this.value.slice(0, -1);
+
+    var phoneCode = this.value.replace('+38', '').replace(/\D/g, '').split(/(?=.)/);
+    var i = phoneCode.length;
+
+    if (0 <= i) {
+      phoneCode.unshift('+38');
     }
-    if (/\+\d\d/.test(this.value)) {
-      this.value = this.value + '(';
+    if (1 <= i) {
+      phoneCode.splice(1, 0, '(');
     }
-    if (/\+\d\d\(\d/.test(this.value)) {
-      this.value = this.value.slice(0, -1);
+    if (4 <= i) {
+      phoneCode.splice(5, 0, ') ');
     }
-    if (/\+\d\d\(\d{3}/.test(this.value)) {
-      this.value = this.value + ') ';
+    if (7 <= i) {
+      phoneCode.splice(9, 0, ' ');
     }
-    if (/\+\d\d\(\d{3}\) \d/.test(this.value)) {
-      this.value = this.value.slice(0, -2);
-    }
-    if (/\+\d\d\(\d{3}\) \d{3}/.test(this.value)) {
-      this.value = this.value + ' ';
-    }
-    if (/\+\d\d\(\d{3}\) \d{3} \d/.test(this.value)) {
-      this.value = this.value.slice(0, -1);
-    }
-    if (/\+\d\d\(\d{3}\) \d{3} \d{2}/.test(this.value)) {
-      this.value = this.value + ' ';
-    }
-    if (/\+\d\d\(\d{3}\) \d{3} \d{2} \d/.test(this.value)) {
-      this.value = this.value.slice(0, -1);
+    if (9 <= i) {
+      phoneCode.splice(12, 0, ' ');
     }
 
-    
+    this.value = phoneCode.join('');
+
     if (/\+38\(\d{3}\) \d{3} \d{2} \d{2}/.test(this.value)) {
       clientName.removeAttr('disabled'); // разблокируем следующее поле
     }
