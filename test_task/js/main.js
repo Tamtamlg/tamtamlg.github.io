@@ -112,11 +112,11 @@ $(function () {
 //    $('.active-hover').show();
 //    $('input').focus();
 //  });
-//  $('input').hover(function () {
-//    $('.active-hover').show();
-//    $('input').focus();
-//    
-//    
-//  });
+  $('input').hover(function () {
+    $('.active-hover').show();
+    $('input').focus();
+    
+    
+  });
 });
 
