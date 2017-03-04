@@ -107,16 +107,5 @@ $(function () {
     window.open("https://docs.google.com/document/d/1BnJzEu4ygUVpiky7aUXTMQRRO6GxXe_tGcDV-XOuuW8/edit");
   });
   
-  $('.active-hover').hide();
-  $('input').on('touchstart', function () {
-    $('.active-hover').show();
-    //$('input').focus();
-  });
-//  $('input').hover(function () {
-//    $('.active-hover').show();
-//    $('input').focus();
-//    
-//    
-//  });
 });
 
