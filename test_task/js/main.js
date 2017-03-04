@@ -110,7 +110,7 @@ $(function () {
   $('.active-hover').hide();
   $('input').on('touchstart', function () {
     $('.active-hover').show();
-    $('input').focus();
+    //$('input').focus();
   });
 //  $('input').hover(function () {
 //    $('.active-hover').show();
