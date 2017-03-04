@@ -108,15 +108,15 @@ $(function () {
   });
   
   $('.active-hover').hide();
-//  $('input').on('tachstart', function () {
-//    $('.active-hover').show();
-//    $('input').focus();
-//  });
-  $('input').hover(function () {
+  $('input').on('tachstart', function () {
     $('.active-hover').show();
     $('input').focus();
-    
-    
   });
+//  $('input').hover(function () {
+//    $('.active-hover').show();
+//    $('input').focus();
+//    
+//    
+//  });
 });
 
