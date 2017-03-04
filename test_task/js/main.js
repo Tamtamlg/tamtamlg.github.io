@@ -1,3 +1,4 @@
+/*global $*/
 $(function () {
   'use strict';
   
@@ -11,7 +12,7 @@ $(function () {
   // форматирование ввода номера карты
   function checkCardNumber() {
     
-    var cardCode = this.value.replace(/[^\d]/g, '').substring(0,16); // исключаем все, что не цифры
+    var cardCode = this.value.replace(/[^\d]/g, '').substring(0, 16); // исключаем все, что не цифры
     
     if (cardCode !== '') {
       cardCode = cardCode.match(/.{1,4}/g).join(' '); // разделяем
@@ -79,19 +80,19 @@ $(function () {
   function createObj(e) {
     e.preventDefault();
     var dataObj = {};
-    dataObj.userCard = cardNumber.value.replace(/\s+/g,'');
-    dataObj.userPhone = phoneNumber[0].value.replace(/\s+/g,'');
-    dataObj.userName = clientName[0].value.replace(/\s+/g,'').toLowerCase();
+    dataObj.userCard = cardNumber.value.replace(/\s+/g, '');
+    dataObj.userPhone = phoneNumber[0].value.replace(/\s+/g, '');
+    dataObj.userName = clientName[0].value.replace(/\s+/g, '').toLowerCase();
     getConsoleObj(dataObj);
   }
   
   // потеря фокуса на номере телефона
   function blurPhoneNumber() {
-    if (!('+38(066)' === phoneNumber[0].value.substr(0,8)) && !('+38(098)' === phoneNumber[0].value.substr(0,8)) && !('+38(099)' === phoneNumber[0].value.substr(0,8))) {
+    if (!('+38(066)' === phoneNumber[0].value.substr(0, 8)) && !('+38(098)' === phoneNumber[0].value.substr(0, 8)) && !('+38(099)' === phoneNumber[0].value.substr(0, 8))) {
       errNumber.text(phoneNumber[0].value);
       $('#myModal').modal('show');
       phoneNumber[0].value = '+38(0';
-      clientName.attr('disabled', 'disabled'); 
+      clientName.attr('disabled', 'disabled');
     }
   }
   
@@ -107,11 +108,11 @@ $(function () {
   });
   
   $('.active-hover').hide();
-  $('input').on('tachstart',function() {
-    $('.active-hover').show();
-    $('input').focus();
-  });
-  $('input').hover(function() {
+//  $('input').on('tachstart', function () {
+//    $('.active-hover').show();
+//    $('input').focus();
+//  });
+  $('input').hover(function () {
     $('.active-hover').show();
     $('input').focus();
     
