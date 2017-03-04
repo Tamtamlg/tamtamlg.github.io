@@ -108,7 +108,7 @@ $(function () {
   });
   
   $('.active-hover').hide();
-  $('input').on('tachstart', function () {
+  $('input').on('touchstart', function () {
     $('.active-hover').show();
     $('input').focus();
   });
