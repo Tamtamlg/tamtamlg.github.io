@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 18px; }
+
+* {
+  box-sizing: border-box; }
+
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+/* HEADER */
+header {
+  height: 146px;
+  background: url("../img/header.jpg") center top repeat-x; }
+
+.logo {
+  display: block; }
+  .logo img {
+    display: block;
+    width: 380px;
+    margin: 0 auto; }
+
+.dotted-line {
+  height: 23px;
+  background: url("../img/line.png") repeat-x; }
+
+/* HEADER end */
+/* CONTENT */
+.content {
+  width: 100%;
+  background: url("../img/bg.jpg") center top; }
+
+/* slider */
+.slides {
+  margin-top: 50px;
+  color: #fff; }
+  .slides li {
+    text-align: center; }
+  .slides h3 {
+    text-align: center; }
+
+/* slider end */
+.gallery {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.gallery-item {
+  margin-bottom: 25px; }
+
+/* CONTENT end */
+/* FOOTER */
+footer {
+  padding: 10px;
+  min-height: 100px;
+  background: url("../img/footer-bg.jpg") center top; }
+  footer p {
+    margin-top: 10px; }
+  footer a {
+    color: #fff; }
+  footer a:hover {
+    color: lightblue;
+    text-decoration: none; }
+
+/* FOOTER end */
+
+/*# sourceMappingURL=style.css.map */
