@@ -1,9 +1,9 @@
 body {
+  position: relative;
   margin: 0;
   padding: 0;
   color: #fff;
-  font-size: 18px;
-  min-width: 380px; }
+  font-size: 18px; }
 
 * {
   box-sizing: border-box; }
@@ -40,13 +40,38 @@ header {
   top: 30px;
   right: 30px;
   font-size: 40px;
-  color: #fff; }
+  color: #fff;
+  z-index: 20; }
 
 .bars:hover,
 .bars:focus {
   color: lightblue; }
 
 /* HEADER end */
+/* MENU */
+.main-menu {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  height: 100%;
+  width: 300px;
+  background: gray;
+  z-index: 10;
+  padding-top: 146px; }
+  .main-menu ul {
+    list-style: none; }
+  .main-menu li {
+    height: 60px; }
+  .main-menu a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: #fff; }
+  .main-menu a:hover {
+    color: lightblue;
+    text-decoration: none; }
+
+/* MENU end*/
 /* CONTENT */
 .content {
   width: 100%;
