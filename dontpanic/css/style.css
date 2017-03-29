@@ -23,12 +23,11 @@ header {
   height: 146px;
   background: url("../img/header.jpg") center top repeat-x; }
 
-.logo {
-  display: block; }
-  .logo img {
-    display: block;
-    width: 380px;
-    margin: 0 auto; }
+.logo-container {
+  display: block;
+  text-align: center; }
+  .logo-container img {
+    width: 264px; }
 
 .dotted-line {
   height: 23px;
@@ -45,7 +44,7 @@ header {
 
 .bars:hover,
 .bars:focus {
-  color: lightblue; }
+  color: #fff; }
 
 /* HEADER end */
 /* MENU */
@@ -94,6 +93,21 @@ header {
 .gallery-item {
   margin-bottom: 25px; }
 
+.gallery-img-container {
+  position: relative; }
+
+.img-hover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(28, 104, 189, 0.6); }
+
+.gallery-item:hover .img-hover {
+  display: block; }
+
 .info {
   margin-bottom: 50px; }
 
@@ -119,7 +133,7 @@ footer {
     display: inline-block; }
   .footer-menu a {
     display: block;
-    width: 50px;
+    width: 48px;
     text-align: center;
     font-size: 30px;
     border: 2px solid #fff;
