@@ -9,16 +9,43 @@ $(function () {
   });
   
   // меню
-  var flag = false;
-  $('.bars').click(function () {
-    var menu = $('.main-menu');
-    if (!flag) {
+  var menu = $('.main-menu');
+  $('.bars').click(function (e) {
+    e.preventDefault();
+    if (menu.css('right') === '-300px') {
       menu.animate({right: 0}, 500);
     } else {
       menu.animate({right: '-300px'}, 500);
     }
-    flag = !flag;
   });
+  
+  //скрываем меню, если клик не на нем
+  $(document).mouseup(function (e) {
+    if (menu.css('right') === '0px' && !menu.is(e.target) && menu.has(e.target).length === 0) {
+      menu.animate({right: '-300px'}, 500);
+    }
+  });
+  
+  //список городов
+  var cityList = $('.city-list');
+  var location = $('.location');
+  location.click(function (e) {
+    e.preventDefault();
+    if (cityList.css('display') === 'none') {
+      cityList.show();
+    } else {
+      cityList.hide();
+    }
+  });
+  
+  //скрываем список городов, если клик не на нем
+  $(document).mouseup(function (e) {
+    if (!cityList.is(e.target) && cityList.has(e.target).length === 0) {
+      cityList.hide();
+    }
+  });
+  
+  
   
 });
 
