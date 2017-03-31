@@ -46,7 +46,7 @@ header {
   position: absolute;
   top: 60px;
   left: 70px;
-  width: 170px;
+  width: 175px;
   padding: 0;
   background: gray;
   list-style: none;
@@ -188,5 +188,28 @@ footer {
     text-align: center; }
     footer .copy p {
       text-align: center; } }
+
+/* ROOM */
+td,
+th {
+  text-align: center; }
+
+.t-active {
+  background-color: #ababab; }
+
+.t-success {
+  background-color: #5cb85c; }
+
+.t-info {
+  background-color: #5bc0de; }
+
+.t-warning {
+  background-color: #f0ad4e; }
+
+.t-danger {
+  background-color: #d9534f; }
+
+.t-primary {
+  background-color: #337ab7; }
 
 /*# sourceMappingURL=style.css.map */

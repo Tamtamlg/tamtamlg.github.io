@@ -45,7 +45,10 @@ $(function () {
     }
   });
   
-  
+  //получаем текущий год в футере
+  var today = new Date();
+  var year = today.getFullYear();
+  $('.year').text(year);
   
 });
 
