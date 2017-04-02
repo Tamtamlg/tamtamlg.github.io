@@ -35,6 +35,12 @@
         <img src="img/logo.gif" alt="Don&#039;t Panic">
       </a>
       
+      <div class="callback hidden-sm hidden-xs">
+        <p>+38 (098) 000-80-77</p>
+        <p>+38 (073) 044-50-77</p>
+        <button class="btn btn-warning">Обратная связь</button>
+      </div>
+      
       <a href="#" class="bars"><i class="fa fa-bars" aria-hidden="true"></i></a>
       
       <ul class="city-list">
@@ -59,6 +65,11 @@
       <li><a href="#">Акции</a></li>
       <li><a href="#">Сотрудничество</a></li>
     </ul>
+    <div class="callback-menu text-center visible-sm-block visible-xs-block">
+        <p>+38 (098) 000-80-77</p>
+        <p>+38 (073) 044-50-77</p>
+        <button class="btn btn-warning">Обратная связь</button>
+      </div>
   </nav>
 <!--  MENU end -->
 
@@ -89,37 +100,68 @@
       </div>
     </section>
 <!--    slider end -->
+
+<!-- service btn-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <a href="#" class="btn btn-warning calendar">
+          <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;Pacписание
+        </a>
+        <select name="sort" id="sort" class="form-control sort">
+          <option>По рейтингу</option>
+          <option>По сложности</option>
+          <option>По количеству игроков</option>
+        </select>
+      </div>
+    </div>
+  </div>
+<!-- service btn end-->
     
 <!--    gallery start -->
     <section class="gallery container-fluid">
       <div class="row">
         <div class="col-sm-6 col-md-4 gallery-item">
           <div class="gallery-img-container">
-          
-            <img src="img/game-1.jpg" alt="Автостопом по галактике" class="img-responsive">
-
+            <img src="img/game-1.jpg" alt="Автостопом по галактике" class="img-responsive zoom">
+            <img src="img/hitchhike-logo.png" alt="" class="game-logo">
+            <div class="game-title">
+              <p>Автостопом по галактике</p>
+            </div>
             <a href="#" class="img-hover"></a>
           </div>
         </div>
         
         <div class="col-sm-6 col-md-4 gallery-item">
           <div class="gallery-img-container">
-            <img src="img/game-2.jpg" alt="Генезис" class="img-responsive">
-            <a href="#" class="img-hover"></a>
+            <img src="img/game-2.jpg" alt="Генезис" class="img-responsive zoom">
+            <img src="img/genesis-logo.png" alt="" class="game-logo">
+            <div class="game-title">
+              <p>Проект: Genesis</p>
+            </div>
+            <a href="http://tamtamlg.github.io/dontpanic/room" class="img-hover"></a>
           </div>
         </div>
         
         <div class="col-sm-6 col-md-4 gallery-item">
           <div class="gallery-img-container">
-            <img src="img/game-3.jpg" alt="Музей невозможных фигур" class="img-responsive">
-            <a href="#" class="img-hover"></a>
+            <img src="img/game-3.jpg" alt="Музей невозможных фигур" class="img-responsive zoom">
+            <img src="img/museum-logo.png" alt="" class="game-logo">
+            <div class="game-title">
+              <p>Музей невозможных фигур</p>
+            </div>
+            <a href="http://www.60.kiev.ua/?lang=uk" class="img-hover" target="_blank"></a>
           </div>
         </div>
         
         <div class="col-sm-6 col-md-4 gallery-item">
           <div class="gallery-img-container">
-            <img src="img/game-4.jpg" alt="Не пойман - не вор" class="img-responsive">
-            <a href="#" class="img-hover"></a>
+            <img src="img/game-4.jpg" alt="Не пойман - не вор" class="img-responsive zoom">
+            <img src="img/burglar-logo.png" alt="" class="game-logo">
+            <div class="game-title">
+              <p>Не пойман - не вор</p>
+            </div>
+            <a href="http://podzamkom.com.ua/" class="img-hover" target="_blank"></a>
           </div>
         </div>
       </div>
@@ -148,15 +190,15 @@
       </div>
       <div class="col-md-4 text-center">
         <ul class="footer-menu">
-          <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UCr93TpjxKZz_MrKC7tIE6RQ"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.instagram.com/dontpanic.org.ua/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.facebook.com/dontpanic.quest/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="https://vk.com/dontpanic_quest"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
         </ul>
       </div>
       <div class="col-md-4 copy">
         <p class="text-right">
-          &copy; Don&#039;t Panic 2015-2017
+          &copy; Don&#039;t Panic 2015-<span class="year"></span>
         </p>
       </div>
       
