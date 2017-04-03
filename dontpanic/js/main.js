@@ -14,8 +14,10 @@ $(function () {
     e.preventDefault();
     if (menu.css('right') === '-300px') {
       menu.animate({right: 0}, 500);
+      $('.open-menu').css('display', 'block');
     } else {
       menu.animate({right: '-300px'}, 500);
+      $('.open-menu').css('display', 'none');
     }
   });
   
@@ -23,18 +25,22 @@ $(function () {
   $(document).mouseup(function (e) {
     if (menu.css('right') === '0px' && !menu.is(e.target) && menu.has(e.target).length === 0) {
       menu.animate({right: '-300px'}, 500);
+      $('.open-menu').css('display', 'none');
     }
   });
   
   //список городов
   var cityList = $('.city-list');
   var location = $('.location');
+  var city = $('.city');
   location.click(function (e) {
     e.preventDefault();
     if (cityList.css('display') === 'none') {
       cityList.show();
+      city.css('color', 'transparent');
     } else {
       cityList.hide();
+      city.css('color', '#fff');
     }
   });
   
@@ -42,6 +48,7 @@ $(function () {
   $(document).mouseup(function (e) {
     if (!cityList.is(e.target) && cityList.has(e.target).length === 0) {
       cityList.hide();
+      city.css('color', '#fff');
     }
   });
   
