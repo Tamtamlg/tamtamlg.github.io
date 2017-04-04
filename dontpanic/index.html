@@ -105,15 +105,23 @@
 <!-- service btn-->
   <div class="container-fluid">
     <div class="row">
-      <div class="col-xs-12">
-        <a href="http://tamtamlg.github.io/dontpanic/schedule" class="btn btn-warning calendar">
+      <div class="col-xs-12 servise-btn">
+        <a href="http://tamtamlg.github.io/dontpanic/schedule" class="btn btn-link calendar">
           <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;Pacписание
         </a>
-        <select name="sort" id="sort" class="form-control sort">
-          <option>По рейтингу</option>
-          <option>По сложности</option>
-          <option>По количеству игроков</option>
-        </select>
+        
+        <div class="radio-wrapper"> 
+          <label class="radio-item">
+            <input type="radio" name="sort" id="number"> По количеству игроков
+          </label>
+          <label class="radio-item">
+            <input type="radio" name="sort" id="rating"> По рейтингу
+          </label>
+          <label class="radio-item">
+            <input type="radio" name="sort" id="complexity"> По сложности
+          </label>
+        </div>
+        
       </div>
     </div>
   </div>
