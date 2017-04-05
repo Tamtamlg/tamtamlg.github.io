@@ -342,6 +342,11 @@ th:hover {
   bottom: 20px;
   right: 20px; }
 
+.room-images {
+  display: block;
+  width: 100%;
+  height: auto; }
+
 /* ROOM end*/
 /* SCHEDULE */
 .schedule h2 {
@@ -386,13 +391,23 @@ th:hover {
     max-height: 70px; } }
 
 @media only screen and (max-width: 570px) {
-  .time-to-play,
-  .team,
   .average-time,
-  .room-right-panel,
-  .team-results,
   .room-complexity {
-    display: none; } }
+    display: none; }
+  .team-results,
+  .room-right-panel {
+    display: block;
+    position: static;
+    text-align: center;
+    margin-top: 30px; }
+  .time-to-play,
+  .team {
+    font-size: 14px; }
+  .room h3 {
+    font-size: 16px; }
+  .room-logo {
+    max-width: 50px;
+    max-height: 50px; } }
 
 @media only screen and (max-width: 480px) {
   .calendar {
