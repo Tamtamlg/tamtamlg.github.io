@@ -57,5 +57,20 @@ $(function () {
   var year = today.getFullYear();
   $('.year').text(year);
   
+  //бронирование игры (заполняем название, время, стоимость)
+  $('#reservation').on('show.bs.modal', function (e) {
+    if ($(e.relatedTarget).hasClass('t-active')) {
+      e.preventDefault();
+    }
+    if ($('.room-title').text()) {
+      $('.room-name').text('"' + $('.room-title').text() + '"');
+    } else {
+      $('.room-name').text('"' + $(e.relatedTarget).parents('.schedule').children('h2').children('a').text() + '"');
+    }
+    $('.room-time').text('Время: ' + $(e.relatedTarget).children('.game-time').text());
+    $('.room-price').text('Стоимость: ' + $(e.relatedTarget).children('.game-price').text() + ' грн');
+  });
+  
+  
 });
 

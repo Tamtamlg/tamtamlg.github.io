@@ -357,6 +357,17 @@ th:hover {
     color: lightblue; }
 
 /* SCHEDULE end */
+/* MODAL #reservation */
+.modal-content {
+  color: #333; }
+  .modal-content input {
+    max-width: 170px;
+    margin-bottom: 10px; }
+  .modal-content label {
+    font-weight: normal;
+    margin-bottom: 0; }
+
+/* MODAL #reservation end */
 @media only screen and (max-width: 1200px) {
   .callback {
     right: 200px; } }
