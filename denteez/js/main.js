@@ -8,7 +8,7 @@ $(function() {
   function doRequest() {
       $.ajax({
           type: "GET",
-          headers: {"Authorization": "cc8ce950677315687c234ab23d78e4d40c8f3dec"},
+          headers: {"Authorization": "7152a0091fa89413a92c0bb258907f7cf04ec49a"},
           url: "http://504080.com/api/v1/services/categories",
           dataType: "json",
           success: function (data) {
@@ -24,7 +24,7 @@ $(function() {
   }
   
   
-  
+
   
   
 });
