@@ -12,11 +12,13 @@ $(function() {
   var userName = $('#name');
   var userPhone = $('#phone');
   var userEmail = $('#email');
+  var btn = $('#signUp');
   
   function checkClientName() {
     if (/[^а-яА-ЯёЁa-zA-Z]/.test(this.value)) {
       this.value = '';
     }
+    checkBtn();
   }
   
   function checkPhoneNumber() {
@@ -38,9 +40,17 @@ $(function() {
       phoneCode.splice(12, 0, ' ');
     }
     this.value = phoneCode.join('').substring(0, 18);
+    checkBtn();
+  }
+  
+  function checkBtn() {
+    if (/\+38\(\d{3}\) \d{3} \d{2} \d{2}/.test(userPhone.val()) && userName.val() !== '' && userEmail.val() !=='') {
+      btn.removeAttr('disabled');
+    }
   }
   
   userPhone.on('input', checkPhoneNumber);
   userName.on('input', checkClientName);
+  userEmail.on('input', checkBtn);
 });
 
