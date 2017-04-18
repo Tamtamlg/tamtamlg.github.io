@@ -36,6 +36,20 @@ h2 {
 nav {
   margin-bottom: 370px; }
 
+.fa {
+  font-size: 40px;
+  color: #fff; }
+
+.fa-bars {
+  width: 100%;
+  text-align: left;
+  padding: 20px 30px;
+  color: #f26522;
+  font-size: 40px;
+  line-height: 44px;
+  cursor: pointer;
+  display: none; }
+
 .main-menu {
   font-size: 0;
   padding: 0;
@@ -371,7 +385,6 @@ footer {
     color: #494a56; }
 
 /* FOOTER end */
-/* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .header-bottom,
   .orange-bg,
@@ -406,13 +419,37 @@ footer {
     footer .col-md-6 {
       padding: 0; } }
 
-/* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .column2,
   .column {
     column-count: 1; } }
 
-/* Extra Small Devices, Phones */
-/* Custom, iPhone Retina */
+@media only screen and (min-width: 621px) {
+  .main-menu {
+    display: block !important; } }
+
+@media only screen and (max-width: 620px) {
+  .main-menu {
+    display: none;
+    position: absolute;
+    text-align: center; }
+  .main-menu li {
+    display: block; }
+  .fa-bars {
+    display: block; } }
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .main-header {
+    background: url("../img/header-bg-r.jpg") center top no-repeat; }
+  .header-bottom-img {
+    background: url("../img/header-img1-r.jpg") center top no-repeat; }
+  .content-bg-img {
+    background: url("../img/center-bg-r.jpg") center top no-repeat; }
+  .content-img1 {
+    background: url("../img/girl-r.jpg") center top no-repeat; }
+  .bottom-bg {
+    background: url("../img/bottom-bg-r.jpg") center top no-repeat; }
+  .footer-bottom-img {
+    background: url("../img/bottom-img1-r.jpg") center top no-repeat; } }
 
 /*# sourceMappingURL=style.css.map */
