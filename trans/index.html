@@ -5,13 +5,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Trans</title>
+  <link rel="icon" href="img/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="css/flexslider.css">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/jquery.flexslider.js"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <script src="js/main.js"></script>
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -36,19 +41,31 @@
         </ul>
       </nav>
 <!--menu end-->
-    
-      <section class="container-fluid header-section">
+      
+<!--slider-->
+      <section class="header-section slider container-fluid">
         <div class="row">
-          <div class="col-md-5">
-            <h2>Sleek as<br> fkuc</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+          <div class="col-md-4">
+            <div class="flexslider">
+              <ul class="slides">
+                <li>
+                  <h2>Sleek as<br> fkuc</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                </li>
+                <li>
+                  <h2>Sleek as<br> fkuc</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                </li>
+                <li>
+                  <h2>Sleek as<br> fkuc</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div>
-          <div class="ctrl-left"></div>
-          <div class="ctrl-right"></div>
-        </div>
       </section>
+<!--slider end-->
       
     </div>
   </header>
@@ -62,20 +79,20 @@
             <div class="control-bottom"></div>
             <div class="control-right"></div>
           </div>
-          <div class="col-md-3 orange-bg">
-            <h2>Bright ass orange</h2>
+          <div class="col-md-3 orange-bg scroll-right" data-aos="fade-right">
+            <h2>Bright ass<br> orange</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
           </div>
           <div class="col-md-6">
               <div class="row">
-                <div class="col-md-12 header-bottom-img"></div>
+                <div class="col-md-12 header-bottom-img" data-aos="fade-up"></div>
               </div>
               <div class="row">
                 <div class="col-md-12 header-bottom-text">
                   <h2>Finaly a layout that<br> blows your head off</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                  <div class="tweet"></div><a href="#">Tweet this shit</a>
+                  <a href="#">Tweet this shit</a>
                 </div>
               </div>
           </div>
@@ -88,7 +105,7 @@
       <div class="col-md-12">
         <h2>Melbourne, Australia</h2>
         <div class="column">
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <p class="leader">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
           <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
           <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
@@ -102,10 +119,10 @@
     <div class="row">
         <div class="container-fluid content1">
           <div class="row">
-            <div class="col-md-4 orange-bg-content">
+            <div class="col-md-4 orange-bg-content" data-aos="fade-right">
               <h2>Words & Such</h2>
             </div>
-            <div class="col-md-4 content-img1"></div>
+            <div class="col-md-4 content-img1" data-aos="fade-left"></div>
           </div>
         </div>
     </div>
@@ -115,7 +132,7 @@
     <div class="row">
         <div class="container-fluid content2">
           <div class="row">
-            <div class="col-md-12 newspaper2">
+            <div class="col-md-12 newspaper2" data-aos="fade-up">
               <div class="column2">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut</p>
@@ -156,14 +173,14 @@
             <div class="bottom-bg-inner">
               <div class="row">
                 <div class="orange-bottom">
-                  <div class="col-md-3 orange-bg">
-                    <h2>Ohh this is nice</h2>
+                  <div class="col-md-3 orange-bg" data-aos="fade-right">
+                    <h2>Ohh this<br> is nice</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                   </div>
                   <div class="col-md-7">
                       <div class="row">
-                        <div class="col-md-12 footer-bottom-img"></div>
+                        <div class="col-md-12 footer-bottom-img" data-aos="fade-left"></div>
                       </div>
                       <div class="row">
                         <div class="col-md-12 footer-bottom-text">
@@ -186,7 +203,7 @@
   <footer class="container-fluid">
     <div class="row">
       <div class="col-md-6">
-        <div class="col-md-3">
+        <div class="col-md-3 col-xs-6">
           <h5>Quicklinks</h5>
           <ul>
             <li><a href="#">A Footer Link</a></li>
@@ -197,7 +214,7 @@
             <li><a href="#">A Footer Link</a></li>
           </ul>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-xs-6">
           <h5>Our Profile</h5>
           <ul>
             <li><a href="#">A Footer Link</a></li>
@@ -208,7 +225,7 @@
             <li><a href="#">A Footer Link</a></li>
           </ul>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-xs-6">
           <h5>Information</h5>
           <ul>
             <li><a href="#">A Footer Link</a></li>
@@ -218,7 +235,7 @@
             <li><a href="#">A Footer Link</a></li>
           </ul>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-xs-6">
           <h5>Courses</h5>
           <ul>
             <li><a href="#">A Footer Link</a></li>
@@ -232,7 +249,7 @@
         </div>
       </div>
       <div class="col-md-6">
-        <div class="col-md-3">
+        <div class="col-md-3 col-xs-6">
           <h5>Courses</h5>
           <ul>
             <li><a href="#">A Footer Link</a></li>

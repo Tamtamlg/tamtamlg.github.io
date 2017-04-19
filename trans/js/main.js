@@ -1,11 +1,35 @@
 $(function() {
   
+  //scroll animation
+  AOS.init({
+    duration: 1500
+  });
+  
+  //flexslider
+  $('.flexslider').flexslider({
+    animation: "slide",
+    directionNav: true
+  });
+  
   //menu
   var faBars = $('.fa-bars');
   var mainMenu = $('.main-menu');
   var menuItem = $('.menu-item');
   faBars.click(function() {
     mainMenu.slideToggle('menuItem');
+  });
+  
+  //scroll to bottom
+  var controlBottom = $('.control-bottom');
+  var newspaper = $('.newspaper')
+    controlBottom.click(function () {
+      $('html, body').animate({scrollTop: newspaper.offset().top}, 2000);
+  });
+  
+  var controlRight = $('.control-right');
+  var scrollRight = $('.scroll-right')
+    controlRight.click(function () {
+      $('html, body').animate({scrollTop: scrollRight.offset().top}, 1000);
   });
   
   //form validation
