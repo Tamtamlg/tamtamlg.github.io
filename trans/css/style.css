@@ -37,8 +37,7 @@ nav {
   padding-top: 55px;
   height: 200px;
   padding-left: 12%;
-  margin-bottom: 170px;
-  background: rgba(0, 0, 0, 0.7); }
+  margin-bottom: 170px; }
 
 .fa {
   font-size: 40px;
@@ -61,7 +60,8 @@ nav {
   font-family: 'Raleway', sans-serif; }
   .main-menu li {
     list-style: none;
-    display: inline-block; }
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.7); }
     .main-menu li a {
       display: block;
       margin-left: 25px;
@@ -107,7 +107,9 @@ nav {
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 5px;
-  font-weight: bold; }
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 5px 10px; }
   .logo span {
     color: #f26522; }
 
@@ -162,7 +164,8 @@ nav {
   .header-bottom-text a:hover,
   .header-bottom-text a:focus {
     text-decoration: none;
-    color: #d8d8d8; }
+    color: #3a4d69;
+    border-color: #3a4d69; }
   .header-bottom-text a:before {
     content: '';
     position: absolute;
