@@ -449,6 +449,7 @@ footer {
   .fa-bars {
     display: block; }
   nav {
+    padding-top: 10px;
     height: 330px;
     margin-bottom: 30px; }
   .main-header {
