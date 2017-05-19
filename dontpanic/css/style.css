@@ -267,6 +267,9 @@ td,
 th {
   text-align: center; }
 
+td div {
+  border-radius: 10px; }
+
 td:hover {
   text-decoration: underline; }
 
@@ -295,10 +298,6 @@ th:hover {
 
 .t-danger {
   background-color: #d9534f;
-  cursor: pointer; }
-
-.t-primary {
-  background-color: #337ab7;
   cursor: pointer; }
 
 .results {
@@ -425,5 +424,3 @@ th:hover {
     display: block;
     width: 100%;
     margin-bottom: 20px; } }
-
-/*# sourceMappingURL=style.css.map */
