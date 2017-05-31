@@ -89,6 +89,26 @@ header {
   right: 300px;
   color: #fff; }
 
+.lang {
+  position: absolute;
+  top: 120px;
+  right: 0px;
+  color: #fff; }
+
+.lang-list {
+  padding: 0;
+  list-style: none; }
+  .lang-list li {
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    margin-right: 5px;
+    transform: skewX(40deg); }
+  .lang-list a {
+    display: block;
+    width: 100%;
+    height: auto; }
+
 /* HEADER end */
 /* MENU */
 .open-menu {
