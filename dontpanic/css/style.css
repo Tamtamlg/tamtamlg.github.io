@@ -102,8 +102,7 @@ header {
     display: inline-block;
     width: 40px;
     height: 30px;
-    margin-right: 5px;
-    transform: skewX(40deg); }
+    margin-right: 5px; }
   .lang-list a {
     display: block;
     width: 100%;
@@ -366,6 +365,56 @@ th:hover {
   width: 100%;
   height: auto; }
 
+.shedule-slider {
+  background: none;
+  position: relative; }
+
+.shedule-slider .flex-direction-nav a {
+  text-decoration: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0;
+  position: absolute;
+  top: 10px;
+  z-index: 10;
+  overflow: hidden;
+  opacity: 1;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.shedule-slider .flex-direction-nav a:before {
+  font-family: "flexslider-icon";
+  font-size: 40px;
+  display: inline-block;
+  content: '<'; }
+
+.shedule-slider .flex-direction-nav a.flex-next:before {
+  content: '>'; }
+
+.shedule-slider .flex-direction-nav .flex-prev {
+  left: 40%; }
+
+.shedule-slider .flex-direction-nav .flex-next {
+  right: 40%;
+  text-align: right; }
+
+.shedule-slider .flexslider:hover .flex-direction-nav .flex-prev {
+  opacity: 1; }
+
+.shedule-slider:hover .flex-direction-nav .flex-prev:hover {
+  opacity: 1; }
+
+.shedule-slider:hover .flex-direction-nav .flex-next {
+  opacity: 1; }
+
+.shedule-slider .flexslider:hover .flex-direction-nav .flex-next:hover {
+  opacity: 1; }
+
 /* ROOM end*/
 /* SCHEDULE */
 .schedule h2 {
@@ -444,3 +493,5 @@ th:hover {
     display: block;
     width: 100%;
     margin-bottom: 20px; } }
+
+/*# sourceMappingURL=style.css.map */

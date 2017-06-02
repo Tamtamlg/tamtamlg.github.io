@@ -31,17 +31,26 @@ $(function () {
   
   //список городов
   var cityList = $('.city-list');
+  var cityListItem = $('.city-list li a');
   var location = $('.location');
   var city = $('.city');
   location.click(function (e) {
     e.preventDefault();
     if (cityList.css('display') === 'none') {
-      cityList.show();
+      cityList.slideDown();
       city.css('color', 'transparent');
     } else {
       cityList.hide();
       city.css('color', '#fff');
     }
+  });
+  
+  //выбор города
+  cityListItem.click(function (e) {
+    e.preventDefault();
+    city.text($(this).text());
+    cityList.hide();
+    city.css('color', '#fff');
   });
   
   //скрываем список городов, если клик не на нем
@@ -76,7 +85,13 @@ $(function () {
   });
   
   
-  
+  // подключение слайдера расписания
+  $('.shedule-slider').flexslider({
+    animation: 'slide',
+    controlNav: false,
+    directionNav: true,
+    slideshow: false
+  });
   
   
   
