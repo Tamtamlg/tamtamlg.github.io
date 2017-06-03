@@ -264,9 +264,47 @@ header {
   border: 1px solid lightblue;
   text-decoration: none; }
 
-.radio-wrapper {
+.sort-wrapper {
+  position: relative;
   float: right;
-  padding: 10px; }
+  width: 230px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 6px 12px; }
+
+.sort-wrapper:hover {
+  color: lightblue;
+  border: 1px solid lightblue;
+  cursor: pointer; }
+
+.sort-wrapper .caret {
+  position: absolute;
+  top: 48%;
+  right: 5%; }
+
+.sort-wrapper:after {
+  content: ''; }
+
+.sort-list {
+  display: none;
+  position: absolute;
+  right: 0px;
+  top: 38px;
+  width: 230px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.9);
+  list-style: none;
+  text-align: left;
+  z-index: 30; }
+  .sort-list li {
+    padding: 5px; }
+  .sort-list a {
+    color: #fff;
+    display: block; }
+  .sort-list a:hover,
+  .sort-list a:focus {
+    color: lightblue;
+    text-decoration: none; }
 
 .radio-item {
   display: inline-block;
@@ -579,6 +617,11 @@ th:hover {
   .calendar {
     display: block;
     width: 100%;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .sort-wrapper {
+    float: none;
+    width: 100%; }
+  .sort-list {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

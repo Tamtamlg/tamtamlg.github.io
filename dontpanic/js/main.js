@@ -86,7 +86,6 @@ $(function () {
     });
   });
   
-  
   // подключение слайдера расписания
   $('.shedule-slider').flexslider({
     animation: 'slide',
@@ -96,7 +95,33 @@ $(function () {
     touch: false
   });
   
+  //сортировка
+  var sortList = $('.sort-list');
+  var sortListItem = $('.sort-list li a');
+  var sortWrapper = $('.sort-wrapper');
+  sortWrapper.click(function (e) {
+    e.preventDefault();
+    if (sortList.css('display') === 'none') {
+      sortList.slideDown();
+    } else {
+      sortList.hide();
+    }
+  });
   
+  //выбор сортировки
+  sortListItem.click(function (e) {
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    $('.sort-text').text($(this).text());
+    sortList.hide();
+  });
+  
+  //скрываем сортировку, если клик не на ней
+  $(document).mouseup(function (e) {
+    if (!sortWrapper.is(e.target) && sortWrapper.has(e.target).length === 0) {
+      sortList.hide();
+    }
+  });
   
 });
 
