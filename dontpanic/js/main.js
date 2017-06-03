@@ -10,14 +10,16 @@ $(function () {
   
   // меню
   var menu = $('.main-menu');
-  $('.bars').click(function (e) {
+  $('.cmn-toggle-switch').click(function (e) {
     e.preventDefault();
     if (menu.css('right') === '-300px') {
       menu.animate({right: 0}, 500);
       $('.open-menu').css('display', 'block');
+      $('.cmn-toggle-switch').addClass('active');
     } else {
       menu.animate({right: '-300px'}, 500);
       $('.open-menu').css('display', 'none');
+      $('.cmn-toggle-switch').removeClass('active');
     }
   });
   
