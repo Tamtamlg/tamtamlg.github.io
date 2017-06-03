@@ -92,7 +92,8 @@ $(function () {
     animation: 'slide',
     controlNav: false,
     directionNav: true,
-    slideshow: false
+    slideshow: false,
+    touch: false
   });
   
   
