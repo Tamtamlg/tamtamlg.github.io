@@ -7,4 +7,6 @@ $(function() {
   });
   
   $(".my-skills__right").skill();
+  
+  new WOW().init();
 });
