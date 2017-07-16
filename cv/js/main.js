@@ -5,4 +5,6 @@ $(function() {
   faBars.click(function() {
     mainMenu.slideToggle('menuItem');
   });
+  
+  $(".my-skills__right").skill();
 });

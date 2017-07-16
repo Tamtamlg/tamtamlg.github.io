@@ -299,18 +299,22 @@ h1 span:after {
   left: 0;
   background: #2ecc71;
   height: 30px;
-  width: 90%;
+/*  width: 90%;*/
   text-align: right;
   color: #fff;
   padding-right: 10px; }
 
 /* line 269, D:/dz/tamtamlg.github.io/cv/css/style.scss */
+/*
 .percent-top__80 {
   width: 80%; }
+*/
 
 /* line 272, D:/dz/tamtamlg.github.io/cv/css/style.scss */
+/*
 .percent-top__70 {
   width: 70%; }
+*/
 
 /* line 276, D:/dz/tamtamlg.github.io/cv/css/style.scss */
 .resume {
