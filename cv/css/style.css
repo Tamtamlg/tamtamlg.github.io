@@ -33,15 +33,20 @@ body {
 /*HEADER*/
 /* line 28, D:/dz/tamtamlg.github.io/cv/css/style.scss */
 .main-header {
-  min-height: 1000px;
-  background: #191f21 url(../img/header-slide1.jpg) no-repeat center center;
+  min-height: 100vh;
+  height: 100vh;
+  background: #191f21 url(../img/header-slide2.jpg) no-repeat center center;
   background-size: cover;
-  padding-top: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center; }
 
 /* line 35, D:/dz/tamtamlg.github.io/cv/css/style.scss */
 .main-header a {
   display: inline-block;
+  width: 250px;
   padding: 20px 35px;
   color: #fff;
   text-decoration: none;
@@ -174,7 +179,7 @@ h1 span:after {
 /* line 154, D:/dz/tamtamlg.github.io/cv/css/style.scss */
 .about-me__slider {
   height: 750px;
-  background: url("../img/img1.jpg") center center no-repeat;
+  background: url("../img/img2.jpg") center center no-repeat;
   background-size: cover; }
 
 /* line 159, D:/dz/tamtamlg.github.io/cv/css/style.scss */
