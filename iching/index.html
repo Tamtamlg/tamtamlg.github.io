@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.15.1/phaser.min.js"></script>
+    <!-- <script src="/dev.js"></script> -->
+  </head>
+  <body>
+
+    <div id="phaser-example" style="text-align: center;"></div>
+    <div class="text"></div>
+
+    <script>
+      var counter = 6;
+      // Preloader start
+      var Preloader = new Phaser.Class({
+        Extends: Phaser.Scene,
+
+        initialize: function Preloader() {
+          Phaser.Scene.call(this, { key: "preloader" });
+        },
+
+        preload: function() {
+          this.load.image("background", "bg.png");
+          this.load.image("buttonBG", "button-bg.png");
+          this.load.image("buttonText", "button-text.png");
+          this.load.image("hand", "hand.png");
+          this.load.image("cat1", "img1.png");
+          this.load.image("cat2", "img2.png");
+          this.load.image("cat3", "img3.png");
+          this.load.image("cat4", "img4.png");
+          this.load.image("cat5", "img5.png");
+          this.load.image("cat6", "img6.png");
+          this.load.image("cat7", "img7.png");
+          this.load.image("cat8", "img8.png");
+          this.load.image("cat9", "img9.png");
+          this.load.image("cat10", "img10.png");
+          this.load.image("cat11", "img11.png");
+          this.load.image("cat12", "img12.png");
+          this.load.image("cat13", "img13.png");
+          this.load.image("cat14", "img14.png");
+          this.load.image("cat15", "img15.png");
+          this.load.image("cat16", "img16.png");
+          this.load.image("cat17", "img17.png");
+          this.load.image("cat18", "img18.png");
+          this.load.image("cat19", "img19.png");
+          this.load.image("cat20", "img20.png");
+          this.load.image("cat21", "img21.png");
+          this.load.image("cat22", "img22.png");
+          this.load.image("cat23", "img23.png");
+          this.load.image("cat24", "img24.png");
+          this.load.image("cat25", "img25.png");
+          this.load.image("cat26", "img26.png");
+          this.load.image("cat27", "img27.png");
+          this.load.image("cat40", "img40.png");
+          this.load.image("cat41", "img41.png");
+        },
+
+        create: function() {
+          console.log(
+            "%c Preloader ",
+            "background: green; color: white; display: block;"
+          );
+
+          this.anims.create({
+            key: "money1",
+            frames: [
+              { key: "cat1" },
+              { key: "cat2" },
+              { key: "cat3" },
+              { key: "cat4" },
+              { key: "cat5" },
+              { key: "cat6" },
+              { key: "cat7" },
+              { key: "cat8" },
+              { key: "cat9" },
+              { key: "cat10" },
+              { key: "cat11" },
+              { key: "cat12" },
+              { key: "cat13" },
+              { key: "cat14" },
+              { key: "cat15" },
+              { key: "cat16" },
+              { key: "cat17" },
+              { key: "cat18" },
+              { key: "cat19" },
+              { key: "cat20" },
+              { key: "cat21" },
+              { key: "cat22" },
+              { key: "cat23" },
+              { key: "cat24" },
+              { key: "cat25" },
+              { key: "cat26" },
+              { key: "cat27" },
+              { key: "cat41" }
+            ],
+            frameRate: 15,
+            repeat: 0
+          });
+
+          this.anims.create({
+            key: "money2",
+            frames: [
+              { key: "cat1" },
+              { key: "cat2" },
+              { key: "cat3" },
+              { key: "cat4" },
+              { key: "cat5" },
+              { key: "cat6" },
+              { key: "cat7" },
+              { key: "cat8" },
+              { key: "cat9" },
+              { key: "cat10" },
+              { key: "cat11" },
+              { key: "cat12" },
+              { key: "cat13" },
+              { key: "cat14" },
+              { key: "cat15" },
+              { key: "cat16" },
+              { key: "cat17" },
+              { key: "cat18" },
+              { key: "cat19" },
+              { key: "cat20" },
+              { key: "cat21" },
+              { key: "cat22" },
+              { key: "cat23" },
+              { key: "cat24" },
+              { key: "cat25" },
+              { key: "cat26" },
+              { key: "cat27" },
+              { key: "cat40" }
+            ],
+            frameRate: 10,
+            repeat: 0
+          });
+
+          this.scene.start("mainmenu");
+        }
+      });
+      // Preloader end
+
+
+
+      // MainMenu start
+      var MainMenu = new Phaser.Class({
+        Extends: Phaser.Scene,
+
+        initialize: function MainMenu() {
+          Phaser.Scene.call(this, { key: "mainmenu" });
+          window.MENU = this;
+        },
+
+        create: function() {
+          console.log(
+            "%c MainMenu ",
+            "background: green; color: white; display: block;"
+          );
+
+          this.add.image(400, 300, "background");
+
+          var bg = this.add.image(0, 0, "buttonBG");
+          var text = this.add.image(0, 0, "buttonText");
+
+          var container = this.add.container(400, 300, [bg, text]);
+
+          bg.setInteractive();
+
+          bg.once(
+            "pointerup",
+            function() {
+              this.scene.start("game");
+            },
+            this
+          );
+        }
+      });
+      // MainMenu end
+
+
+
+      // Game start
+      var Game = new Phaser.Class({
+        Extends: Phaser.Scene,
+
+        initialize: function Game() {
+          Phaser.Scene.call(this, { key: "game" });
+          window.GAME = this;
+
+          this.controls;
+          this.track;
+          this.text;
+        },
+
+        create: function() {
+          console.log(
+            "%c Game ",
+            "background: green; color: white; display: block;"
+          );
+          this.add.image(400, 300, "background");
+
+          this.add.text(50, 120, "Кликните по полю,\nчтобы бросить монеты", {
+            fontSize: "26px",
+            fontWeight: 'bold',
+            // align: 'center',
+            fill: "#000",
+            stroke: '#000',
+            strokeThickness: 2
+          });
+
+          this.physics.world.collideWorldBounds = true;
+
+          
+          var group = this.physics.add.group({
+            bounceX: 0,
+            bounceY: 0.5,
+            collideWorldBounds: true
+          });
+
+          var sprite1 = this.physics.add.sprite(600, 80, "cat1");
+          var sprite2 = this.physics.add.sprite(620, 70, "cat1");
+          var sprite3 = this.physics.add.sprite(640, 80, "cat1");
+          group.add(sprite1);
+          group.add(sprite2);
+          group.add(sprite3);
+
+          this.input.setDraggable(sprite1.setInteractive());
+          this.input.setDraggable(sprite2.setInteractive());
+          this.input.setDraggable(sprite3.setInteractive());
+          this.input.on("dragstart", function(pointer, obj) {
+            obj.body.moves = false;
+          });
+          this.input.on("drag", function(pointer, obj, dragX, dragY) {
+            obj.setPosition(dragX, dragY);
+          });
+          this.input.on("dragend", function(pointer, obj) {
+            obj.body.moves = true;
+          });
+
+          var hand = this.physics.add.image(380, 160, "hand", null, {
+            isStatic: true
+          });
+
+          var self = this;
+          this.input.once("pointerup", function() {
+            hand.destroy();
+
+            if (Math.random() > 0.5) {
+              sprite1.play("money1");
+            } else {
+              sprite1.play("money2");
+            }
+            sprite1.setGravity(0, 900);
+            setTimeout(function() {
+              if (Math.random() > 0.5) {
+                sprite2.play("money1");
+              } else {
+                sprite2.play("money2");
+              }
+              sprite2.setGravity(55, 900);
+            }, 200);
+            setTimeout(function() {
+              if (Math.random() > 0.5) {
+                sprite3.play("money1");
+              } else {
+                sprite3.play("money2");
+              }
+              sprite3.setGravity(0, 900);
+            }, 400);
+            setTimeout(function() {
+              sprite2.setGravity(0, 900);
+              if(counter > 1) {
+                self.scene.start('gameover');
+                counter--;
+              } else {
+                self.scene.start('mainmenu');
+                counter = 6;
+              }
+            }, 4000);
+            
+          });
+        }
+      });
+      // Game end
+
+
+
+
+      // GameOver start
+      var GameOver = new Phaser.Class({
+        Extends: Phaser.Scene,
+
+        initialize: function GameOver() {
+          Phaser.Scene.call(this, { key: "gameover" });
+          window.OVER = this;
+        },
+
+        create: function() {
+          console.log(
+            "%c GameOver ",
+            "background: green; color: white; display: block;"
+          );
+
+          this.add.image(400, 300, "background");
+
+          var message = this.add.text(50, 120, "Осталось бросить " + counter + " раз", {
+            fontSize: "26px",
+            fontWeight: 'bold',
+            fill: "#000",
+            stroke: '#000',
+            strokeThickness: 2
+          });
+
+          // var bg = this.add.image(0, 0, "buttonBG");
+          // var text = this.add.image(0, 0, "buttonText2");
+
+          // var container = this.add.container(400, 300, [bg, text]);
+
+          // bg.setInteractive();
+
+          // bg.once(
+          //   "pointerup",
+          //   function() {
+          //     this.scene.start("game");
+          //   },
+          //   this
+          // );
+          var self = this;
+          setTimeout(function() {
+            self.scene.start("game");
+            }, 1000);
+        }
+      });
+      // GameOver end
+
+      // config
+      var config = {
+        type: Phaser.AUTO,
+        width: 800,
+        height: 600,
+        backgroundColor: "#ffffff",
+        parent: "phaser-example",
+        physics: {
+          default: "arcade",
+          arcade: {}
+        },
+        scene: [Preloader, MainMenu, Game, GameOver]
+      };
+
+      var game = new Phaser.Game(config);
+
+    </script>
+  </body>
+</html>
