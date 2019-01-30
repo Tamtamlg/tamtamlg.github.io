@@ -2,7 +2,6 @@
 <html>
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.15.1/phaser.min.js"></script>
-    <!-- <script src="/dev.js"></script> -->
   </head>
   <body>
 
@@ -11,6 +10,8 @@
 
     <script>
       var counter = 6;
+      var result = [];
+      
       // Preloader start
       var Preloader = new Phaser.Class({
         Extends: Phaser.Scene,
@@ -21,9 +22,12 @@
 
         preload: function() {
           this.load.image("background", "bg.png");
+          this.load.image("short", "short.png");
+          this.load.image("long", "long.png");
           this.load.image("buttonBG", "button-bg.png");
+          this.load.image("buttonBG2", "button-bg2.png");
           this.load.image("buttonText", "button-text.png");
-          this.load.image("hand", "hand.png");
+          this.load.image("buttonText2", "button-text2.png");
           this.load.image("cat1", "img1.png");
           this.load.image("cat2", "img2.png");
           this.load.image("cat3", "img3.png");
@@ -157,7 +161,7 @@
 
           this.add.image(400, 300, "background");
 
-          var bg = this.add.image(0, 0, "buttonBG");
+          var bg = this.add.image(0, 0, "buttonBG2");
           var text = this.add.image(0, 0, "buttonText");
 
           var container = this.add.container(400, 300, [bg, text]);
@@ -200,7 +204,6 @@
           this.add.text(50, 120, "Кликните по полю,\nчтобы бросить монеты", {
             fontSize: "26px",
             fontWeight: 'bold',
-            // align: 'center',
             fill: "#000",
             stroke: '#000',
             strokeThickness: 2
@@ -208,7 +211,6 @@
 
           this.physics.world.collideWorldBounds = true;
 
-          
           var group = this.physics.add.group({
             bounceX: 0,
             bounceY: 0.5,
@@ -218,6 +220,9 @@
           var sprite1 = this.physics.add.sprite(600, 80, "cat1");
           var sprite2 = this.physics.add.sprite(620, 70, "cat1");
           var sprite3 = this.physics.add.sprite(640, 80, "cat1");
+          sprite1.setGravity(0, 0);
+          sprite2.setGravity(0, 0);
+          sprite3.setGravity(0, 0);
           group.add(sprite1);
           group.add(sprite2);
           group.add(sprite3);
@@ -235,22 +240,30 @@
             obj.body.moves = true;
           });
 
-          var hand = this.physics.add.image(380, 160, "hand", null, {
-            isStatic: true
-          });
+          var y = 500;
+          for(var i = 0; i < result.length; i++) {
+            this.add.image(230, y, result[i] < 1? "short" : "long");
+            y -= 40;
+          }
 
           var self = this;
           this.input.once("pointerup", function() {
-            hand.destroy();
 
-            if (Math.random() > 0.5) {
+            var random1 = Math.random();
+            var random2 = Math.random();
+            var random3 = Math.random();
+            var sum = 0;
+
+            if (random1 > 0.5) {
+              sum +=1;
               sprite1.play("money1");
             } else {
               sprite1.play("money2");
             }
             sprite1.setGravity(0, 900);
             setTimeout(function() {
-              if (Math.random() > 0.5) {
+              if (random2 > 0.5) {
+                sum +=1;
                 sprite2.play("money1");
               } else {
                 sprite2.play("money2");
@@ -258,7 +271,8 @@
               sprite2.setGravity(55, 900);
             }, 200);
             setTimeout(function() {
-              if (Math.random() > 0.5) {
+              if (random3 > 0.5) {
+                sum +=1;
                 sprite3.play("money1");
               } else {
                 sprite3.play("money2");
@@ -268,19 +282,64 @@
             setTimeout(function() {
               sprite2.setGravity(0, 900);
               if(counter > 1) {
-                self.scene.start('gameover');
+                self.scene.start('levelend');
                 counter--;
               } else {
-                self.scene.start('mainmenu');
+                self.scene.start('gameover');
                 counter = 6;
               }
+            if (sum > 1) {
+              result.push(0)
+            } else {
+              result.push(1)
+            }
             }, 4000);
-            
           });
         }
       });
       // Game end
 
+
+
+
+      // LevelEnd start
+      var LevelEnd = new Phaser.Class({
+        Extends: Phaser.Scene,
+
+        initialize: function GameOver() {
+          Phaser.Scene.call(this, { key: "levelend" });
+          window.END = this;
+        },
+
+        create: function() {
+          console.log(
+            "%c LevelEnd ",
+            "background: green; color: white; display: block;"
+          );
+
+          this.add.image(400, 300, "background");
+
+          var message = this.add.text(50, 120, "Осталось бросить " + counter + " раз", {
+            fontSize: "26px",
+            fontWeight: 'bold',
+            fill: "#000",
+            stroke: '#000',
+            strokeThickness: 2
+          });
+
+          var y = 500;
+          for(var i = 0; i < result.length; i++) {
+            this.add.image(230, y, result[i] < 1? "short" : "long");
+            y -= 40;
+          }
+
+          var self = this;
+          setTimeout(function() {
+            self.scene.start("game");
+            }, 1000);
+        }
+      });
+      // LevelEnd end
 
 
 
@@ -301,7 +360,7 @@
 
           this.add.image(400, 300, "background");
 
-          var message = this.add.text(50, 120, "Осталось бросить " + counter + " раз", {
+          var message = this.add.text(50, 120, "Игра окончена", {
             fontSize: "26px",
             fontWeight: 'bold',
             fill: "#000",
@@ -309,24 +368,29 @@
             strokeThickness: 2
           });
 
-          // var bg = this.add.image(0, 0, "buttonBG");
-          // var text = this.add.image(0, 0, "buttonText2");
+          var y = 500;
+          for(var i = 0; i < result.length; i++) {
+            this.add.image(230, y, result[i] < 1? "short" : "long");
+            y -= 40;
+          }
 
-          // var container = this.add.container(400, 300, [bg, text]);
+          var bg = this.add.image(0, 0, "buttonBG2");
+          var text = this.add.image(0, 0, "buttonText2");
 
-          // bg.setInteractive();
+          var container = this.add.container(610, 300, [bg, text]);
 
-          // bg.once(
-          //   "pointerup",
-          //   function() {
-          //     this.scene.start("game");
-          //   },
-          //   this
-          // );
-          var self = this;
-          setTimeout(function() {
-            self.scene.start("game");
-            }, 1000);
+          bg.setInteractive();
+
+          bg.once(
+            "pointerup",
+            function() {
+              counter = 6;
+              result = [];
+              this.scene.start("game");
+            },
+            this
+          );
+
         }
       });
       // GameOver end
@@ -342,7 +406,7 @@
           default: "arcade",
           arcade: {}
         },
-        scene: [Preloader, MainMenu, Game, GameOver]
+        scene: [Preloader, MainMenu, Game, LevelEnd, GameOver]
       };
 
       var game = new Phaser.Game(config);
