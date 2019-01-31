@@ -356,9 +356,9 @@
             wordWrap: { width: 380, useAdvancedWrap: true }
           });
 
-          var btn1 = this.add.image(610, 300, "buttonText");
-          btn1.setInteractive({ useHandCursor: true });
-          btn1.once(
+          var btnGame = this.add.image(610, 300, "buttonText");
+          btnGame.setInteractive({ useHandCursor: true });
+          btnGame.once(
             "pointerup",
             function() {
               counter = 6;
@@ -407,9 +407,9 @@
             wordWrap: { width: 380, useAdvancedWrap: true }
           });
 
-          var btn1 = this.add.image(610, 300, "buttonText");
-          btn1.setInteractive({ useHandCursor: true });
-          btn1.once(
+          var btnGame = this.add.image(610, 300, "buttonText");
+          btnGame.setInteractive({ useHandCursor: true });
+          btnGame.once(
             "pointerup",
             function() {
               counter = 6;
@@ -458,9 +458,9 @@
             wordWrap: { width: 380, useAdvancedWrap: true }
           });
 
-          var btn1 = this.add.image(610, 300, "buttonText");
-          btn1.setInteractive({ useHandCursor: true });
-          btn1.once(
+          var btnGame = this.add.image(610, 300, "buttonText");
+          btnGame.setInteractive({ useHandCursor: true });
+          btnGame.once(
             "pointerup",
             function() {
               counter = 6;
@@ -491,7 +491,7 @@
           Phaser.Scene.call(this, {
             key: "text4"
           });
-          window.TEXT3 = this;
+          window.TEXT4 = this;
         },
 
         create: function() {
@@ -517,9 +517,9 @@
           var text2 = this.add.text(50, 195, content2, textSettings);
           var text3 = this.add.text(50, 370, content3, textSettings);
 
-          var btn1 = this.add.image(610, 300, "buttonText");
-          btn1.setInteractive({ useHandCursor: true });
-          btn1.once(
+          var btnGame = this.add.image(610, 300, "buttonText");
+          btnGame.setInteractive({ useHandCursor: true });
+          btnGame.once(
             "pointerup",
             function() {
               counter = 6;
@@ -531,38 +531,6 @@
         }
       });
       // Text4 end
-
-      // MainMenu start
-      var MainMenu = new Phaser.Class({
-        Extends: Phaser.Scene,
-
-        initialize: function MainMenu() {
-          Phaser.Scene.call(this, {
-            key: "mainmenu"
-          });
-          window.MENU = this;
-        },
-
-        create: function() {
-          this.add.image(400, 300, "background");
-
-          var bg = this.add.image(0, 0, "buttonBG2");
-          var text = this.add.image(0, 0, "buttonText");
-
-          var container = this.add.container(400, 300, [bg, text]);
-
-          bg.setInteractive();
-
-          bg.once(
-            "pointerup",
-            function() {
-              this.scene.start("game");
-            },
-            this
-          );
-        }
-      });
-      // MainMenu end
 
       // Game start
       var Game = new Phaser.Class({
@@ -1119,7 +1087,6 @@
             Text2,
             Text3,
             Text4,
-            MainMenu,
             Game,
             LevelEnd,
             GameOver
@@ -1128,7 +1095,7 @@
 
         var game = new Phaser.Game(config);
 
-        if(game.input.touch) {
+        if (game.input.touch) {
           game.input.touch.destroy();
         }
 
