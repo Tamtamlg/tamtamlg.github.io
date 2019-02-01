@@ -739,7 +739,7 @@
         var message = this.add.text(
           50,
           120,
-          "Осталось бросить " + counter + " раз", {
+          "Осталось бросить " + counter + (counter === 5 || counter === 1 ? " раз" : " раза"), {
             fontSize: "26px",
             fontWeight: "bold",
             fill: "#000",
@@ -1118,7 +1118,7 @@
           }
         });
         var wtt = this.add.text(50, 100, wtt, {
-          fontSize: "17px",
+          fontSize: "16px",
           fontWeight: "bold",
           fill: "#000",
           stroke: "#000",
