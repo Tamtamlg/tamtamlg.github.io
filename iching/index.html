@@ -2,25 +2,15 @@
 <html>
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.15.1/phaser.min.js"></script>
-    <style>
-      /* canvas {
-        display: block;
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      } */
-    </style>
   </head>
 
   <body>
     <div id="phaser-game" style="text-align: center;"></div>
 
     <script>
-      // global var
-      var counter = 6;
-      var result = [];
+      // global variables
+      var counter = 6; // number of throw
+      var result = []; // throw results
 
       // Preloader start
       var Preloader = new Phaser.Class({
@@ -47,7 +37,7 @@
               font: "30px monospace",
               fill: "#fce302",
               stroke: "red",
-              strokeThickness: 2,
+              strokeThickness: 2
             }
           });
           loadingText.setOrigin(0.5, 0.5);
@@ -62,6 +52,7 @@
             }
           });
           percentText.setOrigin(0.5, 0.5);
+
           this.load.on("progress", function(value) {
             percentText.setText(parseInt(value * 100) + "%");
             progressBar.clear();
@@ -76,321 +67,274 @@
             loadingText.destroy();
           });
 
-          this.load.image("background", "bg.png");
-          this.load.image("short", "short.png");
-          this.load.image("long", "long.png");
-          this.load.image("shortMin", "short-min.png");
-          this.load.image("longMin", "long-min.png");
-          this.load.image("buttonText", "button-text.png");
-          this.load.image("buttonText2", "button-text2.png");
-          this.load.image("buttonText3", "button-text3.png");
-          this.load.image("img1", "img1.png");
-          this.load.image("img2", "img2.png");
-          this.load.image("img3", "img3.png");
-          this.load.image("img4", "img4.png");
-          this.load.image("img5", "img5.png");
-          this.load.image("img6", "img6.png");
-          this.load.image("img7", "img7.png");
-          this.load.image("img8", "img8.png");
-          this.load.image("img12", "img12.png");
-          this.load.image("img13", "img13.png");
-          this.load.image("img14", "img14.png");
-          this.load.image("img15", "img15.png");
-          this.load.image("img16", "img16.png");
-          this.load.image("img17", "img17.png");
-          this.load.image("img18", "img18.png");
-          this.load.image("img19", "img19.png");
-          this.load.image("img20", "img20.png");
-          this.load.image("img21", "img21.png");
-          this.load.image("img22", "img22.png");
-          this.load.image("img23", "img23.png");
-          this.load.image("img24", "img24.png");
-          this.load.image("img25", "img25.png");
-          this.load.image("img26", "img26.png");
-          this.load.image("img27", "img27.png");
-          this.load.image("img28", "img28.png");
-          this.load.image("img29", "img29.png");
-          this.load.image("img30", "img30.png");
-          this.load.image("img31", "img31.png");
-          this.load.image("img32", "img32.png");
-          this.load.image("img33", "img33.png");
-          this.load.image("img40", "img40.png");
-          this.load.image("img41", "img41.png");
+          this.load.image("background", "assets/bg.png");
+          this.load.image("short", "assets/short.png");
+          this.load.image("long", "assets/long.png");
+          this.load.image("shortMin", "assets/short-min.png");
+          this.load.image("longMin", "assets/long-min.png");
+          this.load.image("buttonText", "assets/button-text.png");
+          this.load.image("buttonText2", "assets/button-text2.png");
+          this.load.image("buttonText3", "assets/button-text3.png");
           this.load.multiatlas("texture", "assets/texture.json", "assets");
+          this.load.multiatlas("money", "assets/money.json", "assets");
         },
 
         create: function() {
-          this.anims.create({
-            key: "money1",
-            frames: [
-              {
-                key: "img1"
-              },
-              {
-                key: "img2"
-              },
-              {
-                key: "img3"
-              },
-              {
-                key: "img4"
-              },
-              {
-                key: "img5"
-              },
-              {
-                key: "img12"
-              },
-              {
-                key: "img13"
-              },
-              {
-                key: "img14"
-              },
-              {
-                key: "img15"
-              },
-              {
-                key: "img16"
-              },
-              {
-                key: "img17"
-              },
-              {
-                key: "img18"
-              },
-              {
-                key: "img19"
-              },
-              {
-                key: "img20"
-              },
-              {
-                key: "img6"
-              },
-              {
-                key: "img7"
-              },
-              {
-                key: "img8"
-              },
-              {
-                key: "img21"
-              },
-              {
-                key: "img22"
-              },
-              {
-                key: "img23"
-              },
-              {
-                key: "img24"
-              },
-              {
-                key: "img25"
-              },
-              {
-                key: "img26"
-              },
-              {
-                key: "img27"
-              },
-              {
-                key: "img28"
-              },
-              {
-                key: "img29"
-              },
-              {
-                key: "img30"
-              },
-              {
-                key: "img31"
-              },
-              {
-                key: "img32"
-              },
-              {
-                key: "img33"
-              },
-              {
-                key: "img41"
-              }
-            ],
-            frameRate: 17,
-            repeat: 0
-          });
-
-          this.anims.create({
-            key: "money2",
-            frames: [
-              {
-                key: "img1"
-              },
-              {
-                key: "img2"
-              },
-              {
-                key: "img3"
-              },
-              {
-                key: "img4"
-              },
-              {
-                key: "img5"
-              },
-              {
-                key: "img12"
-              },
-              {
-                key: "img13"
-              },
-              {
-                key: "img14"
-              },
-              {
-                key: "img15"
-              },
-              {
-                key: "img16"
-              },
-              {
-                key: "img17"
-              },
-              {
-                key: "img18"
-              },
-              {
-                key: "img19"
-              },
-              {
-                key: "img20"
-              },
-              {
-                key: "img6"
-              },
-              {
-                key: "img7"
-              },
-              {
-                key: "img8"
-              },
-              {
-                key: "img21"
-              },
-              {
-                key: "img22"
-              },
-              {
-                key: "img23"
-              },
-              {
-                key: "img24"
-              },
-              {
-                key: "img25"
-              },
-              {
-                key: "img26"
-              },
-              {
-                key: "img27"
-              },
-              {
-                key: "img28"
-              },
-              {
-                key: "img29"
-              },
-              {
-                key: "img30"
-              },
-              {
-                key: "img31"
-              },
-              {
-                key: "img32"
-              },
-              {
-                key: "img33"
-              },
-              {
-                key: "img40"
-              }
-            ],
-            frameRate: 13,
-            repeat: 0
-          });
-
-          this.anims.create({
-            key: "run",
-            frames: "muybridge",
-            frameRate: 7,
-            repeat: 0
-          });
-
-          this.scene.start("text1");
-        }
-      });
-      // Preloader end
-
-      // Text1 start
-      var Text1 = new Phaser.Class({
-        Extends: Phaser.Scene,
-
-        initialize: function GameOver() {
-          Phaser.Scene.call(this, {
-            key: "text1"
-          });
-          window.TEXT1 = this;
-        },
-
-        create: function() {
-          this.add.image(400, 300, "background");
-
-          var content =
-            "Древние китайские легенды повествуют о правителе Фу Си, который изобрел «Книгу Перемен» в 3 тысячелетии до н. э. В книге всего 64 символа - гексаграммы, каждая из которых состоит из шести черт. Эти черты обозначают последовательные ступени развития ситуации. Черты могут быть цельными, или прерванными. Первые символизируют активное состояние, свет, напряжение, а вторые - пассивное состояние, тьму, податливость.";
-
-          var text = this.add.text(50, 100, content, {
-            fontSize: "20px",
-            fontWeight: "bold",
-            fill: "#000",
-            stroke: "#000",
-            strokeThickness: 1,
-            wordWrap: {
-              width: 380,
-              useAdvancedWrap: true
+          var frames1 = [
+            {
+              key: "money",
+              frame: "img1.png"
+            },
+            {
+              key: "money",
+              frame: "img2.png"
+            },
+            {
+              key: "money",
+              frame: "img3.png"
+            },
+            {
+              key: "money",
+              frame: "img4.png"
+            },
+            {
+              key: "money",
+              frame: "img5.png"
+            },
+            {
+              key: "money",
+              frame: "img6.png"
+            },
+            {
+              key: "money",
+              frame: "img7.png"
+            },
+            {
+              key: "money",
+              frame: "img8.png"
+            },
+            {
+              key: "money",
+              frame: "img12.png"
+            },
+            {
+              key: "money",
+              frame: "img13.png"
+            },
+            {
+              key: "money",
+              frame: "img14.png"
+            },
+            {
+              key: "money",
+              frame: "img15.png"
+            },
+            {
+              key: "money",
+              frame: "img16.png"
+            },
+            {
+              key: "money",
+              frame: "img17.png"
+            },
+            {
+              key: "money",
+              frame: "img18.png"
+            },
+            {
+              key: "money",
+              frame: "img19.png"
+            },
+            {
+              key: "money",
+              frame: "img20.png"
+            },
+            {
+              key: "money",
+              frame: "img21.png"
+            },
+            {
+              key: "money",
+              frame: "img22.png"
+            },
+            {
+              key: "money",
+              frame: "img23.png"
+            },
+            {
+              key: "money",
+              frame: "img24.png"
+            },
+            {
+              key: "money",
+              frame: "img25.png"
+            },
+            {
+              key: "money",
+              frame: "img26.png"
+            },
+            {
+              key: "money",
+              frame: "img27.png"
+            },
+            {
+              key: "money",
+              frame: "img28.png"
+            },
+            {
+              key: "money",
+              frame: "img29.png"
+            },
+            {
+              key: "money",
+              frame: "img30.png"
+            },
+            {
+              key: "money",
+              frame: "img31.png"
+            },
+            {
+              key: "money",
+              frame: "img32.png"
+            },
+            {
+              key: "money",
+              frame: "img33.png"
+            },
+            {
+              key: "money",
+              frame: "img40.png"
             }
-          });
+          ];
 
-          var btnGame = this.add.image(610, 300, "buttonText");
-          btnGame.setInteractive({
-            useHandCursor: true
-          });
-          btnGame.once(
-            "pointerup",
-            function() {
-              counter = 6;
-              result = [];
-              this.scene.start("game");
+          var frames2 = [
+            {
+              key: "money",
+              frame: "img1.png"
             },
-            this
-          );
-
-          var btnNext = this.add.image(240, 500, "buttonText3");
-          btnNext.setInteractive({
-            useHandCursor: true
-          });
-          btnNext.once(
-            "pointerup",
-            function() {
-              this.scene.start("text2");
+            {
+              key: "money",
+              frame: "img2.png"
             },
-            this
-          );
+            {
+              key: "money",
+              frame: "img3.png"
+            },
+            {
+              key: "money",
+              frame: "img4.png"
+            },
+            {
+              key: "money",
+              frame: "img5.png"
+            },
+            {
+              key: "money",
+              frame: "img6.png"
+            },
+            {
+              key: "money",
+              frame: "img7.png"
+            },
+            {
+              key: "money",
+              frame: "img8.png"
+            },
+            {
+              key: "money",
+              frame: "img12.png"
+            },
+            {
+              key: "money",
+              frame: "img13.png"
+            },
+            {
+              key: "money",
+              frame: "img14.png"
+            },
+            {
+              key: "money",
+              frame: "img15.png"
+            },
+            {
+              key: "money",
+              frame: "img16.png"
+            },
+            {
+              key: "money",
+              frame: "img17.png"
+            },
+            {
+              key: "money",
+              frame: "img18.png"
+            },
+            {
+              key: "money",
+              frame: "img19.png"
+            },
+            {
+              key: "money",
+              frame: "img20.png"
+            },
+            {
+              key: "money",
+              frame: "img21.png"
+            },
+            {
+              key: "money",
+              frame: "img22.png"
+            },
+            {
+              key: "money",
+              frame: "img23.png"
+            },
+            {
+              key: "money",
+              frame: "img24.png"
+            },
+            {
+              key: "money",
+              frame: "img25.png"
+            },
+            {
+              key: "money",
+              frame: "img26.png"
+            },
+            {
+              key: "money",
+              frame: "img27.png"
+            },
+            {
+              key: "money",
+              frame: "img28.png"
+            },
+            {
+              key: "money",
+              frame: "img29.png"
+            },
+            {
+              key: "money",
+              frame: "img30.png"
+            },
+            {
+              key: "money",
+              frame: "img31.png"
+            },
+            {
+              key: "money",
+              frame: "img32.png"
+            },
+            {
+              key: "money",
+              frame: "img33.png"
+            },
+            {
+              key: "money",
+              frame: "img41.png"
+            }
+          ];
 
-          var shape = this.add.sprite(0, 0, "texture", "shape15.png");
-          var frameNames = [
+          var frames3 = [
             {
               key: "texture",
               frame: "shape15.png"
@@ -472,13 +416,89 @@
               frame: "shape99.png"
             }
           ];
+
           this.anims.create({
-            key: "walk",
-            frames: frameNames,
+            key: "money1",
+            frames: frames1,
+            frameRate: 17,
+            repeat: 0
+          });
+
+          this.anims.create({
+            key: "money2",
+            frames: frames2,
+            frameRate: 13,
+            repeat: 0
+          });
+
+          this.anims.create({
+            key: "background",
+            frames: frames3,
             frameRate: 7,
             repeat: 0
           });
-          shape.anims.play("walk");
+
+          this.scene.start("text1");
+        }
+      });
+      // Preloader end
+
+      // Text1 start
+      var Text1 = new Phaser.Class({
+        Extends: Phaser.Scene,
+
+        initialize: function GameOver() {
+          Phaser.Scene.call(this, {
+            key: "text1"
+          });
+        },
+
+        create: function() {
+          this.add.image(400, 300, "background");
+
+          var content =
+            "Древние китайские легенды повествуют о правителе Фу Си, который изобрел «Книгу Перемен» в 3 тысячелетии до н. э. В книге всего 64 символа - гексаграммы, каждая из которых состоит из шести черт. Эти черты обозначают последовательные ступени развития ситуации. Черты могут быть цельными, или прерванными. Первые символизируют активное состояние, свет, напряжение, а вторые - пассивное состояние, тьму, податливость.";
+
+          var text = this.add.text(50, 100, content, {
+            fontSize: "20px",
+            fontWeight: "bold",
+            fill: "#000",
+            stroke: "#000",
+            strokeThickness: 1,
+            wordWrap: {
+              width: 380,
+              useAdvancedWrap: true
+            }
+          });
+
+          var btnGame = this.add.image(610, 300, "buttonText");
+          btnGame.setInteractive({
+            useHandCursor: true
+          });
+          btnGame.once(
+            "pointerup",
+            function() {
+              counter = 6;
+              result = [];
+              this.scene.start("game");
+            },
+            this
+          );
+
+          var btnNext = this.add.image(240, 500, "buttonText3");
+          btnNext.setInteractive({
+            useHandCursor: true
+          });
+          btnNext.once(
+            "pointerup",
+            function() {
+              this.scene.start("text2");
+            },
+            this
+          );
+
+          var shape = this.add.sprite(0, 0, "texture", "shape15.png");
+          shape.anims.play("background");
         }
       });
       // Text1 end
@@ -491,7 +511,6 @@
           Phaser.Scene.call(this, {
             key: "text2"
           });
-          window.TEXT2 = this;
         },
 
         create: function() {
@@ -556,7 +575,6 @@
           Phaser.Scene.call(this, {
             key: "text3"
           });
-          window.TEXT3 = this;
         },
 
         create: function() {
@@ -621,7 +639,6 @@
           Phaser.Scene.call(this, {
             key: "text4"
           });
-          window.TEXT4 = this;
         },
 
         create: function() {
@@ -686,11 +703,6 @@
           Phaser.Scene.call(this, {
             key: "game"
           });
-          window.GAME = this;
-
-          this.controls;
-          this.track;
-          this.text;
         },
 
         create: function() {
@@ -741,9 +753,9 @@
             collideWorldBounds: true
           });
 
-          var sprite1 = this.physics.add.sprite(600, 80, "img1");
-          var sprite2 = this.physics.add.sprite(620, 70, "img1");
-          var sprite3 = this.physics.add.sprite(640, 80, "img1");
+          var sprite1 = this.physics.add.sprite(600, 80, "money", "img1.png");
+          var sprite2 = this.physics.add.sprite(620, 70, "money", "img1.png");
+          var sprite3 = this.physics.add.sprite(640, 80, "money", "img1.png");
           group.add(sprite1);
           group.add(sprite2);
           group.add(sprite3);
@@ -798,7 +810,7 @@
                 duration: 2500
               });
             } else {
-              sprite1.play("money2");
+              sprite1.anims.play("money2");
               self.tweens.add({
                 targets: sprite1,
                 x: 600 + Math.floor(random1 * 100),
@@ -818,7 +830,7 @@
                   duration: 2000
                 });
               } else {
-                sprite2.play("money2");
+                sprite2.anims.play("money2");
                 self.tweens.add({
                   targets: sprite2,
                   x: 620 - Math.floor(random2 * 100),
@@ -839,7 +851,7 @@
                   duration: 2500
                 });
               } else {
-                sprite3.play("money2");
+                sprite3.anims.play("money2");
                 self.tweens.add({
                   targets: sprite3,
                   x: 640 + Math.floor(random3 * 100),
@@ -884,7 +896,6 @@
           Phaser.Scene.call(this, {
             key: "levelend"
           });
-          window.END = this;
         },
 
         create: function() {
@@ -936,7 +947,6 @@
           Phaser.Scene.call(this, {
             key: "gameover"
           });
-          window.OVER = this;
         },
 
         create: function() {
