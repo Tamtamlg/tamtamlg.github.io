@@ -756,17 +756,42 @@
               if (random2 > 0.5) {
                 sum += 1;
                 sprite2.play("money1");
+                self.tweens.add({
+                  targets: sprite2,
+                  x: 690,
+                  ease: "Linear",
+                  duration: 2000
+                });
               } else {
                 sprite2.play("money2");
+                self.tweens.add({
+                  targets: sprite2,
+                  x: 550,
+                  ease: "Linear",
+                  duration: 2500
+                });
               }
-              sprite2.setGravity(55, 900);
+              sprite2.setGravity(0, 900);
+              
             }, 200);
             setTimeout(function() {
               if (random3 > 0.5) {
                 sum += 1;
                 sprite3.play("money1");
+                self.tweens.add({
+                  targets: sprite3,
+                  x: 520,
+                  ease: "Linear",
+                  duration: 2500
+                });
               } else {
                 sprite3.play("money2");
+                self.tweens.add({
+                  targets: sprite3,
+                  x: 720,
+                  ease: "Linear",
+                  duration: 2500
+                });
               }
               sprite3.setGravity(0, 900);
             }, 400);
@@ -779,7 +804,6 @@
               });
             }, 3500);
             setTimeout(function() {
-              sprite2.setGravity(0, 900);
               if (counter > 1) {
                 self.scene.start("levelend");
                 counter--;
