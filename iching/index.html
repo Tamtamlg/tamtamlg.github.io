@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <div id="phaser-game" style="text-align: center;">Загрузка...</div>
+    <div id="phaser-game" style="text-align: center;"></div>
 
     <script>
       // global var
@@ -33,6 +33,49 @@
         },
 
         preload: function() {
+          var progressBox = this.add.graphics();
+          var progressBar = this.add.graphics();
+          progressBox.fillStyle("0xffffff", 0.5);
+          progressBox.fillRect(240, 270, 320, 50);
+          var width = this.cameras.main.width;
+          var height = this.cameras.main.height;
+          var loadingText = this.make.text({
+            x: width / 2,
+            y: height / 2 - 50,
+            text: "Загрузка...",
+            style: {
+              font: "30px monospace",
+              fill: "#fce302",
+              stroke: "red",
+              strokeThickness: 2,
+            }
+          });
+          loadingText.setOrigin(0.5, 0.5);
+
+          var percentText = this.make.text({
+            x: width / 2,
+            y: height / 2 - 5,
+            text: "0%",
+            style: {
+              font: "18px monospace",
+              fill: "#ffffff"
+            }
+          });
+          percentText.setOrigin(0.5, 0.5);
+          this.load.on("progress", function(value) {
+            percentText.setText(parseInt(value * 100) + "%");
+            progressBar.clear();
+            progressBar.fillStyle("0xffb30b", 1);
+            progressBar.fillRect(250, 280, 300 * value, 30);
+          });
+
+          this.load.on("complete", function() {
+            percentText.destroy();
+            progressBar.destroy();
+            progressBox.destroy();
+            loadingText.destroy();
+          });
+
           this.load.image("background", "bg.png");
           this.load.image("short", "short.png");
           this.load.image("long", "long.png");
@@ -749,19 +792,19 @@
               sum += 1;
               sprite1.play("money1");
               self.tweens.add({
-                  targets: sprite1,
-                  x: 600 + Math.floor(random1*100),
-                  ease: "Linear",
-                  duration: 2500
-                });
+                targets: sprite1,
+                x: 600 + Math.floor(random1 * 100),
+                ease: "Linear",
+                duration: 2500
+              });
             } else {
               sprite1.play("money2");
               self.tweens.add({
-                  targets: sprite1,
-                  x: 600 + Math.floor(random1*100),
-                  ease: "Linear",
-                  duration: 2500
-                });
+                targets: sprite1,
+                x: 600 + Math.floor(random1 * 100),
+                ease: "Linear",
+                duration: 2500
+              });
             }
             sprite1.setGravity(0, 900);
             setTimeout(function() {
@@ -770,7 +813,7 @@
                 sprite2.play("money1");
                 self.tweens.add({
                   targets: sprite2,
-                  x: 620 + Math.floor(random2*100),
+                  x: 620 + Math.floor(random2 * 100),
                   ease: "Linear",
                   duration: 2000
                 });
@@ -778,13 +821,12 @@
                 sprite2.play("money2");
                 self.tweens.add({
                   targets: sprite2,
-                  x: 620 - Math.floor(random2*100),
+                  x: 620 - Math.floor(random2 * 100),
                   ease: "Linear",
                   duration: 2500
                 });
               }
               sprite2.setGravity(0, 900);
-              
             }, 200);
             setTimeout(function() {
               if (random3 > 0.5) {
@@ -792,7 +834,7 @@
                 sprite3.play("money1");
                 self.tweens.add({
                   targets: sprite3,
-                  x: 640 - Math.floor(random3*100),
+                  x: 640 - Math.floor(random3 * 100),
                   ease: "Linear",
                   duration: 2500
                 });
@@ -800,7 +842,7 @@
                 sprite3.play("money2");
                 self.tweens.add({
                   targets: sprite3,
-                  x: 640 + Math.floor(random3*100),
+                  x: 640 + Math.floor(random3 * 100),
                   ease: "Linear",
                   duration: 2500
                 });
