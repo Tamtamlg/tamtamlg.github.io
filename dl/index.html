@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flex</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid black;
+      width: 360px;
+      height: 360px;
+    }
+    .block {
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+    }
+    .block--left {
+      margin: 10px auto 10px 10px;
+    }
+    .block--center {
+      margin: 10px auto;
+    }
+    .block--right {
+      margin: 10px 10px 10px auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="block block--left">block--left</div>
+    <div class="block block--center">block--center</div>
+    <div class="block block--right">block--right</div>
+  </div>
+  <code>
+    <pre>
+  * {
+    box-sizing: border-box;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 360px;
+    height: 360px;
+  }
+  .block {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+  }
+  .block--left {
+    margin: 10px auto 10px 10px;
+  }
+  .block--center {
+    margin: 10px auto;
+  }
+  .block--right {
+    margin: 10px 10px 10px auto;
+  }
+    </pre>
+  </code>
+</body>
+</html>
